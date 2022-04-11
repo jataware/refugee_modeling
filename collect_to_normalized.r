@@ -12,7 +12,7 @@ sum(is.na(countries$export_trade_share))
 #get unique list of countries that refugees migrated to
 list_countries=unique(countries$country)
 # add a few names that are different between databases
-list_countries=c(list_countries, "Russian Federation","Russia", "South Sudan", "Tajikistan")
+list_countries=c(list_countries, "Russian Federation","Russia", "South Sudan", "Tajikistan","Moldova","Slovakia")
 #reduce the size of the dataframe to make it easier to work with
 reduced=Dem %>% 
   filter(country_name==list_countries)
@@ -49,6 +49,7 @@ data=merged_data
 #set Uzbekistan to values found here https://www.v-dem.net/data_analysis/VariableGraph/ The two features are Access to Justic for women and Liberal Dem index
 data[data$country=="Uzbekistan",]["v2xeg_eqdr"]=0.2
 data[data$country=="Uzbekistan",]["v2x_libdem"]=0.09
+data[data$country=="Slovakia",]["v2x_libdem"]=0.77
 
 # calculate percent of refugees traveling to each country out of all refugees leaving
 
@@ -88,4 +89,5 @@ data=data %>%
 data=data %>% mutate(value = 1)  %>% spread(conflict, value,  fill = 0 ) 
 #save
 write.csv(data, 'individualsPerCountry_normalized_withoutRussia.csv')
+
 
