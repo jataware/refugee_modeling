@@ -3,7 +3,7 @@ library(tidyverse)
 #bring in data V-Dem database for democracy index and justice for women
 Dem=read.csv("V-Dem-CY-Core-v12.csv")
 #read in data I collect manually from wiki and othe sources
-countries=read_csv("collected_data.csv")
+countries=read_csv("refugee_data/collected_data.csv")
 
 
 #get unique list of countries that refugees migrated to
