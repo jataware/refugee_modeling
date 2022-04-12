@@ -1,7 +1,7 @@
 # refugee_modeling
 Model refugee migration based on county level features and distance of travel.
 
-I collected data manually from a variety of sources and processed the data in r.After normalizing the data I uploading the data to a python jupyter notebook to run the linear model and view the results.
+Refugee and country level data were manually from a variety of sources and processed the data in r. After normalizing the data we used the jupyter notebook to run the linear model, collect distance data with google's directions api, and view the results.
 
 **Data collection:**
 
