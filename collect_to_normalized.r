@@ -2,14 +2,17 @@ library(tidyverse)
 
 #bring in data V-Dem database for democracy index and justice for women
 Dem=read.csv("V-Dem-CY-Core-v12.csv")
+
 #read in data I collect manually from wiki and othe sources
-countries=read_csv("refugee_data/collected_data.csv")
+countries=read_csv("collected_data.csv")
 
 
 #get unique list of countries that refugees migrated to
 list_countries=unique(countries$country)
+
 # add a few names that are different between databases
 list_countries=c(list_countries, "Russian Federation","Russia", "South Sudan", "Tajikistan","Moldova","Slovakia")
+
 #reduce the size of the dataframe to make it easier to work with
 reduced=Dem %>% 
   filter(country_name==list_countries)
@@ -109,44 +112,35 @@ for(row in rownames(data) ){
   data[row,"remittances"]=as.double(remittance_value)
 }
 
-# Calculating means for each feature.
+# Calculating by each conflict
 data=data %>% 
   group_by(conflict) %>% 
   mutate("percent_IndividualPerCountry_of_total"=individualPerCountry/Total_pop_left_conflict_zone) %>% 
-  mutate("average_pop"=mean(population)) %>% 
-  mutate("average_refugee"=mean(individualPerCountry)) %>% 
-  mutate("average_gdp"=mean(gdp_millions)) %>% 
   mutate("total_recored_migrants"=sum(individualPerCountry)) %>% 
-  mutate("percent_IndividualPerCountry_of_recorded"=individualPerCountry/total_recored_migrants) %>% 
-  mutate("average_eqdr"=mean(v2xeg_eqdr)) %>% 
-  mutate("average_lib"=mean(v2x_libdem)) %>% 
-  mutate("average_bilateral_migration"=mean(bilateral_migration)) %>% 
-  mutate("average_export_trade_share"=mean(export_trade_share)) %>% 
-  mutate("average_migr_ratio"=mean(migrant_ratio)) %>% 
-  mutate("average_remittances"=mean(remittances))
+  mutate("percent_IndividualPerCountry_of_recorded"=individualPerCountry/total_recored_migrants) 
 
 # calculate gdp per cap
-
 data['gdp_per_cap']=data['gdp_millions']/data['population']
 
 #normalize the features
 data=data %>% 
   group_by(conflict) %>% 
-  mutate('normalized_pop'=(population-average_pop)/sd(population)) %>% 
-  mutate('normalized_refugee'=(individualPerCountry-average_refugee)/sd(individualPerCountry)) %>% 
-  mutate('normalized_gdp'=(gdp_millions -average_gdp)/sd(gdp_millions)) %>% 
-  mutate('normalized_qrdp'=(v2xeg_eqdr-average_eqdr)/sd(v2xeg_eqdr)) %>% 
-  mutate('normalized_lib'=(v2x_libdem-average_lib)/sd(v2x_libdem)) %>% 
-  mutate("normalized_migr_ratio"=(migrant_ratio-average_migr_ratio)/sd(migrant_ratio)) %>% 
-  mutate('normalized_bilateral_migr'=(bilateral_migration-average_bilateral_migration)/sd(bilateral_migration)) %>% 
-  mutate('normalized_export_trade'=(export_trade_share-average_export_trade_share)/sd(export_trade_share)) %>% 
-  mutate("normalized_remittances"=(remittances-average_remittances)/sd(remittances))
+  mutate('normalized_pop'=(population-mean(population))/sd(population)) %>% 
+  mutate('normalized_refugee'=(individualPerCountry-mean(individualPerCountry))/sd(individualPerCountry)) %>% 
+  mutate('normalized_gdp'=(gdp_millions -mean(gdp_millions))/sd(gdp_millions)) %>% 
+  mutate('normalized_qrdp'=(v2xeg_eqdr-mean(v2xeg_eqdr))/sd(v2xeg_eqdr)) %>% 
+  mutate('normalized_lib'=(v2x_libdem-mean(v2x_libdem))/sd(v2x_libdem)) %>% 
+  mutate("normalized_migr_ratio"=(migrant_ratio-mean(migrant_ratio))/sd(migrant_ratio)) %>% 
+  mutate('normalized_bilateral_migr'=(bilateral_migration-mean(bilateral_migration))/sd(bilateral_migration)) %>% 
+  mutate('normalized_export_trade'=(export_trade_share-mean(export_trade_share))/sd(export_trade_share)) %>% 
+  mutate("normalized_remittances"=(remittances=mean(remittances))/sd(remittances))
   
 
 # one-hot encoding for conflict
 data=data %>% mutate(value = 1)  %>% spread(conflict, value,  fill = 0 ) 
 #save
 
-write.csv(data, 'individualsPerCountry_normalized_withoutRussia.csv')
+
+write.csv(data, 'refugee_data/refugee_Model_Data.csv')
 
 
