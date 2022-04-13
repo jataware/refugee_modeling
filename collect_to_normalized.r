@@ -133,14 +133,16 @@ data=data %>%
   mutate("normalized_migr_ratio"=(migrant_ratio-mean(migrant_ratio))/sd(migrant_ratio)) %>% 
   mutate('normalized_bilateral_migr'=(bilateral_migration-mean(bilateral_migration))/sd(bilateral_migration)) %>% 
   mutate('normalized_export_trade'=(export_trade_share-mean(export_trade_share))/sd(export_trade_share)) %>% 
-  mutate("normalized_remittances"=(remittances=mean(remittances))/sd(remittances))
+  mutate("normalized_remittances"=(remittances-mean(remittances))/sd(remittances)) %>% 
+  mutate("normalized_touching"=(touching-mean(touching))/sd(touching)) %>% 
+  mutate("normalized_same_language"=(same_language-mean(same_language))/sd(same_language)) 
   
+# where normalized data is NaN means there is no spread and all the data is the same for that conflict. Let fix the two columns effected by that
+data$normalized_touching[is.na(data$normalized_touching)]<-0
+data$normalized_same_language[is.na(data$normalized_same_language)]<-0
 
 # one-hot encoding for conflict
 data=data %>% mutate(value = 1)  %>% spread(conflict, value,  fill = 0 ) 
 #save
 
-
 write.csv(data, 'refugee_data/refugee_Model_Data.csv')
-
-
