@@ -12,7 +12,7 @@ list_countries=unique(countries$country)
 list_conflicts=unique(countries$conflict)
 
 # add a few names that are different between databases
-list_countries=c(list_countries, "Russian Federation","Russia", "South Sudan", "Tajikistan","Moldova","Slovakia")
+list_countries=c(list_countries, "Russian Federation","Russia", "South Sudan", "Tajikistan","Moldova","Slovakia","Turkmenistan")
 
 #reduce the size of the dataframe to make it easier to work with
 columnList=c("country_name","year","v2xeg_eqdr","v2x_libdem")
@@ -137,7 +137,9 @@ countries=countries %>%
   mutate("total_recored_migrants"=sum(individualPerCountry)) %>% 
   mutate("percent_IndividualPerCountry_of_recorded"=individualPerCountry/total_recored_migrants) 
 
-countries=countries %>% mutate(value = 1)  %>% spread(conflict, value,  fill = 0 ) 
+conflict=countries[,c(1,2)]
+countries=countries %>% mutate(value = 1)  %>% spread(conflict, value,  fill = 0) 
 
+countries['conflict']=conflict$conflict
 
-write.csv(countries, 'refugee_data/collected_data.csv')
+write.csv(countries, 'refugee_data/refugee_data_final.csv')
