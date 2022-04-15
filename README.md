@@ -7,7 +7,7 @@ Refugee and country level data were manually from a variety of sources and proce
 
  - For refugee data (individualPerCountry,country,conflict) most conflicts were collected from-[https://data2.unhcr.org/en/situations](https://data2.unhcr.org/en/situations).
    For VENEZUELA I also used- 
-   [https://www.r4v.info/es/refugiadosymigrantes](https://www.r4v.info/es/refugiadosymigrantes)
+   [https://www.r4v.info/es/refugiadosymigrantes](https://www.r4v.info/es/refugiadosymigrantes) - For Afghanistan we used https://reporting.unhcr.org/sites/default/files/RPRP%20Afghanistan%20-%204-pager%20Summary%20of%20Plan.pdf. 
   
   
  - GDP was collected from [https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal))
