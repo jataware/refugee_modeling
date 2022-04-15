@@ -131,6 +131,47 @@ for(row in rownames(countries) ){
   countries[row,"remittances"]=as.double(remittance_value)
 }
 
+gdp_per_cap_historic=read_csv('refugee_data/gdp_per_cap.csv')
+
+for(row in rownames(countries)) {
+  
+  year_v=toString(countries[row,"conflict_start_year"]-1)
+  if(year_v==2021){
+    year_v=2020
+  }
+  year_v=as.numeric(year_v)
+  country_v= toString(countries[row,"country"])
+  print(year_v)
+  print(country_v)
+
+  if("Iran"%in% country_v){
+    country_v="Iran, Islamic Rep."
+  }
+  if("Democratic Republic of the Congo"%in% country_v){
+    country_v="Congo, Dem. Rep."
+  }
+  if("Republic of the Congo"%in% country_v){
+    country_v="Congo, Rep."
+  }
+  if("Yemen"%in% country_v){
+    country_v="Yemen, Rep."
+  }
+  if("Egypt"%in% country_v){
+    country_v="Egypt, Arab Rep."
+  }
+  if("Slovakia"%in% country_v){
+    country_v="Slovak Republic"
+  }
+  
+  gdp_h=gdp_per_cap_historic%>% 
+    dplyr::filter(gdp_per_cap_historic$`Country Name`==country_v) %>% 
+    dplyr::pull(paste0(year_v," [YR",year_v,"]"))
+  countries[row,'gdp_per_cap_historic']=as.numeric(gdp_h)
+  
+  
+}
+
+
 countries=countries %>% 
   group_by(conflict) %>% 
   mutate("percent_IndividualPerCountry_of_total"=individualPerCountry/Total_pop_left_conflict_zone) %>% 
