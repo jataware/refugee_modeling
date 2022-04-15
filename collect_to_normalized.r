@@ -171,6 +171,46 @@ for(row in rownames(countries)) {
   
 }
 
+historic_pop=read_csv('refugee_data/historic_pop.csv')
+
+for(row in rownames(countries)) {
+  
+  year_v=toString(countries[row,"conflict_start_year"]-1)
+  if(year_v==2021){
+    year_v=2020
+  }
+  year_v=as.numeric(year_v)
+  country_v= toString(countries[row,"country"])
+  print(year_v)
+  print(country_v)
+  
+  if("Iran"%in% country_v){
+    country_v="Iran, Islamic Rep."
+  }
+  if("Democratic Republic of the Congo"%in% country_v){
+    country_v="Congo, Dem. Rep."
+  }
+  if("Republic of the Congo"%in% country_v){
+    country_v="Congo, Rep."
+  }
+  if("Yemen"%in% country_v){
+    country_v="Yemen, Rep."
+  }
+  if("Egypt"%in% country_v){
+    country_v="Egypt, Arab Rep."
+  }
+  if("Slovakia"%in% country_v){
+    country_v="Slovak Republic"
+  }
+  
+  historic_v=historic_pop%>% 
+    dplyr::filter(historic_pop$`Country Name`==country_v) %>% 
+    dplyr::pull(paste0(year_v," [YR",year_v,"]"))
+  countries[row,'historic_pop']=as.numeric(historic_v)
+  
+  
+}
+countries['historic_gdp']=countries['historic_pop']*countries['gdp_per_cap_historic']
 
 countries=countries %>% 
   group_by(conflict) %>% 
