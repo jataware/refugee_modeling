@@ -34,3 +34,5 @@ Refugee and country level data were manually from a variety of sources and proce
  - Bilateral migration (bilateral_migration) was collected from
 
    [https://www.knomad.org/sites/default/files/2018-04/bilateralmigrationmatrix20170_Apr2018.xlsx](https://www.knomad.org/sites/default/files/2018-04/bilateralmigrationmatrix20170_Apr2018.xlsx)
+   
+   -country codes were used from this list https://github.com/jataware/open-indicators/blob/master/google-trends/iso-codes.csv
