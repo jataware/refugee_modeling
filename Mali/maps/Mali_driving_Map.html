@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_211c926994aa4b6c80932c2dddd2f333 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+</head>
+<body>    
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+    </style>
+    
+     <div style="
+     padding-left:5px; padding-top:5px;
+     position: fixed; 
+     bottom: 50px; left: 50px; width: 160px; height: 120px;   
+     border:2px solid grey; z-index:9999; border-radius: 15px;
+     
+     background-color:white;
+     opacity: .85;
+     
+     font-size:14px;
+     font-weight: bold;
+     font-family: 'Roboto', sans-serif;
+     ">
+
+     <div class="awesome-marker-icon-darkred awesome-marker" style="margin-top: 10px; margin-left:5px;">
+         <i class="fa-rotate-0 glyphicon glyphicon-glyphicon glyphicon-fire icon-white"></i>
+     </div>
+     <div style="margin-left:40px; margin-top:20px">Conflict Area</div>
+     
+     <div class="awesome-marker-icon-gray awesome-marker" style="margin-top: 60px; margin-left:5px;">
+         <i class="fa-rotate-0 glyphicon glyphicon-glyphicon glyphicon-road icon-white"></i>
+     </div>
+     <div style="margin-left:40px; margin-top:25px">Destination Crossing</div>     
+     
+     
+      </div> 
+    
+            <div class="folium-map" id="map_211c926994aa4b6c80932c2dddd2f333" ></div>
+        
+</body>
+<script>    
+    
+            var map_211c926994aa4b6c80932c2dddd2f333 = L.map(
+                "map_211c926994aa4b6c80932c2dddd2f333",
+                {
+                    center: [13.384607619047618, -6.5844499999999995],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_61193ef47bd64211b79a3dd2900eeb84 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var marker_4b7a3accb2164c1fbc335096abeb02c1 = L.marker(
+                [21.1856922, 1.0452569],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_3c976aebcdd9453bb567352dfe8dc8c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_4b7a3accb2164c1fbc335096abeb02c1.setIcon(icon_3c976aebcdd9453bb567352dfe8dc8c7);
+        
+    
+        var popup_e96b0b89ceba4c6aa44d4a2669825ef9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6fb1b9598bc42fca9e7599e1ee56842 = $(`<div id="html_f6fb1b9598bc42fca9e7599e1ee56842" style="width: 100.0%; height: 100.0%;">Algeria_crossing</div>`)[0];
+            popup_e96b0b89ceba4c6aa44d4a2669825ef9.setContent(html_f6fb1b9598bc42fca9e7599e1ee56842);
+        
+
+        marker_4b7a3accb2164c1fbc335096abeb02c1.bindPopup(popup_e96b0b89ceba4c6aa44d4a2669825ef9)
+        ;
+
+        
+    
+    
+            var marker_5c3ea96b3ab34b3aa373e5297380faed = L.marker(
+                [13.1116742, -4.347420899999999],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_3e5476a5185b4602a94cc62dc1286df9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5c3ea96b3ab34b3aa373e5297380faed.setIcon(icon_3e5476a5185b4602a94cc62dc1286df9);
+        
+    
+        var popup_1b342c5bb40b43119125d38dde6e9595 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4b98067a105455b9fde3400ba224566 = $(`<div id="html_f4b98067a105455b9fde3400ba224566" style="width: 100.0%; height: 100.0%;">Burkina Faso_crossing</div>`)[0];
+            popup_1b342c5bb40b43119125d38dde6e9595.setContent(html_f4b98067a105455b9fde3400ba224566);
+        
+
+        marker_5c3ea96b3ab34b3aa373e5297380faed.bindPopup(popup_1b342c5bb40b43119125d38dde6e9595)
+        ;
+
+        
+    
+    
+            var marker_70ac9d9de2f5464796467494f00e22f2 = L.marker(
+                [11.1191925, -5.3607151],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_21a2c6f14ff645a88081b46525fa1c79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_70ac9d9de2f5464796467494f00e22f2.setIcon(icon_21a2c6f14ff645a88081b46525fa1c79);
+        
+    
+        var popup_c6adbf6a7fdd41f3b9e19c2b9ef147df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3386f81eb031460eaf3d8f318b6988e5 = $(`<div id="html_3386f81eb031460eaf3d8f318b6988e5" style="width: 100.0%; height: 100.0%;">Burkina Faso_crossing</div>`)[0];
+            popup_c6adbf6a7fdd41f3b9e19c2b9ef147df.setContent(html_3386f81eb031460eaf3d8f318b6988e5);
+        
+
+        marker_70ac9d9de2f5464796467494f00e22f2.bindPopup(popup_c6adbf6a7fdd41f3b9e19c2b9ef147df)
+        ;
+
+        
+    
+    
+            var marker_180c36c90acc42a798b3a0cc82d11893 = L.marker(
+                [10.5628102, -6.4274739],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_902996458eaf4bbd8a1ad05253949630 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_180c36c90acc42a798b3a0cc82d11893.setIcon(icon_902996458eaf4bbd8a1ad05253949630);
+        
+    
+        var popup_64119f2dba104c85a1cd1364794f77fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb41567abbf34eb880f644615065cced = $(`<div id="html_eb41567abbf34eb880f644615065cced" style="width: 100.0%; height: 100.0%;">Cote d’Ivoire_crossing</div>`)[0];
+            popup_64119f2dba104c85a1cd1364794f77fc.setContent(html_eb41567abbf34eb880f644615065cced);
+        
+
+        marker_180c36c90acc42a798b3a0cc82d11893.bindPopup(popup_64119f2dba104c85a1cd1364794f77fc)
+        ;
+
+        
+    
+    
+            var marker_7830516e50ad4b69a972f6c099c9b9f5 = L.marker(
+                [11.9510015, -8.7850117],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_ff28547bb79144f0b5c00267eebac3e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_7830516e50ad4b69a972f6c099c9b9f5.setIcon(icon_ff28547bb79144f0b5c00267eebac3e9);
+        
+    
+        var popup_de3ff1a258f74378a0242d7ea18aa71a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fab48a7647db4d969ef3deb9dbdc4359 = $(`<div id="html_fab48a7647db4d969ef3deb9dbdc4359" style="width: 100.0%; height: 100.0%;">Guinea_crossing</div>`)[0];
+            popup_de3ff1a258f74378a0242d7ea18aa71a.setContent(html_fab48a7647db4d969ef3deb9dbdc4359);
+        
+
+        marker_7830516e50ad4b69a972f6c099c9b9f5.bindPopup(popup_de3ff1a258f74378a0242d7ea18aa71a)
+        ;
+
+        
+    
+    
+            var marker_022093025156449ca7789424d5a09f48 = L.marker(
+                [15.6925503, -9.3217184],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_ef458d33f1004e53a926ed6d1bb195b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_022093025156449ca7789424d5a09f48.setIcon(icon_ef458d33f1004e53a926ed6d1bb195b6);
+        
+    
+        var popup_d1a24868000d43ba88db608a7a9981b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afcb6a6db66448de888f95b75d5d85a9 = $(`<div id="html_afcb6a6db66448de888f95b75d5d85a9" style="width: 100.0%; height: 100.0%;">Mauritania_crossing</div>`)[0];
+            popup_d1a24868000d43ba88db608a7a9981b3.setContent(html_afcb6a6db66448de888f95b75d5d85a9);
+        
+
+        marker_022093025156449ca7789424d5a09f48.bindPopup(popup_d1a24868000d43ba88db608a7a9981b3)
+        ;
+
+        
+    
+    
+            var marker_66c71e5d05684b2fb890f6a972f5c98a = L.marker(
+                [15.5000025, -8.5916519],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_ab0064c857204fd7a275e9241cd664bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_66c71e5d05684b2fb890f6a972f5c98a.setIcon(icon_ab0064c857204fd7a275e9241cd664bd);
+        
+    
+        var popup_2cea8efb909b4f3ca90d46373110dde3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93ae97d3838849ebac4ad6b25751e11f = $(`<div id="html_93ae97d3838849ebac4ad6b25751e11f" style="width: 100.0%; height: 100.0%;">Mauritania_crossing</div>`)[0];
+            popup_2cea8efb909b4f3ca90d46373110dde3.setContent(html_93ae97d3838849ebac4ad6b25751e11f);
+        
+
+        marker_66c71e5d05684b2fb890f6a972f5c98a.bindPopup(popup_2cea8efb909b4f3ca90d46373110dde3)
+        ;
+
+        
+    
+    
+            var marker_8ba65492be3544ebbe05069fb6d9da29 = L.marker(
+                [13.9929961, 0.3872442],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_b48a28c16b474ad1a22c93941a5700f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8ba65492be3544ebbe05069fb6d9da29.setIcon(icon_b48a28c16b474ad1a22c93941a5700f4);
+        
+    
+        var popup_4b9f0d291f99455ba9f95f86352b4da0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a95defdfe8ab46b181e8e37d87f6d940 = $(`<div id="html_a95defdfe8ab46b181e8e37d87f6d940" style="width: 100.0%; height: 100.0%;">Niger_crossing</div>`)[0];
+            popup_4b9f0d291f99455ba9f95f86352b4da0.setContent(html_a95defdfe8ab46b181e8e37d87f6d940);
+        
+
+        marker_8ba65492be3544ebbe05069fb6d9da29.bindPopup(popup_4b9f0d291f99455ba9f95f86352b4da0)
+        ;
+
+        
+    
+    
+            var marker_c8827dbcdff54a2eb3a0ea35aa457c8a = L.marker(
+                [14.4563277, -12.204163],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_14b1131560d5455d983e0e804c3135ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_c8827dbcdff54a2eb3a0ea35aa457c8a.setIcon(icon_14b1131560d5455d983e0e804c3135ca);
+        
+    
+        var popup_8ef24809ab5b417f98fb863a49950ac4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2678bfa6d7d4302841e84a3cc5ef08c = $(`<div id="html_e2678bfa6d7d4302841e84a3cc5ef08c" style="width: 100.0%; height: 100.0%;">Senegal_crossing</div>`)[0];
+            popup_8ef24809ab5b417f98fb863a49950ac4.setContent(html_e2678bfa6d7d4302841e84a3cc5ef08c);
+        
+
+        marker_c8827dbcdff54a2eb3a0ea35aa457c8a.bindPopup(popup_8ef24809ab5b417f98fb863a49950ac4)
+        ;
+
+        
+    
+    
+            var marker_92096116655a484c825ad9aff3073759 = L.marker(
+                [12.0631251, -4.669205499999999],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_e362cfbff28e4558b22a913919736f67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_92096116655a484c825ad9aff3073759.setIcon(icon_e362cfbff28e4558b22a913919736f67);
+        
+    
+        var popup_b2602fd44b964498bcdb250b5b1839d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c63ed64057f4ed7b1ccd7f577a26c38 = $(`<div id="html_2c63ed64057f4ed7b1ccd7f577a26c38" style="width: 100.0%; height: 100.0%;">Burkina Faso_crossing</div>`)[0];
+            popup_b2602fd44b964498bcdb250b5b1839d9.setContent(html_2c63ed64057f4ed7b1ccd7f577a26c38);
+        
+
+        marker_92096116655a484c825ad9aff3073759.bindPopup(popup_b2602fd44b964498bcdb250b5b1839d9)
+        ;
+
+        
+    
+    
+            var marker_c7fa5d7eab5243b9a03e88ae09a53ee4 = L.marker(
+                [10.4681093, -5.650487399999999],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_60cdaf65cd3a42e6a6a742ad8cfefc54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_c7fa5d7eab5243b9a03e88ae09a53ee4.setIcon(icon_60cdaf65cd3a42e6a6a742ad8cfefc54);
+        
+    
+        var popup_8f3aa209a2df416a9ded4b87bd2976e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c52fb49309f4173b9d5ef45ec24eb92 = $(`<div id="html_3c52fb49309f4173b9d5ef45ec24eb92" style="width: 100.0%; height: 100.0%;">Cote d’Ivoire_crossing</div>`)[0];
+            popup_8f3aa209a2df416a9ded4b87bd2976e4.setContent(html_3c52fb49309f4173b9d5ef45ec24eb92);
+        
+
+        marker_c7fa5d7eab5243b9a03e88ae09a53ee4.bindPopup(popup_8f3aa209a2df416a9ded4b87bd2976e4)
+        ;
+
+        
+    
+    
+            var marker_08e8e634a5454001890a6fff9d752ab4 = L.marker(
+                [15.5009551, -5.3888988],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_f05b13f9f7394b6a8379c1fde69c98cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_08e8e634a5454001890a6fff9d752ab4.setIcon(icon_f05b13f9f7394b6a8379c1fde69c98cd);
+        
+    
+        var popup_d75a047f62134d3db748ba480a1a53a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3297a5e86433454183f7feb0aac028a7 = $(`<div id="html_3297a5e86433454183f7feb0aac028a7" style="width: 100.0%; height: 100.0%;">Mauritania_crossing</div>`)[0];
+            popup_d75a047f62134d3db748ba480a1a53a4.setContent(html_3297a5e86433454183f7feb0aac028a7);
+        
+
+        marker_08e8e634a5454001890a6fff9d752ab4.bindPopup(popup_d75a047f62134d3db748ba480a1a53a4)
+        ;
+
+        
+    
+    
+            var marker_6773023178ef4a81bea1215470147509 = L.marker(
+                [11.0056137, -8.2823254],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_0999e2e16d514133bfddce9610a0abb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_6773023178ef4a81bea1215470147509.setIcon(icon_0999e2e16d514133bfddce9610a0abb3);
+        
+    
+        var popup_cf2396eaf9f34464b0e3f0c2ff40c5ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_604e4899b157442db293cde4565852b4 = $(`<div id="html_604e4899b157442db293cde4565852b4" style="width: 100.0%; height: 100.0%;">Guinea_crossing</div>`)[0];
+            popup_cf2396eaf9f34464b0e3f0c2ff40c5ce.setContent(html_604e4899b157442db293cde4565852b4);
+        
+
+        marker_6773023178ef4a81bea1215470147509.bindPopup(popup_cf2396eaf9f34464b0e3f0c2ff40c5ce)
+        ;
+
+        
+    
+    
+            var marker_0bcb2d05670d403caef7b23219140ef8 = L.marker(
+                [9.378802799999999, -7.8636989],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_40c5b84e0d6e4a7ba1b4477a19126029 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_0bcb2d05670d403caef7b23219140ef8.setIcon(icon_40c5b84e0d6e4a7ba1b4477a19126029);
+        
+    
+        var popup_6fd87fe27e674e1b964130040ef8854f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e791120442a4a6a8f13edc0e2b02a4a = $(`<div id="html_7e791120442a4a6a8f13edc0e2b02a4a" style="width: 100.0%; height: 100.0%;">Guinea_crossing</div>`)[0];
+            popup_6fd87fe27e674e1b964130040ef8854f.setContent(html_7e791120442a4a6a8f13edc0e2b02a4a);
+        
+
+        marker_0bcb2d05670d403caef7b23219140ef8.bindPopup(popup_6fd87fe27e674e1b964130040ef8854f)
+        ;
+
+        
+    
+    
+            var marker_1146ec4a39ae4de792d95f64677d7585 = L.marker(
+                [13.9109933, -2.8657394],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_9f9494aca1fe493ea119312d947f219e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1146ec4a39ae4de792d95f64677d7585.setIcon(icon_9f9494aca1fe493ea119312d947f219e);
+        
+    
+        var popup_8a345bbbd3cf4fc285c055f41636e8c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b701e1b4a3044153a8fc202bf615a2bb = $(`<div id="html_b701e1b4a3044153a8fc202bf615a2bb" style="width: 100.0%; height: 100.0%;">Burkina Faso_crossing</div>`)[0];
+            popup_8a345bbbd3cf4fc285c055f41636e8c2.setContent(html_b701e1b4a3044153a8fc202bf615a2bb);
+        
+
+        marker_1146ec4a39ae4de792d95f64677d7585.bindPopup(popup_8a345bbbd3cf4fc285c055f41636e8c2)
+        ;
+
+        
+    
+    
+            var marker_89a49c8b10814ad0bd20acd5b29794c0 = L.marker(
+                [15.4970249, -7.980194099999999],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_5ca630fa0dec458daa5e8efd0510995a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_89a49c8b10814ad0bd20acd5b29794c0.setIcon(icon_5ca630fa0dec458daa5e8efd0510995a);
+        
+    
+        var popup_4cf7775d67ab4408aa33a5086bd4cdf2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcdaa2ab14fd4150878a0634302fb5b8 = $(`<div id="html_fcdaa2ab14fd4150878a0634302fb5b8" style="width: 100.0%; height: 100.0%;">Mauritania_crossing</div>`)[0];
+            popup_4cf7775d67ab4408aa33a5086bd4cdf2.setContent(html_fcdaa2ab14fd4150878a0634302fb5b8);
+        
+
+        marker_89a49c8b10814ad0bd20acd5b29794c0.bindPopup(popup_4cf7775d67ab4408aa33a5086bd4cdf2)
+        ;
+
+        
+    
+    
+            var marker_ba5435f3fa9b4a72a65db35937b32a1f = L.marker(
+                [14.9626087, 0.7575717],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_c2b4f3efd7ab4ab49ada8db1500aa92a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ba5435f3fa9b4a72a65db35937b32a1f.setIcon(icon_c2b4f3efd7ab4ab49ada8db1500aa92a);
+        
+    
+        var popup_4506518a49e04afeb088b9d462f54263 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8c2680a403e42a684bfad4c5255886f = $(`<div id="html_a8c2680a403e42a684bfad4c5255886f" style="width: 100.0%; height: 100.0%;">Niger_crossing</div>`)[0];
+            popup_4506518a49e04afeb088b9d462f54263.setContent(html_a8c2680a403e42a684bfad4c5255886f);
+        
+
+        marker_ba5435f3fa9b4a72a65db35937b32a1f.bindPopup(popup_4506518a49e04afeb088b9d462f54263)
+        ;
+
+        
+    
+    
+            var marker_b8a3ac498ed94db284fb122a1b1b56b6 = L.marker(
+                [15.340146, 3.0143761],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_f9d5d88fe081437097d10ec210d65f0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b8a3ac498ed94db284fb122a1b1b56b6.setIcon(icon_f9d5d88fe081437097d10ec210d65f0d);
+        
+    
+        var popup_dee559c4fcea4d03888ba17d029ae4e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68f9e78dd1a24ecb958a61b19ceeff85 = $(`<div id="html_68f9e78dd1a24ecb958a61b19ceeff85" style="width: 100.0%; height: 100.0%;">Niger_crossing</div>`)[0];
+            popup_dee559c4fcea4d03888ba17d029ae4e2.setContent(html_68f9e78dd1a24ecb958a61b19ceeff85);
+        
+
+        marker_b8a3ac498ed94db284fb122a1b1b56b6.bindPopup(popup_dee559c4fcea4d03888ba17d029ae4e2)
+        ;
+
+        
+    
+    
+            var marker_1fdd53993f1c4e42b90d5e688c0be54a = L.marker(
+                [12.6748613, -13.559083],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_437a8c0d41b64892814924fe265a6b37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_1fdd53993f1c4e42b90d5e688c0be54a.setIcon(icon_437a8c0d41b64892814924fe265a6b37);
+        
+    
+        var popup_8fc5948aac3c448aacc7531d22d1aaf0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d52b92395eff4ba1b93222667a8662b3 = $(`<div id="html_d52b92395eff4ba1b93222667a8662b3" style="width: 100.0%; height: 100.0%;">Guinea_crossing</div>`)[0];
+            popup_8fc5948aac3c448aacc7531d22d1aaf0.setContent(html_d52b92395eff4ba1b93222667a8662b3);
+        
+
+        marker_1fdd53993f1c4e42b90d5e688c0be54a.bindPopup(popup_8fc5948aac3c448aacc7531d22d1aaf0)
+        ;
+
+        
+    
+    
+            var marker_315be229fae64bc1ac61f9cdea9336ce = L.marker(
+                [16.213827, -16.4151213],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_313e2aa017324d74a250e3e8c84652a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_315be229fae64bc1ac61f9cdea9336ce.setIcon(icon_313e2aa017324d74a250e3e8c84652a9);
+        
+    
+        var popup_4a0226b2086b4fe48781be35e03cf2e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6091e74f6c2f410ea14dedd66432ef54 = $(`<div id="html_6091e74f6c2f410ea14dedd66432ef54" style="width: 100.0%; height: 100.0%;">Mauritania_crossing</div>`)[0];
+            popup_4a0226b2086b4fe48781be35e03cf2e2.setContent(html_6091e74f6c2f410ea14dedd66432ef54);
+        
+
+        marker_315be229fae64bc1ac61f9cdea9336ce.bindPopup(popup_4a0226b2086b4fe48781be35e03cf2e2)
+        ;
+
+        
+    
+    
+            var marker_0104cd8925cf4403853f2fee3f8c22ee = L.marker(
+                [12.3345667, -12.2919791],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_fa48526fcc6040159e8bd7f708d3d2e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_0104cd8925cf4403853f2fee3f8c22ee.setIcon(icon_fa48526fcc6040159e8bd7f708d3d2e1);
+        
+    
+        var popup_c995f92f4474471d99a82523f48a3e5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62116e1732744c45a15f060c501d2539 = $(`<div id="html_62116e1732744c45a15f060c501d2539" style="width: 100.0%; height: 100.0%;">Guinea_crossing</div>`)[0];
+            popup_c995f92f4474471d99a82523f48a3e5a.setContent(html_62116e1732744c45a15f060c501d2539);
+        
+
+        marker_0104cd8925cf4403853f2fee3f8c22ee.bindPopup(popup_c995f92f4474471d99a82523f48a3e5a)
+        ;
+
+        
+    
+    
+            var marker_36090dddc7c147f58a11f541c8306fd3 = L.marker(
+                [12.3997103, -4.4443687],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_b0a8348483314ded9dd5db19d4be4456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_36090dddc7c147f58a11f541c8306fd3.setIcon(icon_b0a8348483314ded9dd5db19d4be4456);
+        
+    
+        var popup_7e538ecd31b64b809fdac49d239932c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04360ed5402d4db4920cadac85132602 = $(`<div id="html_04360ed5402d4db4920cadac85132602" style="width: 100.0%; height: 100.0%;">Burkina Faso_crossing</div>`)[0];
+            popup_7e538ecd31b64b809fdac49d239932c7.setContent(html_04360ed5402d4db4920cadac85132602);
+        
+
+        marker_36090dddc7c147f58a11f541c8306fd3.bindPopup(popup_7e538ecd31b64b809fdac49d239932c7)
+        ;
+
+        
+    
+    
+            var marker_bfd85c20131c4d5d8563e4c135ad3a1a = L.marker(
+                [12.9300422, -11.3799548],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_37c1c0dd6c2645c9bd41c8c5f56c026c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-road", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_bfd85c20131c4d5d8563e4c135ad3a1a.setIcon(icon_37c1c0dd6c2645c9bd41c8c5f56c026c);
+        
+    
+        var popup_390b0f2830c744c6adafa95c97317fef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c660edf7c0234dd091ed3aacc46a59e5 = $(`<div id="html_c660edf7c0234dd091ed3aacc46a59e5" style="width: 100.0%; height: 100.0%;">Senegal_crossing</div>`)[0];
+            popup_390b0f2830c744c6adafa95c97317fef.setContent(html_c660edf7c0234dd091ed3aacc46a59e5);
+        
+
+        marker_bfd85c20131c4d5d8563e4c135ad3a1a.bindPopup(popup_390b0f2830c744c6adafa95c97317fef)
+        ;
+
+        
+    
+    
+            var marker_8c53ac5e4de6447b9e36428053e8bba4 = L.marker(
+                [12.65, -8.0],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_17614b066baa4510ad3bef0e8e79f285 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8c53ac5e4de6447b9e36428053e8bba4.setIcon(icon_17614b066baa4510ad3bef0e8e79f285);
+        
+    
+        var popup_cc164088139f4e0e9c6c91ae94b642a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3217607d100940ae95fc14fe8d717764 = $(`<div id="html_3217607d100940ae95fc14fe8d717764" style="width: 100.0%; height: 100.0%;">Bamako</div>`)[0];
+            popup_cc164088139f4e0e9c6c91ae94b642a1.setContent(html_3217607d100940ae95fc14fe8d717764);
+        
+
+        marker_8c53ac5e4de6447b9e36428053e8bba4.bindPopup(popup_cc164088139f4e0e9c6c91ae94b642a1)
+        ;
+
+        
+    
+    
+            var marker_4705230108934ecda5bfcffbdcdfbfa6 = L.marker(
+                [13.44032, -6.25947],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_206ee4fb44174f7f98f4ab8ce5be3f0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4705230108934ecda5bfcffbdcdfbfa6.setIcon(icon_206ee4fb44174f7f98f4ab8ce5be3f0c);
+        
+    
+        var popup_9f0d64052fdd400f964b4e14a04bfeeb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87992e270a6849618922b31545828da9 = $(`<div id="html_87992e270a6849618922b31545828da9" style="width: 100.0%; height: 100.0%;">Ségou</div>`)[0];
+            popup_9f0d64052fdd400f964b4e14a04bfeeb.setContent(html_87992e270a6849618922b31545828da9);
+        
+
+        marker_4705230108934ecda5bfcffbdcdfbfa6.bindPopup(popup_9f0d64052fdd400f964b4e14a04bfeeb)
+        ;
+
+        
+    
+    
+            var marker_f76151b053bb416e94b7571f924dd0f3 = L.marker(
+                [11.31755, -5.66654],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_650a6393851a488ebec5629d581d7360 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_f76151b053bb416e94b7571f924dd0f3.setIcon(icon_650a6393851a488ebec5629d581d7360);
+        
+    
+        var popup_4d1b86f337da4aaf911956add5e4c8c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d21c6c3aaef74fc5ab7f956810471370 = $(`<div id="html_d21c6c3aaef74fc5ab7f956810471370" style="width: 100.0%; height: 100.0%;">Sikasso</div>`)[0];
+            popup_4d1b86f337da4aaf911956add5e4c8c3.setContent(html_d21c6c3aaef74fc5ab7f956810471370);
+        
+
+        marker_f76151b053bb416e94b7571f924dd0f3.bindPopup(popup_4d1b86f337da4aaf911956add5e4c8c3)
+        ;
+
+        
+    
+    
+            var marker_63c7562dc930471eb7418e285e9348a0 = L.marker(
+                [14.4843, -4.18296],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_1ddf3f96b710499a8eddf1c824a558f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_63c7562dc930471eb7418e285e9348a0.setIcon(icon_1ddf3f96b710499a8eddf1c824a558f0);
+        
+    
+        var popup_7e4127be102d40f7ae53e44c23d3e9a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_535af97bf82d4e518cb3c072597c3f37 = $(`<div id="html_535af97bf82d4e518cb3c072597c3f37" style="width: 100.0%; height: 100.0%;">Mopti</div>`)[0];
+            popup_7e4127be102d40f7ae53e44c23d3e9a0.setContent(html_535af97bf82d4e518cb3c072597c3f37);
+        
+
+        marker_63c7562dc930471eb7418e285e9348a0.bindPopup(popup_7e4127be102d40f7ae53e44c23d3e9a0)
+        ;
+
+        
+    
+    
+            var marker_d8860fc37dd34e83a2a16150e34941ed = L.marker(
+                [12.39173, -5.46421],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_7c1c56be45804a58af2bdfc6f87a543b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d8860fc37dd34e83a2a16150e34941ed.setIcon(icon_7c1c56be45804a58af2bdfc6f87a543b);
+        
+    
+        var popup_2ff4c26dec124f0891e4642a1199c8d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab223b48f7134759a2a407f1b360ad21 = $(`<div id="html_ab223b48f7134759a2a407f1b360ad21" style="width: 100.0%; height: 100.0%;">Koutiala</div>`)[0];
+            popup_2ff4c26dec124f0891e4642a1199c8d4.setContent(html_ab223b48f7134759a2a407f1b360ad21);
+        
+
+        marker_d8860fc37dd34e83a2a16150e34941ed.bindPopup(popup_2ff4c26dec124f0891e4642a1199c8d4)
+        ;
+
+        
+    
+    
+            var marker_d3003dd54fde40abb1d9bf883916b584 = L.marker(
+                [16.27167, -0.04472],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_f3ab4c1b497e4f0eab33b5e861259608 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d3003dd54fde40abb1d9bf883916b584.setIcon(icon_f3ab4c1b497e4f0eab33b5e861259608);
+        
+    
+        var popup_7fdfc006bb144567a715c0daaecd8703 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_648141106d734475891c351110d91cc6 = $(`<div id="html_648141106d734475891c351110d91cc6" style="width: 100.0%; height: 100.0%;">Gao</div>`)[0];
+            popup_7fdfc006bb144567a715c0daaecd8703.setContent(html_648141106d734475891c351110d91cc6);
+        
+
+        marker_d3003dd54fde40abb1d9bf883916b584.bindPopup(popup_7fdfc006bb144567a715c0daaecd8703)
+        ;
+
+        
+    
+    
+            var marker_d7f4b3d79fc34fabb28590ae07b96add = L.marker(
+                [14.44693, -11.44448],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_493fe4524b4b4451bf02829e47744779 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d7f4b3d79fc34fabb28590ae07b96add.setIcon(icon_493fe4524b4b4451bf02829e47744779);
+        
+    
+        var popup_e0eb00244a7941638607ebf7fa32216e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc06e8f8102e4f469583f39c51cde683 = $(`<div id="html_bc06e8f8102e4f469583f39c51cde683" style="width: 100.0%; height: 100.0%;">Kayes</div>`)[0];
+            popup_e0eb00244a7941638607ebf7fa32216e.setContent(html_bc06e8f8102e4f469583f39c51cde683);
+        
+
+        marker_d7f4b3d79fc34fabb28590ae07b96add.bindPopup(popup_e0eb00244a7941638607ebf7fa32216e)
+        ;
+
+        
+    
+    
+            var marker_4e79f45dfcda4e26a29a2c130e3cee73 = L.marker(
+                [13.68427, -6.07352],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_3c4b5707cbff415d84ec4e2f5600def2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4e79f45dfcda4e26a29a2c130e3cee73.setIcon(icon_3c4b5707cbff415d84ec4e2f5600def2);
+        
+    
+        var popup_d3e07177ed984ff393c31c73b9efe927 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cc6130f98e54608b819328192e289f7 = $(`<div id="html_8cc6130f98e54608b819328192e289f7" style="width: 100.0%; height: 100.0%;">Markala</div>`)[0];
+            popup_d3e07177ed984ff393c31c73b9efe927.setContent(html_8cc6130f98e54608b819328192e289f7);
+        
+
+        marker_4e79f45dfcda4e26a29a2c130e3cee73.bindPopup(popup_d3e07177ed984ff393c31c73b9efe927)
+        ;
+
+        
+    
+    
+            var marker_a3d0e6f605ae4963b0d6d6706b8a01df = L.marker(
+                [13.5728, -8.0339],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_1c92533eb37044afa4362389d92aac5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_a3d0e6f605ae4963b0d6d6706b8a01df.setIcon(icon_1c92533eb37044afa4362389d92aac5b);
+        
+    
+        var popup_924c3c4ac6664e67ae5e1d04d55335b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a03f9ce75ca4d33871cc3b0138c7cf2 = $(`<div id="html_7a03f9ce75ca4d33871cc3b0138c7cf2" style="width: 100.0%; height: 100.0%;">Kolokani</div>`)[0];
+            popup_924c3c4ac6664e67ae5e1d04d55335b9.setContent(html_7a03f9ce75ca4d33871cc3b0138c7cf2);
+        
+
+        marker_a3d0e6f605ae4963b0d6d6706b8a01df.bindPopup(popup_924c3c4ac6664e67ae5e1d04d55335b9)
+        ;
+
+        
+    
+    
+            var marker_c6c4caeaef80452d8a43ae35c57d9e32 = L.marker(
+                [12.74409, -8.07257],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_a54ef8b4980c401cbc4aaef3fd33876e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c6c4caeaef80452d8a43ae35c57d9e32.setIcon(icon_a54ef8b4980c401cbc4aaef3fd33876e);
+        
+    
+        var popup_2af4d4d7587d4311adcc427cd8ddb44b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9769af01bba342248a3dc8f7f560d658 = $(`<div id="html_9769af01bba342248a3dc8f7f560d658" style="width: 100.0%; height: 100.0%;">Kati</div>`)[0];
+            popup_2af4d4d7587d4311adcc427cd8ddb44b.setContent(html_9769af01bba342248a3dc8f7f560d658);
+        
+
+        marker_c6c4caeaef80452d8a43ae35c57d9e32.bindPopup(popup_2af4d4d7587d4311adcc427cd8ddb44b)
+        ;
+
+        
+    
+    
+            var marker_8a92df7bff574e9088b2b6f43384b99d = L.marker(
+                [11.41769, -7.48323],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_4d20e2f48f4b475297fc57a6434f20a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8a92df7bff574e9088b2b6f43384b99d.setIcon(icon_4d20e2f48f4b475297fc57a6434f20a9);
+        
+    
+        var popup_0e8fb2e960e346e3bad6d99ea6ceab38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b9f95e766a441709baec42c3be9d51b = $(`<div id="html_4b9f95e766a441709baec42c3be9d51b" style="width: 100.0%; height: 100.0%;">Bougouni</div>`)[0];
+            popup_0e8fb2e960e346e3bad6d99ea6ceab38.setContent(html_4b9f95e766a441709baec42c3be9d51b);
+        
+
+        marker_8a92df7bff574e9088b2b6f43384b99d.bindPopup(popup_0e8fb2e960e346e3bad6d99ea6ceab38)
+        ;
+
+        
+    
+    
+            var marker_bdd744a139c84f01b2826a752dfd3f60 = L.marker(
+                [16.77348, -3.00742],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_cbfa161b8aec49ceb3d7e6b9183f7293 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_bdd744a139c84f01b2826a752dfd3f60.setIcon(icon_cbfa161b8aec49ceb3d7e6b9183f7293);
+        
+    
+        var popup_e6251a51585f42589a16669e1680f596 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eec903e474340e396c65ddba522016f = $(`<div id="html_5eec903e474340e396c65ddba522016f" style="width: 100.0%; height: 100.0%;">Timbuktu</div>`)[0];
+            popup_e6251a51585f42589a16669e1680f596.setContent(html_5eec903e474340e396c65ddba522016f);
+        
+
+        marker_bdd744a139c84f01b2826a752dfd3f60.bindPopup(popup_e6251a51585f42589a16669e1680f596)
+        ;
+
+        
+    
+    
+            var marker_6e68e7a4cf3d482d82a20a04797d9a5d = L.marker(
+                [13.54773, -7.44808],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_89fb6d5e28ea493a826c683b7f09f530 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6e68e7a4cf3d482d82a20a04797d9a5d.setIcon(icon_89fb6d5e28ea493a826c683b7f09f530);
+        
+    
+        var popup_6b1b2d28d02c43f7ad2fbdeb079e9344 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc1f9987d0a6431cbe3215d727e4d802 = $(`<div id="html_dc1f9987d0a6431cbe3215d727e4d802" style="width: 100.0%; height: 100.0%;">Banamba</div>`)[0];
+            popup_6b1b2d28d02c43f7ad2fbdeb079e9344.setContent(html_dc1f9987d0a6431cbe3215d727e4d802);
+        
+
+        marker_6e68e7a4cf3d482d82a20a04797d9a5d.bindPopup(popup_6b1b2d28d02c43f7ad2fbdeb079e9344)
+        ;
+
+        
+    
+    
+            var marker_5c21a763a5614ff48c29a11c47a1d177 = L.marker(
+                [13.8065, -10.8321],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_5bb35916db3b4d00890974f6108af189 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_5c21a763a5614ff48c29a11c47a1d177.setIcon(icon_5bb35916db3b4d00890974f6108af189);
+        
+    
+        var popup_2a02fb96bb3242f6a79e00461697c9d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01236cb50af042ca9cb8c93a10e721a1 = $(`<div id="html_01236cb50af042ca9cb8c93a10e721a1" style="width: 100.0%; height: 100.0%;">Bafoulabé</div>`)[0];
+            popup_2a02fb96bb3242f6a79e00461697c9d2.setContent(html_01236cb50af042ca9cb8c93a10e721a1);
+        
+
+        marker_5c21a763a5614ff48c29a11c47a1d177.bindPopup(popup_2a02fb96bb3242f6a79e00461697c9d2)
+        ;
+
+        
+    
+    
+            var marker_2e70285939344bf2b8630e96794456e4 = L.marker(
+                [13.30335, -4.89562],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_3d7e3c56b7674c0ca81edb3242d42e16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_2e70285939344bf2b8630e96794456e4.setIcon(icon_3d7e3c56b7674c0ca81edb3242d42e16);
+        
+    
+        var popup_2fbf551974764121a108a4f244a13f67 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43078dd25ca24b76b99c0e3e7f3bd4e9 = $(`<div id="html_43078dd25ca24b76b99c0e3e7f3bd4e9" style="width: 100.0%; height: 100.0%;">San</div>`)[0];
+            popup_2fbf551974764121a108a4f244a13f67.setContent(html_43078dd25ca24b76b99c0e3e7f3bd4e9);
+        
+
+        marker_2e70285939344bf2b8630e96794456e4.bindPopup(popup_2fbf551974764121a108a4f244a13f67)
+        ;
+
+        
+    
+    
+            var marker_d08e67de3ef24e99bf8ec09d55dcbce5 = L.marker(
+                [12.86273, -7.55985],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_41538b3430b84dc0839d80c19b2df7e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d08e67de3ef24e99bf8ec09d55dcbce5.setIcon(icon_41538b3430b84dc0839d80c19b2df7e8);
+        
+    
+        var popup_a25a9c0c3c6e4ab28bd3e751f8d307d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee3ace446c8f4b40b077ce7701de15f4 = $(`<div id="html_ee3ace446c8f4b40b077ce7701de15f4" style="width: 100.0%; height: 100.0%;">Koulikoro</div>`)[0];
+            popup_a25a9c0c3c6e4ab28bd3e751f8d307d2.setContent(html_ee3ace446c8f4b40b077ce7701de15f4);
+        
+
+        marker_d08e67de3ef24e99bf8ec09d55dcbce5.bindPopup(popup_a25a9c0c3c6e4ab28bd3e751f8d307d2)
+        ;
+
+        
+    
+    
+            var marker_8dfd34ad08e243229e027b4d1cf41938 = L.marker(
+                [13.90608, -4.55332],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_c7a7310fe49b464c9b29441705fc2d8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8dfd34ad08e243229e027b4d1cf41938.setIcon(icon_c7a7310fe49b464c9b29441705fc2d8c);
+        
+    
+        var popup_2ad7616eea7640fea0761c4110218d48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69284611aaa14c05b9701f42c4e2d178 = $(`<div id="html_69284611aaa14c05b9701f42c4e2d178" style="width: 100.0%; height: 100.0%;">Djénné</div>`)[0];
+            popup_2ad7616eea7640fea0761c4110218d48.setContent(html_69284611aaa14c05b9701f42c4e2d178);
+        
+
+        marker_8dfd34ad08e243229e027b4d1cf41938.bindPopup(popup_2ad7616eea7640fea0761c4110218d48)
+        ;
+
+        
+    
+    
+            var marker_a84025cb9edf48119fea252e93083d2c = L.marker(
+                [12.35811, -4.77688],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_8e47e96f49c74595ba4c7ef1c72e589f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_a84025cb9edf48119fea252e93083d2c.setIcon(icon_8e47e96f49c74595ba4c7ef1c72e589f);
+        
+    
+        var popup_780199dd1e664ed58d0fc8782538f4ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_459f3a99fe544f29ac3d841de29270a3 = $(`<div id="html_459f3a99fe544f29ac3d841de29270a3" style="width: 100.0%; height: 100.0%;">Yorosso</div>`)[0];
+            popup_780199dd1e664ed58d0fc8782538f4ae.setContent(html_459f3a99fe544f29ac3d841de29270a3);
+        
+
+        marker_a84025cb9edf48119fea252e93083d2c.bindPopup(popup_780199dd1e664ed58d0fc8782538f4ae)
+        ;
+
+        
+    
+    
+            var marker_f05430b3087248c584968fd73244c06d = L.marker(
+                [11.93333, -8.41667],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_693df28d5f2f4c0b97f3c01d4a31436e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_f05430b3087248c584968fd73244c06d.setIcon(icon_693df28d5f2f4c0b97f3c01d4a31436e);
+        
+    
+        var popup_552f106ab3434ff8b33213956f819d9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_391dfa755f26403f869fff1702bf292b = $(`<div id="html_391dfa755f26403f869fff1702bf292b" style="width: 100.0%; height: 100.0%;">Kangaba</div>`)[0];
+            popup_552f106ab3434ff8b33213956f819d9b.setContent(html_391dfa755f26403f869fff1702bf292b);
+        
+
+        marker_f05430b3087248c584968fd73244c06d.bindPopup(popup_552f106ab3434ff8b33213956f819d9b)
+        ;
+
+        
+    
+    
+            var marker_966c7f3e2c19410f8f5c282b1c844a71 = L.marker(
+                [12.2, -10.7],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_d22f8e98fc724fe7bceac5c3785872f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_966c7f3e2c19410f8f5c282b1c844a71.setIcon(icon_d22f8e98fc724fe7bceac5c3785872f5);
+        
+    
+        var popup_72f6955f13ac4fc4a9e9e5f6b56459e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a63bcf46b0843b1977a62f02186198f = $(`<div id="html_6a63bcf46b0843b1977a62f02186198f" style="width: 100.0%; height: 100.0%;">Sagalo</div>`)[0];
+            popup_72f6955f13ac4fc4a9e9e5f6b56459e2.setContent(html_6a63bcf46b0843b1977a62f02186198f);
+        
+
+        marker_966c7f3e2c19410f8f5c282b1c844a71.bindPopup(popup_72f6955f13ac4fc4a9e9e5f6b56459e2)
+        ;
+
+        
+    
+    
+            var marker_fe7e2c6827c84ec2a7ec7d9ae1c8e76a = L.marker(
+                [13.9641, -5.35791],
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var icon_f234630147d34cbf9e507896c6970556 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-fire", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_fe7e2c6827c84ec2a7ec7d9ae1c8e76a.setIcon(icon_f234630147d34cbf9e507896c6970556);
+        
+    
+        var popup_58cfaa52e4d74a90a5bbc86327fb8b4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0632fb80a97743568969450ce13cc7f9 = $(`<div id="html_0632fb80a97743568969450ce13cc7f9" style="width: 100.0%; height: 100.0%;">Ké-Macina</div>`)[0];
+            popup_58cfaa52e4d74a90a5bbc86327fb8b4a.setContent(html_0632fb80a97743568969450ce13cc7f9);
+        
+
+        marker_fe7e2c6827c84ec2a7ec7d9ae1c8e76a.bindPopup(popup_58cfaa52e4d74a90a5bbc86327fb8b4a)
+        ;
+
+        
+    
+    
+            var feature_group_c1fe5a28bbb9415db4044378847d1084 = L.featureGroup(
+                {}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var poly_line_1d02b5a0ed814455af787c32d9bb2db6 = L.polyline(
+                [[12.65005, -8.00015], [12.64636, -8.00159], [12.64626, -8.00178], [12.64683, -8.00351], [12.64699, -8.00402], [12.64652, -8.0043], [12.64613, -8.00586], [12.64533, -8.00933], [12.64528, -8.00948], [12.64522, -8.00947], [12.64065, -8.00681], [12.64058, -8.00677], [12.64056, -8.00674], [12.63842, -8.00547], [12.6372, -8.00486], [12.63704, -8.0049], [12.63448, -8.0075], [12.63324, -8.00884], [12.63285, -8.00956], [12.63211, -8.01108], [12.63134, -8.01189], [12.62931, -8.01352], [12.62842, -8.01463], [12.62843, -8.01467], [12.62839, -8.01476], [12.62818, -8.01502], [12.62101, -8.02723], [12.61745, -8.03529], [12.61292, -8.04382], [12.61278, -8.04459], [12.6127, -8.04468], [12.60705, -8.04714], [12.60591, -8.04787], [12.60514, -8.04857], [12.6039, -8.04979], [12.60109, -8.05264], [12.59753, -8.05629], [12.59631, -8.05726], [12.59468, -8.05883], [12.5883, -8.06527], [12.58204, -8.07138], [12.57993, -8.07339], [12.57762, -8.07559], [12.57417, -8.07915], [12.57238, -8.08176], [12.57037, -8.0843], [12.56883, -8.08706], [12.56749, -8.08982], [12.56574, -8.09338], [12.56345, -8.09785], [12.56212, -8.09934], [12.5602, -8.10072], [12.55553, -8.10315], [12.55347, -8.10445], [12.55147, -8.10624], [12.5503, -8.10775], [12.54956, -8.10898], [12.5488, -8.11075], [12.54714, -8.115], [12.54563, -8.11888], [12.54268, -8.12647], [12.54062, -8.13197], [12.53966, -8.13441], [12.53926, -8.13508], [12.53811, -8.13654], [12.53668, -8.13773], [12.53465, -8.13912], [12.52858, -8.14323], [12.52442, -8.14609], [12.52014, -8.14956], [12.50898, -8.15866], [12.50123, -8.16496], [12.49726, -8.1682], [12.49399, -8.17073], [12.49263, -8.17139], [12.49169, -8.17169], [12.49028, -8.17194], [12.48565, -8.17237], [12.48424, -8.17236], [12.482, -8.17208], [12.47794, -8.17157], [12.47493, -8.17179], [12.47225, -8.17257], [12.47083, -8.17324], [12.46875, -8.17456], [12.46378, -8.17784], [12.46221, -8.17915], [12.45976, -8.18245], [12.45777, -8.1852], [12.45645, -8.1866], [12.4544, -8.18867], [12.45243, -8.19103], [12.44961, -8.19432], [12.44346, -8.20034], [12.44011, -8.20323], [12.43715, -8.20594], [12.43195, -8.21183], [12.42093, -8.22518], [12.41983, -8.22627], [12.41818, -8.22753], [12.41228, -8.23175], [12.41058, -8.23354], [12.40894, -8.23526], [12.40701, -8.23697], [12.40317, -8.24029], [12.40213, -8.24132], [12.401, -8.24276], [12.39763, -8.24776], [12.39601, -8.24996], [12.393, -8.25375], [12.39112, -8.25688], [12.3882, -8.26233], [12.38658, -8.26534], [12.38508, -8.26839], [12.38248, -8.27577], [12.38209, -8.27752], [12.38174, -8.28187], [12.38074, -8.29316], [12.37985, -8.30246], [12.37923, -8.32181], [12.37899, -8.32807], [12.37863, -8.33447], [12.37638, -8.34815], [12.37492, -8.35454], [12.37435, -8.35639], [12.37352, -8.35842], [12.37216, -8.36108], [12.37031, -8.36397], [12.36572, -8.37111], [12.3651, -8.3719], [12.36417, -8.37279], [12.36087, -8.37509], [12.3576, -8.37733], [12.35684, -8.37797], [12.35582, -8.37915], [12.35488, -8.38073], [12.35347, -8.385], [12.35001, -8.39605], [12.34742, -8.40446], [12.34643, -8.40714], [12.346, -8.40913], [12.34506, -8.42013], [12.34463, -8.42357], [12.34344, -8.43039], [12.34181, -8.43969], [12.34133, -8.44362], [12.34093, -8.44957], [12.34076, -8.45052], [12.34024, -8.45209], [12.33927, -8.45369], [12.3335, -8.4599], [12.33226, -8.4614], [12.33028, -8.46444], [12.32734, -8.46879], [12.32579, -8.47048], [12.32467, -8.47153], [12.32269, -8.47306], [12.31799, -8.47605], [12.3167, -8.47734], [12.31583, -8.47869], [12.31523, -8.48022], [12.31392, -8.48466], [12.3129, -8.48675], [12.31195, -8.48815], [12.31097, -8.4893], [12.30906, -8.49096], [12.30773, -8.4918], [12.30518, -8.49311], [12.30323, -8.49448], [12.30193, -8.496], [12.30091, -8.49791], [12.30042, -8.49968], [12.29923, -8.50692], [12.29824, -8.51291], [12.29762, -8.51532], [12.29649, -8.51774], [12.29509, -8.51987], [12.29173, -8.52489], [12.28983, -8.5275], [12.28856, -8.52863], [12.28664, -8.5297], [12.28071, -8.53136], [12.27978, -8.53178], [12.27842, -8.53266], [12.26777, -8.54181], [12.26622, -8.54381], [12.26546, -8.54547], [12.2651, -8.5469], [12.26421, -8.55398], [12.26376, -8.55721], [12.26325, -8.55899], [12.26267, -8.56035], [12.2612, -8.56273], [12.2581, -8.56603], [12.25451, -8.56961], [12.2526, -8.57184], [12.25123, -8.57429], [12.25063, -8.57602], [12.25022, -8.57808], [12.25011, -8.58006], [12.25026, -8.58184], [12.25147, -8.59035], [12.25161, -8.59242], [12.25134, -8.59509], [12.25052, -8.59774], [12.24948, -8.59974], [12.24241, -8.6103], [12.23807, -8.61674], [12.23254, -8.62608], [12.23011, -8.63033], [12.22888, -8.63267], [12.22612, -8.63803], [12.22519, -8.63957], [12.22335, -8.64207], [12.2183, -8.64838], [12.21544, -8.65233], [12.21218, -8.65709], [12.21061, -8.65856], [12.20957, -8.65927], [12.20631, -8.66118], [12.20548, -8.66181], [12.20459, -8.66271], [12.20368, -8.66393], [12.20193, -8.66681], [12.20083, -8.66813], [12.19709, -8.67085], [12.19416, -8.67326], [12.19247, -8.67493], [12.19106, -8.67606], [12.18573, -8.67993], [12.18178, -8.68286], [12.18062, -8.68356], [12.17874, -8.68445], [12.17483, -8.68614], [12.17281, -8.68655], [12.17069, -8.68643], [12.16862, -8.68572], [12.16617, -8.68401], [12.16543, -8.68349], [12.16413, -8.68282], [12.16258, -8.68234], [12.15742, -8.68204], [12.1547, -8.68201], [12.15344, -8.6822], [12.15193, -8.68266], [12.15032, -8.68353], [12.14509, -8.68707], [12.13874, -8.69124], [12.13179, -8.69543], [12.12961, -8.6968], [12.12743, -8.69843], [12.12204, -8.70351], [12.11558, -8.70961], [12.11428, -8.71051], [12.11248, -8.71147], [12.1078, -8.71316], [12.10398, -8.71469], [12.09855, -8.71671], [12.09672, -8.71757], [12.09507, -8.71853], [12.08872, -8.72289], [12.08302, -8.72686], [12.08118, -8.72837], [12.07991, -8.72934], [12.07886, -8.7299], [12.07731, -8.7304], [12.07533, -8.73058], [12.06977, -8.72992], [12.06791, -8.72942], [12.06256, -8.72693], [12.0607, -8.72634], [12.05847, -8.72619], [12.05579, -8.72656], [12.05266, -8.72673], [12.05127, -8.72696], [12.05009, -8.72735], [12.04367, -8.7303], [12.04172, -8.73109], [12.04042, -8.73141], [12.03861, -8.73165], [12.03726, -8.73166], [12.0268, -8.73127], [12.02155, -8.73072], [12.01877, -8.73036], [12.01618, -8.73034], [12.01469, -8.73063], [12.01344, -8.73104], [12.00861, -8.73347], [11.99903, -8.73831], [11.99619, -8.74005], [11.98994, -8.74432], [11.98571, -8.74772], [11.98153, -8.75067], [11.97615, -8.75439], [11.9742, -8.75614], [11.97312, -8.75747], [11.97223, -8.75888], [11.97072, -8.76145], [11.96934, -8.7633], [11.96549, -8.76776], [11.96427, -8.76934], [11.96242, -8.77221], [11.95822, -8.777], [11.951, -8.78501]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_1d02b5a0ed814455af787c32d9bb2db6.bindTooltip(
+                `<div>
+                     Travel between <b>Bamako</b> and <b>Guinea, Guinea</b> by car is <b>127 km</b> and takes <b>2 hours 9 mins</b>.</br></br><b>1,297,281</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_10d1addc6ccc49c1813f7fc80b46b0fb = L.polyline(
+                [[13.44029, -6.25955], [13.43988, -6.25942], [13.44002, -6.25895], [13.44021, -6.25787], [13.4391, -6.25751], [13.43695, -6.25682], [13.43469, -6.25665], [13.43294, -6.25653], [13.43232, -6.2565], [13.43287, -6.25461], [13.4342, -6.24996], [13.43515, -6.24661], [13.4367, -6.24078], [13.43732, -6.23829], [13.43544, -6.2344], [13.43201, -6.22655], [13.43162, -6.22598], [13.42589, -6.21904], [13.41862, -6.21073], [13.40553, -6.1862], [13.40173, -6.17898], [13.39994, -6.176], [13.38639, -6.15946], [13.38416, -6.15729], [13.37686, -6.15166], [13.3667, -6.14369], [13.36227, -6.13788], [13.35972, -6.13409], [13.34942, -6.11621], [13.3444, -6.10844], [13.34181, -6.10184], [13.33891, -6.09393], [13.33618, -6.08642], [13.33572, -6.08472], [13.33469, -6.07454], [13.33414, -6.06942], [13.33351, -6.06715], [13.3325, -6.0649], [13.3307, -6.06233], [13.31949, -6.04808], [13.30574, -6.02966], [13.2996, -6.01921], [13.29604, -6.01405], [13.29311, -6.0103], [13.28478, -5.99963], [13.27224, -5.987], [13.26231, -5.97645], [13.25708, -5.96693], [13.24858, -5.95133], [13.23712, -5.93036], [13.23564, -5.92793], [13.23074, -5.92222], [13.22642, -5.9173], [13.21696, -5.90634], [13.21531, -5.90454], [13.21414, -5.90384], [13.20616, -5.8995], [13.19669, -5.89144], [13.18915, -5.88418], [13.1849, -5.87765], [13.18196, -5.87464], [13.17818, -5.87278], [13.1725, -5.87049], [13.16796, -5.8678], [13.16053, -5.86328], [13.15406, -5.85848], [13.14863, -5.85398], [13.14488, -5.85114], [13.13943, -5.84828], [13.12705, -5.84185], [13.11962, -5.83795], [13.10989, -5.8308], [13.10075, -5.82518], [13.08728, -5.81742], [13.07835, -5.81234], [13.06395, -5.8021], [13.05909, -5.79866], [13.05264, -5.79538], [13.01814, -5.77808], [13.00268, -5.77034], [12.98796, -5.76301], [12.98422, -5.76141], [12.9823, -5.76114], [12.97472, -5.76098], [12.96543, -5.76075], [12.95296, -5.76047], [12.9496, -5.76032], [12.94976, -5.75918], [12.95053, -5.7549], [12.95173, -5.74596], [12.95426, -5.72953], [12.95673, -5.71596], [12.95833, -5.70723], [12.95918, -5.70213], [12.95916, -5.69987], [12.95751, -5.68746], [12.95507, -5.67316], [12.95263, -5.65837], [12.9522, -5.65381], [12.95235, -5.65083], [12.95454, -5.62508], [12.9581, -5.58306], [12.9588, -5.5692], [12.95916, -5.56366], [12.96327, -5.55052], [12.96796, -5.53576], [12.96893, -5.53143], [12.96939, -5.52461], [12.97013, -5.50964], [12.97079, -5.49854], [12.97357, -5.49123], [12.97943, -5.47691], [12.99073, -5.44942], [12.99996, -5.42691], [13.01288, -5.39541], [13.01744, -5.38166], [13.01923, -5.3742], [13.02168, -5.36276], [13.02289, -5.3601], [13.0281, -5.35482], [13.03493, -5.34801], [13.04082, -5.3425], [13.05111, -5.33686], [13.05682, -5.33356], [13.07242, -5.32005], [13.08047, -5.31305], [13.08272, -5.31005], [13.08765, -5.29692], [13.09412, -5.27949], [13.09872, -5.26596], [13.09949, -5.26273], [13.10199, -5.24145], [13.10246, -5.238], [13.10415, -5.23188], [13.10876, -5.2155], [13.10954, -5.21244], [13.10986, -5.20839], [13.11059, -5.19795], [13.11242, -5.17251], [13.11409, -5.16753], [13.11727, -5.15979], [13.12153, -5.14945], [13.13893, -5.10723], [13.14397, -5.09483], [13.14605, -5.09166], [13.16573, -5.077], [13.22391, -5.03389], [13.23531, -5.02544], [13.2456, -5.01509], [13.25297, -5.00745], [13.25639, -5.00342], [13.2579, -5.00007], [13.26132, -4.99129], [13.26773, -4.97441], [13.27461, -4.95077], [13.28085, -4.92914], [13.28358, -4.92007], [13.28483, -4.91825], [13.28805, -4.91453], [13.29213, -4.90982], [13.29457, -4.907], [13.29518, -4.90565], [13.29668, -4.89769], [13.2973, -4.8944], [13.2971, -4.89412], [13.28901, -4.89241], [13.26828, -4.88807], [13.23475, -4.88373], [13.23458, -4.88364], [13.23464, -4.88351], [13.23411, -4.88264], [13.23383, -4.87936], [13.23309, -4.86958], [13.23341, -4.86648], [13.23447, -4.86025], [13.23652, -4.84911], [13.23722, -4.84463], [13.23688, -4.83946], [13.23512, -4.82615], [13.23566, -4.81483], [13.23616, -4.81002], [13.23695, -4.80664], [13.23923, -4.79954], [13.23995, -4.79196], [13.24089, -4.77795], [13.24248, -4.77495], [13.24388, -4.77141], [13.24565, -4.76323], [13.24581, -4.75712], [13.24609, -4.75434], [13.24781, -4.7494], [13.24804, -4.74734], [13.24667, -4.73391], [13.24609, -4.72914], [13.24478, -4.72572], [13.24418, -4.72348], [13.24397, -4.71883], [13.24385, -4.70975], [13.24303, -4.70556], [13.24259, -4.70188], [13.24311, -4.69972], [13.24453, -4.69743], [13.24564, -4.69644], [13.24788, -4.6952], [13.2505, -4.6938], [13.25269, -4.69191], [13.25513, -4.68978], [13.25743, -4.68834], [13.261, -4.68499], [13.26614, -4.68135], [13.2701, -4.67845], [13.27265, -4.67612], [13.2728, -4.67552], [13.27254, -4.67503], [13.27256, -4.67395], [13.27302, -4.67337], [13.2759, -4.67214], [13.278, -4.67019], [13.27907, -4.66891], [13.27975, -4.66675], [13.28117, -4.6609], [13.2821, -4.65671], [13.28254, -4.64848], [13.2815, -4.64413], [13.27962, -4.6369], [13.28009, -4.63326], [13.28121, -4.62999], [13.28336, -4.62665], [13.28568, -4.62219], [13.28611, -4.62036], [13.2882, -4.60967], [13.2876, -4.60157], [13.2885, -4.59217], [13.28836, -4.59204], [13.28561, -4.58534], [13.2735, -4.5584], [13.26217, -4.53345], [13.25553, -4.5206], [13.25089, -4.51184], [13.24487, -4.5001], [13.24275, -4.496], [13.24248, -4.49446], [13.24145, -4.48594], [13.2407, -4.47137], [13.2407, -4.47066], [13.24036, -4.46912], [13.2388, -4.46799], [13.23707, -4.46675], [13.2312, -4.46255], [13.22211, -4.45607], [13.21357, -4.45001], [13.19576, -4.43741], [13.18655, -4.43075], [13.17517, -4.4219], [13.15471, -4.40715], [13.14632, -4.40049], [13.14336, -4.39753], [13.13733, -4.39015], [13.13297, -4.38508], [13.13156, -4.38389], [13.12938, -4.38252], [13.12788, -4.38054], [13.12439, -4.37505], [13.12365, -4.37367], [13.12253, -4.37222], [13.11925, -4.36893], [13.1185, -4.36703], [13.11707, -4.36301], [13.11599, -4.35989], [13.11167, -4.34742]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_10d1addc6ccc49c1813f7fc80b46b0fb.bindTooltip(
+                `<div>
+                     Travel between <b>Ségou</b> and <b>Burkina Faso, Burkina Faso</b> by car is <b>264 km</b> and takes <b>3 hours 51 mins</b>.</br></br><b>153,349</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1fac70d7405c4663aa03030d01d6d84e = L.polyline(
+                [[11.31757, -5.66641], [11.31717, -5.66635], [11.3164, -5.66615], [11.31589, -5.66646], [11.31581, -5.6666], [11.31545, -5.66727], [11.31546, -5.66727], [11.31549, -5.66728], [11.3155, -5.66729], [11.31553, -5.66733], [11.31555, -5.66737], [11.31552, -5.66746], [11.31543, -5.6675], [11.31535, -5.66746], [11.31532, -5.66737], [11.31532, -5.66736], [11.3145, -5.66726], [11.31413, -5.66716], [11.314, -5.6671], [11.3139, -5.66703], [11.31375, -5.66679], [11.3128, -5.66481], [11.31267, -5.66458], [11.31252, -5.66435], [11.3123, -5.66412], [11.31204, -5.66388], [11.31139, -5.66329], [11.31001, -5.66199], [11.30884, -5.66097], [11.30863, -5.66082], [11.30871, -5.66053], [11.30891, -5.65933], [11.30898, -5.65893], [11.30913, -5.65802], [11.30948, -5.6558], [11.30949, -5.65546], [11.30943, -5.65473], [11.30929, -5.65344], [11.30918, -5.6519], [11.30906, -5.64996], [11.30876, -5.64552], [11.30863, -5.64356], [11.30857, -5.64225], [11.30822, -5.63603], [11.30803, -5.63209], [11.30781, -5.62684], [11.30777, -5.62601], [11.3077, -5.62521], [11.30752, -5.62429], [11.3073, -5.62355], [11.30649, -5.62089], [11.30622, -5.61992], [11.30612, -5.61946], [11.30602, -5.61886], [11.30597, -5.61811], [11.30598, -5.61452], [11.30597, -5.61372], [11.30596, -5.61334], [11.30593, -5.61325], [11.30591, -5.61315], [11.30591, -5.61233], [11.30583, -5.61166], [11.30573, -5.61129], [11.30564, -5.61108], [11.30548, -5.61075], [11.30526, -5.61036], [11.30488, -5.60965], [11.30444, -5.60883], [11.30418, -5.60831], [11.30406, -5.60807], [11.30374, -5.60748], [11.30337, -5.60691], [11.303, -5.60637], [11.30254, -5.60582], [11.3015, -5.60451], [11.30142, -5.60438], [11.30136, -5.60428], [11.30074, -5.60349], [11.29997, -5.60252], [11.29853, -5.60069], [11.29721, -5.59904], [11.29616, -5.59772], [11.29431, -5.59539], [11.29321, -5.59396], [11.29201, -5.59248], [11.29032, -5.59034], [11.28902, -5.58868], [11.2875, -5.58677], [11.28632, -5.58525], [11.28495, -5.58353], [11.28198, -5.57976], [11.28078, -5.57826], [11.28019, -5.57754], [11.27974, -5.57708], [11.27947, -5.57686], [11.2789, -5.57642], [11.27841, -5.57609], [11.27738, -5.57549], [11.27592, -5.57467], [11.27433, -5.57375], [11.27366, -5.57328], [11.27296, -5.5727], [11.27212, -5.57199], [11.27193, -5.57179], [11.27171, -5.57152], [11.27157, -5.57128], [11.27137, -5.57085], [11.27129, -5.57062], [11.2712, -5.57016], [11.27119, -5.56975], [11.27121, -5.56923], [11.27151, -5.56538], [11.27184, -5.56115], [11.27207, -5.5581], [11.27227, -5.55209], [11.27258, -5.54238], [11.27274, -5.5378], [11.27285, -5.53431], [11.27285, -5.53358], [11.27283, -5.53285], [11.27277, -5.53156], [11.27252, -5.52576], [11.27232, -5.52092], [11.27222, -5.51886], [11.27213, -5.51816], [11.27202, -5.51757], [11.2719, -5.51708], [11.27115, -5.51421], [11.27011, -5.51027], [11.26992, -5.5097], [11.2696, -5.50904], [11.26944, -5.50879], [11.26919, -5.50846], [11.26879, -5.508], [11.26846, -5.50768], [11.26811, -5.50738], [11.26636, -5.50604], [11.26411, -5.50428], [11.26216, -5.50278], [11.25909, -5.50044], [11.25689, -5.49874], [11.25453, -5.49693], [11.25252, -5.49537], [11.2509, -5.49413], [11.24801, -5.49189], [11.24765, -5.49159], [11.24648, -5.49054], [11.24601, -5.49011], [11.24478, -5.48893], [11.24306, -5.4873], [11.23951, -5.48395], [11.23913, -5.48357], [11.23877, -5.48313], [11.23855, -5.48284], [11.23808, -5.48215], [11.23663, -5.4797], [11.23634, -5.47922], [11.23594, -5.4787], [11.2356, -5.47834], [11.23545, -5.4782], [11.23483, -5.47774], [11.23462, -5.4776], [11.23321, -5.47686], [11.23258, -5.47653], [11.23191, -5.47614], [11.23148, -5.47582], [11.23096, -5.47537], [11.22945, -5.47405], [11.22699, -5.47186], [11.2254, -5.47048], [11.22424, -5.46944], [11.22291, -5.46828], [11.22139, -5.46693], [11.22032, -5.46599], [11.21937, -5.46514], [11.21858, -5.46445], [11.21743, -5.46343], [11.21672, -5.46282], [11.21659, -5.46265], [11.21564, -5.46181], [11.21484, -5.4611], [11.21463, -5.4609], [11.21385, -5.46022], [11.21342, -5.45979], [11.21317, -5.45955], [11.21257, -5.45877], [11.21207, -5.45794], [11.21042, -5.4551], [11.20964, -5.45374], [11.20854, -5.45198], [11.20652, -5.44876], [11.20508, -5.44645], [11.20379, -5.44425], [11.20288, -5.44269], [11.20188, -5.44096], [11.20134, -5.44014], [11.20084, -5.43946], [11.20035, -5.43887], [11.2001, -5.43858], [11.19963, -5.4381], [11.19923, -5.43773], [11.19848, -5.43709], [11.19753, -5.43632], [11.19407, -5.43359], [11.18951, -5.42996], [11.18717, -5.42781], [11.1847, -5.42549], [11.18308, -5.42397], [11.18192, -5.42288], [11.18098, -5.42203], [11.1806, -5.42174], [11.18035, -5.42158], [11.17966, -5.42116], [11.17819, -5.4204], [11.17362, -5.418], [11.16799, -5.41506], [11.16423, -5.41309], [11.16193, -5.4119], [11.16155, -5.41172], [11.16098, -5.41148], [11.16036, -5.41128], [11.15958, -5.41107], [11.15903, -5.41093], [11.15858, -5.41079], [11.1579, -5.41054], [11.1571, -5.41014], [11.15433, -5.40834], [11.154, -5.40809], [11.15382, -5.40793], [11.15373, -5.40784], [11.15354, -5.40759], [11.15341, -5.40736], [11.15326, -5.40701], [11.15317, -5.40666], [11.15313, -5.40629], [11.15314, -5.40492], [11.15322, -5.40112], [11.15323, -5.40065], [11.15321, -5.40025], [11.15312, -5.39974], [11.15298, -5.39935], [11.15281, -5.39896], [11.15264, -5.39866], [11.15241, -5.39835], [11.15126, -5.39701], [11.15053, -5.39617], [11.15007, -5.39565], [11.14983, -5.3954], [11.1489, -5.39454], [11.14832, -5.3939], [11.14564, -5.39087], [11.14123, -5.38587], [11.13088, -5.37412], [11.1288, -5.37178], [11.12403, -5.3663], [11.12267, -5.36472], [11.12151, -5.36328], [11.12091, -5.36258], [11.12008, -5.36171], [11.11955, -5.36113], [11.11922, -5.36075], [11.11919, -5.36072]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_1fac70d7405c4663aa03030d01d6d84e.bindTooltip(
+                `<div>
+                     Travel between <b>Sikasso</b> and <b>Burkina Faso, Burkina Faso</b> by car is <b>43.4 km</b> and takes <b>44 mins</b>.</br></br><b>144,786</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0fbb68f3b02142ec9fbf4ba317e3f182 = L.polyline(
+                [[14.48439, -4.18305], [14.48449, -4.18403], [14.48408, -4.18546], [14.48529, -4.18658], [14.48674, -4.18686], [14.48874, -4.18794], [14.49187, -4.18852], [14.49346, -4.18852], [14.49636, -4.18741], [14.49748, -4.18732], [14.49948, -4.18802], [14.50062, -4.18801], [14.50354, -4.18215], [14.51113, -4.16565], [14.51366, -4.15459], [14.51806, -4.13809], [14.52086, -4.12777], [14.5249, -4.11291], [14.52695, -4.1049], [14.5276, -4.10233], [14.52634, -4.10218], [14.52461, -4.09781], [14.52411, -4.09705], [14.52237, -4.09265], [14.52198, -4.09164], [14.52095, -4.09167], [14.51893, -4.09165], [14.5132, -4.09168], [14.50138, -4.09112], [14.49515, -4.09009], [14.48807, -4.08749], [14.47613, -4.08471], [14.46563, -4.08259], [14.44925, -4.08485], [14.43542, -4.0868], [14.42835, -4.08644], [14.42365, -4.08699], [14.41956, -4.08668], [14.41065, -4.08558], [14.40541, -4.08606], [14.39739, -4.08724], [14.38927, -4.08786], [14.38114, -4.09178], [14.37801, -4.09195], [14.37181, -4.09047], [14.36227, -4.09168], [14.33686, -4.08449], [14.33288, -4.08327], [14.32551, -4.07859], [14.32094, -4.07565], [14.31607, -4.07426], [14.31083, -4.07196], [14.29605, -4.06684], [14.29105, -4.06508], [14.28634, -4.06457], [14.28236, -4.06346], [14.27615, -4.06261], [14.27347, -4.06259], [14.27148, -4.06307], [14.26609, -4.06275], [14.2627, -4.06293], [14.25404, -4.06488], [14.24669, -4.06851], [14.24418, -4.0702], [14.24117, -4.07505], [14.23526, -4.08457], [14.23359, -4.08579], [14.23137, -4.08651], [14.2255, -4.08674], [14.21625, -4.09179], [14.20512, -4.0974], [14.20155, -4.09897], [14.1991, -4.09946], [14.18742, -4.09852], [14.17769, -4.10099], [14.17618, -4.10165], [14.17397, -4.1035], [14.17139, -4.10519], [14.16612, -4.10512], [14.16029, -4.10772], [14.15377, -4.11193], [14.14818, -4.11609], [14.14202, -4.11967], [14.13695, -4.12045], [14.13037, -4.12061], [14.1286, -4.12106], [14.12602, -4.12249], [14.12125, -4.12579], [14.11871, -4.127], [14.11117, -4.12772], [14.10506, -4.12975], [14.0923, -4.1349], [14.07421, -4.13956], [14.06198, -4.14479], [14.05388, -4.14841], [14.05238, -4.14972], [14.051, -4.15219], [14.04598, -4.16295], [14.03956, -4.17638], [14.03531, -4.18259], [14.0339, -4.18878], [14.03208, -4.19313], [14.03082, -4.19503], [14.02728, -4.19754], [14.02386, -4.19938], [14.02109, -4.20017], [14.01308, -4.2007], [14.00686, -4.2019], [14.00274, -4.20505], [13.99024, -4.21006], [13.98105, -4.21279], [13.97159, -4.21684], [13.96616, -4.21935], [13.9571, -4.22647], [13.95141, -4.23026], [13.94938, -4.23175], [13.94815, -4.23359], [13.94536, -4.24067], [13.94412, -4.24203], [13.94062, -4.24332], [13.93862, -4.24424], [13.93742, -4.24563], [13.93326, -4.25191], [13.93119, -4.2541], [13.92687, -4.25651], [13.91387, -4.26336], [13.90426, -4.27037], [13.90168, -4.27267], [13.89896, -4.27612], [13.89435, -4.28128], [13.88783, -4.28663], [13.87373, -4.29879], [13.86732, -4.30201], [13.85747, -4.3065], [13.85182, -4.30939], [13.84519, -4.31446], [13.84085, -4.31728], [13.83856, -4.3192], [13.83577, -4.32256], [13.82624, -4.33025], [13.8212, -4.33478], [13.81992, -4.33672], [13.81742, -4.33908], [13.80861, -4.34707], [13.80315, -4.3517], [13.79573, -4.35744], [13.78619, -4.36224], [13.77955, -4.36468], [13.77315, -4.36766], [13.75872, -4.37355], [13.74806, -4.37892], [13.74273, -4.38389], [13.73391, -4.38919], [13.73045, -4.39108], [13.72776, -4.39158], [13.71638, -4.39253], [13.70739, -4.39445], [13.70056, -4.39951], [13.67781, -4.41349], [13.66561, -4.42147], [13.65088, -4.43136], [13.64198, -4.43871], [13.63994, -4.441], [13.63556, -4.44811], [13.62124, -4.47014], [13.60623, -4.49347], [13.60375, -4.49726], [13.60175, -4.49881], [13.58907, -4.5049], [13.58397, -4.50875], [13.5814, -4.50945], [13.57827, -4.50925], [13.56681, -4.50564], [13.56073, -4.50466], [13.55234, -4.5047], [13.54966, -4.50367], [13.54774, -4.50218], [13.54491, -4.49811], [13.54326, -4.49512], [13.54178, -4.4936], [13.53517, -4.49], [13.53163, -4.48845], [13.52985, -4.48828], [13.52449, -4.48967], [13.52214, -4.49097], [13.51753, -4.49492], [13.50528, -4.5033], [13.49348, -4.51207], [13.49047, -4.51403], [13.48706, -4.51512], [13.47726, -4.51588], [13.47524, -4.51674], [13.46909, -4.5212], [13.45775, -4.53009], [13.44879, -4.53878], [13.43972, -4.55259], [13.43111, -4.56295], [13.4288, -4.56495], [13.42637, -4.56594], [13.4246, -4.56751], [13.42113, -4.57224], [13.4147, -4.58071], [13.41064, -4.58384], [13.40827, -4.58499], [13.39418, -4.5875], [13.38843, -4.59089], [13.38037, -4.59578], [13.37296, -4.60001], [13.3698, -4.60334], [13.36114, -4.61153], [13.35815, -4.61356], [13.35506, -4.61526], [13.35326, -4.61697], [13.35023, -4.62052], [13.34774, -4.62585], [13.34223, -4.63779], [13.33823, -4.64197], [13.33586, -4.64357], [13.31876, -4.64809], [13.30452, -4.65697], [13.28546, -4.66977], [13.28254, -4.67119], [13.27799, -4.67213], [13.27558, -4.67337], [13.27375, -4.67514], [13.27294, -4.67578], [13.27268, -4.67532], [13.2728, -4.67356], [13.27646, -4.67176], [13.27934, -4.66836], [13.28196, -4.65754], [13.28256, -4.64943], [13.28223, -4.64641], [13.27975, -4.63757], [13.2797, -4.63489], [13.28102, -4.6303], [13.28279, -4.62754], [13.28517, -4.62344], [13.28604, -4.62073], [13.28814, -4.6104], [13.28757, -4.60219], [13.28853, -4.59217], [13.28841, -4.59188], [13.28037, -4.5738], [13.26815, -4.54646], [13.26253, -4.53417], [13.25649, -4.52246], [13.24597, -4.5024], [13.24275, -4.496], [13.24175, -4.48869], [13.24103, -4.4765], [13.2407, -4.47066], [13.24036, -4.46912], [13.2388, -4.46799], [13.23707, -4.46675], [13.22714, -4.45965], [13.21856, -4.45355], [13.20074, -4.44106], [13.18841, -4.43209], [13.17903, -4.42474], [13.16014, -4.41118], [13.14824, -4.40216], [13.14336, -4.39753], [13.1345, -4.38662], [13.13156, -4.38389], [13.12938, -4.38252], [13.12788, -4.38054], [13.12439, -4.37505], [13.1232, -4.37308], [13.11925, -4.36893], [13.11673, -4.36203], [13.11205, -4.34855], [13.11167, -4.34742]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_0fbb68f3b02142ec9fbf4ba317e3f182.bindTooltip(
+                `<div>
+                     Travel between <b>Mopti</b> and <b>Burkina Faso, Burkina Faso</b> by car is <b>224 km</b> and takes <b>3 hours 10 mins</b>.</br></br><b>108,456</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1448bd55554c49f2a9cd365f684dc1fc = L.polyline(
+                [[12.39175, -5.46496], [12.39105, -5.46491], [12.39047, -5.4643], [12.38843, -5.46312], [12.38544, -5.46146], [12.38387, -5.46036], [12.38318, -5.45996], [12.38275, -5.45985], [12.3795, -5.45969], [12.37568, -5.45951], [12.37329, -5.45939], [12.37231, -5.45923], [12.37106, -5.45885], [12.37016, -5.45849], [12.36508, -5.45647], [12.3635, -5.45591], [12.36244, -5.45569], [12.36085, -5.45563], [12.35913, -5.45588], [12.35322, -5.45725], [12.35153, -5.45783], [12.35033, -5.45847], [12.34953, -5.45904], [12.34516, -5.46258], [12.34348, -5.46398], [12.33942, -5.46729], [12.33767, -5.46873], [12.33676, -5.46937], [12.33374, -5.47147], [12.33, -5.47404], [12.32796, -5.47536], [12.32636, -5.47608], [12.32533, -5.47643], [12.32283, -5.47713], [12.32077, -5.47772], [12.31971, -5.47794], [12.31807, -5.47805], [12.31639, -5.47782], [12.31336, -5.47673], [12.30878, -5.47492], [12.30005, -5.47147], [12.29851, -5.47089], [12.29752, -5.4704], [12.29614, -5.46969], [12.29524, -5.46908], [12.29438, -5.46841], [12.29269, -5.46667], [12.29147, -5.46485], [12.28787, -5.45779], [12.28417, -5.45048], [12.28249, -5.44717], [12.28178, -5.44594], [12.28058, -5.44438], [12.27986, -5.44362], [12.27849, -5.44246], [12.27728, -5.44165], [12.27396, -5.44008], [12.27187, -5.43902], [12.27059, -5.43814], [12.26899, -5.43666], [12.26805, -5.43551], [12.2672, -5.43424], [12.2664, -5.43266], [12.2651, -5.42983], [12.26263, -5.42443], [12.26163, -5.42254], [12.26022, -5.42037], [12.25235, -5.41009], [12.24488, -5.40039], [12.24369, -5.39872], [12.24294, -5.39736], [12.24225, -5.39569], [12.24185, -5.39419], [12.24162, -5.39268], [12.24155, -5.39176], [12.2416, -5.38995], [12.24197, -5.38425], [12.24213, -5.382], [12.24257, -5.3791], [12.24331, -5.37622], [12.24518, -5.3694], [12.24624, -5.36556], [12.24657, -5.36371], [12.24657, -5.36232], [12.24637, -5.36092], [12.24572, -5.35904], [12.2447, -5.35671], [12.24307, -5.35291], [12.23917, -5.34388], [12.23821, -5.34154], [12.238, -5.34077], [12.23781, -5.33954], [12.23781, -5.33784], [12.23802, -5.33656], [12.23833, -5.3354], [12.23867, -5.33414], [12.23969, -5.33056], [12.24087, -5.32758], [12.24156, -5.32621], [12.24429, -5.32167], [12.24509, -5.32005], [12.24564, -5.31829], [12.24588, -5.31643], [12.24587, -5.31513], [12.24572, -5.31394], [12.24525, -5.31217], [12.24492, -5.31133], [12.2425, -5.30617], [12.24118, -5.30335], [12.24043, -5.30175], [12.2399, -5.30041], [12.23921, -5.29795], [12.23886, -5.29526], [12.23875, -5.29142], [12.23843, -5.28128], [12.23674, -5.26641], [12.23653, -5.26441], [12.23645, -5.26274], [12.23621, -5.25511], [12.23601, -5.24914], [12.23585, -5.24723], [12.23559, -5.2458], [12.23455, -5.24182], [12.23356, -5.238], [12.23012, -5.22494], [12.22837, -5.21833], [12.22775, -5.21645], [12.22697, -5.21467], [12.22616, -5.21326], [12.22447, -5.21098], [12.22381, -5.21025], [12.22149, -5.20768], [12.21846, -5.20431], [12.21325, -5.19855], [12.21149, -5.19652], [12.2108, -5.19558], [12.20949, -5.19334], [12.20868, -5.19147], [12.20782, -5.18851], [12.20517, -5.1779], [12.20284, -5.16856], [12.20119, -5.16178], [12.20112, -5.16031], [12.2016, -5.15373], [12.20166, -5.15228], [12.2016, -5.15161], [12.20137, -5.15023], [12.20095, -5.14899], [12.20033, -5.14775], [12.19822, -5.14434], [12.19572, -5.14034], [12.19491, -5.13927], [12.19358, -5.13788], [12.18884, -5.13374], [12.18058, -5.12647], [12.17936, -5.12506], [12.17836, -5.12359], [12.17766, -5.12216], [12.17727, -5.12114], [12.17671, -5.11893], [12.17562, -5.11138], [12.17445, -5.10325], [12.17428, -5.10184], [12.17428, -5.10016], [12.1744, -5.09889], [12.17576, -5.09238], [12.17649, -5.08969], [12.17748, -5.08739], [12.17783, -5.08676], [12.17979, -5.08371], [12.18209, -5.08017], [12.18756, -5.07184], [12.18845, -5.07046], [12.18907, -5.06934], [12.18957, -5.06821], [12.19021, -5.0661], [12.19106, -5.06301], [12.19138, -5.06136], [12.19144, -5.06021], [12.19134, -5.05905], [12.19112, -5.05799], [12.19062, -5.05653], [12.18746, -5.04855], [12.1859, -5.04372], [12.18523, -5.04161], [12.18466, -5.03946], [12.18443, -5.03754], [12.18441, -5.03615], [12.18453, -5.03493], [12.18488, -5.03313], [12.18696, -5.02706], [12.18829, -5.02325], [12.18906, -5.02144], [12.18976, -5.02021], [12.19097, -5.01864], [12.19255, -5.01715], [12.19401, -5.01613], [12.19875, -5.01365], [12.20197, -5.01201], [12.20768, -5.00911], [12.20992, -5.00782], [12.21032, -5.00754], [12.21155, -5.00646], [12.21268, -5.00525], [12.21368, -5.00389], [12.21466, -5.002], [12.2171, -4.99497], [12.2205, -4.98491], [12.22229, -4.97954], [12.22262, -4.9779], [12.22287, -4.97533], [12.22336, -4.96998], [12.22376, -4.96563], [12.22375, -4.96426], [12.22358, -4.96268], [12.22309, -4.95909], [12.22192, -4.95182], [12.22133, -4.94357], [12.21972, -4.93452], [12.21916, -4.93144], [12.21859, -4.9297], [12.21582, -4.92413], [12.21486, -4.92223], [12.2144, -4.92111], [12.21408, -4.91984], [12.21336, -4.91573], [12.21273, -4.91208], [12.21237, -4.90997], [12.2123, -4.9087], [12.21218, -4.90497], [12.21201, -4.90001], [12.21158, -4.8948], [12.2107, -4.88468], [12.21045, -4.88179], [12.21038, -4.88101], [12.21013, -4.87962], [12.20969, -4.87831], [12.20926, -4.87741], [12.20734, -4.87431], [12.20526, -4.87125], [12.20436, -4.86989], [12.20365, -4.86854], [12.20269, -4.86649], [12.20173, -4.86444], [12.20034, -4.86145], [12.19907, -4.85879], [12.19701, -4.85442], [12.19625, -4.85305], [12.19554, -4.85199], [12.19333, -4.84881], [12.19095, -4.84539], [12.18971, -4.84363], [12.18859, -4.84223], [12.18711, -4.84022], [12.18623, -4.83853], [12.18552, -4.83645], [12.18529, -4.83536], [12.18513, -4.83407], [12.18506, -4.8309], [12.18493, -4.82196], [12.18484, -4.81688], [12.18479, -4.81338], [12.18473, -4.8118], [12.18451, -4.81022], [12.18373, -4.80685], [12.18264, -4.80347], [12.18237, -4.80288], [12.18175, -4.8018], [12.1814, -4.80134], [12.17989, -4.7997], [12.17809, -4.79772], [12.1754, -4.79478], [12.17215, -4.79116], [12.16834, -4.78677], [12.16616, -4.78429], [12.16356, -4.78155], [12.15921, -4.77703], [12.15335, -4.77053], [12.1504, -4.76723], [12.1499, -4.76658], [12.14939, -4.76566], [12.14664, -4.7605], [12.14383, -4.75522], [12.13877, -4.74607], [12.13314, -4.73591], [12.13064, -4.73137], [12.12534, -4.72343], [12.12112, -4.7172], [12.11685, -4.71103], [12.11238, -4.70468], [12.11002, -4.70144], [12.10752, -4.69816], [12.10549, -4.69552], [12.10393, -4.69372], [12.09898, -4.68919], [12.0967, -4.68715], [12.09536, -4.68614], [12.09395, -4.68526], [12.09146, -4.68395], [12.08453, -4.68028], [12.08008, -4.67788], [12.07367, -4.67426], [12.07005, -4.67215], [12.06891, -4.67139], [12.06767, -4.67025], [12.067, -4.66978], [12.06645, -4.66952], [12.06562, -4.66928], [12.06477, -4.66918], [12.06313, -4.66921]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_1448bd55554c49f2a9cd365f684dc1fc.bindTooltip(
+                `<div>
+                     Travel between <b>Koutiala</b> and <b>Burkina Faso, Burkina Faso</b> by car is <b>113 km</b> and takes <b>1 hour 55 mins</b>.</br></br><b>99,353</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b70826e5bc4c442b9bcc961925c8a4a4 = L.polyline(
+                [[16.27173, -0.04485], [16.27266, -0.04441], [16.27193, -0.04298], [16.2714, -0.04197], [16.27073, -0.04067], [16.26923, -0.03793], [16.26866, -0.03693], [16.26812, -0.03605], [16.26429, -0.02991], [16.25862, -0.02175], [16.25874, -0.02174], [16.26245, -0.01932], [16.26406, -0.01747], [16.26502, -0.0156], [16.2654, -0.01415], [16.2653, -0.00936], [16.26353, 0.00211], [16.26284, 0.0061], [16.26113, 0.01078], [16.25761, 0.01694], [16.25404, 0.02127], [16.25148, 0.02242], [16.2427, 0.02351], [16.2418, 0.02365], [16.23419, 0.02465], [16.23157, 0.02579], [16.22931, 0.02781], [16.22759, 0.03088], [16.22418, 0.03483], [16.22123, 0.03775], [16.21687, 0.04217], [16.21641, 0.04372], [16.21629, 0.04753], [16.21517, 0.05213], [16.21118, 0.05821], [16.20871, 0.06054], [16.20634, 0.06176], [16.20392, 0.06242], [16.20072, 0.06258], [16.19256, 0.06134], [16.18666, 0.06003], [16.18524, 0.06012], [16.183, 0.06138], [16.1794, 0.06323], [16.17528, 0.06375], [16.17027, 0.06511], [16.16637, 0.06689], [16.16378, 0.0671], [16.15911, 0.06589], [16.15579, 0.06635], [16.15339, 0.06805], [16.15104, 0.07072], [16.14862, 0.07242], [16.1446, 0.07408], [16.14288, 0.07501], [16.1405, 0.07533], [16.13532, 0.07553], [16.12944, 0.07556], [16.12395, 0.07724], [16.123, 0.07805], [16.12219, 0.08014], [16.11775, 0.08477], [16.11466, 0.08704], [16.11229, 0.08992], [16.10998, 0.09157], [16.10587, 0.0931], [16.10108, 0.09575], [16.09703, 0.09883], [16.09209, 0.10128], [16.08707, 0.10532], [16.08233, 0.10721], [16.07281, 0.11193], [16.06385, 0.1168], [16.05727, 0.11978], [16.05162, 0.12149], [16.04852, 0.12148], [16.04247, 0.12115], [16.03832, 0.12268], [16.03104, 0.12425], [16.02181, 0.12825], [16.0196, 0.12904], [16.01744, 0.12905], [16.01299, 0.12782], [16.00653, 0.13143], [16.00168, 0.1329], [15.99672, 0.13359], [15.9933, 0.13274], [15.99117, 0.13409], [15.99009, 0.1396], [15.98824, 0.14336], [15.98259, 0.14816], [15.97981, 0.15124], [15.97855, 0.15352], [15.97461, 0.16301], [15.97211, 0.16976], [15.96915, 0.17432], [15.96555, 0.17749], [15.95788, 0.19145], [15.95581, 0.19503], [15.95345, 0.19783], [15.95144, 0.19976], [15.94912, 0.20073], [15.94199, 0.20603], [15.93514, 0.21176], [15.92489, 0.21769], [15.91856, 0.22088], [15.91079, 0.22166], [15.90295, 0.22255], [15.89666, 0.2269], [15.8924, 0.22973], [15.89075, 0.23156], [15.88766, 0.23956], [15.88321, 0.24554], [15.87327, 0.25732], [15.86434, 0.26791], [15.85912, 0.27191], [15.85243, 0.27686], [15.84597, 0.28951], [15.83993, 0.29724], [15.82863, 0.31095], [15.81836, 0.32335], [15.81514, 0.32883], [15.81182, 0.3413], [15.8057, 0.36442], [15.80342, 0.37239], [15.80194, 0.37745], [15.80111, 0.38332], [15.80039, 0.38771], [15.7989, 0.39076], [15.79492, 0.39998], [15.79287, 0.40553], [15.79106, 0.41002], [15.78993, 0.41157], [15.78506, 0.41493], [15.77719, 0.41921], [15.77259, 0.42171], [15.76892, 0.42646], [15.76385, 0.43127], [15.76012, 0.43566], [15.75352, 0.4463], [15.7465, 0.45644], [15.74313, 0.46029], [15.74027, 0.46218], [15.73223, 0.465], [15.72416, 0.46816], [15.71847, 0.47103], [15.71435, 0.4722], [15.7124, 0.47328], [15.707, 0.47785], [15.70318, 0.48302], [15.69802, 0.48844], [15.69427, 0.49373], [15.6887, 0.49602], [15.68183, 0.50013], [15.67711, 0.50111], [15.6744, 0.50102], [15.66484, 0.50035], [15.66009, 0.50049], [15.6481, 0.5047], [15.63231, 0.50996], [15.62134, 0.50971], [15.60958, 0.50601], [15.6077, 0.506], [15.60521, 0.50708], [15.59862, 0.5109], [15.5938, 0.5111], [15.57609, 0.51025], [15.57175, 0.51103], [15.55995, 0.51534], [15.55265, 0.51831], [15.54978, 0.52091], [15.54021, 0.53649], [15.53835, 0.54018], [15.53728, 0.54482], [15.53657, 0.55768], [15.53816, 0.56778], [15.5398, 0.58171], [15.5389, 0.58547], [15.53758, 0.58921], [15.53702, 0.5994], [15.53648, 0.60284], [15.53467, 0.60847], [15.52969, 0.62352], [15.52188, 0.63715], [15.51451, 0.65301], [15.51356, 0.65672], [15.51315, 0.66145], [15.51232, 0.66702], [15.51046, 0.67181], [15.50747, 0.67896], [15.50529, 0.6815], [15.4983, 0.68509], [15.48578, 0.69406], [15.48346, 0.69697], [15.48103, 0.70091], [15.47501, 0.70793], [15.46994, 0.71399], [15.4599, 0.72395], [15.4512, 0.73252], [15.44874, 0.73446], [15.44556, 0.73593], [15.44278, 0.73813], [15.4376, 0.74423], [15.43456, 0.74752], [15.4321, 0.74905], [15.4289, 0.75003], [15.42161, 0.75008], [15.41218, 0.75004], [15.40868, 0.75068], [15.40477, 0.75233], [15.3989, 0.75722], [15.39342, 0.76223], [15.3885, 0.76483], [15.37266, 0.77063], [15.3698, 0.77085], [15.36743, 0.7703], [15.35875, 0.76541], [15.35081, 0.76009], [15.33781, 0.75524], [15.33222, 0.75225], [15.32306, 0.74636], [15.31764, 0.74258], [15.31076, 0.73879], [15.30546, 0.73639], [15.30017, 0.73464], [15.28663, 0.73208], [15.27639, 0.73203], [15.27015, 0.73228], [15.26613, 0.73289], [15.26228, 0.73444], [15.25613, 0.73787], [15.2523, 0.7398], [15.24986, 0.74032], [15.24699, 0.7402], [15.24316, 0.73894], [15.23958, 0.73823], [15.23365, 0.73886], [15.21741, 0.74224], [15.19889, 0.74528], [15.19526, 0.74527], [15.19062, 0.7437], [15.18588, 0.74046], [15.18282, 0.7365], [15.17165, 0.71977], [15.16663, 0.71288], [15.16279, 0.70588], [15.1597, 0.70065], [15.1535, 0.69382], [15.13907, 0.68179], [15.13512, 0.6798], [15.13111, 0.67936], [15.12583, 0.67967], [15.12098, 0.68112], [15.11411, 0.68213], [15.0925, 0.68258], [15.08764, 0.68301], [15.08341, 0.68449], [15.08001, 0.6862], [15.07372, 0.68834], [15.0542, 0.69456], [15.04971, 0.69554], [15.04386, 0.69572], [15.02884, 0.69556], [15.02233, 0.69699], [15.01969, 0.69712], [15.01128, 0.69546], [15.00632, 0.69519], [14.99887, 0.69543], [14.99251, 0.6955], [14.98785, 0.69475], [14.97947, 0.69465], [14.97794, 0.69506], [14.97502, 0.69884], [14.97006, 0.70299], [14.96748, 0.70586], [14.96723, 0.71343], [14.96678, 0.72195], [14.96408, 0.73214], [14.96387, 0.73483], [14.96464, 0.73972], [14.96586, 0.7472], [14.96511, 0.75261], [14.96261, 0.75757]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_b70826e5bc4c442b9bcc961925c8a4a4.bindTooltip(
+                `<div>
+                     Travel between <b>Gao</b> and <b>Niger, Niger</b> by car is <b>205 km</b> and takes <b>3 hours 8 mins</b>.</br></br><b>87,000</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_edc68c69b30f4ee8b62c24feb9d98bad = L.polyline(
+                [[14.44685, -11.44437], [14.44667, -11.44465], [14.44628, -11.44547], [14.44625, -11.44564], [14.4465, -11.44555], [14.44811, -11.44502], [14.44821, -11.44498], [14.44833, -11.44539], [14.44902, -11.44755], [14.44952, -11.44902], [14.45034, -11.45145], [14.4517, -11.45533], [14.45187, -11.4575], [14.45179, -11.46221], [14.45172, -11.4631], [14.45171, -11.46464], [14.45186, -11.46526], [14.45245, -11.4667], [14.45329, -11.46877], [14.45405, -11.47128], [14.4546, -11.47346], [14.45583, -11.47827], [14.4563, -11.48014], [14.45819, -11.48729], [14.45936, -11.4916], [14.46015, -11.49319], [14.462, -11.49579], [14.46504, -11.49991], [14.46586, -11.50092], [14.46919, -11.50448], [14.47072, -11.50618], [14.47162, -11.50771], [14.47221, -11.50935], [14.4729, -11.51192], [14.47438, -11.51747], [14.4764, -11.52535], [14.47664, -11.52719], [14.47671, -11.52897], [14.47652, -11.53293], [14.47632, -11.53724], [14.47658, -11.54125], [14.47689, -11.54365], [14.47722, -11.54544], [14.47784, -11.54887], [14.47842, -11.55207], [14.47859, -11.55334], [14.47858, -11.55415], [14.47834, -11.556], [14.47831, -11.55697], [14.47845, -11.55799], [14.47873, -11.55887], [14.47952, -11.56035], [14.4824, -11.56496], [14.48354, -11.56681], [14.48456, -11.56818], [14.48644, -11.57038], [14.48722, -11.5719], [14.48859, -11.57501], [14.49091, -11.57814], [14.49448, -11.58278], [14.49721, -11.58632], [14.49842, -11.58788], [14.49914, -11.58856], [14.50005, -11.58913], [14.502, -11.59009], [14.5053, -11.59174], [14.50741, -11.59291], [14.51064, -11.59451], [14.5136, -11.59594], [14.51804, -11.59847], [14.51875, -11.59899], [14.51951, -11.5999], [14.52014, -11.60133], [14.52029, -11.60253], [14.52018, -11.606], [14.52, -11.61114], [14.52009, -11.61338], [14.52024, -11.61425], [14.521, -11.61694], [14.52172, -11.61947], [14.52203, -11.62257], [14.52219, -11.62342], [14.52251, -11.62433], [14.52297, -11.62516], [14.52484, -11.62758], [14.52605, -11.62923], [14.5281, -11.63234], [14.52943, -11.63428], [14.53426, -11.64097], [14.53628, -11.64382], [14.54011, -11.64952], [14.54353, -11.65389], [14.5443, -11.655], [14.54502, -11.65642], [14.54544, -11.65759], [14.54571, -11.65866], [14.54659, -11.66289], [14.5469, -11.6649], [14.54709, -11.67128], [14.54746, -11.68023], [14.54779, -11.68639], [14.54804, -11.68868], [14.54963, -11.69288], [14.55173, -11.69822], [14.55484, -11.70604], [14.55627, -11.7096], [14.55722, -11.71126], [14.55872, -11.7132], [14.55942, -11.71428], [14.55993, -11.71535], [14.56032, -11.7165], [14.56083, -11.71887], [14.56145, -11.72141], [14.56222, -11.72349], [14.56392, -11.72797], [14.56566, -11.73253], [14.56635, -11.73443], [14.56672, -11.73625], [14.56678, -11.7381], [14.56659, -11.74086], [14.56651, -11.74569], [14.56651, -11.74859], [14.56663, -11.74962], [14.56682, -11.75028], [14.56794, -11.7525], [14.5722, -11.76036], [14.57302, -11.76159], [14.57596, -11.76543], [14.57811, -11.76823], [14.57847, -11.7689], [14.57883, -11.77007], [14.5789, -11.77098], [14.57851, -11.774], [14.57811, -11.77674], [14.57806, -11.77771], [14.57821, -11.77969], [14.57827, -11.78139], [14.57806, -11.78242], [14.57739, -11.78387], [14.57674, -11.78506], [14.57591, -11.78655], [14.57542, -11.78724], [14.57489, -11.78769], [14.57422, -11.788], [14.57079, -11.78884], [14.567, -11.79024], [14.5652, -11.79103], [14.56425, -11.79203], [14.56168, -11.79536], [14.56057, -11.79669], [14.55951, -11.79762], [14.55782, -11.7988], [14.5563, -11.80011], [14.55476, -11.80177], [14.55306, -11.80327], [14.54834, -11.8063], [14.54281, -11.80975], [14.53942, -11.81106], [14.53827, -11.81195], [14.5378, -11.81256], [14.53744, -11.81326], [14.53705, -11.81449], [14.53665, -11.81587], [14.53576, -11.81724], [14.53445, -11.81883], [14.5336, -11.82014], [14.53322, -11.82149], [14.53322, -11.82225], [14.53358, -11.82398], [14.53539, -11.82952], [14.53769, -11.83729], [14.53789, -11.83758], [14.53791, -11.83806], [14.53771, -11.83919], [14.5369, -11.84109], [14.53538, -11.84436], [14.53382, -11.84779], [14.53341, -11.84931], [14.53327, -11.8507], [14.53335, -11.85225], [14.53384, -11.85449], [14.53439, -11.8568], [14.53476, -11.85837], [14.53533, -11.85998], [14.5359, -11.86147], [14.53645, -11.86251], [14.53726, -11.86369], [14.5381, -11.86456], [14.54087, -11.867], [14.54307, -11.8693], [14.54414, -11.87036], [14.54502, -11.87105], [14.55263, -11.87593], [14.55535, -11.87771], [14.5577, -11.87921], [14.55896, -11.88025], [14.55966, -11.88125], [14.56007, -11.88247], [14.56014, -11.88339], [14.56006, -11.88422], [14.5594, -11.88702], [14.55843, -11.89091], [14.5577, -11.89396], [14.55752, -11.89647], [14.55715, -11.90267], [14.55691, -11.90424], [14.55638, -11.90578], [14.55492, -11.90924], [14.55221, -11.91568], [14.55181, -11.91741], [14.55184, -11.92045], [14.55194, -11.92413], [14.55149, -11.92716], [14.55108, -11.92868], [14.55056, -11.92959], [14.54921, -11.93139], [14.54877, -11.93222], [14.54822, -11.93373], [14.5469, -11.93751], [14.54474, -11.94356], [14.54215, -11.94875], [14.5418, -11.9506], [14.54125, -11.95305], [14.53985, -11.9562], [14.53907, -11.95819], [14.53845, -11.96024], [14.5367, -11.96623], [14.53507, -11.97182], [14.53305, -11.97958], [14.53297, -11.98052], [14.533, -11.98134], [14.53321, -11.98322], [14.53323, -11.98466], [14.53268, -11.98779], [14.53209, -11.99089], [14.53166, -11.99353], [14.53156, -11.99779], [14.53156, -12.00106], [14.53151, -12.003], [14.53122, -12.00482], [14.53065, -12.00845], [14.53042, -12.01005], [14.53026, -12.01268], [14.5302, -12.01828], [14.53011, -12.02144], [14.52967, -12.02644], [14.52933, -12.03256], [14.52911, -12.03496], [14.52869, -12.03644], [14.52722, -12.03988], [14.52558, -12.04368], [14.524, -12.04732], [14.52259, -12.05058], [14.52201, -12.05213], [14.52167, -12.05394], [14.52132, -12.05536], [14.52079, -12.05651], [14.51985, -12.05797], [14.51706, -12.0622], [14.51626, -12.064], [14.51473, -12.06939], [14.51318, -12.07425], [14.51032, -12.08311], [14.50916, -12.08654], [14.50847, -12.08782], [14.5075, -12.08914], [14.50617, -12.09092], [14.50567, -12.09174], [14.50517, -12.09298], [14.50507, -12.09345], [14.50437, -12.09665], [14.50313, -12.10215], [14.50193, -12.10738], [14.50123, -12.11049], [14.50063, -12.11369], [14.50005, -12.11796], [14.4994, -12.1227], [14.49893, -12.12457], [14.49855, -12.12555], [14.4973, -12.12797], [14.4958, -12.13081], [14.4953, -12.13208], [14.49504, -12.13309], [14.49424, -12.13698], [14.49293, -12.14183], [14.49034, -12.15067], [14.48961, -12.1527], [14.48841, -12.15527], [14.48593, -12.16065], [14.48468, -12.16336], [14.48397, -12.1648], [14.48296, -12.16623], [14.48162, -12.16755], [14.47999, -12.16873], [14.4773, -12.17064], [14.4739, -12.173], [14.47281, -12.17377], [14.47195, -12.17457], [14.47037, -12.17663], [14.46848, -12.17918], [14.46675, -12.18133], [14.46427, -12.1841], [14.46275, -12.18577], [14.46213, -12.18659], [14.45998, -12.19024], [14.45931, -12.19146], [14.45894, -12.1924], [14.45866, -12.1938], [14.45848, -12.19516], [14.45794, -12.1989], [14.45732, -12.20057], [14.45707, -12.20293], [14.4568, -12.20358], [14.45633, -12.20416]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_edc68c69b30f4ee8b62c24feb9d98bad.bindTooltip(
+                `<div>
+                     Travel between <b>Kayes</b> and <b>Senegal, Senegal</b> by car is <b>93.7 km</b> and takes <b>1 hour 34 mins</b>.</br></br><b>78,406</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7a1658965fad4fbb916e22a05b5794ac = L.polyline(
+                [[13.68413, -6.07358], [13.68169, -6.07429], [13.6796, -6.07534], [13.67834, -6.0758], [13.67823, -6.07583], [13.67793, -6.07539], [13.67649, -6.0712], [13.67499, -6.06915], [13.67231, -6.06759], [13.66945, -6.06677], [13.66546, -6.06729], [13.66321, -6.06852], [13.66089, -6.0707], [13.65497, -6.07662], [13.65231, -6.07899], [13.64862, -6.08051], [13.6362, -6.08491], [13.62561, -6.08863], [13.60882, -6.09458], [13.58106, -6.10423], [13.57137, -6.10663], [13.56606, -6.10916], [13.55802, -6.11317], [13.53842, -6.12296], [13.53267, -6.12587], [13.52821, -6.12897], [13.50809, -6.14493], [13.50191, -6.14988], [13.50052, -6.15162], [13.49952, -6.15383], [13.49841, -6.15822], [13.49714, -6.16335], [13.49466, -6.17254], [13.4903, -6.17849], [13.4849, -6.18539], [13.47219, -6.20167], [13.46349, -6.2128], [13.4568, -6.21909], [13.45316, -6.22352], [13.44983, -6.22761], [13.44654, -6.23068], [13.44062, -6.23613], [13.44049, -6.23622], [13.43806, -6.23821], [13.43727, -6.23964], [13.43787, -6.23991], [13.43784, -6.23902], [13.43544, -6.2343], [13.43157, -6.2259], [13.42275, -6.21537], [13.41914, -6.21139], [13.41606, -6.20603], [13.40205, -6.17957], [13.40051, -6.17675], [13.39451, -6.16937], [13.38508, -6.15803], [13.37111, -6.1472], [13.36733, -6.14425], [13.36466, -6.14121], [13.36068, -6.13564], [13.3508, -6.11862], [13.34522, -6.1097], [13.34337, -6.10611], [13.33696, -6.08856], [13.33556, -6.08341], [13.33388, -6.06831], [13.33184, -6.06384], [13.32171, -6.05092], [13.30741, -6.03195], [13.30122, -6.02196], [13.29803, -6.01658], [13.29508, -6.01283], [13.28553, -6.00058], [13.26266, -5.97693], [13.24419, -5.94329], [13.23851, -5.93291], [13.23464, -5.92675], [13.22321, -5.91354], [13.21494, -5.90429], [13.20766, -5.90037], [13.20287, -5.89671], [13.19021, -5.88538], [13.18596, -5.87931], [13.18259, -5.87513], [13.17963, -5.87334], [13.17081, -5.86955], [13.16272, -5.8646], [13.15538, -5.85959], [13.14529, -5.85139], [13.1359, -5.84645], [13.11812, -5.83695], [13.10812, -5.82953], [13.08364, -5.81537], [13.07645, -5.81099], [13.06009, -5.79936], [13.04224, -5.79013], [13.01484, -5.77644], [12.99801, -5.76802], [12.98443, -5.76147], [12.97876, -5.76106], [12.96238, -5.76068], [12.95075, -5.76044], [12.94954, -5.76019], [12.95016, -5.75748], [12.95198, -5.74406], [12.95505, -5.72522], [12.95795, -5.7093], [12.95922, -5.70096], [12.95792, -5.6905], [12.95405, -5.66714], [12.95219, -5.65472], [12.95545, -5.61433], [12.95853, -5.57783], [12.95888, -5.56628], [12.95971, -5.56176], [12.96396, -5.54838], [12.96872, -5.53273], [12.96966, -5.51908], [12.9703, -5.50631], [12.97065, -5.4997], [12.97236, -5.49413], [12.98474, -5.46401], [13.00302, -5.41939], [13.00884, -5.40527], [13.01451, -5.39078], [13.01861, -5.37702], [13.02143, -5.36389], [13.02252, -5.36066], [13.03274, -5.3502], [13.0399, -5.34317], [13.04454, -5.34046], [13.05593, -5.33421], [13.06031, -5.33056], [13.07949, -5.3139], [13.08234, -5.3108], [13.08411, -5.30641], [13.09128, -5.28712], [13.09598, -5.27442], [13.09938, -5.26352], [13.10183, -5.24281], [13.10319, -5.23528], [13.10833, -5.21698], [13.10967, -5.21113], [13.11138, -5.18662], [13.11228, -5.17373], [13.11336, -5.16927], [13.11788, -5.15809], [13.12443, -5.14238], [13.14203, -5.09971], [13.14523, -5.09262], [13.14683, -5.09098], [13.15697, -5.0835], [13.19205, -5.05751], [13.22874, -5.03031], [13.23459, -5.02597], [13.23801, -5.02292], [13.25135, -5.00915], [13.25603, -5.00398], [13.25747, -5.00121], [13.26549, -4.98058], [13.26861, -4.97142], [13.27612, -4.94555], [13.28267, -4.92277], [13.28445, -4.91872], [13.28915, -4.91327], [13.29404, -4.90763], [13.29506, -4.90618], [13.29568, -4.90298], [13.29705, -4.89576], [13.29712, -4.89414], [13.29552, -4.89375], [13.28201, -4.89095], [13.27068, -4.88856], [13.26087, -4.88708], [13.23706, -4.88402], [13.23468, -4.88371], [13.23458, -4.88362], [13.23442, -4.88317], [13.23387, -4.88021], [13.23352, -4.87535], [13.23323, -4.86757], [13.23716, -4.84537], [13.2363, -4.83484], [13.23531, -4.82775], [13.23517, -4.82284], [13.23606, -4.81098], [13.23645, -4.80809], [13.23914, -4.79992], [13.2398, -4.79471], [13.24032, -4.78521], [13.24072, -4.77866], [13.24194, -4.77585], [13.24361, -4.77251], [13.24521, -4.76545], [13.24579, -4.75815], [13.24598, -4.75474], [13.24762, -4.74997], [13.24805, -4.74766], [13.24768, -4.74379], [13.24616, -4.72947], [13.24423, -4.72395], [13.24377, -4.71564], [13.24389, -4.71086], [13.24327, -4.70667], [13.24256, -4.70243], [13.24292, -4.70029], [13.24393, -4.6982], [13.24693, -4.69567], [13.25113, -4.69332], [13.25637, -4.68899], [13.26456, -4.68244], [13.27138, -4.67737], [13.27294, -4.67578], [13.27268, -4.67532], [13.27245, -4.67439], [13.2728, -4.67356], [13.27646, -4.67176], [13.27934, -4.66836], [13.28089, -4.66201], [13.28196, -4.65754], [13.28256, -4.64943], [13.28223, -4.64641], [13.27975, -4.63757], [13.2797, -4.63489], [13.28102, -4.6303], [13.28517, -4.62344], [13.28675, -4.61751], [13.28814, -4.6104], [13.28804, -4.60652], [13.28757, -4.60219], [13.28817, -4.59742], [13.28843, -4.59214], [13.28836, -4.59197], [13.28295, -4.57954], [13.27039, -4.55147], [13.26535, -4.54018], [13.25948, -4.52822], [13.25306, -4.51577], [13.24597, -4.5024], [13.24275, -4.496], [13.24175, -4.48869], [13.24103, -4.4765], [13.2407, -4.47066], [13.24036, -4.46912], [13.2388, -4.46799], [13.23707, -4.46675], [13.22714, -4.45965], [13.21856, -4.45355], [13.20074, -4.44106], [13.17903, -4.42474], [13.16014, -4.41118], [13.14824, -4.40216], [13.14336, -4.39753], [13.1345, -4.38662], [13.13156, -4.38389], [13.12938, -4.38252], [13.12788, -4.38054], [13.12439, -4.37505], [13.1232, -4.37308], [13.11925, -4.36893], [13.11673, -4.36203], [13.11167, -4.34742]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_7a1658965fad4fbb916e22a05b5794ac.bindTooltip(
+                `<div>
+                     Travel between <b>Markala</b> and <b>Burkina Faso, Burkina Faso</b> by car is <b>297 km</b> and takes <b>4 hours 24 mins</b>.</br></br><b>53,738</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_15083e3d4ebe47a3af01633bc3e6cdfb = L.polyline(
+                [[13.57294, -8.03391], [13.55125, -8.0374], [13.51833, -8.0548], [13.51182, -8.0551], [13.49697, -8.04873], [13.48109, -8.03915], [13.45656, -8.02199], [13.43365, -8.0142], [13.40434, -8.00678], [13.38005, -7.99252], [13.37124, -7.98765], [13.35325, -7.98165], [13.33968, -7.97719], [13.32753, -7.96605], [13.31088, -7.95549], [13.29684, -7.95384], [13.27175, -7.95502], [13.25538, -7.95195], [13.23761, -7.94679], [13.22743, -7.93905], [13.21357, -7.93062], [13.20523, -7.93096], [13.18862, -7.93964], [13.17245, -7.94633], [13.15494, -7.95189], [13.14046, -7.95289], [13.13137, -7.95135], [13.10762, -7.94149], [13.10702, -7.93134], [13.09026, -7.91454], [13.0758, -7.91155], [13.06081, -7.91919], [13.03721, -7.91523], [13.02863, -7.9174], [13.01862, -7.91519], [13.00991, -7.92266], [12.99818, -7.92367], [12.98872, -7.91787], [12.97812, -7.91899], [12.97074, -7.91549], [12.96877, -7.90953], [12.95908, -7.90078], [12.94661, -7.90691], [12.93665, -7.90243], [12.92093, -7.90257], [12.91386, -7.89985], [12.90643, -7.90052], [12.89256, -7.90594], [12.88484, -7.91028], [12.87286, -7.90762], [12.85543, -7.90751], [12.85243, -7.90734], [12.84655, -7.90754], [12.83621, -7.90981], [12.81125, -7.91213], [12.79343, -7.91752], [12.78111, -7.91955], [12.76796, -7.92778], [12.76597, -7.92427], [12.75655, -7.91657], [12.74953, -7.91415], [12.74325, -7.91136], [12.73602, -7.91189], [12.73055, -7.91107], [12.72701, -7.91384], [12.72176, -7.91396], [12.71928, -7.91218], [12.71088, -7.91205], [12.69858, -7.91405], [12.69003, -7.91606], [12.68111, -7.92287], [12.67737, -7.92451], [12.67278, -7.92417], [12.66855, -7.92629], [12.66545, -7.93198], [12.65629, -7.93188], [12.6537, -7.93196], [12.63765, -7.92419], [12.60981, -7.91714], [12.60422, -7.92968], [12.58998, -7.94202], [12.5846, -7.94366], [12.57791, -7.94114], [12.5668, -7.93935], [12.56082, -7.9226], [12.55891, -7.91557], [12.55287, -7.91317], [12.54793, -7.91709], [12.54292, -7.92488], [12.53497, -7.93276], [12.52997, -7.93266], [12.51363, -7.93246], [12.49506, -7.93538], [12.45557, -7.93812], [12.4308, -7.93491], [12.4062, -7.93728], [12.37913, -7.93586], [12.33501, -7.93127], [12.30123, -7.92582], [12.28314, -7.92324], [12.26812, -7.92561], [12.2612, -7.92721], [12.25381, -7.92462], [12.2358, -7.91874], [12.20345, -7.90741], [12.17903, -7.89815], [12.16278, -7.8937], [12.14096, -7.89354], [12.10813, -7.89629], [12.07742, -7.90228], [12.04525, -7.90785], [12.01205, -7.91178], [11.99779, -7.91116], [11.98456, -7.9061], [11.97126, -7.90143], [11.95835, -7.89222], [11.92499, -7.86671], [11.91196, -7.85903], [11.9006, -7.84608], [11.89053, -7.8373], [11.87472, -7.82965], [11.8634, -7.82539], [11.85263, -7.81534], [11.82955, -7.79106], [11.80094, -7.77385], [11.77376, -7.74547], [11.76467, -7.72918], [11.74994, -7.71881], [11.72059, -7.70498], [11.70729, -7.69006], [11.69443, -7.65977], [11.68299, -7.64255], [11.67895, -7.62766], [11.67165, -7.61583], [11.6671, -7.60058], [11.65686, -7.59259], [11.64242, -7.58471], [11.61653, -7.57556], [11.55634, -7.55315], [11.53257, -7.54249], [11.50713, -7.53308], [11.49468, -7.52837], [11.48272, -7.51775], [11.46228, -7.5103], [11.45376, -7.51017], [11.44657, -7.50509], [11.43441, -7.49987], [11.42742, -7.49503], [11.42566, -7.48969], [11.4225, -7.47185], [11.41796, -7.46196], [11.41039, -7.45101], [11.39123, -7.44924], [11.38476, -7.44696], [11.37821, -7.43971], [11.36832, -7.42648], [11.36512, -7.38315], [11.36502, -7.36019], [11.36078, -7.3361], [11.3769, -7.28373], [11.3735, -7.27254], [11.38157, -7.25546], [11.3795, -7.24656], [11.37709, -7.24092], [11.37149, -7.22695], [11.3676, -7.21071], [11.35009, -7.16875], [11.33627, -7.13652], [11.32976, -7.10532], [11.32656, -7.0915], [11.31993, -7.08155], [11.29668, -7.06442], [11.27629, -7.04463], [11.26501, -7.03311], [11.25838, -7.0171], [11.25213, -6.99347], [11.24757, -6.98426], [11.23588, -6.97315], [11.22899, -6.96353], [11.21251, -6.9486], [11.20143, -6.94178], [11.19222, -6.92991], [11.17819, -6.91863], [11.16553, -6.91334], [11.15168, -6.91366], [11.14331, -6.91385], [11.13287, -6.90826], [11.11267, -6.8997], [11.09982, -6.89637], [11.08847, -6.89043], [11.07009, -6.86286], [11.05454, -6.8449], [11.04445, -6.82254], [11.02933, -6.80128], [11.00009, -6.78367], [10.97977, -6.77211], [10.9739, -6.76926], [10.96788, -6.7615], [10.96353, -6.75631], [10.94661, -6.74775], [10.93761, -6.73797], [10.92085, -6.72796], [10.90763, -6.71732], [10.89577, -6.71148], [10.8921, -6.7075], [10.87966, -6.6993], [10.87104, -6.69432], [10.86757, -6.68985], [10.85188, -6.68113], [10.8262, -6.67191], [10.8163, -6.66033], [10.81554, -6.64679], [10.80048, -6.62087], [10.79909, -6.6031], [10.78881, -6.584], [10.78299, -6.57067], [10.7805, -6.55645], [10.76626, -6.5267], [10.75685, -6.50838], [10.7459, -6.50327], [10.72939, -6.50445], [10.71852, -6.50586], [10.70287, -6.50149], [10.68457, -6.50089], [10.65702, -6.49647], [10.64165, -6.47961], [10.63203, -6.46893], [10.61634, -6.46054], [10.60101, -6.45337], [10.58929, -6.44106], [10.58745, -6.43836], [10.58065, -6.4277], [10.57069, -6.42677], [10.56281, -6.42747]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_15083e3d4ebe47a3af01633bc3e6cdfb.bindTooltip(
+                `<div>
+                     Travel between <b>Kolokani</b> and <b>Cote d’Ivoire, Cote d’Ivoire</b> by car is <b>446 km</b> and takes <b>7 hours 42 mins</b>.</br></br><b>48,774</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_814755e62652482ebef2cb374f20f1f8 = L.polyline(
+                [[12.74423, -8.0725], [12.74358, -8.07114], [12.74275, -8.07156], [12.74173, -8.07205], [12.7414, -8.07136], [12.74093, -8.07032], [12.7407, -8.06981], [12.74068, -8.06957], [12.741, -8.06861], [12.74097, -8.06857], [12.74097, -8.06853], [12.74104, -8.06846], [12.74109, -8.06846], [12.7414, -8.06759], [12.74114, -8.067], [12.73962, -8.0658], [12.73804, -8.0652], [12.73472, -8.06456], [12.73235, -8.06373], [12.72911, -8.06355], [12.72888, -8.06353], [12.72785, -8.06332], [12.72566, -8.06256], [12.72493, -8.06205], [12.72415, -8.06097], [12.72268, -8.0592], [12.72104, -8.05786], [12.72032, -8.05829], [12.71962, -8.05832], [12.71814, -8.05792], [12.71642, -8.0572], [12.7147, -8.05604], [12.71298, -8.05499], [12.71116, -8.05425], [12.70951, -8.05378], [12.7082, -8.05371], [12.70575, -8.05432], [12.70426, -8.05416], [12.70084, -8.05302], [12.69942, -8.05193], [12.69728, -8.05075], [12.69529, -8.04982], [12.6931, -8.0493], [12.68998, -8.04899], [12.68917, -8.0489], [12.68818, -8.0485], [12.68681, -8.04696], [12.6857, -8.04598], [12.68457, -8.04563], [12.68341, -8.04575], [12.68218, -8.04617], [12.68111, -8.04591], [12.67902, -8.04296], [12.677, -8.04203], [12.67455, -8.041], [12.67202, -8.03999], [12.67097, -8.03985], [12.66964, -8.03979], [12.66717, -8.03875], [12.66433, -8.03744], [12.66283, -8.03693], [12.66113, -8.03533], [12.66009, -8.03383], [12.65918, -8.03231], [12.65792, -8.03074], [12.65741, -8.02946], [12.65607, -8.0277], [12.65489, -8.0263], [12.65332, -8.02693], [12.6506, -8.02798], [12.65024, -8.02795], [12.64965, -8.02695], [12.64756, -8.02216], [12.64753, -8.02217], [12.64747, -8.02213], [12.64309, -8.02102], [12.6421, -8.021], [12.64159, -8.02072], [12.64065, -8.02064], [12.63903, -8.02186], [12.63652, -8.02373], [12.62921, -8.03163], [12.62665, -8.03441], [12.62268, -8.03788], [12.61789, -8.04245], [12.61432, -8.04409], [12.61274, -8.04467], [12.61268, -8.04468], [12.60885, -8.04632], [12.60591, -8.04787], [12.60307, -8.0506], [12.59707, -8.0566], [12.59339, -8.06013], [12.58681, -8.06674], [12.57898, -8.07427], [12.57467, -8.07853], [12.57321, -8.08061], [12.56973, -8.08531], [12.56532, -8.09422], [12.56408, -8.09673], [12.56294, -8.09851], [12.56056, -8.10053], [12.55916, -8.10126], [12.55489, -8.10352], [12.55254, -8.10521], [12.55147, -8.10624], [12.5503, -8.10775], [12.54919, -8.10974], [12.54807, -8.11263], [12.5468, -8.11585], [12.54182, -8.12872], [12.54043, -8.13258], [12.53926, -8.13508], [12.53811, -8.13654], [12.53668, -8.13773], [12.53167, -8.14114], [12.52603, -8.14496], [12.51715, -8.152], [12.4987, -8.16702], [12.49475, -8.17024], [12.49263, -8.17139], [12.49028, -8.17194], [12.48424, -8.17236], [12.47955, -8.17175], [12.47664, -8.17158], [12.47378, -8.17205], [12.47083, -8.17324], [12.46279, -8.17858], [12.46159, -8.17985], [12.45859, -8.18412], [12.45734, -8.1857], [12.45507, -8.18793], [12.45115, -8.19257], [12.44714, -8.19675], [12.44205, -8.20159], [12.43785, -8.20523], [12.43637, -8.20689], [12.43055, -8.21352], [12.42497, -8.22032], [12.4221, -8.22378], [12.41983, -8.22627], [12.41448, -8.23015], [12.41143, -8.2326], [12.40894, -8.23526], [12.40498, -8.2387], [12.40213, -8.24132], [12.39913, -8.24538], [12.39685, -8.24886], [12.39459, -8.25172], [12.39243, -8.25458], [12.38993, -8.25909], [12.38775, -8.26317], [12.38572, -8.26693], [12.38461, -8.26962], [12.38218, -8.27691], [12.38144, -8.28529], [12.38061, -8.29446], [12.38007, -8.29985], [12.37974, -8.30577], [12.37913, -8.32443], [12.37878, -8.33237], [12.37814, -8.33766], [12.37681, -8.34588], [12.37541, -8.35246], [12.37435, -8.35639], [12.37303, -8.35951], [12.36888, -8.36619], [12.3651, -8.3719], [12.36291, -8.37373], [12.3582, -8.3769], [12.35684, -8.37797], [12.35522, -8.38009], [12.35444, -8.38188], [12.35268, -8.3876], [12.34942, -8.39785], [12.34693, -8.40591], [12.34616, -8.40813], [12.34584, -8.41094], [12.34481, -8.42254], [12.34289, -8.43347], [12.34151, -8.4416], [12.34076, -8.45052], [12.3398, -8.45293], [12.33872, -8.45433], [12.33226, -8.4614], [12.32842, -8.46734], [12.32692, -8.46929], [12.32467, -8.47153], [12.31947, -8.47507], [12.31737, -8.4766], [12.31616, -8.4781], [12.31557, -8.47924], [12.31419, -8.48383], [12.3136, -8.48543], [12.31195, -8.48815], [12.31012, -8.49011], [12.30773, -8.4918], [12.30439, -8.49357], [12.30271, -8.49501], [12.30138, -8.49689], [12.30067, -8.4986], [12.29886, -8.50912], [12.29798, -8.51415], [12.29721, -8.51633], [12.29611, -8.51835], [12.29336, -8.52246], [12.29048, -8.52674], [12.28899, -8.5283], [12.28761, -8.52924], [12.28511, -8.53015], [12.28178, -8.53104], [12.27978, -8.53178], [12.27842, -8.53266], [12.27463, -8.53589], [12.26708, -8.54257], [12.26622, -8.54381], [12.26546, -8.54547], [12.26488, -8.54855], [12.26376, -8.55721], [12.26267, -8.56035], [12.2612, -8.56273], [12.2581, -8.56603], [12.25451, -8.56961], [12.2526, -8.57184], [12.25123, -8.57429], [12.25063, -8.57602], [12.25022, -8.57808], [12.25011, -8.58006], [12.25086, -8.58606], [12.25161, -8.59242], [12.25134, -8.59509], [12.25052, -8.59774], [12.24948, -8.59974], [12.2466, -8.60405], [12.24045, -8.61322], [12.23606, -8.62011], [12.23096, -8.62876], [12.22821, -8.63396], [12.22582, -8.63857], [12.221, -8.64511], [12.21685, -8.65026], [12.21299, -8.65605], [12.21218, -8.65709], [12.21061, -8.65856], [12.20631, -8.66118], [12.20459, -8.66271], [12.20193, -8.66681], [12.1999, -8.6689], [12.19525, -8.67227], [12.19247, -8.67493], [12.18836, -8.67799], [12.18062, -8.68356], [12.17651, -8.68542], [12.17379, -8.68642], [12.17148, -8.68653], [12.16948, -8.68609], [12.1677, -8.68517], [12.16543, -8.68349], [12.16332, -8.68253], [12.16151, -8.68218], [12.1547, -8.68201], [12.15193, -8.68266], [12.14804, -8.68508], [12.14127, -8.68962], [12.12961, -8.6968], [12.12559, -8.70013], [12.11689, -8.70845], [12.11428, -8.71051], [12.11248, -8.71147], [12.1078, -8.71316], [12.10122, -8.71571], [12.09672, -8.71757], [12.09239, -8.72037], [12.08532, -8.7252], [12.07991, -8.72934], [12.07828, -8.73011], [12.07633, -8.73055], [12.07315, -8.73035], [12.06886, -8.72973], [12.06152, -8.72655], [12.05965, -8.72619], [12.05732, -8.72633], [12.05127, -8.72696], [12.04172, -8.73109], [12.03861, -8.73165], [12.03038, -8.7314], [12.0268, -8.73127], [12.02155, -8.73072], [12.01759, -8.73027], [12.01469, -8.73063], [12.01094, -8.73227], [11.99795, -8.73889], [11.98994, -8.74432], [11.9844, -8.74868], [11.97536, -8.75502], [11.97312, -8.75747], [11.97148, -8.7602], [11.97002, -8.76245], [11.96731, -8.76566], [11.96368, -8.77024], [11.9614, -8.7735], [11.95609, -8.77942], [11.951, -8.78501]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_814755e62652482ebef2cb374f20f1f8.bindTooltip(
+                `<div>
+                     Travel between <b>Kati</b> and <b>Guinea, Guinea</b> by car is <b>138 km</b> and takes <b>2 hours 33 mins</b>.</br></br><b>42,922</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_77ffd009551c417c98aa1fc5d0d7aa27 = L.polyline(
+                [[11.41788, -7.48336], [11.41902, -7.48167], [11.42027, -7.48066], [11.42215, -7.47936], [11.42347, -7.47844], [11.42357, -7.47782], [11.42309, -7.47523], [11.42264, -7.47264], [11.42226, -7.47043], [11.42112, -7.46685], [11.4169, -7.46035], [11.41326, -7.4548], [11.41075, -7.4513], [11.40863, -7.45019], [11.39847, -7.44961], [11.38897, -7.44901], [11.38681, -7.44814], [11.38257, -7.44533], [11.37692, -7.43806], [11.36963, -7.42866], [11.36843, -7.42677], [11.36807, -7.42543], [11.36747, -7.41434], [11.36566, -7.40507], [11.36512, -7.38043], [11.36569, -7.36793], [11.36464, -7.35706], [11.36325, -7.3462], [11.36091, -7.33701], [11.36091, -7.33461], [11.36543, -7.32332], [11.37151, -7.30308], [11.37585, -7.28851], [11.37691, -7.28436], [11.37665, -7.28253], [11.37346, -7.27485], [11.37336, -7.27315], [11.37379, -7.27183], [11.37847, -7.26198], [11.38266, -7.25312], [11.37651, -7.23949], [11.37026, -7.22342], [11.36884, -7.219], [11.36824, -7.21568], [11.36663, -7.20499], [11.3579, -7.18547], [11.35287, -7.17431], [11.34535, -7.16015], [11.34175, -7.15357], [11.34028, -7.1503], [11.33834, -7.14377], [11.33601, -7.13564], [11.33397, -7.12867], [11.33163, -7.12108], [11.33029, -7.11651], [11.32993, -7.11142], [11.32964, -7.10353], [11.32934, -7.0988], [11.3281, -7.09552], [11.32725, -7.0933], [11.3258, -7.08824], [11.3253, -7.08644], [11.32358, -7.08457], [11.32188, -7.08294], [11.31599, -7.07873], [11.31292, -7.07648], [11.30249, -7.0684], [11.29909, -7.0665], [11.29653, -7.06429], [11.29329, -7.06169], [11.28568, -7.05566], [11.2833, -7.05296], [11.27862, -7.04755], [11.27524, -7.04307], [11.27349, -7.04036], [11.27179, -7.03851], [11.26374, -7.03199], [11.26076, -7.02315], [11.25952, -7.02131], [11.25883, -7.01891], [11.25787, -7.0148], [11.25765, -7.01249], [11.25688, -7.00983], [11.25424, -7.00066], [11.25102, -6.9895], [11.25006, -6.98667], [11.2491, -6.98568], [11.24369, -6.98063], [11.23767, -6.97507], [11.23569, -6.97287], [11.23366, -6.96964], [11.23211, -6.96715], [11.231, -6.96567], [11.22955, -6.96394], [11.22697, -6.96168], [11.22357, -6.95825], [11.21768, -6.95314], [11.21281, -6.94888], [11.21107, -6.94608], [11.21034, -6.9451], [11.2065, -6.94418], [11.2032, -6.94279], [11.19975, -6.94072], [11.19861, -6.9394], [11.19756, -6.93728], [11.19563, -6.93312], [11.19424, -6.93161], [11.18869, -6.92691], [11.1829, -6.9223], [11.17709, -6.91783], [11.17242, -6.91452], [11.17051, -6.91381], [11.16715, -6.91334], [11.1631, -6.91341], [11.15228, -6.91367], [11.1505, -6.91368], [11.14355, -6.91389], [11.14258, -6.91351], [11.12842, -6.90586], [11.12591, -6.90462], [11.12012, -6.90263], [11.11072, -6.89908], [11.09663, -6.89562], [11.09336, -6.89487], [11.09218, -6.89428], [11.08962, -6.89169], [11.08628, -6.88738], [11.0791, -6.87658], [11.07732, -6.87274], [11.07494, -6.87028], [11.06983, -6.86242], [11.06875, -6.85979], [11.06641, -6.85765], [11.06284, -6.85339], [11.05952, -6.84916], [11.05584, -6.84641], [11.05469, -6.84521], [11.05348, -6.84246], [11.04728, -6.82793], [11.04547, -6.82404], [11.0419, -6.81888], [11.03457, -6.80832], [11.03092, -6.80235], [11.02789, -6.80035], [11.02514, -6.79868], [11.01935, -6.79588], [11.0153, -6.79404], [11.01142, -6.7912], [11.0046, -6.78666], [10.99982, -6.78357], [10.99613, -6.78068], [10.99348, -6.77812], [10.99134, -6.77653], [10.98556, -6.77408], [10.97575, -6.77079], [10.97439, -6.76984], [10.97263, -6.76762], [10.96659, -6.76006], [10.96523, -6.75929], [10.96512, -6.7588], [10.96445, -6.75736], [10.96268, -6.75533], [10.96006, -6.75357], [10.95872, -6.75304], [10.95617, -6.7529], [10.95548, -6.75241], [10.94938, -6.74789], [10.94679, -6.74781], [10.9464, -6.74748], [10.94367, -6.74238], [10.94113, -6.74], [10.93946, -6.73869], [10.93582, -6.73709], [10.93216, -6.73465], [10.92632, -6.73118], [10.92046, -6.72753], [10.9135, -6.72286], [10.91079, -6.72093], [10.9092, -6.71935], [10.90814, -6.71766], [10.90653, -6.71691], [10.89789, -6.71281], [10.89621, -6.71189], [10.8955, -6.71089], [10.89456, -6.70893], [10.89425, -6.70847], [10.89252, -6.70768], [10.89181, -6.70728], [10.88901, -6.70563], [10.88822, -6.70487], [10.8867, -6.70325], [10.88094, -6.69971], [10.8774, -6.69812], [10.87317, -6.69601], [10.87117, -6.69467], [10.87071, -6.69251], [10.86909, -6.69106], [10.8657, -6.68836], [10.86408, -6.68699], [10.86367, -6.68707], [10.8621, -6.68588], [10.85456, -6.68296], [10.85295, -6.68184], [10.85152, -6.68098], [10.85012, -6.68077], [10.84699, -6.67917], [10.84213, -6.67647], [10.83784, -6.67551], [10.83466, -6.67489], [10.83159, -6.67404], [10.82829, -6.67248], [10.82661, -6.67203], [10.82556, -6.67131], [10.82123, -6.66683], [10.81825, -6.6632], [10.81642, -6.66066], [10.81663, -6.6533], [10.81689, -6.64922], [10.81654, -6.64855], [10.81556, -6.64662], [10.81215, -6.64111], [10.81112, -6.63907], [10.80791, -6.63406], [10.80377, -6.62713], [10.8029, -6.62653], [10.8024, -6.62607], [10.80118, -6.62353], [10.79969, -6.6173], [10.79937, -6.60727], [10.79914, -6.60507], [10.79909, -6.60286], [10.79869, -6.60174], [10.79525, -6.59571], [10.79135, -6.58854], [10.78684, -6.58021], [10.78414, -6.57457], [10.78328, -6.57256], [10.78279, -6.56903], [10.7818, -6.56086], [10.78078, -6.55737], [10.77938, -6.55362], [10.77783, -6.54967], [10.77357, -6.54118], [10.76867, -6.53118], [10.76456, -6.52347], [10.7607, -6.51595], [10.7578, -6.51035], [10.75619, -6.5075], [10.75139, -6.50546], [10.74419, -6.50248], [10.73814, -6.50343], [10.73304, -6.50389], [10.72908, -6.50449], [10.72334, -6.50519], [10.72087, -6.50556], [10.71756, -6.50572], [10.70801, -6.50288], [10.70044, -6.50072], [10.69786, -6.50081], [10.69383, -6.50129], [10.69269, -6.50149], [10.68956, -6.50134], [10.68029, -6.50035], [10.67422, -6.49958], [10.67024, -6.49877], [10.66339, -6.49797], [10.65828, -6.4971], [10.65582, -6.49545], [10.65448, -6.49398], [10.65403, -6.49301], [10.6532, -6.49235], [10.65048, -6.48929], [10.65015, -6.48893], [10.64474, -6.48303], [10.6415, -6.47949], [10.63543, -6.4727], [10.63004, -6.46692], [10.61616, -6.46045], [10.60676, -6.45635], [10.60596, -6.45581], [10.60212, -6.45403], [10.59791, -6.45131], [10.59474, -6.44908], [10.59195, -6.44509], [10.58927, -6.4407], [10.58606, -6.43627], [10.58036, -6.42727], [10.57955, -6.42652], [10.57667, -6.42627], [10.56918, -6.4269], [10.56281, -6.42747]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_77ffd009551c417c98aa1fc5d0d7aa27.bindTooltip(
+                `<div>
+                     Travel between <b>Bougouni</b> and <b>Cote d’Ivoire, Cote d’Ivoire</b> by car is <b>170 km</b> and takes <b>2 hours 29 mins</b>.</br></br><b>35,450</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_93a45c193ec94711bcd7404f50da7a0f = L.polyline(
+                [[16.77326, -3.00739], [16.77022, -3.00821], [16.76087, -3.00512], [16.73174, -2.9892], [16.72527, -2.98567], [16.71931, -2.98487], [16.71239, -2.98612], [16.71063, -2.99106], [16.70775, -2.9937], [16.69925, -2.99456], [16.69232, -2.98952], [16.6847, -2.98963], [16.6798, -2.99166], [16.67543, -2.99991], [16.66879, -3.00742], [16.66617, -3.01312], [16.66717, -3.01548], [16.66841, -3.02022], [16.66644, -3.02327], [16.66269, -3.02414], [16.66187, -3.02515], [16.65923, -3.02465], [16.65579, -3.01589], [16.64672, -3.00565], [16.6414, -3.00431], [16.63476, -3.00576], [16.63272, -3.00636], [16.63216, -3.00253], [16.63099, -2.99794], [16.62926, -2.99416], [16.60978, -2.98663], [16.60266, -2.9794], [16.59804, -2.96876], [16.58531, -2.9462], [16.57796, -2.92785], [16.57093, -2.92097], [16.56017, -2.91661], [16.54318, -2.92312], [16.53001, -2.92345], [16.51887, -2.9202], [16.50066, -2.91406], [16.48927, -2.91061], [16.47267, -2.91064], [16.45663, -2.90234], [16.45056, -2.89844], [16.44085, -2.89708], [16.43171, -2.8956], [16.42069, -2.8954], [16.40628, -2.89861], [16.38883, -2.89766], [16.37137, -2.89325], [16.36141, -2.88973], [16.35207, -2.88985], [16.33666, -2.88763], [16.31102, -2.87907], [16.28673, -2.87414], [16.27484, -2.86948], [16.2606, -2.86724], [16.22303, -2.86348], [16.20874, -2.86398], [16.18283, -2.86038], [16.16943, -2.85969], [16.15544, -2.86225], [16.1483, -2.86392], [16.13853, -2.86231], [16.13112, -2.85937], [16.10648, -2.85093], [16.09535, -2.84144], [16.08496, -2.83561], [16.06164, -2.83751], [16.03947, -2.83347], [16.03268, -2.83203], [16.02732, -2.82979], [16.02449, -2.83032], [16.02061, -2.83035], [16.01472, -2.82644], [16.00525, -2.82309], [15.99603, -2.8208], [15.98353, -2.82051], [15.97405, -2.82072], [15.96336, -2.81781], [15.94265, -2.81416], [15.90077, -2.8052], [15.89274, -2.80465], [15.88058, -2.79991], [15.87215, -2.79664], [15.86479, -2.79188], [15.85376, -2.78349], [15.84538, -2.78136], [15.83498, -2.78323], [15.82534, -2.78199], [15.81135, -2.77921], [15.79438, -2.77375], [15.77541, -2.77038], [15.75695, -2.77149], [15.73361, -2.77892], [15.71164, -2.78198], [15.69325, -2.78278], [15.67439, -2.78371], [15.64914, -2.78247], [15.63986, -2.78231], [15.63209, -2.78555], [15.61412, -2.7877], [15.60452, -2.79069], [15.60023, -2.78883], [15.59173, -2.78956], [15.57317, -2.78904], [15.55916, -2.78997], [15.53056, -2.79505], [15.49941, -2.80365], [15.4728, -2.81162], [15.4395, -2.8141], [15.42249, -2.81993], [15.41049, -2.82224], [15.39093, -2.82426], [15.38652, -2.82463], [15.38296, -2.82844], [15.36715, -2.83293], [15.35398, -2.83438], [15.33351, -2.84311], [15.32343, -2.84496], [15.31089, -2.8519], [15.30156, -2.8581], [15.2976, -2.85815], [15.29207, -2.85923], [15.28177, -2.86635], [15.27268, -2.86761], [15.25812, -2.8709], [15.25231, -2.87046], [15.2447, -2.874], [15.23954, -2.87718], [15.22991, -2.87775], [15.2182, -2.88141], [15.20356, -2.88755], [15.18888, -2.89567], [15.18488, -2.89848], [15.17618, -2.90531], [15.16892, -2.91384], [15.16787, -2.91686], [15.16505, -2.92408], [15.15698, -2.93573], [15.14561, -2.94876], [15.13773, -2.94394], [15.12149, -2.93914], [15.10048, -2.93575], [15.08751, -2.93455], [15.07711, -2.93675], [15.07377, -2.93788], [15.06957, -2.93785], [15.06011, -2.94304], [15.0386, -2.94622], [15.00616, -2.95108], [15.00012, -2.95145], [14.99817, -2.95059], [14.99276, -2.945], [14.96602, -2.91455], [14.95221, -2.89844], [14.94033, -2.88971], [14.9274, -2.88045], [14.91663, -2.87683], [14.89521, -2.86865], [14.87485, -2.8679], [14.86788, -2.87344], [14.86151, -2.88274], [14.85564, -2.88951], [14.84471, -2.8961], [14.83382, -2.90425], [14.82835, -2.90912], [14.82048, -2.91116], [14.80456, -2.91671], [14.79675, -2.9217], [14.7919, -2.92612], [14.77903, -2.93732], [14.76232, -2.95135], [14.75192, -2.96039], [14.74329, -2.96072], [14.72847, -2.96199], [14.70795, -2.97134], [14.67987, -2.98676], [14.65916, -2.99935], [14.64436, -3.00405], [14.63925, -3.00547], [14.63126, -3.01043], [14.62339, -3.01405], [14.61315, -3.01558], [14.59276, -3.01929], [14.57532, -3.02248], [14.55994, -3.02546], [14.54588, -3.03154], [14.52709, -3.04087], [14.52001, -3.04738], [14.49506, -3.05838], [14.47202, -3.06368], [14.46438, -3.06215], [14.45183, -3.06338], [14.42906, -3.0707], [14.41872, -3.07385], [14.41368, -3.07761], [14.4036, -3.08093], [14.40163, -3.08185], [14.39903, -3.08349], [14.38113, -3.08862], [14.36727, -3.09075], [14.35329, -3.09331], [14.34022, -3.09599], [14.32728, -3.09666], [14.31506, -3.09834], [14.30269, -3.0993], [14.29283, -3.09952], [14.27578, -3.10404], [14.2658, -3.10776], [14.24908, -3.11093], [14.2428, -3.11153], [14.23963, -3.11378], [14.23452, -3.11613], [14.22494, -3.12056], [14.21913, -3.12059], [14.21363, -3.11986], [14.20369, -3.11501], [14.18988, -3.11235], [14.17835, -3.10926], [14.17211, -3.11145], [14.1533, -3.11947], [14.14539, -3.1226], [14.13963, -3.12292], [14.1305, -3.1222], [14.12068, -3.11648], [14.11151, -3.10949], [14.07588, -3.0863], [14.05136, -3.07349], [14.03047, -3.06414], [14.01735, -3.05627], [14.00764, -3.04759], [13.98952, -3.04025], [13.97571, -3.03093], [13.97016, -3.02642], [13.96703, -3.01909], [13.96041, -3.00394], [13.94851, -2.99167], [13.94327, -2.98586], [13.94138, -2.97978], [13.93644, -2.96102], [13.93132, -2.94015], [13.92772, -2.91079], [13.91997, -2.89431], [13.91922, -2.88285], [13.91099, -2.86574]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_93a45c193ec94711bcd7404f50da7a0f.bindTooltip(
+                `<div>
+                     Travel between <b>Timbuktu</b> and <b>Burkina Faso, Burkina Faso</b> by car is <b>367 km</b> and takes <b>7 hours 31 mins</b>.</br></br><b>32,460</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_acc6fae7cea848dbba6c6fdbe3a570d9 = L.polyline(
+                [[13.54764, -7.44799], [13.5444, -7.44652], [13.53854, -7.44875], [13.51791, -7.45556], [13.50085, -7.46394], [13.48997, -7.46996], [13.47636, -7.48193], [13.45625, -7.50087], [13.4431, -7.50786], [13.41988, -7.51318], [13.4027, -7.5165], [13.39325, -7.51807], [13.38414, -7.52385], [13.37052, -7.53267], [13.35883, -7.54019], [13.32534, -7.55434], [13.30773, -7.55806], [13.29474, -7.56505], [13.26892, -7.58084], [13.24236, -7.59477], [13.21002, -7.60045], [13.20034, -7.60414], [13.18323, -7.60354], [13.16426, -7.59939], [13.14391, -7.60066], [13.12862, -7.60224], [13.11744, -7.60545], [13.10436, -7.61087], [13.08492, -7.61096], [13.0476, -7.60744], [13.03246, -7.61146], [13.02245, -7.60944], [12.98821, -7.61059], [12.9732, -7.60751], [12.96091, -7.60288], [12.95265, -7.59621], [12.93706, -7.59119], [12.91666, -7.5749], [12.91265, -7.56263], [12.91141, -7.55127], [12.90905, -7.54424], [12.90535, -7.54076], [12.88714, -7.54221], [12.87543, -7.54958], [12.8577, -7.56096], [12.8442, -7.58322], [12.83829, -7.59526], [12.83007, -7.60823], [12.82691, -7.61871], [12.82031, -7.64556], [12.81174, -7.65716], [12.80324, -7.66436], [12.79011, -7.68193], [12.77808, -7.69518], [12.76021, -7.70923], [12.75105, -7.72482], [12.73259, -7.75389], [12.71224, -7.7647], [12.70129, -7.77449], [12.67934, -7.8055], [12.69188, -7.84461], [12.69294, -7.85628], [12.68918, -7.86744], [12.68307, -7.87493], [12.67554, -7.88817], [12.66918, -7.90047], [12.66939, -7.91286], [12.66942, -7.92437], [12.66642, -7.93126], [12.65636, -7.93182], [12.65377, -7.93199], [12.64683, -7.92808], [12.63158, -7.92215], [12.61649, -7.91921], [12.6105, -7.91681], [12.60781, -7.92219], [12.59939, -7.93516], [12.58484, -7.94359], [12.56711, -7.9398], [12.56465, -7.93323], [12.55916, -7.91602], [12.55356, -7.91324], [12.54909, -7.9151], [12.53562, -7.9324], [12.52195, -7.9311], [12.48457, -7.93684], [12.44575, -7.93855], [12.42131, -7.93552], [12.39709, -7.9379], [12.31917, -7.9286], [12.28552, -7.92358], [12.26988, -7.92515], [12.26277, -7.92703], [12.25599, -7.92557], [12.23876, -7.91974], [12.2205, -7.91348], [12.1896, -7.90258], [12.16481, -7.89375], [12.12384, -7.89368], [12.0623, -7.90449], [12.03297, -7.91055], [11.9992, -7.91148], [11.9733, -7.90209], [11.94592, -7.88324], [11.92708, -7.86756], [11.91357, -7.86099], [11.89219, -7.83867], [11.8769, -7.83023], [11.8647, -7.82647], [11.84119, -7.80416], [11.83041, -7.792], [11.8191, -7.78459], [11.80337, -7.77556], [11.78878, -7.76194], [11.775, -7.74765], [11.76554, -7.73025], [11.75244, -7.7204], [11.72416, -7.707], [11.70909, -7.69255], [11.70169, -7.67777], [11.69626, -7.66402], [11.68472, -7.64562], [11.67948, -7.62965], [11.67233, -7.61816], [11.66781, -7.60296], [11.66523, -7.59725], [11.65921, -7.59389], [11.6459, -7.58663], [11.63126, -7.58216], [11.59919, -7.5685], [11.56854, -7.55645], [11.543, -7.54848], [11.53417, -7.54314], [11.52105, -7.53984], [11.49601, -7.52903], [11.4852, -7.51998], [11.47506, -7.51452], [11.46329, -7.51066], [11.45483, -7.51063], [11.44855, -7.50512], [11.43583, -7.50086], [11.42616, -7.49253], [11.42294, -7.47441], [11.41998, -7.46505], [11.4113, -7.45189], [11.39493, -7.44944], [11.38767, -7.44856], [11.38095, -7.44326], [11.36861, -7.42717], [11.36711, -7.41208], [11.3656, -7.36506], [11.36186, -7.34069], [11.36161, -7.33272], [11.36618, -7.32108], [11.37689, -7.28466], [11.37332, -7.27357], [11.38017, -7.25839], [11.3823, -7.25388], [11.38078, -7.24921], [11.37787, -7.24288], [11.37257, -7.22971], [11.36791, -7.21299], [11.36422, -7.19966], [11.35399, -7.17661], [11.34028, -7.1503], [11.33029, -7.11651], [11.3253, -7.08644], [11.30438, -7.06975], [11.28407, -7.05383], [11.2771, -7.04568], [11.26789, -7.03537], [11.25926, -7.02063], [11.25288, -6.99598], [11.24981, -6.98637], [11.23891, -6.97626], [11.23003, -6.96431], [11.21391, -6.94981], [11.20379, -6.94312], [11.19809, -6.93837], [11.19493, -6.93217], [11.18067, -6.92054], [11.16803, -6.91331], [11.15193, -6.91372], [11.13867, -6.91149], [11.10254, -6.89705], [11.09025, -6.8923], [11.07859, -6.87557], [11.06711, -6.85854], [11.05478, -6.84544], [11.04581, -6.82454], [11.03128, -6.80277], [11.0155, -6.79421], [10.99399, -6.77857], [10.98334, -6.77329], [10.97471, -6.77022], [10.97006, -6.76437], [10.96491, -6.75813], [10.95647, -6.75293], [10.94717, -6.74779], [10.94305, -6.74168], [10.92997, -6.73345], [10.89633, -6.712], [10.88863, -6.70533], [10.87125, -6.69474], [10.86378, -6.68707], [10.84103, -6.67613], [10.82727, -6.67221], [10.81659, -6.66094], [10.81568, -6.64715], [10.81204, -6.6405], [10.80172, -6.62493], [10.79918, -6.60597], [10.78335, -6.57283], [10.77646, -6.54689], [10.75887, -6.51237], [10.75453, -6.50677], [10.74703, -6.50365], [10.73664, -6.50353], [10.72234, -6.50538], [10.69339, -6.50137], [10.66822, -6.49851], [10.65789, -6.497], [10.65117, -6.49013], [10.63461, -6.47185], [10.61801, -6.46137], [10.60738, -6.45657], [10.60288, -6.45439], [10.58963, -6.44162], [10.58067, -6.4279], [10.574, -6.4265], [10.56281, -6.42747]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_acc6fae7cea848dbba6c6fdbe3a570d9.bindTooltip(
+                `<div>
+                     Travel between <b>Banamba</b> and <b>Cote d’Ivoire, Cote d’Ivoire</b> by car is <b>469 km</b> and takes <b>7 hours 23 mins</b>.</br></br><b>30,591</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_87bcaee894ac45ae9128c80977f12a4e = L.polyline(
+                [[13.8063, -10.83133], [13.80677, -10.83035], [13.80448, -10.83011], [13.80153, -10.82981], [13.7987, -10.82962], [13.79488, -10.83111], [13.78904, -10.83524], [13.78394, -10.83916], [13.7777, -10.84232], [13.7709, -10.84488], [13.76431, -10.84642], [13.75208, -10.84903], [13.74825, -10.85112], [13.74348, -10.85466], [13.74133, -10.85644], [13.7394, -10.85872], [13.73474, -10.86547], [13.73251, -10.86896], [13.72973, -10.87207], [13.72688, -10.87422], [13.72039, -10.87886], [13.71373, -10.87942], [13.70432, -10.87932], [13.70131, -10.8791], [13.69773, -10.87966], [13.6944, -10.882], [13.69243, -10.88402], [13.69011, -10.88407], [13.68715, -10.88263], [13.6844, -10.88032], [13.68239, -10.88034], [13.67649, -10.88129], [13.67038, -10.88281], [13.6604, -10.88518], [13.6546, -10.88468], [13.64658, -10.88547], [13.64312, -10.88543], [13.63922, -10.88458], [13.63104, -10.8852], [13.62721, -10.88585], [13.62348, -10.88713], [13.61947, -10.88912], [13.61668, -10.88848], [13.61457, -10.88939], [13.61316, -10.89024], [13.61233, -10.89214], [13.61118, -10.89517], [13.61037, -10.89856], [13.60898, -10.90085], [13.60704, -10.90202], [13.6036, -10.904], [13.60105, -10.90541], [13.59953, -10.90738], [13.5962, -10.91452], [13.59202, -10.92476], [13.58638, -10.94296], [13.58208, -10.94946], [13.5798, -10.95382], [13.57784, -10.95684], [13.57663, -10.96134], [13.56682, -10.978], [13.56599, -10.98016], [13.56435, -10.98151], [13.5611, -10.98553], [13.55741, -10.98776], [13.55613, -10.98957], [13.55397, -10.99292], [13.55212, -10.99447], [13.54964, -10.99744], [13.54776, -10.99911], [13.54704, -10.99885], [13.544, -10.99919], [13.53922, -10.99995], [13.53388, -11.00102], [13.52548, -11.00286], [13.52074, -11.00379], [13.51533, -11.00662], [13.51258, -11.01003], [13.50977, -11.01222], [13.50805, -11.01294], [13.50529, -11.01411], [13.50283, -11.01585], [13.50045, -11.01853], [13.49712, -11.02217], [13.49351, -11.02528], [13.49019, -11.02797], [13.48608, -11.02961], [13.47636, -11.03271], [13.47101, -11.03471], [13.46636, -11.03677], [13.46226, -11.03957], [13.46079, -11.04105], [13.45865, -11.04424], [13.45682, -11.04594], [13.4545, -11.04737], [13.44937, -11.04743], [13.44377, -11.04543], [13.43816, -11.04402], [13.42326, -11.04066], [13.41484, -11.0396], [13.41031, -11.03898], [13.40824, -11.03752], [13.40692, -11.03617], [13.40527, -11.03612], [13.40123, -11.03641], [13.39645, -11.03671], [13.39012, -11.0373], [13.37934, -11.03437], [13.37638, -11.03313], [13.37262, -11.03534], [13.3714, -11.03637], [13.37061, -11.04023], [13.36804, -11.04385], [13.36098, -11.04779], [13.35677, -11.04882], [13.35537, -11.04886], [13.35075, -11.05278], [13.34901, -11.05297], [13.3474, -11.05527], [13.34608, -11.05766], [13.34456, -11.05971], [13.34005, -11.06487], [13.33465, -11.069], [13.33159, -11.07166], [13.33007, -11.07234], [13.32694, -11.07442], [13.32359, -11.07423], [13.3218, -11.07535], [13.32065, -11.07607], [13.32033, -11.07758], [13.3191, -11.07932], [13.31668, -11.0782], [13.31428, -11.0797], [13.31146, -11.08217], [13.30963, -11.0823], [13.30791, -11.08185], [13.30399, -11.08174], [13.30082, -11.08297], [13.29996, -11.0842], [13.29885, -11.08871], [13.29743, -11.09264], [13.29526, -11.09876], [13.29447, -11.10253], [13.29438, -11.10406], [13.29336, -11.10544], [13.29115, -11.10892], [13.29003, -11.11027], [13.28958, -11.11177], [13.28826, -11.11275], [13.28764, -11.11524], [13.28686, -11.1163], [13.28382, -11.11766], [13.28258, -11.11842], [13.28191, -11.12006], [13.28088, -11.12286], [13.27917, -11.1274], [13.27752, -11.13026], [13.27529, -11.13131], [13.27177, -11.13312], [13.26626, -11.13682], [13.26095, -11.14124], [13.25746, -11.14491], [13.25544, -11.1477], [13.25348, -11.15046], [13.25036, -11.15201], [13.2469, -11.15439], [13.24369, -11.15549], [13.23964, -11.15722], [13.2372, -11.15918], [13.23353, -11.16347], [13.2303, -11.16792], [13.22879, -11.1692], [13.22717, -11.16982], [13.22496, -11.17108], [13.22054, -11.17173], [13.21876, -11.17221], [13.21679, -11.17376], [13.21456, -11.17502], [13.21343, -11.17577], [13.21393, -11.17757], [13.21431, -11.18087], [13.21416, -11.18394], [13.2139, -11.18565], [13.21458, -11.18623], [13.21784, -11.18866], [13.21901, -11.19123], [13.22208, -11.19244], [13.22337, -11.19278], [13.22408, -11.19413], [13.2254, -11.19541], [13.22549, -11.19723], [13.22427, -11.19962], [13.22342, -11.20404], [13.22384, -11.20699], [13.2231, -11.20885], [13.22377, -11.21315], [13.22153, -11.22003], [13.2205, -11.22308], [13.21867, -11.226], [13.21604, -11.22916], [13.21144, -11.23276], [13.2055, -11.237], [13.20123, -11.23983], [13.1944, -11.24289], [13.18962, -11.24415], [13.1863, -11.24342], [13.1829, -11.24229], [13.17653, -11.23888], [13.16787, -11.23383], [13.16486, -11.23041], [13.15415, -11.22436], [13.14863, -11.22248], [13.13725, -11.22195], [13.11566, -11.22112], [13.10506, -11.22076], [13.10103, -11.21783], [13.09346, -11.21213], [13.0906, -11.20998], [13.0868, -11.21003], [13.08107, -11.20775], [13.07846, -11.20617], [13.0776, -11.20486], [13.07294, -11.201], [13.06804, -11.19775], [13.06183, -11.19495], [13.05186, -11.18884], [13.04405, -11.18179], [13.03806, -11.17622], [13.03085, -11.17059], [13.02596, -11.1683], [13.02232, -11.16687], [13.02073, -11.16593], [13.01568, -11.16502], [13.00932, -11.16078], [13.00306, -11.1597], [13.00032, -11.15668], [12.99863, -11.15658], [12.99562, -11.15769], [12.99345, -11.16024], [12.98748, -11.16492], [12.98476, -11.16571], [12.98399, -11.16732], [12.98185, -11.1705], [12.97982, -11.17054], [12.97788, -11.17097], [12.97621, -11.17278], [12.97049, -11.17645], [12.96466, -11.17768], [12.96167, -11.17837], [12.96032, -11.18158], [12.95941, -11.18367], [12.95838, -11.184], [12.95594, -11.18562], [12.95544, -11.18924], [12.95351, -11.19368], [12.95085, -11.19888], [12.94693, -11.20046], [12.94125, -11.20165], [12.93747, -11.2038], [12.93594, -11.20363], [12.93441, -11.20223], [12.93119, -11.20079], [12.92905, -11.19822], [12.92812, -11.19729], [12.92736, -11.19725], [12.92584, -11.1985], [12.92324, -11.20003], [12.91979, -11.20275], [12.91685, -11.205], [12.9127, -11.2117], [12.90936, -11.21841], [12.90574, -11.22747], [12.89874, -11.23503], [12.89694, -11.23814], [12.89629, -11.24301], [12.89572, -11.24846], [12.89278, -11.25036], [12.89096, -11.25115], [12.89055, -11.25214], [12.89367, -11.26222], [12.89844, -11.28117], [12.90327, -11.29798], [12.90634, -11.30952], [12.90724, -11.3142], [12.9092, -11.31795], [12.91197, -11.32139], [12.91308, -11.32498], [12.91524, -11.32756], [12.91715, -11.33163], [12.91761, -11.33696], [12.9175, -11.3413], [12.91962, -11.34653], [12.92037, -11.35112], [12.92284, -11.35755], [12.92528, -11.36028], [12.92839, -11.36319], [12.92857, -11.36733], [12.92691, -11.37568], [12.92636, -11.37912], [12.92734, -11.37992], [12.93004, -11.37995]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_87bcaee894ac45ae9128c80977f12a4e.bindTooltip(
+                `<div>
+                     Travel between <b>Bafoulabé</b> and <b>Senegal, Senegal</b> by car is <b>154 km</b> and takes <b>4 hours 11 mins</b>.</br></br><b>26,823</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b5911ab950334b6d83097e4d0f7e5123 = L.polyline(
+                [[13.30337, -4.89554], [13.30201, -4.89513], [13.30095, -4.89482], [13.29736, -4.89413], [13.29393, -4.89344], [13.29278, -4.89316], [13.29083, -4.89276], [13.28881, -4.89237], [13.27927, -4.89037], [13.27471, -4.88941], [13.26791, -4.888], [13.25132, -4.88585], [13.238, -4.88413], [13.23568, -4.88386], [13.23516, -4.88379], [13.2347, -4.88371], [13.23467, -4.88371], [13.23463, -4.8837], [13.23458, -4.88364], [13.23459, -4.88355], [13.23465, -4.8835], [13.23457, -4.88338], [13.23425, -4.88293], [13.23411, -4.88264], [13.23404, -4.88234], [13.23401, -4.88207], [13.23393, -4.88082], [13.23379, -4.87894], [13.23335, -4.87296], [13.23321, -4.87104], [13.23308, -4.86905], [13.23309, -4.86855], [13.23316, -4.86799], [13.23358, -4.8654], [13.23414, -4.86214], [13.23465, -4.8593], [13.23557, -4.85439], [13.23609, -4.8516], [13.2365, -4.8494], [13.23656, -4.84887], [13.23704, -4.84609], [13.23721, -4.84486], [13.23723, -4.84449], [13.23723, -4.84386], [13.2371, -4.84206], [13.23681, -4.83867], [13.23642, -4.83575], [13.23583, -4.83147], [13.23535, -4.82805], [13.23507, -4.82559], [13.23506, -4.82478], [13.23512, -4.82362], [13.23529, -4.82071], [13.2355, -4.81687], [13.23562, -4.8154], [13.23578, -4.81367], [13.23604, -4.81122], [13.2362, -4.80963], [13.23635, -4.80855], [13.23645, -4.80809], [13.2367, -4.80739], [13.23728, -4.8057], [13.23822, -4.80287], [13.23897, -4.80048], [13.23928, -4.79929], [13.23942, -4.79838], [13.23974, -4.79576], [13.23998, -4.79129], [13.24057, -4.7808], [13.24069, -4.77883], [13.2408, -4.77834], [13.241, -4.77765], [13.24124, -4.77706], [13.24174, -4.77618], [13.24281, -4.7744], [13.24317, -4.77369], [13.24352, -4.77278], [13.24373, -4.77205], [13.24393, -4.77115], [13.24478, -4.76736], [13.2454, -4.76456], [13.24557, -4.76377], [13.24568, -4.76282], [13.24576, -4.75991], [13.24582, -4.75639], [13.24585, -4.75554], [13.2459, -4.75514], [13.24603, -4.75452], [13.24632, -4.75363], [13.24741, -4.75057], [13.24787, -4.74915], [13.24798, -4.74859], [13.24804, -4.74796], [13.24801, -4.74702], [13.24731, -4.74008], [13.24691, -4.73612], [13.24659, -4.73318], [13.24629, -4.73021], [13.24613, -4.7293], [13.24598, -4.72879], [13.2453, -4.72706], [13.24456, -4.72514], [13.24429, -4.72419], [13.2442, -4.72371], [13.24416, -4.72323], [13.24408, -4.72137], [13.24394, -4.71834], [13.24377, -4.71592], [13.24377, -4.71481], [13.24386, -4.71204], [13.24388, -4.71011], [13.24378, -4.7092], [13.24365, -4.70843], [13.24343, -4.70745], [13.24285, -4.70472], [13.24265, -4.70361], [13.24257, -4.70276], [13.24256, -4.70213], [13.24263, -4.70154], [13.24283, -4.70056], [13.24304, -4.69991], [13.24323, -4.69944], [13.24373, -4.69849], [13.24423, -4.6978], [13.24471, -4.69724], [13.24528, -4.69671], [13.24594, -4.69623], [13.24739, -4.69544], [13.24847, -4.69488], [13.25013, -4.69402], [13.25082, -4.69359], [13.25393, -4.69082], [13.25479, -4.69005], [13.25566, -4.68942], [13.2577, -4.68817], [13.25863, -4.68744], [13.25918, -4.68691], [13.26049, -4.68552], [13.26126, -4.68475], [13.26172, -4.68441], [13.26314, -4.68343], [13.26711, -4.68066], [13.26901, -4.67926], [13.27086, -4.67783], [13.27258, -4.67624], [13.27278, -4.67597], [13.27294, -4.67578], [13.27287, -4.67565], [13.27272, -4.67537], [13.27259, -4.67515], [13.27245, -4.67471], [13.27247, -4.67417], [13.27266, -4.67373], [13.27292, -4.67344], [13.27321, -4.67328], [13.27535, -4.67236], [13.2759, -4.67214], [13.2762, -4.67194], [13.27646, -4.67176], [13.27695, -4.67128], [13.27847, -4.66972], [13.27893, -4.66912], [13.2792, -4.66864], [13.27934, -4.66836], [13.27952, -4.66768], [13.27993, -4.66598], [13.28046, -4.66387], [13.28075, -4.66257], [13.28132, -4.66027], [13.28178, -4.65837], [13.28203, -4.65714], [13.2821, -4.65671], [13.28235, -4.65258], [13.28243, -4.65154], [13.28252, -4.65023], [13.28256, -4.64889], [13.28253, -4.6482], [13.28247, -4.64736], [13.28229, -4.64658], [13.28107, -4.64286], [13.27979, -4.63771], [13.27968, -4.6372], [13.27958, -4.63659], [13.27956, -4.63591], [13.27963, -4.63528], [13.28022, -4.63264], [13.2806, -4.63133], [13.28083, -4.63074], [13.28111, -4.63015], [13.28147, -4.62958], [13.28195, -4.62884], [13.28248, -4.62797], [13.28347, -4.62647], [13.2845, -4.62475], [13.28492, -4.62394], [13.28552, -4.62263], [13.28578, -4.62188], [13.28598, -4.62103], [13.28616, -4.62018], [13.28656, -4.61837], [13.28747, -4.61399], [13.28807, -4.61105], [13.2882, -4.6095], [13.28822, -4.60836], [13.28809, -4.60689], [13.28776, -4.6042], [13.28759, -4.60262], [13.28758, -4.60185], [13.28761, -4.60141], [13.28808, -4.59817], [13.28823, -4.59674], [13.28835, -4.59511], [13.28852, -4.59227], [13.28852, -4.59217], [13.28849, -4.59217], [13.28844, -4.59215], [13.2884, -4.59212], [13.28836, -4.59203], [13.28837, -4.59193], [13.28844, -4.59185], [13.28846, -4.59184], [13.28834, -4.59157], [13.28778, -4.59023], [13.28737, -4.58926], [13.28691, -4.58833], [13.28631, -4.58695], [13.28588, -4.58596], [13.28546, -4.585], [13.28335, -4.58046], [13.28198, -4.57739], [13.27958, -4.57199], [13.27806, -4.56859], [13.27659, -4.56533], [13.2729, -4.55701], [13.27083, -4.55242], [13.26998, -4.55047], [13.26952, -4.5495], [13.26833, -4.54686], [13.26719, -4.54431], [13.26587, -4.54136], [13.26531, -4.54009], [13.26431, -4.5379], [13.26358, -4.53624], [13.26312, -4.53532], [13.26204, -4.53319], [13.2608, -4.53082], [13.25974, -4.52874], [13.2587, -4.52671], [13.25835, -4.526], [13.25696, -4.52336], [13.2555, -4.52053], [13.25358, -4.51678], [13.25214, -4.51403], [13.25089, -4.51184], [13.2492, -4.50871], [13.2478, -4.50624], [13.24668, -4.50389], [13.24536, -4.50111], [13.2441, -4.49861], [13.2427, -4.4959], [13.24212, -4.49203], [13.24158, -4.48717], [13.24145, -4.48594], [13.24137, -4.48268], [13.24122, -4.48114], [13.24103, -4.47907], [13.24103, -4.4765], [13.2407, -4.47229], [13.2407, -4.47118], [13.2407, -4.47066], [13.24036, -4.46912], [13.23786, -4.46732], [13.2285, -4.46062], [13.21945, -4.45418], [13.21129, -4.44843], [13.20143, -4.44157], [13.19561, -4.4373], [13.18977, -4.43306], [13.18768, -4.43156], [13.18593, -4.43026], [13.18181, -4.42697], [13.17903, -4.42474], [13.17834, -4.42424], [13.17253, -4.41996], [13.16699, -4.41587], [13.1628, -4.413], [13.16014, -4.41118], [13.15588, -4.40802], [13.15436, -4.40687], [13.15103, -4.40423], [13.14919, -4.40294], [13.14863, -4.40248], [13.14752, -4.40157], [13.14476, -4.39908], [13.14017, -4.39402], [13.13733, -4.39015], [13.13519, -4.38747], [13.1339, -4.38586], [13.13185, -4.38414], [13.13156, -4.38389], [13.12938, -4.38252], [13.12788, -4.38054], [13.12579, -4.37719], [13.12396, -4.3744], [13.12365, -4.37367], [13.12344, -4.37335], [13.12303, -4.37291], [13.12253, -4.37222], [13.12108, -4.37059], [13.11894, -4.36861], [13.1185, -4.36703], [13.11816, -4.36607], [13.11757, -4.36434], [13.11684, -4.36232], [13.11544, -4.35822], [13.11256, -4.35003], [13.11167, -4.34742]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_b5911ab950334b6d83097e4d0f7e5123.bindTooltip(
+                `<div>
+                     Travel between <b>San</b> and <b>Burkina Faso, Burkina Faso</b> by car is <b>76.5 km</b> and takes <b>1 hour 9 mins</b>.</br></br><b>24,811</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_89cab9307c7b4269b7bc2e0c6caed673 = L.polyline(
+                [[12.86274, -7.55986], [12.86218, -7.55957], [12.86213, -7.55943], [12.86153, -7.55921], [12.85992, -7.56033], [12.85988, -7.56032], [12.85982, -7.56035], [12.85981, -7.56038], [12.85924, -7.55989], [12.85547, -7.56291], [12.85453, -7.56377], [12.8537, -7.56651], [12.85027, -7.57276], [12.84367, -7.58424], [12.8371, -7.5974], [12.82889, -7.61011], [12.82755, -7.61395], [12.82629, -7.62359], [12.82523, -7.63222], [12.82306, -7.63861], [12.82083, -7.64442], [12.81946, -7.64709], [12.81521, -7.65295], [12.81251, -7.65636], [12.81015, -7.65853], [12.80848, -7.65989], [12.80324, -7.66436], [12.79927, -7.66858], [12.79276, -7.67781], [12.78817, -7.68501], [12.78496, -7.6893], [12.78193, -7.69212], [12.77651, -7.69644], [12.75904, -7.71026], [12.75707, -7.71249], [12.75525, -7.71547], [12.74995, -7.72734], [12.74828, -7.73106], [12.74577, -7.73514], [12.73899, -7.74584], [12.73497, -7.75207], [12.73172, -7.75441], [12.70985, -7.76599], [12.70693, -7.7678], [12.70512, -7.76952], [12.69963, -7.77665], [12.68624, -7.79412], [12.68022, -7.80217], [12.67947, -7.80439], [12.67936, -7.80657], [12.68062, -7.81103], [12.68466, -7.82247], [12.69037, -7.83914], [12.69277, -7.84781], [12.69357, -7.85093], [12.69367, -7.85313], [12.69224, -7.85878], [12.69056, -7.86503], [12.68989, -7.86658], [12.68867, -7.86789], [12.68639, -7.86956], [12.6851, -7.87105], [12.68334, -7.87433], [12.68282, -7.87607], [12.68224, -7.87931], [12.6808, -7.88157], [12.67377, -7.89038], [12.67187, -7.89364], [12.67009, -7.8973], [12.66936, -7.89962], [12.66904, -7.90239], [12.66884, -7.90848], [12.66963, -7.91483], [12.6703, -7.92118], [12.66984, -7.92339], [12.66868, -7.92603], [12.66697, -7.9298], [12.66594, -7.93311], [12.66459, -7.93987], [12.66325, -7.94836], [12.66213, -7.95391], [12.65957, -7.96145], [12.65711, -7.96903], [12.65453, -7.97743], [12.65257, -7.98519], [12.65168, -7.99025], [12.65062, -7.99447], [12.65026, -7.99708], [12.64931, -8.00044], [12.64628, -8.00173], [12.64664, -8.00297], [12.647, -8.00401], [12.64652, -8.00419], [12.64635, -8.00503], [12.64579, -8.00723], [12.64535, -8.0094], [12.64526, -8.00948], [12.64521, -8.00947], [12.64455, -8.00906], [12.64057, -8.00676], [12.63714, -8.00489], [12.63336, -8.00869], [12.63191, -8.01133], [12.62901, -8.0138], [12.62838, -8.01478], [12.6264, -8.01795], [12.62045, -8.02844], [12.61673, -8.03664], [12.61283, -8.04411], [12.61274, -8.04467], [12.60933, -8.04612], [12.60607, -8.04774], [12.60307, -8.0506], [12.59708, -8.0566], [12.57927, -8.07398], [12.57547, -8.07771], [12.57326, -8.08054], [12.5699, -8.085], [12.56543, -8.09401], [12.56324, -8.09815], [12.56073, -8.10043], [12.55958, -8.10104], [12.55518, -8.10334], [12.5529, -8.1049], [12.55052, -8.10741], [12.54817, -8.11237], [12.54685, -8.11571], [12.54198, -8.12828], [12.54054, -8.1323], [12.53935, -8.13494], [12.53729, -8.13726], [12.52648, -8.14466], [12.51784, -8.15143], [12.49937, -8.16647], [12.49478, -8.17021], [12.493, -8.17124], [12.49081, -8.17187], [12.48466, -8.17238], [12.47705, -8.17157], [12.47423, -8.17193], [12.47117, -8.17307], [12.46302, -8.17839], [12.4617, -8.17972], [12.45866, -8.18403], [12.45529, -8.1877], [12.45154, -8.1921], [12.44281, -8.20094], [12.43651, -8.20672], [12.42501, -8.22027], [12.42012, -8.226], [12.41178, -8.23223], [12.40571, -8.2381], [12.40229, -8.24114], [12.39973, -8.24454], [12.39494, -8.2513], [12.39244, -8.25457], [12.39036, -8.25827], [12.38777, -8.26312], [12.38473, -8.26928], [12.38225, -8.2766], [12.38146, -8.28505], [12.38065, -8.29412], [12.37974, -8.30574], [12.37916, -8.32381], [12.37881, -8.33179], [12.37822, -8.33718], [12.3755, -8.3521], [12.37446, -8.35609], [12.37314, -8.35929], [12.36903, -8.36596], [12.36533, -8.37163], [12.36357, -8.37327], [12.35833, -8.37681], [12.35694, -8.37787], [12.35524, -8.38005], [12.35285, -8.38704], [12.34957, -8.39742], [12.34706, -8.40555], [12.34621, -8.40792], [12.34588, -8.4105], [12.34489, -8.42201], [12.34328, -8.43135], [12.34156, -8.44124], [12.34078, -8.45044], [12.33995, -8.45267], [12.33894, -8.45409], [12.33233, -8.46131], [12.32704, -8.46915], [12.32491, -8.47133], [12.32111, -8.47406], [12.31757, -8.47641], [12.31631, -8.47786], [12.31447, -8.48286], [12.3137, -8.4852], [12.31224, -8.48776], [12.31022, -8.49003], [12.308, -8.49164], [12.30466, -8.4934], [12.3028, -8.49492], [12.30077, -8.4983], [12.29886, -8.5091], [12.29736, -8.51598], [12.29407, -8.52139], [12.29067, -8.52648], [12.28923, -8.52809], [12.28786, -8.5291], [12.28563, -8.53001], [12.28022, -8.53156], [12.27522, -8.53541], [12.26724, -8.54238], [12.26575, -8.54474], [12.26493, -8.54819], [12.26384, -8.55678], [12.26286, -8.55995], [12.26165, -8.5621], [12.25985, -8.56428], [12.2528, -8.57154], [12.25073, -8.57569], [12.25012, -8.57935], [12.25161, -8.59183], [12.25148, -8.59424], [12.25073, -8.59724], [12.2469, -8.60359], [12.23669, -8.61904], [12.22832, -8.63375], [12.22587, -8.63848], [12.22184, -8.64405], [12.21721, -8.64978], [12.21317, -8.65579], [12.21121, -8.65806], [12.20654, -8.66104], [12.20495, -8.66232], [12.20208, -8.6666], [12.20013, -8.66873], [12.19548, -8.67207], [12.19269, -8.67472], [12.18847, -8.67792], [12.18093, -8.68339], [12.17409, -8.68635], [12.17178, -8.68655], [12.16974, -8.68618], [12.16791, -8.68531], [12.16558, -8.68358], [12.16358, -8.68262], [12.16179, -8.68221], [12.15503, -8.68199], [12.15235, -8.68251], [12.14921, -8.68427], [12.1419, -8.6892], [12.1302, -8.69641], [12.12612, -8.69962], [12.12033, -8.70514], [12.1147, -8.71025], [12.11294, -8.71125], [12.10854, -8.71284], [12.10267, -8.71518], [12.09692, -8.71747], [12.08604, -8.72471], [12.07997, -8.7293], [12.07652, -8.73053], [12.06897, -8.72976], [12.06177, -8.72662], [12.06004, -8.72623], [12.05755, -8.72629], [12.05145, -8.72692], [12.04197, -8.73101], [12.03927, -8.7316], [12.03112, -8.73143], [12.02408, -8.73105], [12.01786, -8.73028], [12.01506, -8.73053], [12.01224, -8.7316], [11.9982, -8.73874], [11.99084, -8.74371], [11.98499, -8.74827], [11.9756, -8.75482], [11.97334, -8.75718], [11.97169, -8.75982], [11.96778, -8.7651], [11.96395, -8.76983], [11.96187, -8.77294], [11.95695, -8.77844], [11.951, -8.78501]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_89cab9307c7b4269b7bc2e0c6caed673.bindTooltip(
+                `<div>
+                     Travel between <b>Koulikoro</b> and <b>Guinea, Guinea</b> by car is <b>185 km</b> and takes <b>3 hours 14 mins</b>.</br></br><b>23,919</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f402bcf9b00a43fd845469c9be1bc40c = L.polyline(
+                [[13.90608, -4.55314], [13.90533, -4.55342], [13.90495, -4.55251], [13.90483, -4.55205], [13.90572, -4.55133], [13.90639, -4.5504], [13.90596, -4.54953], [13.90421, -4.54474], [13.90378, -4.54366], [13.90276, -4.54254], [13.901, -4.53967], [13.89974, -4.53674], [13.89871, -4.53505], [13.8966, -4.53324], [13.89526, -4.53252], [13.8914, -4.53153], [13.88819, -4.53067], [13.88523, -4.52788], [13.88451, -4.5268], [13.88392, -4.52649], [13.88352, -4.52643], [13.88309, -4.52657], [13.88119, -4.52577], [13.88011, -4.52577], [13.87973, -4.52564], [13.8795, -4.52502], [13.87871, -4.52399], [13.87729, -4.52311], [13.87615, -4.52302], [13.87448, -4.52257], [13.87347, -4.52212], [13.87148, -4.52219], [13.87006, -4.5227], [13.86883, -4.52277], [13.86643, -4.52361], [13.86559, -4.52372], [13.86535, -4.52415], [13.86459, -4.52505], [13.86373, -4.52527], [13.8629, -4.52626], [13.86207, -4.52657], [13.86135, -4.5271], [13.85937, -4.52788], [13.8586, -4.52819], [13.85751, -4.52818], [13.85347, -4.52875], [13.85177, -4.52888], [13.85153, -4.52926], [13.85153, -4.53037], [13.85117, -4.53187], [13.84833, -4.53219], [13.84693, -4.53243], [13.84581, -4.53226], [13.84281, -4.53103], [13.84146, -4.53083], [13.84, -4.5312], [13.839, -4.53126], [13.83754, -4.53098], [13.83625, -4.53125], [13.83511, -4.53084], [13.83394, -4.53052], [13.83296, -4.52999], [13.83098, -4.52948], [13.82817, -4.52907], [13.82721, -4.52905], [13.82586, -4.52862], [13.82502, -4.5286], [13.82372, -4.52876], [13.82279, -4.52829], [13.82209, -4.52748], [13.82146, -4.52662], [13.82127, -4.52633], [13.82141, -4.52568], [13.82158, -4.52482], [13.81945, -4.52479], [13.81756, -4.52464], [13.81458, -4.52458], [13.81139, -4.52411], [13.80924, -4.52355], [13.80996, -4.52057], [13.8104, -4.51555], [13.80997, -4.515], [13.80539, -4.51426], [13.79728, -4.51332], [13.7824, -4.51148], [13.77811, -4.51157], [13.77437, -4.5117], [13.77386, -4.51149], [13.77347, -4.51145], [13.7726, -4.51204], [13.77186, -4.51181], [13.76684, -4.51204], [13.75592, -4.51242], [13.7482, -4.51266], [13.74531, -4.51276], [13.74411, -4.51265], [13.738, -4.5089], [13.73694, -4.50831], [13.73512, -4.50836], [13.73369, -4.50835], [13.73279, -4.50775], [13.73163, -4.50599], [13.73105, -4.50537], [13.72592, -4.50781], [13.72192, -4.50885], [13.71875, -4.5086], [13.71616, -4.50923], [13.70966, -4.51082], [13.70689, -4.50922], [13.70528, -4.50824], [13.70473, -4.50831], [13.70103, -4.50992], [13.69834, -4.50954], [13.69588, -4.50913], [13.6919, -4.5086], [13.68753, -4.50766], [13.68614, -4.50733], [13.68577, -4.50687], [13.68489, -4.50536], [13.68351, -4.50418], [13.68106, -4.50212], [13.67927, -4.4991], [13.67838, -4.4975], [13.67832, -4.49626], [13.67834, -4.49175], [13.67856, -4.48796], [13.67807, -4.48584], [13.67817, -4.48362], [13.67797, -4.48167], [13.67796, -4.47946], [13.67839, -4.47769], [13.67857, -4.47579], [13.67866, -4.47356], [13.6784, -4.47122], [13.67823, -4.47045], [13.67878, -4.47031], [13.67919, -4.4701], [13.67931, -4.46959], [13.67928, -4.46889], [13.67867, -4.46802], [13.67855, -4.46767], [13.67813, -4.46785], [13.6777, -4.46731], [13.67633, -4.46726], [13.67475, -4.46736], [13.67172, -4.46644], [13.66596, -4.46395], [13.66172, -4.4613], [13.65731, -4.45806], [13.65313, -4.4548], [13.65187, -4.45289], [13.64997, -4.45058], [13.64753, -4.4477], [13.64544, -4.44636], [13.64234, -4.44498], [13.63942, -4.44356], [13.63852, -4.44331], [13.63826, -4.44374], [13.63641, -4.44672], [13.63409, -4.45052], [13.62888, -4.45898], [13.61937, -4.47286], [13.6118, -4.48473], [13.60552, -4.49457], [13.60337, -4.49768], [13.60103, -4.49912], [13.59082, -4.50387], [13.58858, -4.50529], [13.58603, -4.5075], [13.58324, -4.50904], [13.58057, -4.50951], [13.57738, -4.509], [13.57191, -4.50726], [13.56592, -4.50539], [13.56282, -4.5048], [13.55971, -4.50466], [13.55431, -4.50489], [13.55172, -4.50455], [13.54917, -4.50336], [13.54738, -4.50179], [13.546, -4.5], [13.54427, -4.49678], [13.54292, -4.49471], [13.54146, -4.49335], [13.53922, -4.49207], [13.53409, -4.48946], [13.5311, -4.48836], [13.52933, -4.48832], [13.52652, -4.48904], [13.52391, -4.48991], [13.52121, -4.49175], [13.51653, -4.49573], [13.51166, -4.49906], [13.49913, -4.5075], [13.49263, -4.51275], [13.48975, -4.51435], [13.48652, -4.5152], [13.4804, -4.5155], [13.47676, -4.51604], [13.47475, -4.51704], [13.4598, -4.52817], [13.45013, -4.53729], [13.4484, -4.53932], [13.44422, -4.54572], [13.43873, -4.5541], [13.43557, -4.55784], [13.43039, -4.56377], [13.42846, -4.56511], [13.42584, -4.56628], [13.4238, -4.56861], [13.4166, -4.57854], [13.414, -4.58136], [13.4096, -4.58461], [13.39959, -4.58654], [13.39384, -4.58759], [13.39128, -4.58897], [13.38697, -4.59196], [13.38356, -4.594], [13.37898, -4.59654], [13.37247, -4.60043], [13.36924, -4.60389], [13.36421, -4.60834], [13.36054, -4.61209], [13.35661, -4.61442], [13.35424, -4.61589], [13.35259, -4.61771], [13.34984, -4.62122], [13.34441, -4.63322], [13.34255, -4.63725], [13.34163, -4.63857], [13.33757, -4.64256], [13.33526, -4.64378], [13.32332, -4.64686], [13.31822, -4.64835], [13.31277, -4.65146], [13.29176, -4.66555], [13.2846, -4.67034], [13.28338, -4.67093], [13.28126, -4.67144], [13.2773, -4.67238], [13.275, -4.67388], [13.27313, -4.67576], [13.2728, -4.67552], [13.27254, -4.67503], [13.27256, -4.67395], [13.27302, -4.67337], [13.2759, -4.67214], [13.278, -4.67019], [13.27907, -4.66891], [13.27975, -4.66675], [13.28117, -4.6609], [13.2821, -4.65671], [13.28254, -4.64848], [13.2824, -4.64695], [13.2815, -4.64413], [13.27962, -4.6369], [13.27958, -4.63563], [13.28009, -4.63326], [13.28121, -4.62999], [13.28336, -4.62665], [13.28568, -4.62219], [13.28733, -4.61477], [13.2882, -4.60967], [13.28791, -4.60529], [13.2876, -4.60157], [13.28827, -4.59601], [13.28841, -4.59213], [13.28786, -4.59043], [13.26485, -4.53903], [13.2589, -4.52708], [13.25089, -4.51184], [13.24684, -4.50423], [13.24487, -4.5001], [13.24275, -4.496], [13.24248, -4.49446], [13.24145, -4.48594], [13.2407, -4.47137], [13.2407, -4.47066], [13.24036, -4.46912], [13.2388, -4.46799], [13.23707, -4.46675], [13.2312, -4.46255], [13.22211, -4.45607], [13.21357, -4.45001], [13.19576, -4.43741], [13.18655, -4.43075], [13.17517, -4.4219], [13.16672, -4.41568], [13.15471, -4.40715], [13.14919, -4.40294], [13.14632, -4.40049], [13.14336, -4.39753], [13.14017, -4.39402], [13.13733, -4.39015], [13.1345, -4.38662], [13.13297, -4.38508], [13.13156, -4.38389], [13.12938, -4.38252], [13.12788, -4.38054], [13.12439, -4.37505], [13.12365, -4.37367], [13.12253, -4.37222], [13.11925, -4.36893], [13.1185, -4.36703], [13.11707, -4.36301], [13.11599, -4.35989], [13.11167, -4.34742]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_f402bcf9b00a43fd845469c9be1bc40c.bindTooltip(
+                `<div>
+                     Travel between <b>Djénné</b> and <b>Burkina Faso, Burkina Faso</b> by car is <b>136 km</b> and takes <b>2 hours 14 mins</b>.</br></br><b>22,382</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_006b17c932e54064bc49a5229da1426d = L.polyline(
+                [[12.3581, -4.77673], [12.35778, -4.77676], [12.35784, -4.77668], [12.35838, -4.77595], [12.35892, -4.77525], [12.35923, -4.7748], [12.35963, -4.77417], [12.36005, -4.77345], [12.36078, -4.77209], [12.36149, -4.77043], [12.36157, -4.76989], [12.36201, -4.7671], [12.36265, -4.76292], [12.36337, -4.75763], [12.36378, -4.75509], [12.36428, -4.75181], [12.36515, -4.74618], [12.36539, -4.74472], [12.36544, -4.74431], [12.36559, -4.74341], [12.36572, -4.74264], [12.36604, -4.74031], [12.3663, -4.73839], [12.36653, -4.73651], [12.36666, -4.73543], [12.36683, -4.73413], [12.36732, -4.73039], [12.36747, -4.72908], [12.36765, -4.72796], [12.36772, -4.72733], [12.36783, -4.72672], [12.36793, -4.72606], [12.368, -4.72558], [12.36817, -4.7245], [12.36838, -4.72319], [12.36873, -4.72115], [12.3691, -4.71894], [12.36942, -4.71719], [12.36979, -4.71487], [12.37036, -4.71154], [12.37087, -4.70857], [12.37121, -4.70673], [12.37151, -4.705], [12.37207, -4.70187], [12.37241, -4.69989], [12.37257, -4.69913], [12.37276, -4.69793], [12.37296, -4.69678], [12.37321, -4.69539], [12.3738, -4.69192], [12.37401, -4.69067], [12.37448, -4.68808], [12.37525, -4.68356], [12.37574, -4.68065], [12.3761, -4.67835], [12.37637, -4.67689], [12.37669, -4.67504], [12.37698, -4.6735], [12.37728, -4.67169], [12.37766, -4.66953], [12.37843, -4.66513], [12.37853, -4.66476], [12.37869, -4.66444], [12.37911, -4.66366], [12.37961, -4.66298], [12.37998, -4.66251], [12.38039, -4.66202], [12.38121, -4.66123], [12.38683, -4.65593], [12.38797, -4.65482], [12.39036, -4.65259], [12.39095, -4.65203], [12.39158, -4.65138], [12.39187, -4.65111], [12.39219, -4.65076], [12.39256, -4.65015], [12.39278, -4.64973], [12.39294, -4.64925], [12.39324, -4.64767], [12.39346, -4.64551], [12.39407, -4.63908], [12.3945, -4.63459], [12.3946, -4.63371], [12.39466, -4.63357], [12.39631, -4.61903], [12.39843, -4.60023], [12.39875, -4.59749], [12.3993, -4.59347], [12.40117, -4.5798], [12.40145, -4.57769], [12.40241, -4.5731], [12.40312, -4.56968], [12.4038, -4.56636], [12.40623, -4.55864], [12.40855, -4.55256], [12.4096, -4.54974], [12.41089, -4.54469], [12.41097, -4.5442], [12.41115, -4.54321], [12.41144, -4.54183], [12.41152, -4.54129], [12.4116, -4.54087], [12.41169, -4.54035], [12.41174, -4.53987], [12.41174, -4.53961], [12.41171, -4.53937], [12.41167, -4.5388], [12.41151, -4.53782], [12.41144, -4.5374], [12.4114, -4.53704], [12.41129, -4.53621], [12.41107, -4.53488], [12.41087, -4.5337], [12.41076, -4.53312], [12.41069, -4.53262], [12.41041, -4.53114], [12.40981, -4.52795], [12.4096, -4.52673], [12.40935, -4.52526], [12.40918, -4.5241], [12.40892, -4.52266], [12.40873, -4.52148], [12.4085, -4.51999], [12.40835, -4.51917], [12.40819, -4.51822], [12.40808, -4.51742], [12.40785, -4.51606], [12.40775, -4.51544], [12.40762, -4.51461], [12.40738, -4.51312], [12.40717, -4.51187], [12.407, -4.51072], [12.40695, -4.51027], [12.40687, -4.50989], [12.40676, -4.50916], [12.40661, -4.50823], [12.4065, -4.50754], [12.40638, -4.50665], [12.40627, -4.506], [12.40613, -4.50512], [12.40599, -4.50421], [12.40582, -4.50322], [12.40573, -4.50258], [12.40562, -4.502], [12.40545, -4.50083], [12.40525, -4.49968], [12.40506, -4.49844], [12.40483, -4.49682], [12.40458, -4.4952], [12.40433, -4.49366], [12.40405, -4.49186], [12.40389, -4.49086], [12.40377, -4.49014], [12.40358, -4.48889], [12.40349, -4.48829], [12.40334, -4.48753], [12.40311, -4.48606], [12.40294, -4.485], [12.40276, -4.48406], [12.40268, -4.48336], [12.40252, -4.48239], [12.40221, -4.48051], [12.40163, -4.47704], [12.4015, -4.47613], [12.40135, -4.47522], [12.4012, -4.47441], [12.40104, -4.47338], [12.4009, -4.47251], [12.40089, -4.47234], [12.40085, -4.47226], [12.40073, -4.4715], [12.40053, -4.47016], [12.40032, -4.46889], [12.40004, -4.46695], [12.39984, -4.46543], [12.39971, -4.46445], [12.39957, -4.46344], [12.39939, -4.46232], [12.39921, -4.46116], [12.39901, -4.46003], [12.39888, -4.45919], [12.39871, -4.45826], [12.39824, -4.4556], [12.39807, -4.45455], [12.39805, -4.45415], [12.39807, -4.45374], [12.39825, -4.45236], [12.39843, -4.45097], [12.39876, -4.44841], [12.39904, -4.44663], [12.39958, -4.44478], [12.39971, -4.44437]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_006b17c932e54064bc49a5229da1426d.bindTooltip(
+                `<div>
+                     Travel between <b>Yorosso</b> and <b>Burkina Faso, Burkina Faso</b> by car is <b>37.4 km</b> and takes <b>46 mins</b>.</br></br><b>17,447</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ddec8c85224449bca35232812479b9f4 = L.polyline(
+                [[11.935, -8.41558], [11.9352, -8.41566], [11.93563, -8.41586], [11.93577, -8.41593], [11.93586, -8.41593], [11.93609, -8.41588], [11.93659, -8.41595], [11.93701, -8.41595], [11.93719, -8.41597], [11.93756, -8.41611], [11.9378, -8.41621], [11.93793, -8.41623], [11.93797, -8.4162], [11.93816, -8.41577], [11.93837, -8.41527], [11.93888, -8.4155], [11.93927, -8.41567], [11.93944, -8.41571], [11.93953, -8.41557], [11.93962, -8.41537], [11.9399, -8.41546], [11.94013, -8.41552], [11.94032, -8.4156], [11.94055, -8.41563], [11.94094, -8.41582], [11.94103, -8.41582], [11.94112, -8.41574], [11.94165, -8.41439], [11.94172, -8.41434], [11.94175, -8.41438], [11.94193, -8.4145], [11.94212, -8.41436], [11.94269, -8.41431], [11.9431, -8.41434], [11.94325, -8.41433], [11.94359, -8.41463], [11.94368, -8.41476], [11.94385, -8.41547], [11.94406, -8.41642], [11.9442, -8.4172], [11.94436, -8.41775], [11.94576, -8.42119], [11.94594, -8.42168], [11.94596, -8.42189], [11.94596, -8.42252], [11.94585, -8.42353], [11.94584, -8.42381], [11.94605, -8.42555], [11.94622, -8.42625], [11.94673, -8.42819], [11.94694, -8.42897], [11.9473, -8.42997], [11.94745, -8.43042], [11.94759, -8.43073], [11.94816, -8.43161], [11.94874, -8.43254], [11.94909, -8.43303], [11.94947, -8.43342], [11.95, -8.4342], [11.95045, -8.435], [11.95136, -8.43747], [11.95184, -8.43876], [11.95233, -8.43997], [11.95342, -8.44254], [11.95453, -8.4453], [11.95492, -8.44634], [11.95518, -8.44704], [11.95549, -8.44776], [11.95624, -8.44901], [11.95655, -8.44946], [11.95734, -8.45078], [11.95804, -8.45184], [11.95875, -8.45286], [11.95997, -8.45532], [11.96049, -8.45647], [11.96071, -8.45686], [11.96163, -8.45842], [11.96258, -8.46019], [11.96322, -8.46124], [11.96439, -8.46298], [11.96469, -8.4635], [11.96477, -8.46394], [11.96471, -8.46456], [11.96472, -8.46472], [11.96479, -8.46504], [11.96535, -8.46673], [11.96579, -8.46807], [11.96601, -8.46874], [11.96642, -8.46974], [11.96699, -8.47105], [11.96713, -8.47143], [11.96719, -8.47176], [11.96718, -8.47352], [11.96713, -8.475], [11.96718, -8.47585], [11.96734, -8.47705], [11.96784, -8.47832], [11.96808, -8.4788], [11.96828, -8.47911], [11.96851, -8.47938], [11.96911, -8.47997], [11.96944, -8.48029], [11.96966, -8.48056], [11.97073, -8.48204], [11.97107, -8.48234], [11.97129, -8.4825], [11.97203, -8.4829], [11.97243, -8.48318], [11.97282, -8.48351], [11.97302, -8.48377], [11.97315, -8.48398], [11.97342, -8.48452], [11.97376, -8.48533], [11.97446, -8.48673], [11.97492, -8.48766], [11.97575, -8.48926], [11.97603, -8.48982], [11.97625, -8.49039], [11.97698, -8.49299], [11.9775, -8.49473], [11.97758, -8.49492], [11.97807, -8.49569], [11.97837, -8.49618], [11.97856, -8.49661], [11.97886, -8.4972], [11.97918, -8.4979], [11.97968, -8.49909], [11.98009, -8.50019], [11.98034, -8.50075], [11.98067, -8.50117], [11.9811, -8.50155], [11.98168, -8.50197], [11.98197, -8.50226], [11.98257, -8.50367], [11.98271, -8.50411], [11.98292, -8.50602], [11.98316, -8.50849], [11.98328, -8.50935], [11.98355, -8.51062], [11.98372, -8.51135], [11.98387, -8.51181], [11.98413, -8.51259], [11.98424, -8.51304], [11.98454, -8.51429], [11.98514, -8.51692], [11.98556, -8.51924], [11.98603, -8.5213], [11.9861, -8.52378], [11.98611, -8.52404], [11.98596, -8.52487], [11.98561, -8.52679], [11.98536, -8.52894], [11.98536, -8.53151], [11.98494, -8.53478], [11.98477, -8.53655], [11.98443, -8.54002], [11.9845, -8.54205], [11.98452, -8.54243], [11.98494, -8.54389], [11.98595, -8.54657], [11.98662, -8.54844], [11.98694, -8.5501], [11.98773, -8.55226], [11.98914, -8.55488], [11.98989, -8.55652], [11.99121, -8.55786], [11.99194, -8.55839], [11.99233, -8.55867], [11.99333, -8.56004], [11.99375, -8.56227], [11.99417, -8.56381], [11.99459, -8.56545], [11.99527, -8.56657], [11.99627, -8.56768], [11.99647, -8.56784], [11.99779, -8.56889], [11.99963, -8.57095], [12.00264, -8.57444], [12.00484, -8.57722], [12.00702, -8.57893], [12.00782, -8.57937], [12.00979, -8.58046], [12.01307, -8.58289], [12.01502, -8.58465], [12.01637, -8.58587], [12.01693, -8.58633], [12.01971, -8.58836], [12.02104, -8.58933], [12.0218, -8.5901], [12.024, -8.59235], [12.02457, -8.59293], [12.02583, -8.59456], [12.02717, -8.59742], [12.02784, -8.59886], [12.02878, -8.6007], [12.03042, -8.60391], [12.03132, -8.60557], [12.03246, -8.60759], [12.03296, -8.60847], [12.03378, -8.61026], [12.03429, -8.61138], [12.03506, -8.61304], [12.03513, -8.61321], [12.03655, -8.61603], [12.03771, -8.61868], [12.03778, -8.61884], [12.03798, -8.61929], [12.03806, -8.61982], [12.03814, -8.62026], [12.03831, -8.62135], [12.03865, -8.62341], [12.03861, -8.62376], [12.03847, -8.62523], [12.03831, -8.62706], [12.03827, -8.62853], [12.03823, -8.6301], [12.03773, -8.63208], [12.03774, -8.63227], [12.03781, -8.63311], [12.0387, -8.63364], [12.03882, -8.63371], [12.04005, -8.63392], [12.0405, -8.63397], [12.04082, -8.63397], [12.04238, -8.63397], [12.04256, -8.63397], [12.04328, -8.63397], [12.04331, -8.63392], [12.0437, -8.6333], [12.04359, -8.63388], [12.04343, -8.63469], [12.0432, -8.63582], [12.04298, -8.63669], [12.04291, -8.63697], [12.04299, -8.6378], [12.04308, -8.63871], [12.04312, -8.63927], [12.04308, -8.63939], [12.04259, -8.64077], [12.04222, -8.64182], [12.04131, -8.64437], [12.04095, -8.64621], [12.03975, -8.65215], [12.03769, -8.66223], [12.03672, -8.6671], [12.03553, -8.67286], [12.0343, -8.67873], [12.0315, -8.69247], [12.03056, -8.69686], [12.03036, -8.69778], [12.02996, -8.69906], [12.0288, -8.7024], [12.02715, -8.707], [12.02676, -8.70815], [12.02643, -8.70893], [12.02544, -8.71029], [12.0238, -8.71242], [12.02368, -8.71258], [12.0236, -8.71284], [12.02358, -8.7131], [12.02362, -8.71331], [12.02376, -8.71374], [12.02394, -8.71432], [12.02421, -8.71501], [12.02438, -8.71544], [12.02457, -8.71628], [12.02439, -8.71699], [12.02416, -8.71734], [12.02375, -8.71792], [12.02321, -8.71867], [12.02241, -8.71975], [12.02125, -8.72134], [12.02102, -8.72167], [12.02091, -8.7219], [12.02088, -8.72208], [12.02091, -8.72231], [12.02122, -8.72321], [12.02289, -8.72766], [12.02399, -8.73065], [12.02409, -8.73097], [12.02408, -8.73105], [12.02155, -8.73072], [12.02117, -8.73067], [12.01814, -8.7303], [12.01759, -8.73027], [12.01679, -8.73029], [12.01618, -8.73034], [12.01555, -8.73043], [12.01469, -8.73063], [12.01403, -8.73082], [12.01344, -8.73104], [12.0124, -8.73152], [12.00989, -8.73282], [12.00689, -8.73437], [12.00104, -8.73739], [12.00035, -8.73772], [11.99903, -8.73831], [11.99827, -8.7387], [11.99704, -8.73947], [11.99234, -8.74268], [11.98994, -8.74432], [11.98642, -8.74715], [11.98542, -8.74794], [11.98343, -8.74935], [11.98098, -8.75105], [11.97814, -8.75301], [11.97591, -8.75458], [11.97488, -8.75544], [11.9742, -8.75614], [11.97371, -8.75671], [11.97312, -8.75747], [11.97272, -8.75806], [11.97176, -8.75971], [11.97103, -8.76096], [11.97044, -8.76187], [11.96956, -8.76304], [11.96787, -8.765], [11.965, -8.76834], [11.96452, -8.76897], [11.96395, -8.76982], [11.96325, -8.77094], [11.96242, -8.77221], [11.9621, -8.77264], [11.9614, -8.7735], [11.96014, -8.77486], [11.95703, -8.77835], [11.95609, -8.77942], [11.95422, -8.78156], [11.95305, -8.78275], [11.951, -8.78501]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_ddec8c85224449bca35232812479b9f4.bindTooltip(
+                `<div>
+                     Travel between <b>Kangaba</b> and <b>Guinea, Guinea</b> by car is <b>50.7 km</b> and takes <b>1 hour 24 mins</b>.</br></br><b>17,232</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_232e0e6915a2477a92c510ba333417ad = L.polyline(
+                [[13.9642, -5.3574], [13.96067, -5.35805], [13.96086, -5.36255], [13.96147, -5.37295], [13.96776, -5.39113], [13.97393, -5.41583], [13.97947, -5.43466], [13.9758, -5.45925], [13.97188, -5.48329], [13.96737, -5.49873], [13.9614, -5.50898], [13.95214, -5.51866], [13.94581, -5.52753], [13.92808, -5.53798], [13.91894, -5.54934], [13.90232, -5.5659], [13.8911, -5.61304], [13.88579, -5.63315], [13.87484, -5.65487], [13.87163, -5.66054], [13.86948, -5.66457], [13.87146, -5.68125], [13.87258, -5.68168], [13.87431, -5.68116], [13.87497, -5.68245], [13.87351, -5.68472], [13.87201, -5.69078], [13.87337, -5.69683], [13.87332, -5.6994], [13.8725, -5.70053], [13.87571, -5.70449], [13.87728, -5.70587], [13.88977, -5.71048], [13.89532, -5.71274], [13.89715, -5.72122], [13.90064, -5.72383], [13.9023, -5.72706], [13.90912, -5.73164], [13.91618, -5.73448], [13.92229, -5.73815], [13.929, -5.744], [13.94066, -5.75575], [13.94677, -5.7638], [13.9502, -5.77051], [13.95085, -5.7774], [13.95716, -5.78639], [13.96102, -5.7936], [13.96634, -5.80311], [13.97483, -5.81738], [13.97868, -5.82002], [13.98913, -5.82412], [13.998, -5.82881], [14.00235, -5.83131], [14.01123, -5.8411], [14.02495, -5.84908], [14.03533, -5.85528], [14.03717, -5.85623], [14.03333, -5.85836], [14.03008, -5.86092], [14.01896, -5.87405], [14.01525, -5.88279], [14.02141, -5.88727], [14.03597, -5.89278], [14.04291, -5.89647], [14.04974, -5.89131], [14.05925, -5.88823], [14.06749, -5.8898], [14.08128, -5.90229], [14.09094, -5.91051], [14.09061, -5.91354], [14.08573, -5.9196], [14.08438, -5.92389], [14.08571, -5.92461], [14.0934, -5.93113], [14.09976, -5.93187], [14.10939, -5.93107], [14.11345, -5.93595], [14.12195, -5.9415], [14.13241, -5.95783], [14.14034, -5.97783], [14.14562, -5.98386], [14.15349, -5.98952], [14.16008, -5.98991], [14.1566, -5.99555], [14.15142, -6.00384], [14.13256, -6.02744], [14.12418, -6.03787], [14.11798, -6.04186], [14.08321, -6.05119], [14.05929, -6.05961], [14.03709, -6.06357], [13.99681, -6.0744], [13.96263, -6.08359], [13.94274, -6.08881], [13.91872, -6.09027], [13.86892, -6.09322], [13.84597, -6.09207], [13.79968, -6.08484], [13.7446, -6.07632], [13.73567, -6.07764], [13.72971, -6.07543], [13.72682, -6.07647], [13.71662, -6.08607], [13.70269, -6.09394], [13.69257, -6.09964], [13.68727, -6.0998], [13.67869, -6.07698], [13.67821, -6.07579], [13.67386, -6.06843], [13.66853, -6.06672], [13.66438, -6.06778], [13.65351, -6.07809], [13.61619, -6.09196], [13.5639, -6.11022], [13.53785, -6.12324], [13.5046, -6.1477], [13.49906, -6.15559], [13.49593, -6.16809], [13.48911, -6.17998], [13.46274, -6.2136], [13.4406, -6.23615], [13.43776, -6.23851], [13.43796, -6.23981], [13.43169, -6.22603], [13.42995, -6.22385], [13.4218, -6.21429], [13.4138, -6.20176], [13.40166, -6.17885], [13.3906, -6.1646], [13.38132, -6.15509], [13.36999, -6.14636], [13.36197, -6.13743], [13.34887, -6.11526], [13.34173, -6.10161], [13.33597, -6.08576], [13.33333, -6.06666], [13.31753, -6.04555], [13.29864, -6.01752], [13.28426, -5.99904], [13.2622, -5.97628], [13.25331, -5.96002], [13.24202, -5.9393], [13.23023, -5.92164], [13.22101, -5.91097], [13.21207, -5.90273], [13.20053, -5.89472], [13.18885, -5.88381], [13.18154, -5.87436], [13.16623, -5.86675], [13.14383, -5.85057], [13.11236, -5.83265], [13.07407, -5.80931], [13.05849, -5.79831], [13.02786, -5.78291], [13.00724, -5.77261], [12.98406, -5.76138], [12.96872, -5.76083], [12.94954, -5.76012], [12.9534, -5.73424], [12.95864, -5.70548], [12.95736, -5.68648], [12.95407, -5.66693], [12.95226, -5.65301], [12.95359, -5.63617], [12.95748, -5.59034], [12.9589, -5.56577], [12.9626, -5.55266], [12.96656, -5.54017], [12.96974, -5.5175], [12.97042, -5.50406], [12.97378, -5.49073], [12.99454, -5.44012], [13.00984, -5.4028], [13.01969, -5.37207], [13.02317, -5.35973], [13.0368, -5.34615], [13.06041, -5.33047], [13.08078, -5.31276], [13.08451, -5.30537], [13.09673, -5.27213], [13.09965, -5.2613], [13.1044, -5.23099], [13.10993, -5.2074], [13.11174, -5.18144], [13.11452, -5.16646], [13.11815, -5.15753], [13.13831, -5.10863], [13.14649, -5.09127], [13.23017, -5.02924], [13.25399, -5.00639], [13.25826, -4.99915], [13.26671, -4.97719], [13.27362, -4.95426], [13.27925, -4.93466], [13.2855, -4.91749], [13.29494, -4.90657], [13.29726, -4.89427], [13.27927, -4.89037], [13.2346, -4.88367], [13.23335, -4.87296], [13.23557, -4.85439], [13.23723, -4.84449], [13.23583, -4.83147], [13.2362, -4.80963], [13.23928, -4.79929], [13.24057, -4.7808], [13.2454, -4.76456], [13.24787, -4.74915], [13.24598, -4.72879], [13.24377, -4.71481], [13.24323, -4.69944], [13.2577, -4.68817], [13.26711, -4.68066], [13.27245, -4.67471], [13.27847, -4.66972], [13.28132, -4.66027], [13.28253, -4.6482], [13.27958, -4.63659], [13.28578, -4.62188], [13.28776, -4.6042], [13.2884, -4.59212], [13.27659, -4.56533], [13.2492, -4.50871], [13.2441, -4.49861], [13.24137, -4.48268], [13.2407, -4.47118], [13.23786, -4.46732], [13.2285, -4.46062], [13.21129, -4.44843], [13.19561, -4.4373], [13.17253, -4.41996], [13.14476, -4.39908], [13.13185, -4.38414], [13.12344, -4.37335], [13.11816, -4.36607], [13.11544, -4.35822], [13.11167, -4.34742]],
+                {"bubblingMouseEvents": true, "color": "#4A89F3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4A89F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c1fe5a28bbb9415db4044378847d1084);
+        
+    
+            poly_line_232e0e6915a2477a92c510ba333417ad.bindTooltip(
+                `<div>
+                     Travel between <b>Ké-Macina</b> and <b>Burkina Faso, Burkina Faso</b> by car is <b>454 km</b> and takes <b>9 hours 41 mins</b>.</br></br><b>15,750</b> people are effected by this conflict.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_7ba7ff0161164924a8518b4fab6e0cbb = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var tile_layer_763bc04769844db9bf38537e8785409d = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            var layer_control_5dd83a1a2ab34fd0872ea07709b349cc = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_61193ef47bd64211b79a3dd2900eeb84,
+                },
+                overlays :  {
+                    "Driving" : feature_group_c1fe5a28bbb9415db4044378847d1084,
+                    "Google Satellite" : tile_layer_7ba7ff0161164924a8518b4fab6e0cbb,
+                    "Google Maps" : tile_layer_763bc04769844db9bf38537e8785409d,
+                },
+            };
+            L.control.layers(
+                layer_control_5dd83a1a2ab34fd0872ea07709b349cc.base_layers,
+                layer_control_5dd83a1a2ab34fd0872ea07709b349cc.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_211c926994aa4b6c80932c2dddd2f333);
+        
+</script>

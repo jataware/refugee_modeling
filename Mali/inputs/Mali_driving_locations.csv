@@ -1,0 +1,57 @@
+#name,latitude,longitude,country code,population,country,location_type
+Algiers,36.73225,3.08746,DZ,1977663,Algeria,camp
+Boumerdas,36.76639,3.47717,DZ,786499,Algeria,camp
+Oran,35.69906,-0.63588,DZ,645984,Algeria,camp
+Tébessa,35.40417,8.12417,DZ,634332,Algeria,camp
+Constantine,36.365,6.61472,DZ,450097,Algeria,camp
+Ouagadougou,12.36566,-1.53388,BF,1086505,Burkina Faso,camp
+Bobo-Dioulasso,11.17715,-4.2979,BF,360106,Burkina Faso,camp
+Koudougou,12.25263,-2.36272,BF,87347,Burkina Faso,camp
+Ouahigouya,13.58278,-2.42158,BF,61096,Burkina Faso,camp
+Banfora,10.63333,-4.76667,BF,60288,Burkina Faso,camp
+Abidjan,5.35444,-4.00167,CI,3677115,Cote d’Ivoire,camp
+Abobo,5.41613,-4.0159,CI,900000,Cote d’Ivoire,camp
+Bouaké,7.69385,-5.03031,CI,567481,Cote d’Ivoire,camp
+Daloa,6.87735,-6.45022,CI,215652,Cote d’Ivoire,camp
+San-Pédro,4.74851,-6.6363,CI,196751,Cote d’Ivoire,camp
+Camayenne,9.535,-13.68778,GN,1871242,Guinea,camp
+Conakry,9.53795,-13.67729,GN,1767200,Guinea,camp
+Nzérékoré,7.75624,-8.8179,GN,132728,Guinea,camp
+Kindia,10.05692,-12.86576,GN,117062,Guinea,camp
+Kankan,10.38542,-9.30568,GN,114009,Guinea,camp
+Nouakchott,18.08581,-15.9785,MR,661400,Mauritania,camp
+Nouadhibou,20.94188,-17.03842,MR,72337,Mauritania,camp
+Néma,16.61702,-7.25649,MR,60000,Mauritania,camp
+Kaédi,16.15027,-13.5037,MR,55374,Mauritania,camp
+Rosso,16.51378,-15.80503,MR,48922,Mauritania,camp
+Niamey,13.51366,2.1098,NE,774235,Niger,camp
+Zinder,13.80716,8.9881,NE,191424,Niger,camp
+Maradi,13.5,7.10174,NE,163487,Niger,camp
+Agadez,16.97333,7.99111,NE,124324,Niger,camp
+Alaghsas,17.0187,8.0168,NE,88561,Niger,camp
+Dakar,14.6937,-17.44406,SN,2476400,Senegal,camp
+Pikine,14.76457,-17.39071,SN,874062,Senegal,camp
+Touba,14.85,-15.88333,SN,529176,Senegal,camp
+Thiès,14.78944,-16.92602,SN,320000,Senegal,camp
+Thiès Nones,14.78333,-16.96667,SN,252320,Senegal,camp
+Bamako,12.65,-8.0,ML,1297281,Mali,conflict_zone
+Ségou,13.44032,-6.25947,ML,153349,Mali,conflict_zone
+Sikasso,11.31755,-5.66654,ML,144786,Mali,conflict_zone
+Mopti,14.4843,-4.18296,ML,108456,Mali,conflict_zone
+Koutiala,12.39173,-5.46421,ML,99353,Mali,conflict_zone
+Gao,16.27167,-0.04472,ML,87000,Mali,conflict_zone
+Kayes,14.44693,-11.44448,ML,78406,Mali,conflict_zone
+Markala,13.68427,-6.07352,ML,53738,Mali,conflict_zone
+Kolokani,13.5728,-8.0339,ML,48774,Mali,conflict_zone
+Kati,12.74409,-8.07257,ML,42922,Mali,conflict_zone
+Bougouni,11.41769,-7.48323,ML,35450,Mali,conflict_zone
+Timbuktu,16.77348,-3.00742,ML,32460,Mali,conflict_zone
+Banamba,13.54773,-7.44808,ML,30591,Mali,conflict_zone
+Bafoulabé,13.8065,-10.8321,ML,26823,Mali,conflict_zone
+San,13.30335,-4.89562,ML,24811,Mali,conflict_zone
+Koulikoro,12.86273,-7.55985,ML,23919,Mali,conflict_zone
+Djénné,13.90608,-4.55332,ML,22382,Mali,conflict_zone
+Yorosso,12.35811,-4.77688,ML,17447,Mali,conflict_zone
+Kangaba,11.93333,-8.41667,ML,17232,Mali,conflict_zone
+Sagalo,12.2,-10.7,ML,15830,Mali,conflict_zone
+Ké-Macina,13.9641,-5.35791,ML,15750,Mali,conflict_zone
