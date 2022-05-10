@@ -1,0 +1,1591 @@
+ccode1,ccode2,state.destination.name,state.destination.abb,state.origin.name,state.origin.abb,dyad.id,remittances,year
+2,20,Canada,CAN,United States of America,USA,220,0.0,2010
+2,255,Germany,GMY,United States of America,USA,2255,2441.0,2010
+20,255,Germany,GMY,Canada,CAN,20255,728.0,2010
+31,2,United States of America,USA,Bahamas,BHM,312,0.0,2010
+40,20,Canada,CAN,Cuba,CUB,4020,0.0,2010
+40,230,Spain,SPN,Cuba,CUB,40230,36.0,2010
+41,2,United States of America,USA,Haiti,HAI,412,17.0,2010
+41,42,Dominican Republic,DOM,Haiti,HAI,4142,25.0,2010
+70,2,United States of America,USA,Mexico,MEX,702,0.0,2010
+70,255,Germany,GMY,Mexico,MEX,70255,30.0,2010
+70,20,Canada,CAN,Mexico,MEX,7020,0.0,2010
+70,42,Dominican Republic,DOM,Mexico,MEX,7042,3.0,2010
+70,52,Trinidad and Tobago,TRI,Mexico,MEX,7052,0.0,2010
+90,70,Mexico,MEX,Guatemala,GUA,9070,22.0,2010
+90,2,United States of America,USA,Guatemala,GUA,902,14.0,2010
+91,2,United States of America,USA,Honduras,HON,912,9.0,2010
+92,90,Guatemala,GUA,El Salvador,SAL,9290,28.0,2010
+92,2,United States of America,USA,El Salvador,SAL,922,11.0,2010
+93,2,United States of America,USA,Nicaragua,NIC,932,10.0,2010
+94,2,United States of America,USA,Costa Rica,COS,942,0.0,2010
+95,2,United States of America,USA,Panama,PAN,952,16.0,2010
+100,20,Canada,CAN,Colombia,COL,10020,0.0,2010
+100,101,Venezuela,VEN,Colombia,COL,100101,9.0,2010
+100,130,Ecuador,ECU,Colombia,COL,100130,21.0,2010
+100,135,Peru,PER,Colombia,COL,100135,8.0,2010
+100,140,Brazil,BRA,Colombia,COL,100140,5.0,2010
+100,155,Chile,CHL,Colombia,COL,100155,0.0,2010
+100,160,Argentina,ARG,Colombia,COL,100160,2.0,2010
+100,210,Netherlands,NTH,Colombia,COL,100210,1.0,2010
+100,255,Germany,GMY,Colombia,COL,100255,7.0,2010
+100,325,Italy,ITA,Colombia,COL,100325,4.0,2010
+100,2,United States of America,USA,Colombia,COL,1002,33.0,2010
+100,230,Spain,SPN,Colombia,COL,100230,40.0,2010
+100,200,United Kingdom,UKG,Colombia,COL,100200,2.0,2010
+101,20,Canada,CAN,Venezuela,VEN,10120,0.0,2010
+101,70,Mexico,MEX,Venezuela,VEN,10170,5.0,2010
+101,255,Germany,GMY,Venezuela,VEN,101255,14.0,2010
+101,2,United States of America,USA,Venezuela,VEN,1012,20.0,2010
+130,2,United States of America,USA,Ecuador,ECU,1302,80.0,2010
+135,2,United States of America,USA,Peru,PER,1352,9.0,2010
+135,20,Canada,CAN,Peru,PER,13520,0.0,2010
+135,160,Argentina,ARG,Peru,PER,135160,2.0,2010
+135,255,Germany,GMY,Peru,PER,135255,5.0,2010
+140,2,United States of America,USA,Brazil,BRA,1402,31.0,2010
+140,255,Germany,GMY,Brazil,BRA,140255,72.0,2010
+155,20,Canada,CAN,Chile,CHL,15520,0.0,2010
+155,101,Venezuela,VEN,Chile,CHL,155101,2.0,2010
+155,160,Argentina,ARG,Chile,CHL,155160,51.0,2010
+155,211,Belgium,BEL,Chile,CHL,155211,32.0,2010
+155,255,Germany,GMY,Chile,CHL,155255,34.0,2010
+160,20,Canada,CAN,Argentina,ARG,16020,0.0,2010
+160,255,Germany,GMY,Argentina,ARG,160255,36.0,2010
+210,255,Germany,GMY,Netherlands,NTH,210255,431.0,2010
+220,255,Germany,GMY,France,FRN,220255,623.0,2010
+230,255,Germany,GMY,Spain,SPN,230255,995.0,2010
+255,20,Canada,CAN,Germany,GMY,25520,0.0,2010
+290,20,Canada,CAN,Poland,POL,29020,0.0,2010
+290,211,Belgium,BEL,Poland,POL,290211,59.0,2010
+290,255,Germany,GMY,Poland,POL,290255,382.0,2010
+310,255,Germany,GMY,Hungary,HUN,310255,96.0,2010
+316,255,Germany,GMY,Czech Republic,CZR,316255,36.0,2010
+317,255,Germany,GMY,Slovakia,SLO,317255,11.0,2010
+339,325,Italy,ITA,Albania,ALB,339325,0.0,2010
+343,255,Germany,GMY,Macedonia,MAC,343255,0.0,2010
+344,255,Germany,GMY,Croatia,CRO,344255,35.0,2010
+344,325,Italy,ITA,Croatia,CRO,344325,4.0,2010
+344,346,Bosnia and Herzegovina,BOS,Croatia,CRO,344346,611.0,2010
+345,2,United States of America,USA,Yugoslavia,YUG,3452,0.0,2010
+345,255,Germany,GMY,Yugoslavia,YUG,345255,0.0,2010
+345,305,Austria,AUS,Yugoslavia,YUG,345305,0.0,2010
+345,325,Italy,ITA,Yugoslavia,YUG,345325,0.0,2010
+345,220,France,FRN,Yugoslavia,YUG,345220,0.0,2010
+346,255,Germany,GMY,Bosnia and Herzegovina,BOS,346255,0.0,2010
+346,325,Italy,ITA,Bosnia and Herzegovina,BOS,346325,0.0,2010
+346,344,Croatia,CRO,Bosnia and Herzegovina,BOS,346344,15.0,2010
+346,349,Slovenia,SLV,Bosnia and Herzegovina,BOS,346349,0.0,2010
+349,255,Germany,GMY,Slovenia,SLV,349255,5.0,2010
+350,255,Germany,GMY,Greece,GRC,350255,46.0,2010
+355,255,Germany,GMY,Bulgaria,BUL,355255,0.0,2010
+360,2,United States of America,USA,Romania,ROM,3602,3.0,2010
+360,255,Germany,GMY,Romania,ROM,360255,9.0,2010
+360,310,Hungary,HUN,Romania,ROM,360310,25.0,2010
+360,200,United Kingdom,UKG,Romania,ROM,360200,0.0,2010
+365,2,United States of America,USA,Russia,RUS,3652,0.0,2010
+365,290,Poland,POL,Russia,RUS,365290,0.0,2010
+365,316,Czech Republic,CZR,Russia,RUS,365316,0.0,2010
+365,373,Azerbaijan,AZE,Russia,RUS,365373,890.0,2010
+365,705,Kazakhstan,KZK,Russia,RUS,365705,210.0,2010
+365,20,Canada,CAN,Russia,RUS,36520,0.0,2010
+365,210,Netherlands,NTH,Russia,RUS,365210,0.0,2010
+365,211,Belgium,BEL,Russia,RUS,365211,0.0,2010
+365,220,France,FRN,Russia,RUS,365220,0.0,2010
+365,225,Switzerland,SWZ,Russia,RUS,365225,0.0,2010
+365,255,Germany,GMY,Russia,RUS,365255,0.0,2010
+365,305,Austria,AUS,Russia,RUS,365305,0.0,2010
+365,325,Italy,ITA,Russia,RUS,365325,0.0,2010
+365,368,Lithuania,LIT,Russia,RUS,365368,332.0,2010
+365,369,Ukraine,UKR,Russia,RUS,365369,3124.0,2010
+365,375,Finland,FIN,Russia,RUS,365375,0.0,2010
+365,380,Sweden,SWD,Russia,RUS,365380,0.0,2010
+365,385,Norway,NOR,Russia,RUS,365385,0.0,2010
+365,390,Denmark,DEN,Russia,RUS,365390,0.0,2010
+365,900,Australia,AUL,Russia,RUS,365900,0.0,2010
+365,200,United Kingdom,UKG,Russia,RUS,365200,0.0,2010
+365,230,Spain,SPN,Russia,RUS,365230,0.0,2010
+367,255,Germany,GMY,Latvia,LAT,367255,5.0,2010
+368,255,Germany,GMY,Lithuania,LIT,368255,4.0,2010
+369,2,United States of America,USA,Ukraine,UKR,3692,0.0,2010
+369,365,Russia,RUS,Ukraine,UKR,369365,1737.0,2010
+369,370,Belarus,BLR,Ukraine,UKR,369370,88.0,2010
+369,210,Netherlands,NTH,Ukraine,UKR,369210,0.0,2010
+369,211,Belgium,BEL,Ukraine,UKR,369211,0.0,2010
+369,220,France,FRN,Ukraine,UKR,369220,0.0,2010
+369,255,Germany,GMY,Ukraine,UKR,369255,0.0,2010
+369,316,Czech Republic,CZR,Ukraine,UKR,369316,0.0,2010
+369,325,Italy,ITA,Ukraine,UKR,369325,0.0,2010
+370,2,United States of America,USA,Belarus,BLR,3702,0.0,2010
+370,255,Germany,GMY,Belarus,BLR,370255,10.0,2010
+370,365,Russia,RUS,Belarus,BLR,370365,321.0,2010
+373,2,United States of America,USA,Azerbaijan,AZE,3732,0.0,2010
+373,20,Canada,CAN,Azerbaijan,AZE,37320,0.0,2010
+373,220,France,FRN,Azerbaijan,AZE,373220,0.0,2010
+373,255,Germany,GMY,Azerbaijan,AZE,373255,0.0,2010
+373,369,Ukraine,UKR,Azerbaijan,AZE,373369,8.0,2010
+433,220,France,FRN,Senegal,SEN,433220,165.0,2010
+437,2,United States of America,USA,Ivory Coast,CDI,4372,0.0,2010
+437,210,Netherlands,NTH,Ivory Coast,CDI,437210,0.0,2010
+437,220,France,FRN,Ivory Coast,CDI,437220,0.0,2010
+437,255,Germany,GMY,Ivory Coast,CDI,437255,0.0,2010
+437,475,Nigeria,NIG,Ivory Coast,CDI,437475,449.0,2010
+450,255,Germany,GMY,Liberia,LBR,450255,2.0,2010
+450,385,Norway,NOR,Liberia,LBR,450385,0.0,2010
+452,2,United States of America,USA,Ghana,GHA,4522,0.0,2010
+471,325,Italy,ITA,Cameroon,CAO,471325,0.0,2010
+471,220,France,FRN,Cameroon,CAO,471220,85.0,2010
+475,560,South Africa,SAF,Nigeria,NIG,475560,0.0,2010
+475,2,United States of America,USA,Nigeria,NIG,4752,0.0,2010
+475,20,Canada,CAN,Nigeria,NIG,47520,0.0,2010
+475,220,France,FRN,Nigeria,NIG,475220,0.0,2010
+475,255,Germany,GMY,Nigeria,NIG,475255,0.0,2010
+475,325,Italy,ITA,Nigeria,NIG,475325,0.0,2010
+475,200,United Kingdom,UKG,Nigeria,NIG,475200,0.0,2010
+483,2,United States of America,USA,Chad,CHA,4832,0.0,2010
+484,2,United States of America,USA,Congo,CON,4842,0.0,2010
+484,220,France,FRN,Congo,CON,484220,0.0,2010
+490,211,Belgium,BEL,Democratic Republic of the Congo,DRC,490211,0.0,2010
+490,551,Zambia,ZAM,Democratic Republic of the Congo,DRC,490551,0.0,2010
+490,560,South Africa,SAF,Democratic Republic of the Congo,DRC,490560,0.0,2010
+501,2,United States of America,USA,Kenya,KEN,5012,0.0,2010
+501,200,United Kingdom,UKG,Kenya,KEN,501200,0.0,2010
+530,2,United States of America,USA,Ethiopia,ETH,5302,0.0,2010
+540,2,United States of America,USA,Angola,ANG,5402,0.0,2010
+540,20,Canada,CAN,Angola,ANG,54020,0.0,2010
+540,140,Brazil,BRA,Angola,ANG,540140,0.0,2010
+540,210,Netherlands,NTH,Angola,ANG,540210,0.0,2010
+540,220,France,FRN,Angola,ANG,540220,0.0,2010
+540,255,Germany,GMY,Angola,ANG,540255,0.0,2010
+540,560,South Africa,SAF,Angola,ANG,540560,0.0,2010
+540,200,United Kingdom,UKG,Angola,ANG,540200,0.0,2010
+552,560,South Africa,SAF,Zimbabwe,ZIM,552560,20.0,2010
+560,551,Zambia,ZAM,South Africa,SAF,560551,0.0,2010
+560,572,Swaziland,SWA,South Africa,SAF,560572,46.0,2010
+560,255,Germany,GMY,South Africa,SAF,560255,0.0,2010
+560,552,Zimbabwe,ZIM,South Africa,SAF,560552,0.0,2010
+600,325,Italy,ITA,Morocco,MOR,600325,0.0,2010
+600,255,Germany,GMY,Morocco,MOR,600255,0.0,2010
+615,230,Spain,SPN,Algeria,ALG,615230,0.0,2010
+615,255,Germany,GMY,Algeria,ALG,615255,0.0,2010
+615,2,United States of America,USA,Algeria,ALG,6152,0.0,2010
+615,20,Canada,CAN,Algeria,ALG,61520,0.0,2010
+615,220,France,FRN,Algeria,ALG,615220,0.0,2010
+615,200,United Kingdom,UKG,Algeria,ALG,615200,0.0,2010
+616,255,Germany,GMY,Tunisia,TUN,616255,0.0,2010
+616,325,Italy,ITA,Tunisia,TUN,616325,3.0,2010
+620,2,United States of America,USA,Libya,LIB,6202,0.0,2010
+620,220,France,FRN,Libya,LIB,620220,0.0,2010
+620,225,Switzerland,SWZ,Libya,LIB,620225,0.0,2010
+620,255,Germany,GMY,Libya,LIB,620255,0.0,2010
+620,325,Italy,ITA,Libya,LIB,620325,0.0,2010
+620,200,United Kingdom,UKG,Libya,LIB,620200,0.0,2010
+630,652,Syria,SYR,Iran,IRN,630652,0.0,2010
+630,640,Turkey,TUR,Iran,IRN,630640,0.0,2010
+630,210,Netherlands,NTH,Iran,IRN,630210,0.0,2010
+630,211,Belgium,BEL,Iran,IRN,630211,0.0,2010
+630,220,France,FRN,Iran,IRN,630220,0.0,2010
+630,225,Switzerland,SWZ,Iran,IRN,630225,0.0,2010
+630,255,Germany,GMY,Iran,IRN,630255,0.0,2010
+630,305,Austria,AUS,Iran,IRN,630305,0.0,2010
+630,325,Italy,ITA,Iran,IRN,630325,0.0,2010
+630,350,Greece,GRC,Iran,IRN,630350,0.0,2010
+630,380,Sweden,SWD,Iran,IRN,630380,0.0,2010
+630,770,Pakistan,PAK,Iran,IRN,630770,23.0,2010
+630,200,United Kingdom,UKG,Iran,IRN,630200,0.0,2010
+630,750,India,IND,Iran,IRN,630750,0.0,2010
+640,210,Netherlands,NTH,Turkey,TUR,640210,48.0,2010
+640,220,France,FRN,Turkey,TUR,640220,173.0,2010
+640,225,Switzerland,SWZ,Turkey,TUR,640225,81.0,2010
+640,350,Greece,GRC,Turkey,TUR,640350,79.0,2010
+640,2,United States of America,USA,Turkey,TUR,6402,33.0,2010
+640,20,Canada,CAN,Turkey,TUR,64020,0.0,2010
+640,211,Belgium,BEL,Turkey,TUR,640211,221.0,2010
+640,255,Germany,GMY,Turkey,TUR,640255,1118.0,2010
+640,305,Austria,AUS,Turkey,TUR,640305,80.0,2010
+640,325,Italy,ITA,Turkey,TUR,640325,6.0,2010
+640,380,Sweden,SWD,Turkey,TUR,640380,13.0,2010
+640,900,Australia,AUL,Turkey,TUR,640900,12.0,2010
+640,200,United Kingdom,UKG,Turkey,TUR,640200,33.0,2010
+640,645,Iraq,IRQ,Turkey,TUR,640645,1.0,2010
+645,800,Thailand,THI,Iraq,IRQ,645800,0.0,2010
+645,2,United States of America,USA,Iraq,IRQ,6452,1.0,2010
+645,20,Canada,CAN,Iraq,IRQ,64520,0.0,2010
+645,210,Netherlands,NTH,Iraq,IRQ,645210,0.0,2010
+645,220,France,FRN,Iraq,IRQ,645220,0.0,2010
+645,255,Germany,GMY,Iraq,IRQ,645255,1.0,2010
+645,305,Austria,AUS,Iraq,IRQ,645305,0.0,2010
+645,325,Italy,ITA,Iraq,IRQ,645325,0.0,2010
+645,640,Turkey,TUR,Iraq,IRQ,645640,0.0,2010
+645,652,Syria,SYR,Iraq,IRQ,645652,9.0,2010
+645,663,Jordan,JOR,Iraq,IRQ,645663,15.0,2010
+645,750,India,IND,Iraq,IRQ,645750,1.0,2010
+651,220,France,FRN,Egypt,EGY,651220,0.0,2010
+651,200,United Kingdom,UKG,Egypt,EGY,651200,0.0,2010
+651,2,United States of America,USA,Egypt,EGY,6512,0.0,2010
+651,325,Italy,ITA,Egypt,EGY,651325,0.0,2010
+651,255,Germany,GMY,Egypt,EGY,651255,0.0,2010
+652,220,France,FRN,Syria,SYR,652220,0.0,2010
+652,2,United States of America,USA,Syria,SYR,6522,0.0,2010
+652,255,Germany,GMY,Syria,SYR,652255,0.0,2010
+652,325,Italy,ITA,Syria,SYR,652325,0.0,2010
+652,365,Russia,RUS,Syria,SYR,652365,0.0,2010
+652,369,Ukraine,UKR,Syria,SYR,652369,0.0,2010
+652,640,Turkey,TUR,Syria,SYR,652640,0.0,2010
+652,645,Iraq,IRQ,Syria,SYR,652645,0.0,2010
+652,651,Egypt,EGY,Syria,SYR,652651,0.0,2010
+652,732,South Korea,ROK,Syria,SYR,652732,0.0,2010
+660,255,Germany,GMY,Lebanon,LEB,660255,0.0,2010
+660,2,United States of America,USA,Lebanon,LEB,6602,0.0,2010
+663,255,Germany,GMY,Jordan,JOR,663255,22.0,2010
+663,2,United States of America,USA,Jordan,JOR,6632,47.0,2010
+666,20,Canada,CAN,Israel,ISR,66620,0.0,2010
+666,255,Germany,GMY,Israel,ISR,666255,159.0,2010
+670,255,Germany,GMY,Saudi Arabia,SAU,670255,0.0,2010
+679,2,United States of America,USA,Yemen,YEM,6792,0.0,2010
+690,255,Germany,GMY,Kuwait,KUW,690255,0.0,2010
+690,200,United Kingdom,UKG,Kuwait,KUW,690200,0.0,2010
+696,255,Germany,GMY,United Arab Emirates,UAE,696255,0.0,2010
+700,2,United States of America,USA,Afghanistan,AFG,7002,0.0,2010
+700,365,Russia,RUS,Afghanistan,AFG,700365,0.0,2010
+700,770,Pakistan,PAK,Afghanistan,AFG,700770,0.0,2010
+701,365,Russia,RUS,Turkmenistan,TKM,701365,30.0,2010
+702,55,Grenada,GRN,Tajikistan,TAJ,70255,30.0,2010
+704,2,United States of America,USA,Uzbekistan,UZB,7042,3.0,2010
+705,255,Germany,GMY,Kazakhstan,KZK,705255,641.0,2010
+705,365,Russia,RUS,Kazakhstan,KZK,705365,1050.0,2010
+705,2,United States of America,USA,Kazakhstan,KZK,7052,0.0,2010
+710,560,South Africa,SAF,China,CHN,710560,0.0,2010
+710,220,France,FRN,China,CHN,710220,0.0,2010
+710,20,Canada,CAN,China,CHN,71020,0.0,2010
+710,210,Netherlands,NTH,China,CHN,710210,0.0,2010
+710,211,Belgium,BEL,China,CHN,710211,0.0,2010
+710,225,Switzerland,SWZ,China,CHN,710225,0.0,2010
+710,255,Germany,GMY,China,CHN,710255,0.0,2010
+710,385,Norway,NOR,China,CHN,710385,0.0,2010
+710,900,Australia,AUL,China,CHN,710900,0.0,2010
+710,2,United States of America,USA,China,CHN,7102,0.0,2010
+710,750,India,IND,China,CHN,710750,0.0,2010
+710,200,United Kingdom,UKG,China,CHN,710200,0.0,2010
+732,255,Germany,GMY,South Korea,ROK,732255,5.0,2010
+740,255,Germany,GMY,Japan,JPN,740255,22.0,2010
+750,2,United States of America,USA,India,IND,7502,6.0,2010
+750,20,Canada,CAN,India,IND,75020,0.0,2010
+750,255,Germany,GMY,India,IND,750255,8.0,2010
+750,200,United Kingdom,UKG,India,IND,750200,8.0,2010
+770,820,Malaysia,MAL,Pakistan,PAK,770820,0.0,2010
+770,800,Thailand,THI,Pakistan,PAK,770800,0.0,2010
+770,220,France,FRN,Pakistan,PAK,770220,0.0,2010
+770,2,United States of America,USA,Pakistan,PAK,7702,0.0,2010
+770,255,Germany,GMY,Pakistan,PAK,770255,0.0,2010
+770,325,Italy,ITA,Pakistan,PAK,770325,0.0,2010
+770,700,Afghanistan,AFG,Pakistan,PAK,770700,0.0,2010
+770,850,Indonesia,INS,Pakistan,PAK,770850,0.0,2010
+770,200,United Kingdom,UKG,Pakistan,PAK,770200,0.0,2010
+771,220,France,FRN,Bangladesh,BNG,771220,0.0,2010
+771,2,United States of America,USA,Bangladesh,BNG,7712,0.0,2010
+771,20,Canada,CAN,Bangladesh,BNG,77120,0.0,2010
+771,255,Germany,GMY,Bangladesh,BNG,771255,0.0,2010
+771,200,United Kingdom,UKG,Bangladesh,BNG,771200,0.0,2010
+771,750,India,IND,Bangladesh,BNG,771750,3120.0,2010
+775,740,Japan,JPN,Myanmar,MYA,775740,0.0,2010
+775,800,Thailand,THI,Myanmar,MYA,775800,0.0,2010
+775,750,India,IND,Myanmar,MYA,775750,94.0,2010
+780,750,India,IND,Sri Lanka,SRI,780750,1076.0,2010
+780,2,United States of America,USA,Sri Lanka,SRI,7802,0.0,2010
+780,200,United Kingdom,UKG,Sri Lanka,SRI,780200,1.0,2010
+800,900,Australia,AUL,Thailand,THI,800900,15.0,2010
+800,255,Germany,GMY,Thailand,THI,800255,25.0,2010
+811,2,United States of America,USA,Cambodia,CAM,8112,2.0,2010
+811,816,Vietnam,DRV,Cambodia,CAM,811816,352.0,2010
+812,710,China,CHN,Laos,LAO,812710,8.0,2010
+812,800,Thailand,THI,Laos,LAO,812800,3.0,2010
+816,220,France,FRN,Vietnam,DRV,816220,0.0,2010
+816,740,Japan,JPN,Vietnam,DRV,816740,0.0,2010
+816,800,Thailand,THI,Vietnam,DRV,816800,0.0,2010
+816,840,Philippines,PHI,Vietnam,DRV,816840,0.0,2010
+816,850,Indonesia,INS,Vietnam,DRV,816850,0.0,2010
+816,200,United Kingdom,UKG,Vietnam,DRV,816200,0.0,2010
+816,2,United States of America,USA,Vietnam,DRV,8162,0.0,2010
+816,210,Netherlands,NTH,Vietnam,DRV,816210,0.0,2010
+816,255,Germany,GMY,Vietnam,DRV,816255,0.0,2010
+816,710,China,CHN,Vietnam,DRV,816710,0.0,2010
+820,255,Germany,GMY,Malaysia,MAL,820255,0.0,2010
+840,2,United States of America,USA,Philippines,PHI,8402,97.0,2010
+840,255,Germany,GMY,Philippines,PHI,840255,7.0,2010
+850,820,Malaysia,MAL,Indonesia,INS,850820,0.0,2010
+850,20,Canada,CAN,Indonesia,INS,85020,0.0,2010
+850,2,United States of America,USA,Indonesia,INS,8502,0.0,2010
+850,255,Germany,GMY,Indonesia,INS,850255,0.0,2010
+850,900,Australia,AUL,Indonesia,INS,850900,0.0,2010
+2,20,Canada,CAN,United States of America,USA,220,,2010
+2,255,Germany,GMY,United States of America,USA,2255,,2010
+20,255,Germany,GMY,Canada,CAN,20255,,2010
+135,2,United States of America,USA,Peru,PER,1352,,2010
+210,255,Germany,GMY,Netherlands,NTH,210255,,2010
+220,255,Germany,GMY,France,FRN,220255,,2010
+255,20,Canada,CAN,Germany,GMY,25520,,2010
+344,255,Germany,GMY,Croatia,CRO,344255,,2010
+365,2,United States of America,USA,Russia,RUS,3652,,2010
+365,290,Poland,POL,Russia,RUS,365290,,2010
+365,316,Czech Republic,CZR,Russia,RUS,365316,,2010
+365,373,Azerbaijan,AZE,Russia,RUS,365373,,2010
+365,705,Kazakhstan,KZK,Russia,RUS,365705,,2010
+369,2,United States of America,USA,Ukraine,UKR,3692,,2010
+369,365,Russia,RUS,Ukraine,UKR,369365,,2010
+369,370,Belarus,BLR,Ukraine,UKR,369370,,2010
+560,551,Zambia,ZAM,South Africa,SAF,560551,,2010
+560,572,Swaziland,SWA,South Africa,SAF,560572,,2010
+630,652,Syria,SYR,Iran,IRN,630652,,2010
+666,20,Canada,CAN,Israel,ISR,66620,,2010
+666,255,Germany,GMY,Israel,ISR,666255,,2010
+710,560,South Africa,SAF,China,CHN,710560,,2010
+770,820,Malaysia,MAL,Pakistan,PAK,770820,,2010
+850,820,Malaysia,MAL,Indonesia,INS,850820,,2010
+471,325,Italy,ITA,Cameroon,CAO,471325,,2010
+310,255,Germany,GMY,Hungary,HUN,310255,,2010
+475,560,South Africa,SAF,Nigeria,NIG,475560,,2010
+339,325,Italy,ITA,Albania,ALB,339325,,2010
+316,255,Germany,GMY,Czech Republic,CZR,316255,,2010
+317,255,Germany,GMY,Slovakia,SLO,317255,,2010
+31,2,United States of America,USA,Bahamas,BHM,312,,2010
+41,2,United States of America,USA,Haiti,HAI,412,,2010
+41,42,Dominican Republic,DOM,Haiti,HAI,4142,,2010
+70,2,United States of America,USA,Mexico,MEX,702,,2010
+70,255,Germany,GMY,Mexico,MEX,70255,,2010
+90,70,Mexico,MEX,Guatemala,GUA,9070,,2010
+91,2,United States of America,USA,Honduras,HON,912,,2010
+92,90,Guatemala,GUA,El Salvador,SAL,9290,,2010
+93,2,United States of America,USA,Nicaragua,NIC,932,,2010
+95,2,United States of America,USA,Panama,PAN,952,,2010
+100,20,Canada,CAN,Colombia,COL,10020,,2010
+100,101,Venezuela,VEN,Colombia,COL,100101,,2010
+100,130,Ecuador,ECU,Colombia,COL,100130,,2010
+100,135,Peru,PER,Colombia,COL,100135,,2010
+100,140,Brazil,BRA,Colombia,COL,100140,,2010
+100,155,Chile,CHL,Colombia,COL,100155,,2010
+100,160,Argentina,ARG,Colombia,COL,100160,,2010
+100,210,Netherlands,NTH,Colombia,COL,100210,,2010
+100,255,Germany,GMY,Colombia,COL,100255,,2010
+100,325,Italy,ITA,Colombia,COL,100325,,2010
+101,20,Canada,CAN,Venezuela,VEN,10120,,2010
+101,70,Mexico,MEX,Venezuela,VEN,10170,,2010
+101,255,Germany,GMY,Venezuela,VEN,101255,,2010
+130,2,United States of America,USA,Ecuador,ECU,1302,,2010
+135,20,Canada,CAN,Peru,PER,13520,,2010
+135,160,Argentina,ARG,Peru,PER,135160,,2010
+135,255,Germany,GMY,Peru,PER,135255,,2010
+140,2,United States of America,USA,Brazil,BRA,1402,,2010
+140,255,Germany,GMY,Brazil,BRA,140255,,2010
+155,20,Canada,CAN,Chile,CHL,15520,,2010
+155,101,Venezuela,VEN,Chile,CHL,155101,,2010
+155,160,Argentina,ARG,Chile,CHL,155160,,2010
+155,211,Belgium,BEL,Chile,CHL,155211,,2010
+155,255,Germany,GMY,Chile,CHL,155255,,2010
+160,20,Canada,CAN,Argentina,ARG,16020,,2010
+160,255,Germany,GMY,Argentina,ARG,160255,,2010
+230,255,Germany,GMY,Spain,SPN,230255,,2010
+290,20,Canada,CAN,Poland,POL,29020,,2010
+290,211,Belgium,BEL,Poland,POL,290211,,2010
+290,255,Germany,GMY,Poland,POL,290255,,2010
+501,2,United States of America,USA,Kenya,KEN,5012,,2010
+343,255,Germany,GMY,Macedonia,MAC,343255,,2010
+344,325,Italy,ITA,Croatia,CRO,344325,,2010
+346,255,Germany,GMY,Bosnia and Herzegovina,BOS,346255,,2010
+346,325,Italy,ITA,Bosnia and Herzegovina,BOS,346325,,2010
+346,344,Croatia,CRO,Bosnia and Herzegovina,BOS,346344,,2010
+346,349,Slovenia,SLV,Bosnia and Herzegovina,BOS,346349,,2010
+349,255,Germany,GMY,Slovenia,SLV,349255,,2010
+350,255,Germany,GMY,Greece,GRC,350255,,2010
+355,255,Germany,GMY,Bulgaria,BUL,355255,,2010
+360,2,United States of America,USA,Romania,ROM,3602,,2010
+360,255,Germany,GMY,Romania,ROM,360255,,2010
+360,310,Hungary,HUN,Romania,ROM,360310,,2010
+552,560,South Africa,SAF,Zimbabwe,ZIM,552560,,2010
+365,20,Canada,CAN,Russia,RUS,36520,,2010
+365,210,Netherlands,NTH,Russia,RUS,365210,,2010
+365,211,Belgium,BEL,Russia,RUS,365211,,2010
+365,220,France,FRN,Russia,RUS,365220,,2010
+365,225,Switzerland,SWZ,Russia,RUS,365225,,2010
+365,255,Germany,GMY,Russia,RUS,365255,,2010
+365,305,Austria,AUS,Russia,RUS,365305,,2010
+365,325,Italy,ITA,Russia,RUS,365325,,2010
+365,368,Lithuania,LIT,Russia,RUS,365368,,2010
+365,369,Ukraine,UKR,Russia,RUS,365369,,2010
+365,375,Finland,FIN,Russia,RUS,365375,,2010
+365,380,Sweden,SWD,Russia,RUS,365380,,2010
+365,385,Norway,NOR,Russia,RUS,365385,,2010
+365,390,Denmark,DEN,Russia,RUS,365390,,2010
+365,900,Australia,AUL,Russia,RUS,365900,,2010
+367,255,Germany,GMY,Latvia,LAT,367255,,2010
+368,255,Germany,GMY,Lithuania,LIT,368255,,2010
+369,210,Netherlands,NTH,Ukraine,UKR,369210,,2010
+369,211,Belgium,BEL,Ukraine,UKR,369211,,2010
+369,220,France,FRN,Ukraine,UKR,369220,,2010
+369,255,Germany,GMY,Ukraine,UKR,369255,,2010
+369,316,Czech Republic,CZR,Ukraine,UKR,369316,,2010
+369,325,Italy,ITA,Ukraine,UKR,369325,,2010
+370,2,United States of America,USA,Belarus,BLR,3702,,2010
+370,255,Germany,GMY,Belarus,BLR,370255,,2010
+370,365,Russia,RUS,Belarus,BLR,370365,,2010
+373,2,United States of America,USA,Azerbaijan,AZE,3732,,2010
+373,20,Canada,CAN,Azerbaijan,AZE,37320,,2010
+373,220,France,FRN,Azerbaijan,AZE,373220,,2010
+373,255,Germany,GMY,Azerbaijan,AZE,373255,,2010
+373,369,Ukraine,UKR,Azerbaijan,AZE,373369,,2010
+600,325,Italy,ITA,Morocco,MOR,600325,,2010
+615,230,Spain,SPN,Algeria,ALG,615230,,2010
+615,255,Germany,GMY,Algeria,ALG,615255,,2010
+630,640,Turkey,TUR,Iran,IRN,630640,,2010
+640,210,Netherlands,NTH,Turkey,TUR,640210,,2010
+640,220,France,FRN,Turkey,TUR,640220,,2010
+640,225,Switzerland,SWZ,Turkey,TUR,640225,,2010
+640,350,Greece,GRC,Turkey,TUR,640350,,2010
+645,800,Thailand,THI,Iraq,IRQ,645800,,2010
+433,220,France,FRN,Senegal,SEN,433220,,2010
+652,220,France,FRN,Syria,SYR,652220,,2010
+437,2,United States of America,USA,Ivory Coast,CDI,4372,,2010
+437,210,Netherlands,NTH,Ivory Coast,CDI,437210,,2010
+437,220,France,FRN,Ivory Coast,CDI,437220,,2010
+437,255,Germany,GMY,Ivory Coast,CDI,437255,,2010
+437,475,Nigeria,NIG,Ivory Coast,CDI,437475,,2010
+450,255,Germany,GMY,Liberia,LBR,450255,,2010
+450,385,Norway,NOR,Liberia,LBR,450385,,2010
+471,220,France,FRN,Cameroon,CAO,471220,,2010
+700,2,United States of America,USA,Afghanistan,AFG,7002,,2010
+475,2,United States of America,USA,Nigeria,NIG,4752,,2010
+475,20,Canada,CAN,Nigeria,NIG,47520,,2010
+475,220,France,FRN,Nigeria,NIG,475220,,2010
+475,255,Germany,GMY,Nigeria,NIG,475255,,2010
+475,325,Italy,ITA,Nigeria,NIG,475325,,2010
+701,365,Russia,RUS,Turkmenistan,TKM,701365,,2010
+490,211,Belgium,BEL,Democratic Republic of the Congo,DRC,490211,,2010
+710,220,France,FRN,China,CHN,710220,,2010
+490,551,Zambia,ZAM,Democratic Republic of the Congo,DRC,490551,,2010
+490,560,South Africa,SAF,Democratic Republic of the Congo,DRC,490560,,2010
+775,740,Japan,JPN,Myanmar,MYA,775740,,2010
+840,2,United States of America,USA,Philippines,PHI,8402,,2010
+800,900,Australia,AUL,Thailand,THI,800900,,2010
+811,2,United States of America,USA,Cambodia,CAM,8112,,2010
+812,710,China,CHN,Laos,LAO,812710,,2010
+812,800,Thailand,THI,Laos,LAO,812800,,2010
+540,2,United States of America,USA,Angola,ANG,5402,,2010
+540,20,Canada,CAN,Angola,ANG,54020,,2010
+540,140,Brazil,BRA,Angola,ANG,540140,,2010
+540,210,Netherlands,NTH,Angola,ANG,540210,,2010
+540,220,France,FRN,Angola,ANG,540220,,2010
+540,255,Germany,GMY,Angola,ANG,540255,,2010
+540,560,South Africa,SAF,Angola,ANG,540560,,2010
+800,255,Germany,GMY,Thailand,THI,800255,,2010
+560,255,Germany,GMY,South Africa,SAF,560255,,2010
+560,552,Zimbabwe,ZIM,South Africa,SAF,560552,,2010
+600,255,Germany,GMY,Morocco,MOR,600255,,2010
+615,2,United States of America,USA,Algeria,ALG,6152,,2010
+615,20,Canada,CAN,Algeria,ALG,61520,,2010
+615,220,France,FRN,Algeria,ALG,615220,,2010
+616,255,Germany,GMY,Tunisia,TUN,616255,,2010
+616,325,Italy,ITA,Tunisia,TUN,616325,,2010
+620,2,United States of America,USA,Libya,LIB,6202,,2010
+620,220,France,FRN,Libya,LIB,620220,,2010
+620,225,Switzerland,SWZ,Libya,LIB,620225,,2010
+620,255,Germany,GMY,Libya,LIB,620255,,2010
+620,325,Italy,ITA,Libya,LIB,620325,,2010
+630,210,Netherlands,NTH,Iran,IRN,630210,,2010
+630,211,Belgium,BEL,Iran,IRN,630211,,2010
+630,220,France,FRN,Iran,IRN,630220,,2010
+630,225,Switzerland,SWZ,Iran,IRN,630225,,2010
+630,255,Germany,GMY,Iran,IRN,630255,,2010
+630,305,Austria,AUS,Iran,IRN,630305,,2010
+630,325,Italy,ITA,Iran,IRN,630325,,2010
+630,350,Greece,GRC,Iran,IRN,630350,,2010
+630,380,Sweden,SWD,Iran,IRN,630380,,2010
+630,770,Pakistan,PAK,Iran,IRN,630770,,2010
+640,2,United States of America,USA,Turkey,TUR,6402,,2010
+640,20,Canada,CAN,Turkey,TUR,64020,,2010
+640,211,Belgium,BEL,Turkey,TUR,640211,,2010
+640,255,Germany,GMY,Turkey,TUR,640255,,2010
+640,305,Austria,AUS,Turkey,TUR,640305,,2010
+640,325,Italy,ITA,Turkey,TUR,640325,,2010
+640,380,Sweden,SWD,Turkey,TUR,640380,,2010
+640,900,Australia,AUL,Turkey,TUR,640900,,2010
+645,2,United States of America,USA,Iraq,IRQ,6452,,2010
+645,20,Canada,CAN,Iraq,IRQ,64520,,2010
+645,210,Netherlands,NTH,Iraq,IRQ,645210,,2010
+645,220,France,FRN,Iraq,IRQ,645220,,2010
+645,255,Germany,GMY,Iraq,IRQ,645255,,2010
+645,305,Austria,AUS,Iraq,IRQ,645305,,2010
+645,325,Italy,ITA,Iraq,IRQ,645325,,2010
+645,640,Turkey,TUR,Iraq,IRQ,645640,,2010
+645,652,Syria,SYR,Iraq,IRQ,645652,,2010
+645,663,Jordan,JOR,Iraq,IRQ,645663,,2010
+652,2,United States of America,USA,Syria,SYR,6522,,2010
+652,255,Germany,GMY,Syria,SYR,652255,,2010
+652,325,Italy,ITA,Syria,SYR,652325,,2010
+652,365,Russia,RUS,Syria,SYR,652365,,2010
+652,369,Ukraine,UKR,Syria,SYR,652369,,2010
+652,640,Turkey,TUR,Syria,SYR,652640,,2010
+652,645,Iraq,IRQ,Syria,SYR,652645,,2010
+652,651,Egypt,EGY,Syria,SYR,652651,,2010
+652,732,South Korea,ROK,Syria,SYR,652732,,2010
+660,255,Germany,GMY,Lebanon,LEB,660255,,2010
+663,255,Germany,GMY,Jordan,JOR,663255,,2010
+670,255,Germany,GMY,Saudi Arabia,SAU,670255,,2010
+679,2,United States of America,USA,Yemen,YEM,6792,,2010
+690,255,Germany,GMY,Kuwait,KUW,690255,,2010
+770,800,Thailand,THI,Pakistan,PAK,770800,,2010
+696,255,Germany,GMY,United Arab Emirates,UAE,696255,,2010
+771,220,France,FRN,Bangladesh,BNG,771220,,2010
+775,800,Thailand,THI,Myanmar,MYA,775800,,2010
+700,365,Russia,RUS,Afghanistan,AFG,700365,,2010
+700,770,Pakistan,PAK,Afghanistan,AFG,700770,,2010
+705,255,Germany,GMY,Kazakhstan,KZK,705255,,2010
+705,365,Russia,RUS,Kazakhstan,KZK,705365,,2010
+710,20,Canada,CAN,China,CHN,71020,,2010
+710,210,Netherlands,NTH,China,CHN,710210,,2010
+710,211,Belgium,BEL,China,CHN,710211,,2010
+710,225,Switzerland,SWZ,China,CHN,710225,,2010
+710,255,Germany,GMY,China,CHN,710255,,2010
+710,385,Norway,NOR,China,CHN,710385,,2010
+710,900,Australia,AUL,China,CHN,710900,,2010
+770,220,France,FRN,Pakistan,PAK,770220,,2010
+732,255,Germany,GMY,South Korea,ROK,732255,,2010
+850,20,Canada,CAN,Indonesia,INS,85020,,2010
+740,255,Germany,GMY,Japan,JPN,740255,,2010
+750,2,United States of America,USA,India,IND,7502,,2010
+750,20,Canada,CAN,India,IND,75020,,2010
+750,255,Germany,GMY,India,IND,750255,,2010
+770,2,United States of America,USA,Pakistan,PAK,7702,,2010
+770,255,Germany,GMY,Pakistan,PAK,770255,,2010
+770,325,Italy,ITA,Pakistan,PAK,770325,,2010
+770,700,Afghanistan,AFG,Pakistan,PAK,770700,,2010
+770,850,Indonesia,INS,Pakistan,PAK,770850,,2010
+771,2,United States of America,USA,Bangladesh,BNG,7712,,2010
+771,20,Canada,CAN,Bangladesh,BNG,77120,,2010
+771,255,Germany,GMY,Bangladesh,BNG,771255,,2010
+820,255,Germany,GMY,Malaysia,MAL,820255,,2010
+840,255,Germany,GMY,Philippines,PHI,840255,,2010
+850,2,United States of America,USA,Indonesia,INS,8502,,2010
+850,255,Germany,GMY,Indonesia,INS,850255,,2010
+850,900,Australia,AUL,Indonesia,INS,850900,,2010
+710,2,United States of America,USA,China,CHN,7102,,2010
+750,200,United Kingdom,UKG,India,IND,750200,,2010
+484,2,United States of America,USA,Congo,CON,4842,,2010
+484,220,France,FRN,Congo,CON,484220,,2010
+651,220,France,FRN,Egypt,EGY,651220,,2010
+710,750,India,IND,China,CHN,710750,,2010
+660,2,United States of America,USA,Lebanon,LEB,6602,,2010
+100,2,United States of America,USA,Colombia,COL,1002,,2010
+100,230,Spain,SPN,Colombia,COL,100230,,2010
+344,346,Bosnia and Herzegovina,BOS,Croatia,CRO,344346,,2010
+501,200,United Kingdom,UKG,Kenya,KEN,501200,,2010
+640,200,United Kingdom,UKG,Turkey,TUR,640200,,2010
+365,200,United Kingdom,UKG,Russia,RUS,365200,,2010
+640,645,Iraq,IRQ,Turkey,TUR,640645,,2010
+663,2,United States of America,USA,Jordan,JOR,6632,,2010
+690,200,United Kingdom,UKG,Kuwait,KUW,690200,,2010
+530,2,United States of America,USA,Ethiopia,ETH,5302,,2010
+615,200,United Kingdom,UKG,Algeria,ALG,615200,,2010
+365,230,Spain,SPN,Russia,RUS,365230,,2010
+770,200,United Kingdom,UKG,Pakistan,PAK,770200,,2010
+452,2,United States of America,USA,Ghana,GHA,4522,,2010
+771,200,United Kingdom,UKG,Bangladesh,BNG,771200,,2010
+40,20,Canada,CAN,Cuba,CUB,4020,,2010
+40,230,Spain,SPN,Cuba,CUB,40230,,2010
+771,750,India,IND,Bangladesh,BNG,771750,,2010
+540,200,United Kingdom,UKG,Angola,ANG,540200,,2010
+475,200,United Kingdom,UKG,Nigeria,NIG,475200,,2010
+780,750,India,IND,Sri Lanka,SRI,780750,,2010
+620,200,United Kingdom,UKG,Libya,LIB,620200,,2010
+645,750,India,IND,Iraq,IRQ,645750,,2010
+70,20,Canada,CAN,Mexico,MEX,7020,,2010
+780,2,United States of America,USA,Sri Lanka,SRI,7802,,2010
+780,200,United Kingdom,UKG,Sri Lanka,SRI,780200,,2010
+92,2,United States of America,USA,El Salvador,SAL,922,,2010
+360,200,United Kingdom,UKG,Romania,ROM,360200,,2010
+483,2,United States of America,USA,Chad,CHA,4832,,2010
+630,200,United Kingdom,UKG,Iran,IRN,630200,,2010
+100,200,United Kingdom,UKG,Colombia,COL,100200,,2010
+651,200,United Kingdom,UKG,Egypt,EGY,651200,,2010
+90,2,United States of America,USA,Guatemala,GUA,902,,2010
+101,2,United States of America,USA,Venezuela,VEN,1012,,2010
+651,2,United States of America,USA,Egypt,EGY,6512,,2010
+651,325,Italy,ITA,Egypt,EGY,651325,,2010
+630,750,India,IND,Iran,IRN,630750,,2010
+94,2,United States of America,USA,Costa Rica,COS,942,,2010
+775,750,India,IND,Myanmar,MYA,775750,,2010
+710,200,United Kingdom,UKG,China,CHN,710200,,2010
+651,255,Germany,GMY,Egypt,EGY,651255,,2010
+816,220,France,FRN,Vietnam,DRV,816220,,2010
+816,740,Japan,JPN,Vietnam,DRV,816740,,2010
+816,800,Thailand,THI,Vietnam,DRV,816800,,2010
+816,840,Philippines,PHI,Vietnam,DRV,816840,,2010
+816,850,Indonesia,INS,Vietnam,DRV,816850,,2010
+816,200,United Kingdom,UKG,Vietnam,DRV,816200,,2010
+816,2,United States of America,USA,Vietnam,DRV,8162,,2010
+816,210,Netherlands,NTH,Vietnam,DRV,816210,,2010
+704,2,United States of America,USA,Uzbekistan,UZB,7042,,2010
+345,2,United States of America,USA,Yugoslavia,YUG,3452,,2010
+816,255,Germany,GMY,Vietnam,DRV,816255,,2010
+811,816,Vietnam,DRV,Cambodia,CAM,811816,,2010
+345,255,Germany,GMY,Yugoslavia,YUG,345255,,2010
+345,305,Austria,AUS,Yugoslavia,YUG,345305,,2010
+705,2,United States of America,USA,Kazakhstan,KZK,7052,,2010
+345,325,Italy,ITA,Yugoslavia,YUG,345325,,2010
+345,220,France,FRN,Yugoslavia,YUG,345220,,2010
+816,710,China,CHN,Vietnam,DRV,816710,,2010
+70,42,Dominican Republic,DOM,Mexico,MEX,7042,,2010
+70,52,Trinidad and Tobago,TRI,Mexico,MEX,7052,,2010
+702,55,Grenada,GRN,Tajikistan,TAJ,70255,,2010
+2,20,Canada,CAN,United States of America,USA,220,,2010
+2,255,Germany,GMY,United States of America,USA,2255,,2010
+20,255,Germany,GMY,Canada,CAN,20255,,2010
+135,2,United States of America,USA,Peru,PER,1352,,2010
+210,255,Germany,GMY,Netherlands,NTH,210255,,2010
+220,255,Germany,GMY,France,FRN,220255,,2010
+255,20,Canada,CAN,Germany,GMY,25520,,2010
+344,255,Germany,GMY,Croatia,CRO,344255,,2010
+365,2,United States of America,USA,Russia,RUS,3652,,2010
+365,290,Poland,POL,Russia,RUS,365290,,2010
+365,316,Czech Republic,CZR,Russia,RUS,365316,,2010
+365,373,Azerbaijan,AZE,Russia,RUS,365373,,2010
+365,705,Kazakhstan,KZK,Russia,RUS,365705,,2010
+369,2,United States of America,USA,Ukraine,UKR,3692,,2010
+369,365,Russia,RUS,Ukraine,UKR,369365,,2010
+369,370,Belarus,BLR,Ukraine,UKR,369370,,2010
+560,551,Zambia,ZAM,South Africa,SAF,560551,,2010
+560,572,Swaziland,SWA,South Africa,SAF,560572,,2010
+630,652,Syria,SYR,Iran,IRN,630652,,2010
+666,20,Canada,CAN,Israel,ISR,66620,,2010
+666,255,Germany,GMY,Israel,ISR,666255,,2010
+710,560,South Africa,SAF,China,CHN,710560,,2010
+770,820,Malaysia,MAL,Pakistan,PAK,770820,,2010
+850,820,Malaysia,MAL,Indonesia,INS,850820,,2010
+471,325,Italy,ITA,Cameroon,CAO,471325,,2010
+310,255,Germany,GMY,Hungary,HUN,310255,,2010
+475,560,South Africa,SAF,Nigeria,NIG,475560,,2010
+339,325,Italy,ITA,Albania,ALB,339325,,2010
+316,255,Germany,GMY,Czech Republic,CZR,316255,,2010
+317,255,Germany,GMY,Slovakia,SLO,317255,,2010
+31,2,United States of America,USA,Bahamas,BHM,312,,2010
+41,2,United States of America,USA,Haiti,HAI,412,,2010
+41,42,Dominican Republic,DOM,Haiti,HAI,4142,,2010
+70,2,United States of America,USA,Mexico,MEX,702,,2010
+70,255,Germany,GMY,Mexico,MEX,70255,,2010
+90,70,Mexico,MEX,Guatemala,GUA,9070,,2010
+91,2,United States of America,USA,Honduras,HON,912,,2010
+92,90,Guatemala,GUA,El Salvador,SAL,9290,,2010
+93,2,United States of America,USA,Nicaragua,NIC,932,,2010
+95,2,United States of America,USA,Panama,PAN,952,,2010
+100,20,Canada,CAN,Colombia,COL,10020,,2010
+100,101,Venezuela,VEN,Colombia,COL,100101,,2010
+100,130,Ecuador,ECU,Colombia,COL,100130,,2010
+100,135,Peru,PER,Colombia,COL,100135,,2010
+100,140,Brazil,BRA,Colombia,COL,100140,,2010
+100,155,Chile,CHL,Colombia,COL,100155,,2010
+100,160,Argentina,ARG,Colombia,COL,100160,,2010
+100,210,Netherlands,NTH,Colombia,COL,100210,,2010
+100,255,Germany,GMY,Colombia,COL,100255,,2010
+100,325,Italy,ITA,Colombia,COL,100325,,2010
+101,20,Canada,CAN,Venezuela,VEN,10120,,2010
+101,70,Mexico,MEX,Venezuela,VEN,10170,,2010
+101,255,Germany,GMY,Venezuela,VEN,101255,,2010
+130,2,United States of America,USA,Ecuador,ECU,1302,,2010
+135,20,Canada,CAN,Peru,PER,13520,,2010
+135,160,Argentina,ARG,Peru,PER,135160,,2010
+135,255,Germany,GMY,Peru,PER,135255,,2010
+140,2,United States of America,USA,Brazil,BRA,1402,,2010
+140,255,Germany,GMY,Brazil,BRA,140255,,2010
+155,20,Canada,CAN,Chile,CHL,15520,,2010
+155,101,Venezuela,VEN,Chile,CHL,155101,,2010
+155,160,Argentina,ARG,Chile,CHL,155160,,2010
+155,211,Belgium,BEL,Chile,CHL,155211,,2010
+155,255,Germany,GMY,Chile,CHL,155255,,2010
+160,20,Canada,CAN,Argentina,ARG,16020,,2010
+160,255,Germany,GMY,Argentina,ARG,160255,,2010
+230,255,Germany,GMY,Spain,SPN,230255,,2010
+290,20,Canada,CAN,Poland,POL,29020,,2010
+290,211,Belgium,BEL,Poland,POL,290211,,2010
+290,255,Germany,GMY,Poland,POL,290255,,2010
+501,2,United States of America,USA,Kenya,KEN,5012,,2010
+343,255,Germany,GMY,Macedonia,MAC,343255,,2010
+344,325,Italy,ITA,Croatia,CRO,344325,,2010
+346,255,Germany,GMY,Bosnia and Herzegovina,BOS,346255,,2010
+346,325,Italy,ITA,Bosnia and Herzegovina,BOS,346325,,2010
+346,344,Croatia,CRO,Bosnia and Herzegovina,BOS,346344,,2010
+346,349,Slovenia,SLV,Bosnia and Herzegovina,BOS,346349,,2010
+349,255,Germany,GMY,Slovenia,SLV,349255,,2010
+350,255,Germany,GMY,Greece,GRC,350255,,2010
+355,255,Germany,GMY,Bulgaria,BUL,355255,,2010
+360,2,United States of America,USA,Romania,ROM,3602,,2010
+360,255,Germany,GMY,Romania,ROM,360255,,2010
+360,310,Hungary,HUN,Romania,ROM,360310,,2010
+552,560,South Africa,SAF,Zimbabwe,ZIM,552560,,2010
+365,20,Canada,CAN,Russia,RUS,36520,,2010
+365,210,Netherlands,NTH,Russia,RUS,365210,,2010
+365,211,Belgium,BEL,Russia,RUS,365211,,2010
+365,220,France,FRN,Russia,RUS,365220,,2010
+365,225,Switzerland,SWZ,Russia,RUS,365225,,2010
+365,255,Germany,GMY,Russia,RUS,365255,,2010
+365,305,Austria,AUS,Russia,RUS,365305,,2010
+365,325,Italy,ITA,Russia,RUS,365325,,2010
+365,368,Lithuania,LIT,Russia,RUS,365368,,2010
+365,369,Ukraine,UKR,Russia,RUS,365369,,2010
+365,375,Finland,FIN,Russia,RUS,365375,,2010
+365,380,Sweden,SWD,Russia,RUS,365380,,2010
+365,385,Norway,NOR,Russia,RUS,365385,,2010
+365,390,Denmark,DEN,Russia,RUS,365390,,2010
+365,900,Australia,AUL,Russia,RUS,365900,,2010
+367,255,Germany,GMY,Latvia,LAT,367255,,2010
+368,255,Germany,GMY,Lithuania,LIT,368255,,2010
+369,210,Netherlands,NTH,Ukraine,UKR,369210,,2010
+369,211,Belgium,BEL,Ukraine,UKR,369211,,2010
+369,220,France,FRN,Ukraine,UKR,369220,,2010
+369,255,Germany,GMY,Ukraine,UKR,369255,,2010
+369,316,Czech Republic,CZR,Ukraine,UKR,369316,,2010
+369,325,Italy,ITA,Ukraine,UKR,369325,,2010
+370,2,United States of America,USA,Belarus,BLR,3702,,2010
+370,255,Germany,GMY,Belarus,BLR,370255,,2010
+370,365,Russia,RUS,Belarus,BLR,370365,,2010
+373,2,United States of America,USA,Azerbaijan,AZE,3732,,2010
+373,20,Canada,CAN,Azerbaijan,AZE,37320,,2010
+373,220,France,FRN,Azerbaijan,AZE,373220,,2010
+373,255,Germany,GMY,Azerbaijan,AZE,373255,,2010
+373,369,Ukraine,UKR,Azerbaijan,AZE,373369,,2010
+600,325,Italy,ITA,Morocco,MOR,600325,,2010
+615,230,Spain,SPN,Algeria,ALG,615230,,2010
+615,255,Germany,GMY,Algeria,ALG,615255,,2010
+630,640,Turkey,TUR,Iran,IRN,630640,,2010
+640,210,Netherlands,NTH,Turkey,TUR,640210,,2010
+640,220,France,FRN,Turkey,TUR,640220,,2010
+640,225,Switzerland,SWZ,Turkey,TUR,640225,,2010
+640,350,Greece,GRC,Turkey,TUR,640350,,2010
+645,800,Thailand,THI,Iraq,IRQ,645800,,2010
+433,220,France,FRN,Senegal,SEN,433220,,2010
+652,220,France,FRN,Syria,SYR,652220,,2010
+437,2,United States of America,USA,Ivory Coast,CDI,4372,,2010
+437,210,Netherlands,NTH,Ivory Coast,CDI,437210,,2010
+437,220,France,FRN,Ivory Coast,CDI,437220,,2010
+437,255,Germany,GMY,Ivory Coast,CDI,437255,,2010
+437,475,Nigeria,NIG,Ivory Coast,CDI,437475,,2010
+450,255,Germany,GMY,Liberia,LBR,450255,,2010
+450,385,Norway,NOR,Liberia,LBR,450385,,2010
+471,220,France,FRN,Cameroon,CAO,471220,,2010
+700,2,United States of America,USA,Afghanistan,AFG,7002,,2010
+475,2,United States of America,USA,Nigeria,NIG,4752,,2010
+475,20,Canada,CAN,Nigeria,NIG,47520,,2010
+475,220,France,FRN,Nigeria,NIG,475220,,2010
+475,255,Germany,GMY,Nigeria,NIG,475255,,2010
+475,325,Italy,ITA,Nigeria,NIG,475325,,2010
+701,365,Russia,RUS,Turkmenistan,TKM,701365,,2010
+490,211,Belgium,BEL,Democratic Republic of the Congo,DRC,490211,,2010
+710,220,France,FRN,China,CHN,710220,,2010
+490,551,Zambia,ZAM,Democratic Republic of the Congo,DRC,490551,,2010
+490,560,South Africa,SAF,Democratic Republic of the Congo,DRC,490560,,2010
+775,740,Japan,JPN,Myanmar,MYA,775740,,2010
+840,2,United States of America,USA,Philippines,PHI,8402,,2010
+800,900,Australia,AUL,Thailand,THI,800900,,2010
+811,2,United States of America,USA,Cambodia,CAM,8112,,2010
+812,710,China,CHN,Laos,LAO,812710,,2010
+812,800,Thailand,THI,Laos,LAO,812800,,2010
+540,2,United States of America,USA,Angola,ANG,5402,,2010
+540,20,Canada,CAN,Angola,ANG,54020,,2010
+540,140,Brazil,BRA,Angola,ANG,540140,,2010
+540,210,Netherlands,NTH,Angola,ANG,540210,,2010
+540,220,France,FRN,Angola,ANG,540220,,2010
+540,255,Germany,GMY,Angola,ANG,540255,,2010
+540,560,South Africa,SAF,Angola,ANG,540560,,2010
+800,255,Germany,GMY,Thailand,THI,800255,,2010
+560,255,Germany,GMY,South Africa,SAF,560255,,2010
+560,552,Zimbabwe,ZIM,South Africa,SAF,560552,,2010
+600,255,Germany,GMY,Morocco,MOR,600255,,2010
+615,2,United States of America,USA,Algeria,ALG,6152,,2010
+615,20,Canada,CAN,Algeria,ALG,61520,,2010
+615,220,France,FRN,Algeria,ALG,615220,,2010
+616,255,Germany,GMY,Tunisia,TUN,616255,,2010
+616,325,Italy,ITA,Tunisia,TUN,616325,,2010
+620,2,United States of America,USA,Libya,LIB,6202,,2010
+620,220,France,FRN,Libya,LIB,620220,,2010
+620,225,Switzerland,SWZ,Libya,LIB,620225,,2010
+620,255,Germany,GMY,Libya,LIB,620255,,2010
+620,325,Italy,ITA,Libya,LIB,620325,,2010
+630,210,Netherlands,NTH,Iran,IRN,630210,,2010
+630,211,Belgium,BEL,Iran,IRN,630211,,2010
+630,220,France,FRN,Iran,IRN,630220,,2010
+630,225,Switzerland,SWZ,Iran,IRN,630225,,2010
+630,255,Germany,GMY,Iran,IRN,630255,,2010
+630,305,Austria,AUS,Iran,IRN,630305,,2010
+630,325,Italy,ITA,Iran,IRN,630325,,2010
+630,350,Greece,GRC,Iran,IRN,630350,,2010
+630,380,Sweden,SWD,Iran,IRN,630380,,2010
+630,770,Pakistan,PAK,Iran,IRN,630770,,2010
+640,2,United States of America,USA,Turkey,TUR,6402,,2010
+640,20,Canada,CAN,Turkey,TUR,64020,,2010
+640,211,Belgium,BEL,Turkey,TUR,640211,,2010
+640,255,Germany,GMY,Turkey,TUR,640255,,2010
+640,305,Austria,AUS,Turkey,TUR,640305,,2010
+640,325,Italy,ITA,Turkey,TUR,640325,,2010
+640,380,Sweden,SWD,Turkey,TUR,640380,,2010
+640,900,Australia,AUL,Turkey,TUR,640900,,2010
+645,2,United States of America,USA,Iraq,IRQ,6452,,2010
+645,20,Canada,CAN,Iraq,IRQ,64520,,2010
+645,210,Netherlands,NTH,Iraq,IRQ,645210,,2010
+645,220,France,FRN,Iraq,IRQ,645220,,2010
+645,255,Germany,GMY,Iraq,IRQ,645255,,2010
+645,305,Austria,AUS,Iraq,IRQ,645305,,2010
+645,325,Italy,ITA,Iraq,IRQ,645325,,2010
+645,640,Turkey,TUR,Iraq,IRQ,645640,,2010
+645,652,Syria,SYR,Iraq,IRQ,645652,,2010
+645,663,Jordan,JOR,Iraq,IRQ,645663,,2010
+652,2,United States of America,USA,Syria,SYR,6522,,2010
+652,255,Germany,GMY,Syria,SYR,652255,,2010
+652,325,Italy,ITA,Syria,SYR,652325,,2010
+652,365,Russia,RUS,Syria,SYR,652365,,2010
+652,369,Ukraine,UKR,Syria,SYR,652369,,2010
+652,640,Turkey,TUR,Syria,SYR,652640,,2010
+652,645,Iraq,IRQ,Syria,SYR,652645,,2010
+652,651,Egypt,EGY,Syria,SYR,652651,,2010
+652,732,South Korea,ROK,Syria,SYR,652732,,2010
+660,255,Germany,GMY,Lebanon,LEB,660255,,2010
+663,255,Germany,GMY,Jordan,JOR,663255,,2010
+670,255,Germany,GMY,Saudi Arabia,SAU,670255,,2010
+679,2,United States of America,USA,Yemen,YEM,6792,,2010
+690,255,Germany,GMY,Kuwait,KUW,690255,,2010
+770,800,Thailand,THI,Pakistan,PAK,770800,,2010
+696,255,Germany,GMY,United Arab Emirates,UAE,696255,,2010
+771,220,France,FRN,Bangladesh,BNG,771220,,2010
+775,800,Thailand,THI,Myanmar,MYA,775800,,2010
+700,365,Russia,RUS,Afghanistan,AFG,700365,,2010
+700,770,Pakistan,PAK,Afghanistan,AFG,700770,,2010
+705,255,Germany,GMY,Kazakhstan,KZK,705255,,2010
+705,365,Russia,RUS,Kazakhstan,KZK,705365,,2010
+710,20,Canada,CAN,China,CHN,71020,,2010
+710,210,Netherlands,NTH,China,CHN,710210,,2010
+710,211,Belgium,BEL,China,CHN,710211,,2010
+710,225,Switzerland,SWZ,China,CHN,710225,,2010
+710,255,Germany,GMY,China,CHN,710255,,2010
+710,385,Norway,NOR,China,CHN,710385,,2010
+710,900,Australia,AUL,China,CHN,710900,,2010
+770,220,France,FRN,Pakistan,PAK,770220,,2010
+732,255,Germany,GMY,South Korea,ROK,732255,,2010
+850,20,Canada,CAN,Indonesia,INS,85020,,2010
+740,255,Germany,GMY,Japan,JPN,740255,,2010
+750,2,United States of America,USA,India,IND,7502,,2010
+750,20,Canada,CAN,India,IND,75020,,2010
+750,255,Germany,GMY,India,IND,750255,,2010
+770,2,United States of America,USA,Pakistan,PAK,7702,,2010
+770,255,Germany,GMY,Pakistan,PAK,770255,,2010
+770,325,Italy,ITA,Pakistan,PAK,770325,,2010
+770,700,Afghanistan,AFG,Pakistan,PAK,770700,,2010
+770,850,Indonesia,INS,Pakistan,PAK,770850,,2010
+771,2,United States of America,USA,Bangladesh,BNG,7712,,2010
+771,20,Canada,CAN,Bangladesh,BNG,77120,,2010
+771,255,Germany,GMY,Bangladesh,BNG,771255,,2010
+820,255,Germany,GMY,Malaysia,MAL,820255,,2010
+840,255,Germany,GMY,Philippines,PHI,840255,,2010
+850,2,United States of America,USA,Indonesia,INS,8502,,2010
+850,255,Germany,GMY,Indonesia,INS,850255,,2010
+850,900,Australia,AUL,Indonesia,INS,850900,,2010
+710,2,United States of America,USA,China,CHN,7102,,2010
+750,200,United Kingdom,UKG,India,IND,750200,,2010
+484,2,United States of America,USA,Congo,CON,4842,,2010
+484,220,France,FRN,Congo,CON,484220,,2010
+651,220,France,FRN,Egypt,EGY,651220,,2010
+710,750,India,IND,China,CHN,710750,,2010
+660,2,United States of America,USA,Lebanon,LEB,6602,,2010
+100,2,United States of America,USA,Colombia,COL,1002,,2010
+100,230,Spain,SPN,Colombia,COL,100230,,2010
+344,346,Bosnia and Herzegovina,BOS,Croatia,CRO,344346,,2010
+501,200,United Kingdom,UKG,Kenya,KEN,501200,,2010
+640,200,United Kingdom,UKG,Turkey,TUR,640200,,2010
+365,200,United Kingdom,UKG,Russia,RUS,365200,,2010
+640,645,Iraq,IRQ,Turkey,TUR,640645,,2010
+663,2,United States of America,USA,Jordan,JOR,6632,,2010
+690,200,United Kingdom,UKG,Kuwait,KUW,690200,,2010
+530,2,United States of America,USA,Ethiopia,ETH,5302,,2010
+615,200,United Kingdom,UKG,Algeria,ALG,615200,,2010
+365,230,Spain,SPN,Russia,RUS,365230,,2010
+770,200,United Kingdom,UKG,Pakistan,PAK,770200,,2010
+452,2,United States of America,USA,Ghana,GHA,4522,,2010
+771,200,United Kingdom,UKG,Bangladesh,BNG,771200,,2010
+40,20,Canada,CAN,Cuba,CUB,4020,,2010
+40,230,Spain,SPN,Cuba,CUB,40230,,2010
+771,750,India,IND,Bangladesh,BNG,771750,,2010
+540,200,United Kingdom,UKG,Angola,ANG,540200,,2010
+475,200,United Kingdom,UKG,Nigeria,NIG,475200,,2010
+780,750,India,IND,Sri Lanka,SRI,780750,,2010
+620,200,United Kingdom,UKG,Libya,LIB,620200,,2010
+645,750,India,IND,Iraq,IRQ,645750,,2010
+70,20,Canada,CAN,Mexico,MEX,7020,,2010
+780,2,United States of America,USA,Sri Lanka,SRI,7802,,2010
+780,200,United Kingdom,UKG,Sri Lanka,SRI,780200,,2010
+92,2,United States of America,USA,El Salvador,SAL,922,,2010
+360,200,United Kingdom,UKG,Romania,ROM,360200,,2010
+483,2,United States of America,USA,Chad,CHA,4832,,2010
+630,200,United Kingdom,UKG,Iran,IRN,630200,,2010
+100,200,United Kingdom,UKG,Colombia,COL,100200,,2010
+651,200,United Kingdom,UKG,Egypt,EGY,651200,,2010
+90,2,United States of America,USA,Guatemala,GUA,902,,2010
+101,2,United States of America,USA,Venezuela,VEN,1012,,2010
+651,2,United States of America,USA,Egypt,EGY,6512,,2010
+651,325,Italy,ITA,Egypt,EGY,651325,,2010
+630,750,India,IND,Iran,IRN,630750,,2010
+94,2,United States of America,USA,Costa Rica,COS,942,,2010
+775,750,India,IND,Myanmar,MYA,775750,,2010
+710,200,United Kingdom,UKG,China,CHN,710200,,2010
+651,255,Germany,GMY,Egypt,EGY,651255,,2010
+816,220,France,FRN,Vietnam,DRV,816220,,2010
+816,740,Japan,JPN,Vietnam,DRV,816740,,2010
+816,800,Thailand,THI,Vietnam,DRV,816800,,2010
+816,840,Philippines,PHI,Vietnam,DRV,816840,,2010
+816,850,Indonesia,INS,Vietnam,DRV,816850,,2010
+816,200,United Kingdom,UKG,Vietnam,DRV,816200,,2010
+816,2,United States of America,USA,Vietnam,DRV,8162,,2010
+816,210,Netherlands,NTH,Vietnam,DRV,816210,,2010
+704,2,United States of America,USA,Uzbekistan,UZB,7042,,2010
+345,2,United States of America,USA,Yugoslavia,YUG,3452,,2010
+816,255,Germany,GMY,Vietnam,DRV,816255,,2010
+811,816,Vietnam,DRV,Cambodia,CAM,811816,,2010
+345,255,Germany,GMY,Yugoslavia,YUG,345255,,2010
+345,305,Austria,AUS,Yugoslavia,YUG,345305,,2010
+705,2,United States of America,USA,Kazakhstan,KZK,7052,,2010
+345,325,Italy,ITA,Yugoslavia,YUG,345325,,2010
+345,220,France,FRN,Yugoslavia,YUG,345220,,2010
+816,710,China,CHN,Vietnam,DRV,816710,,2010
+70,42,Dominican Republic,DOM,Mexico,MEX,7042,,2010
+70,52,Trinidad and Tobago,TRI,Mexico,MEX,7052,,2010
+702,55,Grenada,GRN,Tajikistan,TAJ,70255,,2010
+2,20,Canada,CAN,United States of America,USA,220,,2010
+2,255,Germany,GMY,United States of America,USA,2255,,2010
+20,255,Germany,GMY,Canada,CAN,20255,,2010
+135,2,United States of America,USA,Peru,PER,1352,,2010
+210,255,Germany,GMY,Netherlands,NTH,210255,,2010
+220,255,Germany,GMY,France,FRN,220255,,2010
+255,20,Canada,CAN,Germany,GMY,25520,,2010
+344,255,Germany,GMY,Croatia,CRO,344255,,2010
+365,2,United States of America,USA,Russia,RUS,3652,,2010
+365,290,Poland,POL,Russia,RUS,365290,,2010
+365,316,Czech Republic,CZR,Russia,RUS,365316,,2010
+365,373,Azerbaijan,AZE,Russia,RUS,365373,,2010
+365,705,Kazakhstan,KZK,Russia,RUS,365705,,2010
+369,2,United States of America,USA,Ukraine,UKR,3692,,2010
+369,365,Russia,RUS,Ukraine,UKR,369365,,2010
+369,370,Belarus,BLR,Ukraine,UKR,369370,,2010
+560,551,Zambia,ZAM,South Africa,SAF,560551,,2010
+560,572,Swaziland,SWA,South Africa,SAF,560572,,2010
+630,652,Syria,SYR,Iran,IRN,630652,,2010
+666,20,Canada,CAN,Israel,ISR,66620,,2010
+666,255,Germany,GMY,Israel,ISR,666255,,2010
+710,560,South Africa,SAF,China,CHN,710560,,2010
+770,820,Malaysia,MAL,Pakistan,PAK,770820,,2010
+850,820,Malaysia,MAL,Indonesia,INS,850820,,2010
+471,325,Italy,ITA,Cameroon,CAO,471325,,2010
+310,255,Germany,GMY,Hungary,HUN,310255,,2010
+475,560,South Africa,SAF,Nigeria,NIG,475560,,2010
+339,325,Italy,ITA,Albania,ALB,339325,,2010
+316,255,Germany,GMY,Czech Republic,CZR,316255,,2010
+317,255,Germany,GMY,Slovakia,SLO,317255,,2010
+31,2,United States of America,USA,Bahamas,BHM,312,,2010
+41,2,United States of America,USA,Haiti,HAI,412,,2010
+41,42,Dominican Republic,DOM,Haiti,HAI,4142,,2010
+70,2,United States of America,USA,Mexico,MEX,702,,2010
+70,255,Germany,GMY,Mexico,MEX,70255,,2010
+90,70,Mexico,MEX,Guatemala,GUA,9070,,2010
+91,2,United States of America,USA,Honduras,HON,912,,2010
+92,90,Guatemala,GUA,El Salvador,SAL,9290,,2010
+93,2,United States of America,USA,Nicaragua,NIC,932,,2010
+95,2,United States of America,USA,Panama,PAN,952,,2010
+100,20,Canada,CAN,Colombia,COL,10020,,2010
+100,101,Venezuela,VEN,Colombia,COL,100101,,2010
+100,130,Ecuador,ECU,Colombia,COL,100130,,2010
+100,135,Peru,PER,Colombia,COL,100135,,2010
+100,140,Brazil,BRA,Colombia,COL,100140,,2010
+100,155,Chile,CHL,Colombia,COL,100155,,2010
+100,160,Argentina,ARG,Colombia,COL,100160,,2010
+100,210,Netherlands,NTH,Colombia,COL,100210,,2010
+100,255,Germany,GMY,Colombia,COL,100255,,2010
+100,325,Italy,ITA,Colombia,COL,100325,,2010
+101,20,Canada,CAN,Venezuela,VEN,10120,,2010
+101,70,Mexico,MEX,Venezuela,VEN,10170,,2010
+101,255,Germany,GMY,Venezuela,VEN,101255,,2010
+130,2,United States of America,USA,Ecuador,ECU,1302,,2010
+135,20,Canada,CAN,Peru,PER,13520,,2010
+135,160,Argentina,ARG,Peru,PER,135160,,2010
+135,255,Germany,GMY,Peru,PER,135255,,2010
+140,2,United States of America,USA,Brazil,BRA,1402,,2010
+140,255,Germany,GMY,Brazil,BRA,140255,,2010
+155,20,Canada,CAN,Chile,CHL,15520,,2010
+155,101,Venezuela,VEN,Chile,CHL,155101,,2010
+155,160,Argentina,ARG,Chile,CHL,155160,,2010
+155,211,Belgium,BEL,Chile,CHL,155211,,2010
+155,255,Germany,GMY,Chile,CHL,155255,,2010
+160,20,Canada,CAN,Argentina,ARG,16020,,2010
+160,255,Germany,GMY,Argentina,ARG,160255,,2010
+230,255,Germany,GMY,Spain,SPN,230255,,2010
+290,20,Canada,CAN,Poland,POL,29020,,2010
+290,211,Belgium,BEL,Poland,POL,290211,,2010
+290,255,Germany,GMY,Poland,POL,290255,,2010
+501,2,United States of America,USA,Kenya,KEN,5012,,2010
+343,255,Germany,GMY,Macedonia,MAC,343255,,2010
+344,325,Italy,ITA,Croatia,CRO,344325,,2010
+346,255,Germany,GMY,Bosnia and Herzegovina,BOS,346255,,2010
+346,325,Italy,ITA,Bosnia and Herzegovina,BOS,346325,,2010
+346,344,Croatia,CRO,Bosnia and Herzegovina,BOS,346344,,2010
+346,349,Slovenia,SLV,Bosnia and Herzegovina,BOS,346349,,2010
+349,255,Germany,GMY,Slovenia,SLV,349255,,2010
+350,255,Germany,GMY,Greece,GRC,350255,,2010
+355,255,Germany,GMY,Bulgaria,BUL,355255,,2010
+360,2,United States of America,USA,Romania,ROM,3602,,2010
+360,255,Germany,GMY,Romania,ROM,360255,,2010
+360,310,Hungary,HUN,Romania,ROM,360310,,2010
+552,560,South Africa,SAF,Zimbabwe,ZIM,552560,,2010
+365,20,Canada,CAN,Russia,RUS,36520,,2010
+365,210,Netherlands,NTH,Russia,RUS,365210,,2010
+365,211,Belgium,BEL,Russia,RUS,365211,,2010
+365,220,France,FRN,Russia,RUS,365220,,2010
+365,225,Switzerland,SWZ,Russia,RUS,365225,,2010
+365,255,Germany,GMY,Russia,RUS,365255,,2010
+365,305,Austria,AUS,Russia,RUS,365305,,2010
+365,325,Italy,ITA,Russia,RUS,365325,,2010
+365,368,Lithuania,LIT,Russia,RUS,365368,,2010
+365,369,Ukraine,UKR,Russia,RUS,365369,,2010
+365,375,Finland,FIN,Russia,RUS,365375,,2010
+365,380,Sweden,SWD,Russia,RUS,365380,,2010
+365,385,Norway,NOR,Russia,RUS,365385,,2010
+365,390,Denmark,DEN,Russia,RUS,365390,,2010
+365,900,Australia,AUL,Russia,RUS,365900,,2010
+367,255,Germany,GMY,Latvia,LAT,367255,,2010
+368,255,Germany,GMY,Lithuania,LIT,368255,,2010
+369,210,Netherlands,NTH,Ukraine,UKR,369210,,2010
+369,211,Belgium,BEL,Ukraine,UKR,369211,,2010
+369,220,France,FRN,Ukraine,UKR,369220,,2010
+369,255,Germany,GMY,Ukraine,UKR,369255,,2010
+369,316,Czech Republic,CZR,Ukraine,UKR,369316,,2010
+369,325,Italy,ITA,Ukraine,UKR,369325,,2010
+370,2,United States of America,USA,Belarus,BLR,3702,,2010
+370,255,Germany,GMY,Belarus,BLR,370255,,2010
+370,365,Russia,RUS,Belarus,BLR,370365,,2010
+373,2,United States of America,USA,Azerbaijan,AZE,3732,,2010
+373,20,Canada,CAN,Azerbaijan,AZE,37320,,2010
+373,220,France,FRN,Azerbaijan,AZE,373220,,2010
+373,255,Germany,GMY,Azerbaijan,AZE,373255,,2010
+373,369,Ukraine,UKR,Azerbaijan,AZE,373369,,2010
+600,325,Italy,ITA,Morocco,MOR,600325,,2010
+615,230,Spain,SPN,Algeria,ALG,615230,,2010
+615,255,Germany,GMY,Algeria,ALG,615255,,2010
+630,640,Turkey,TUR,Iran,IRN,630640,,2010
+640,210,Netherlands,NTH,Turkey,TUR,640210,,2010
+640,220,France,FRN,Turkey,TUR,640220,,2010
+640,225,Switzerland,SWZ,Turkey,TUR,640225,,2010
+640,350,Greece,GRC,Turkey,TUR,640350,,2010
+645,800,Thailand,THI,Iraq,IRQ,645800,,2010
+433,220,France,FRN,Senegal,SEN,433220,,2010
+652,220,France,FRN,Syria,SYR,652220,,2010
+437,2,United States of America,USA,Ivory Coast,CDI,4372,,2010
+437,210,Netherlands,NTH,Ivory Coast,CDI,437210,,2010
+437,220,France,FRN,Ivory Coast,CDI,437220,,2010
+437,255,Germany,GMY,Ivory Coast,CDI,437255,,2010
+437,475,Nigeria,NIG,Ivory Coast,CDI,437475,,2010
+450,255,Germany,GMY,Liberia,LBR,450255,,2010
+450,385,Norway,NOR,Liberia,LBR,450385,,2010
+471,220,France,FRN,Cameroon,CAO,471220,,2010
+700,2,United States of America,USA,Afghanistan,AFG,7002,,2010
+475,2,United States of America,USA,Nigeria,NIG,4752,,2010
+475,20,Canada,CAN,Nigeria,NIG,47520,,2010
+475,220,France,FRN,Nigeria,NIG,475220,,2010
+475,255,Germany,GMY,Nigeria,NIG,475255,,2010
+475,325,Italy,ITA,Nigeria,NIG,475325,,2010
+701,365,Russia,RUS,Turkmenistan,TKM,701365,,2010
+490,211,Belgium,BEL,Democratic Republic of the Congo,DRC,490211,,2010
+710,220,France,FRN,China,CHN,710220,,2010
+490,551,Zambia,ZAM,Democratic Republic of the Congo,DRC,490551,,2010
+490,560,South Africa,SAF,Democratic Republic of the Congo,DRC,490560,,2010
+775,740,Japan,JPN,Myanmar,MYA,775740,,2010
+840,2,United States of America,USA,Philippines,PHI,8402,,2010
+800,900,Australia,AUL,Thailand,THI,800900,,2010
+811,2,United States of America,USA,Cambodia,CAM,8112,,2010
+812,710,China,CHN,Laos,LAO,812710,,2010
+812,800,Thailand,THI,Laos,LAO,812800,,2010
+540,2,United States of America,USA,Angola,ANG,5402,,2010
+540,20,Canada,CAN,Angola,ANG,54020,,2010
+540,140,Brazil,BRA,Angola,ANG,540140,,2010
+540,210,Netherlands,NTH,Angola,ANG,540210,,2010
+540,220,France,FRN,Angola,ANG,540220,,2010
+540,255,Germany,GMY,Angola,ANG,540255,,2010
+540,560,South Africa,SAF,Angola,ANG,540560,,2010
+800,255,Germany,GMY,Thailand,THI,800255,,2010
+560,255,Germany,GMY,South Africa,SAF,560255,,2010
+560,552,Zimbabwe,ZIM,South Africa,SAF,560552,,2010
+600,255,Germany,GMY,Morocco,MOR,600255,,2010
+615,2,United States of America,USA,Algeria,ALG,6152,,2010
+615,20,Canada,CAN,Algeria,ALG,61520,,2010
+615,220,France,FRN,Algeria,ALG,615220,,2010
+616,255,Germany,GMY,Tunisia,TUN,616255,,2010
+616,325,Italy,ITA,Tunisia,TUN,616325,,2010
+620,2,United States of America,USA,Libya,LIB,6202,,2010
+620,220,France,FRN,Libya,LIB,620220,,2010
+620,225,Switzerland,SWZ,Libya,LIB,620225,,2010
+620,255,Germany,GMY,Libya,LIB,620255,,2010
+620,325,Italy,ITA,Libya,LIB,620325,,2010
+630,210,Netherlands,NTH,Iran,IRN,630210,,2010
+630,211,Belgium,BEL,Iran,IRN,630211,,2010
+630,220,France,FRN,Iran,IRN,630220,,2010
+630,225,Switzerland,SWZ,Iran,IRN,630225,,2010
+630,255,Germany,GMY,Iran,IRN,630255,,2010
+630,305,Austria,AUS,Iran,IRN,630305,,2010
+630,325,Italy,ITA,Iran,IRN,630325,,2010
+630,350,Greece,GRC,Iran,IRN,630350,,2010
+630,380,Sweden,SWD,Iran,IRN,630380,,2010
+630,770,Pakistan,PAK,Iran,IRN,630770,,2010
+640,2,United States of America,USA,Turkey,TUR,6402,,2010
+640,20,Canada,CAN,Turkey,TUR,64020,,2010
+640,211,Belgium,BEL,Turkey,TUR,640211,,2010
+640,255,Germany,GMY,Turkey,TUR,640255,,2010
+640,305,Austria,AUS,Turkey,TUR,640305,,2010
+640,325,Italy,ITA,Turkey,TUR,640325,,2010
+640,380,Sweden,SWD,Turkey,TUR,640380,,2010
+640,900,Australia,AUL,Turkey,TUR,640900,,2010
+645,2,United States of America,USA,Iraq,IRQ,6452,,2010
+645,20,Canada,CAN,Iraq,IRQ,64520,,2010
+645,210,Netherlands,NTH,Iraq,IRQ,645210,,2010
+645,220,France,FRN,Iraq,IRQ,645220,,2010
+645,255,Germany,GMY,Iraq,IRQ,645255,,2010
+645,305,Austria,AUS,Iraq,IRQ,645305,,2010
+645,325,Italy,ITA,Iraq,IRQ,645325,,2010
+645,640,Turkey,TUR,Iraq,IRQ,645640,,2010
+645,652,Syria,SYR,Iraq,IRQ,645652,,2010
+645,663,Jordan,JOR,Iraq,IRQ,645663,,2010
+652,2,United States of America,USA,Syria,SYR,6522,,2010
+652,255,Germany,GMY,Syria,SYR,652255,,2010
+652,325,Italy,ITA,Syria,SYR,652325,,2010
+652,365,Russia,RUS,Syria,SYR,652365,,2010
+652,369,Ukraine,UKR,Syria,SYR,652369,,2010
+652,640,Turkey,TUR,Syria,SYR,652640,,2010
+652,645,Iraq,IRQ,Syria,SYR,652645,,2010
+652,651,Egypt,EGY,Syria,SYR,652651,,2010
+652,732,South Korea,ROK,Syria,SYR,652732,,2010
+660,255,Germany,GMY,Lebanon,LEB,660255,,2010
+663,255,Germany,GMY,Jordan,JOR,663255,,2010
+670,255,Germany,GMY,Saudi Arabia,SAU,670255,,2010
+679,2,United States of America,USA,Yemen,YEM,6792,,2010
+690,255,Germany,GMY,Kuwait,KUW,690255,,2010
+770,800,Thailand,THI,Pakistan,PAK,770800,,2010
+696,255,Germany,GMY,United Arab Emirates,UAE,696255,,2010
+771,220,France,FRN,Bangladesh,BNG,771220,,2010
+775,800,Thailand,THI,Myanmar,MYA,775800,,2010
+700,365,Russia,RUS,Afghanistan,AFG,700365,,2010
+700,770,Pakistan,PAK,Afghanistan,AFG,700770,,2010
+705,255,Germany,GMY,Kazakhstan,KZK,705255,,2010
+705,365,Russia,RUS,Kazakhstan,KZK,705365,,2010
+710,20,Canada,CAN,China,CHN,71020,,2010
+710,210,Netherlands,NTH,China,CHN,710210,,2010
+710,211,Belgium,BEL,China,CHN,710211,,2010
+710,225,Switzerland,SWZ,China,CHN,710225,,2010
+710,255,Germany,GMY,China,CHN,710255,,2010
+710,385,Norway,NOR,China,CHN,710385,,2010
+710,900,Australia,AUL,China,CHN,710900,,2010
+770,220,France,FRN,Pakistan,PAK,770220,,2010
+732,255,Germany,GMY,South Korea,ROK,732255,,2010
+850,20,Canada,CAN,Indonesia,INS,85020,,2010
+740,255,Germany,GMY,Japan,JPN,740255,,2010
+750,2,United States of America,USA,India,IND,7502,,2010
+750,20,Canada,CAN,India,IND,75020,,2010
+750,255,Germany,GMY,India,IND,750255,,2010
+770,2,United States of America,USA,Pakistan,PAK,7702,,2010
+770,255,Germany,GMY,Pakistan,PAK,770255,,2010
+770,325,Italy,ITA,Pakistan,PAK,770325,,2010
+770,700,Afghanistan,AFG,Pakistan,PAK,770700,,2010
+770,850,Indonesia,INS,Pakistan,PAK,770850,,2010
+771,2,United States of America,USA,Bangladesh,BNG,7712,,2010
+771,20,Canada,CAN,Bangladesh,BNG,77120,,2010
+771,255,Germany,GMY,Bangladesh,BNG,771255,,2010
+820,255,Germany,GMY,Malaysia,MAL,820255,,2010
+840,255,Germany,GMY,Philippines,PHI,840255,,2010
+850,2,United States of America,USA,Indonesia,INS,8502,,2010
+850,255,Germany,GMY,Indonesia,INS,850255,,2010
+850,900,Australia,AUL,Indonesia,INS,850900,,2010
+710,2,United States of America,USA,China,CHN,7102,,2010
+750,200,United Kingdom,UKG,India,IND,750200,,2010
+484,2,United States of America,USA,Congo,CON,4842,,2010
+484,220,France,FRN,Congo,CON,484220,,2010
+651,220,France,FRN,Egypt,EGY,651220,,2010
+710,750,India,IND,China,CHN,710750,,2010
+660,2,United States of America,USA,Lebanon,LEB,6602,,2010
+100,2,United States of America,USA,Colombia,COL,1002,,2010
+100,230,Spain,SPN,Colombia,COL,100230,,2010
+344,346,Bosnia and Herzegovina,BOS,Croatia,CRO,344346,,2010
+501,200,United Kingdom,UKG,Kenya,KEN,501200,,2010
+640,200,United Kingdom,UKG,Turkey,TUR,640200,,2010
+365,200,United Kingdom,UKG,Russia,RUS,365200,,2010
+640,645,Iraq,IRQ,Turkey,TUR,640645,,2010
+663,2,United States of America,USA,Jordan,JOR,6632,,2010
+690,200,United Kingdom,UKG,Kuwait,KUW,690200,,2010
+530,2,United States of America,USA,Ethiopia,ETH,5302,,2010
+615,200,United Kingdom,UKG,Algeria,ALG,615200,,2010
+365,230,Spain,SPN,Russia,RUS,365230,,2010
+770,200,United Kingdom,UKG,Pakistan,PAK,770200,,2010
+452,2,United States of America,USA,Ghana,GHA,4522,,2010
+771,200,United Kingdom,UKG,Bangladesh,BNG,771200,,2010
+40,20,Canada,CAN,Cuba,CUB,4020,,2010
+40,230,Spain,SPN,Cuba,CUB,40230,,2010
+771,750,India,IND,Bangladesh,BNG,771750,,2010
+540,200,United Kingdom,UKG,Angola,ANG,540200,,2010
+475,200,United Kingdom,UKG,Nigeria,NIG,475200,,2010
+780,750,India,IND,Sri Lanka,SRI,780750,,2010
+620,200,United Kingdom,UKG,Libya,LIB,620200,,2010
+645,750,India,IND,Iraq,IRQ,645750,,2010
+70,20,Canada,CAN,Mexico,MEX,7020,,2010
+780,2,United States of America,USA,Sri Lanka,SRI,7802,,2010
+780,200,United Kingdom,UKG,Sri Lanka,SRI,780200,,2010
+92,2,United States of America,USA,El Salvador,SAL,922,,2010
+360,200,United Kingdom,UKG,Romania,ROM,360200,,2010
+483,2,United States of America,USA,Chad,CHA,4832,,2010
+630,200,United Kingdom,UKG,Iran,IRN,630200,,2010
+100,200,United Kingdom,UKG,Colombia,COL,100200,,2010
+651,200,United Kingdom,UKG,Egypt,EGY,651200,,2010
+90,2,United States of America,USA,Guatemala,GUA,902,,2010
+101,2,United States of America,USA,Venezuela,VEN,1012,,2010
+651,2,United States of America,USA,Egypt,EGY,6512,,2010
+651,325,Italy,ITA,Egypt,EGY,651325,,2010
+630,750,India,IND,Iran,IRN,630750,,2010
+94,2,United States of America,USA,Costa Rica,COS,942,,2010
+775,750,India,IND,Myanmar,MYA,775750,,2010
+710,200,United Kingdom,UKG,China,CHN,710200,,2010
+651,255,Germany,GMY,Egypt,EGY,651255,,2010
+816,220,France,FRN,Vietnam,DRV,816220,,2010
+816,740,Japan,JPN,Vietnam,DRV,816740,,2010
+816,800,Thailand,THI,Vietnam,DRV,816800,,2010
+816,840,Philippines,PHI,Vietnam,DRV,816840,,2010
+816,850,Indonesia,INS,Vietnam,DRV,816850,,2010
+816,200,United Kingdom,UKG,Vietnam,DRV,816200,,2010
+816,2,United States of America,USA,Vietnam,DRV,8162,,2010
+816,210,Netherlands,NTH,Vietnam,DRV,816210,,2010
+704,2,United States of America,USA,Uzbekistan,UZB,7042,,2010
+345,2,United States of America,USA,Yugoslavia,YUG,3452,,2010
+816,255,Germany,GMY,Vietnam,DRV,816255,,2010
+811,816,Vietnam,DRV,Cambodia,CAM,811816,,2010
+345,255,Germany,GMY,Yugoslavia,YUG,345255,,2010
+345,305,Austria,AUS,Yugoslavia,YUG,345305,,2010
+705,2,United States of America,USA,Kazakhstan,KZK,7052,,2010
+345,325,Italy,ITA,Yugoslavia,YUG,345325,,2010
+345,220,France,FRN,Yugoslavia,YUG,345220,,2010
+816,710,China,CHN,Vietnam,DRV,816710,,2010
+70,42,Dominican Republic,DOM,Mexico,MEX,7042,,2010
+70,52,Trinidad and Tobago,TRI,Mexico,MEX,7052,,2010
+702,55,Grenada,GRN,Tajikistan,TAJ,70255,,2010
+2,20,Canada,CAN,United States of America,USA,220,,2010
+2,255,Germany,GMY,United States of America,USA,2255,,2010
+20,255,Germany,GMY,Canada,CAN,20255,,2010
+135,2,United States of America,USA,Peru,PER,1352,,2010
+210,255,Germany,GMY,Netherlands,NTH,210255,,2010
+220,255,Germany,GMY,France,FRN,220255,,2010
+255,20,Canada,CAN,Germany,GMY,25520,,2010
+344,255,Germany,GMY,Croatia,CRO,344255,,2010
+365,2,United States of America,USA,Russia,RUS,3652,,2010
+365,290,Poland,POL,Russia,RUS,365290,,2010
+365,316,Czech Republic,CZR,Russia,RUS,365316,,2010
+365,373,Azerbaijan,AZE,Russia,RUS,365373,,2010
+365,705,Kazakhstan,KZK,Russia,RUS,365705,,2010
+369,2,United States of America,USA,Ukraine,UKR,3692,,2010
+369,365,Russia,RUS,Ukraine,UKR,369365,,2010
+369,370,Belarus,BLR,Ukraine,UKR,369370,,2010
+560,551,Zambia,ZAM,South Africa,SAF,560551,,2010
+560,572,Swaziland,SWA,South Africa,SAF,560572,,2010
+630,652,Syria,SYR,Iran,IRN,630652,,2010
+666,20,Canada,CAN,Israel,ISR,66620,,2010
+666,255,Germany,GMY,Israel,ISR,666255,,2010
+710,560,South Africa,SAF,China,CHN,710560,,2010
+770,820,Malaysia,MAL,Pakistan,PAK,770820,,2010
+850,820,Malaysia,MAL,Indonesia,INS,850820,,2010
+471,325,Italy,ITA,Cameroon,CAO,471325,,2010
+310,255,Germany,GMY,Hungary,HUN,310255,,2010
+475,560,South Africa,SAF,Nigeria,NIG,475560,,2010
+339,325,Italy,ITA,Albania,ALB,339325,,2010
+316,255,Germany,GMY,Czech Republic,CZR,316255,,2010
+317,255,Germany,GMY,Slovakia,SLO,317255,,2010
+31,2,United States of America,USA,Bahamas,BHM,312,,2010
+41,2,United States of America,USA,Haiti,HAI,412,,2010
+41,42,Dominican Republic,DOM,Haiti,HAI,4142,,2010
+70,2,United States of America,USA,Mexico,MEX,702,,2010
+70,255,Germany,GMY,Mexico,MEX,70255,,2010
+90,70,Mexico,MEX,Guatemala,GUA,9070,,2010
+91,2,United States of America,USA,Honduras,HON,912,,2010
+92,90,Guatemala,GUA,El Salvador,SAL,9290,,2010
+93,2,United States of America,USA,Nicaragua,NIC,932,,2010
+95,2,United States of America,USA,Panama,PAN,952,,2010
+100,20,Canada,CAN,Colombia,COL,10020,,2010
+100,101,Venezuela,VEN,Colombia,COL,100101,,2010
+100,130,Ecuador,ECU,Colombia,COL,100130,,2010
+100,135,Peru,PER,Colombia,COL,100135,,2010
+100,140,Brazil,BRA,Colombia,COL,100140,,2010
+100,155,Chile,CHL,Colombia,COL,100155,,2010
+100,160,Argentina,ARG,Colombia,COL,100160,,2010
+100,210,Netherlands,NTH,Colombia,COL,100210,,2010
+100,255,Germany,GMY,Colombia,COL,100255,,2010
+100,325,Italy,ITA,Colombia,COL,100325,,2010
+101,20,Canada,CAN,Venezuela,VEN,10120,,2010
+101,70,Mexico,MEX,Venezuela,VEN,10170,,2010
+101,255,Germany,GMY,Venezuela,VEN,101255,,2010
+130,2,United States of America,USA,Ecuador,ECU,1302,,2010
+135,20,Canada,CAN,Peru,PER,13520,,2010
+135,160,Argentina,ARG,Peru,PER,135160,,2010
+135,255,Germany,GMY,Peru,PER,135255,,2010
+140,2,United States of America,USA,Brazil,BRA,1402,,2010
+140,255,Germany,GMY,Brazil,BRA,140255,,2010
+155,20,Canada,CAN,Chile,CHL,15520,,2010
+155,101,Venezuela,VEN,Chile,CHL,155101,,2010
+155,160,Argentina,ARG,Chile,CHL,155160,,2010
+155,211,Belgium,BEL,Chile,CHL,155211,,2010
+155,255,Germany,GMY,Chile,CHL,155255,,2010
+160,20,Canada,CAN,Argentina,ARG,16020,,2010
+160,255,Germany,GMY,Argentina,ARG,160255,,2010
+230,255,Germany,GMY,Spain,SPN,230255,,2010
+290,20,Canada,CAN,Poland,POL,29020,,2010
+290,211,Belgium,BEL,Poland,POL,290211,,2010
+290,255,Germany,GMY,Poland,POL,290255,,2010
+501,2,United States of America,USA,Kenya,KEN,5012,,2010
+343,255,Germany,GMY,Macedonia,MAC,343255,,2010
+344,325,Italy,ITA,Croatia,CRO,344325,,2010
+346,255,Germany,GMY,Bosnia and Herzegovina,BOS,346255,,2010
+346,325,Italy,ITA,Bosnia and Herzegovina,BOS,346325,,2010
+346,344,Croatia,CRO,Bosnia and Herzegovina,BOS,346344,,2010
+346,349,Slovenia,SLV,Bosnia and Herzegovina,BOS,346349,,2010
+349,255,Germany,GMY,Slovenia,SLV,349255,,2010
+350,255,Germany,GMY,Greece,GRC,350255,,2010
+355,255,Germany,GMY,Bulgaria,BUL,355255,,2010
+360,2,United States of America,USA,Romania,ROM,3602,,2010
+360,255,Germany,GMY,Romania,ROM,360255,,2010
+360,310,Hungary,HUN,Romania,ROM,360310,,2010
+552,560,South Africa,SAF,Zimbabwe,ZIM,552560,,2010
+365,20,Canada,CAN,Russia,RUS,36520,,2010
+365,210,Netherlands,NTH,Russia,RUS,365210,,2010
+365,211,Belgium,BEL,Russia,RUS,365211,,2010
+365,220,France,FRN,Russia,RUS,365220,,2010
+365,225,Switzerland,SWZ,Russia,RUS,365225,,2010
+365,255,Germany,GMY,Russia,RUS,365255,,2010
+365,305,Austria,AUS,Russia,RUS,365305,,2010
+365,325,Italy,ITA,Russia,RUS,365325,,2010
+365,368,Lithuania,LIT,Russia,RUS,365368,,2010
+365,369,Ukraine,UKR,Russia,RUS,365369,,2010
+365,375,Finland,FIN,Russia,RUS,365375,,2010
+365,380,Sweden,SWD,Russia,RUS,365380,,2010
+365,385,Norway,NOR,Russia,RUS,365385,,2010
+365,390,Denmark,DEN,Russia,RUS,365390,,2010
+365,900,Australia,AUL,Russia,RUS,365900,,2010
+367,255,Germany,GMY,Latvia,LAT,367255,,2010
+368,255,Germany,GMY,Lithuania,LIT,368255,,2010
+369,210,Netherlands,NTH,Ukraine,UKR,369210,,2010
+369,211,Belgium,BEL,Ukraine,UKR,369211,,2010
+369,220,France,FRN,Ukraine,UKR,369220,,2010
+369,255,Germany,GMY,Ukraine,UKR,369255,,2010
+369,316,Czech Republic,CZR,Ukraine,UKR,369316,,2010
+369,325,Italy,ITA,Ukraine,UKR,369325,,2010
+370,2,United States of America,USA,Belarus,BLR,3702,,2010
+370,255,Germany,GMY,Belarus,BLR,370255,,2010
+370,365,Russia,RUS,Belarus,BLR,370365,,2010
+373,2,United States of America,USA,Azerbaijan,AZE,3732,,2010
+373,20,Canada,CAN,Azerbaijan,AZE,37320,,2010
+373,220,France,FRN,Azerbaijan,AZE,373220,,2010
+373,255,Germany,GMY,Azerbaijan,AZE,373255,,2010
+373,369,Ukraine,UKR,Azerbaijan,AZE,373369,,2010
+600,325,Italy,ITA,Morocco,MOR,600325,,2010
+615,230,Spain,SPN,Algeria,ALG,615230,,2010
+615,255,Germany,GMY,Algeria,ALG,615255,,2010
+630,640,Turkey,TUR,Iran,IRN,630640,,2010
+640,210,Netherlands,NTH,Turkey,TUR,640210,,2010
+640,220,France,FRN,Turkey,TUR,640220,,2010
+640,225,Switzerland,SWZ,Turkey,TUR,640225,,2010
+640,350,Greece,GRC,Turkey,TUR,640350,,2010
+645,800,Thailand,THI,Iraq,IRQ,645800,,2010
+433,220,France,FRN,Senegal,SEN,433220,,2010
+652,220,France,FRN,Syria,SYR,652220,,2010
+437,2,United States of America,USA,Ivory Coast,CDI,4372,,2010
+437,210,Netherlands,NTH,Ivory Coast,CDI,437210,,2010
+437,220,France,FRN,Ivory Coast,CDI,437220,,2010
+437,255,Germany,GMY,Ivory Coast,CDI,437255,,2010
+437,475,Nigeria,NIG,Ivory Coast,CDI,437475,,2010
+450,255,Germany,GMY,Liberia,LBR,450255,,2010
+450,385,Norway,NOR,Liberia,LBR,450385,,2010
+471,220,France,FRN,Cameroon,CAO,471220,,2010
+700,2,United States of America,USA,Afghanistan,AFG,7002,,2010
+475,2,United States of America,USA,Nigeria,NIG,4752,,2010
+475,20,Canada,CAN,Nigeria,NIG,47520,,2010
+475,220,France,FRN,Nigeria,NIG,475220,,2010
+475,255,Germany,GMY,Nigeria,NIG,475255,,2010
+475,325,Italy,ITA,Nigeria,NIG,475325,,2010
+701,365,Russia,RUS,Turkmenistan,TKM,701365,,2010
+490,211,Belgium,BEL,Democratic Republic of the Congo,DRC,490211,,2010
+710,220,France,FRN,China,CHN,710220,,2010
+490,551,Zambia,ZAM,Democratic Republic of the Congo,DRC,490551,,2010
+490,560,South Africa,SAF,Democratic Republic of the Congo,DRC,490560,,2010
+775,740,Japan,JPN,Myanmar,MYA,775740,,2010
+840,2,United States of America,USA,Philippines,PHI,8402,,2010
+800,900,Australia,AUL,Thailand,THI,800900,,2010
+811,2,United States of America,USA,Cambodia,CAM,8112,,2010
+812,710,China,CHN,Laos,LAO,812710,,2010
+812,800,Thailand,THI,Laos,LAO,812800,,2010
+540,2,United States of America,USA,Angola,ANG,5402,,2010
+540,20,Canada,CAN,Angola,ANG,54020,,2010
+540,140,Brazil,BRA,Angola,ANG,540140,,2010
+540,210,Netherlands,NTH,Angola,ANG,540210,,2010
+540,220,France,FRN,Angola,ANG,540220,,2010
+540,255,Germany,GMY,Angola,ANG,540255,,2010
+540,560,South Africa,SAF,Angola,ANG,540560,,2010
+800,255,Germany,GMY,Thailand,THI,800255,,2010
+560,255,Germany,GMY,South Africa,SAF,560255,,2010
+560,552,Zimbabwe,ZIM,South Africa,SAF,560552,,2010
+600,255,Germany,GMY,Morocco,MOR,600255,,2010
+615,2,United States of America,USA,Algeria,ALG,6152,,2010
+615,20,Canada,CAN,Algeria,ALG,61520,,2010
+615,220,France,FRN,Algeria,ALG,615220,,2010
+616,255,Germany,GMY,Tunisia,TUN,616255,,2010
+616,325,Italy,ITA,Tunisia,TUN,616325,,2010
+620,2,United States of America,USA,Libya,LIB,6202,,2010
+620,220,France,FRN,Libya,LIB,620220,,2010
+620,225,Switzerland,SWZ,Libya,LIB,620225,,2010
+620,255,Germany,GMY,Libya,LIB,620255,,2010
+620,325,Italy,ITA,Libya,LIB,620325,,2010
+630,210,Netherlands,NTH,Iran,IRN,630210,,2010
+630,211,Belgium,BEL,Iran,IRN,630211,,2010
+630,220,France,FRN,Iran,IRN,630220,,2010
+630,225,Switzerland,SWZ,Iran,IRN,630225,,2010
+630,255,Germany,GMY,Iran,IRN,630255,,2010
+630,305,Austria,AUS,Iran,IRN,630305,,2010
+630,325,Italy,ITA,Iran,IRN,630325,,2010
+630,350,Greece,GRC,Iran,IRN,630350,,2010
+630,380,Sweden,SWD,Iran,IRN,630380,,2010
+630,770,Pakistan,PAK,Iran,IRN,630770,,2010
+640,2,United States of America,USA,Turkey,TUR,6402,,2010
+640,20,Canada,CAN,Turkey,TUR,64020,,2010
+640,211,Belgium,BEL,Turkey,TUR,640211,,2010
+640,255,Germany,GMY,Turkey,TUR,640255,,2010
+640,305,Austria,AUS,Turkey,TUR,640305,,2010
+640,325,Italy,ITA,Turkey,TUR,640325,,2010
+640,380,Sweden,SWD,Turkey,TUR,640380,,2010
+640,900,Australia,AUL,Turkey,TUR,640900,,2010
+645,2,United States of America,USA,Iraq,IRQ,6452,,2010
+645,20,Canada,CAN,Iraq,IRQ,64520,,2010
+645,210,Netherlands,NTH,Iraq,IRQ,645210,,2010
+645,220,France,FRN,Iraq,IRQ,645220,,2010
+645,255,Germany,GMY,Iraq,IRQ,645255,,2010
+645,305,Austria,AUS,Iraq,IRQ,645305,,2010
+645,325,Italy,ITA,Iraq,IRQ,645325,,2010
+645,640,Turkey,TUR,Iraq,IRQ,645640,,2010
+645,652,Syria,SYR,Iraq,IRQ,645652,,2010
+645,663,Jordan,JOR,Iraq,IRQ,645663,,2010
+652,2,United States of America,USA,Syria,SYR,6522,,2010
+652,255,Germany,GMY,Syria,SYR,652255,,2010
+652,325,Italy,ITA,Syria,SYR,652325,,2010
+652,365,Russia,RUS,Syria,SYR,652365,,2010
+652,369,Ukraine,UKR,Syria,SYR,652369,,2010
+652,640,Turkey,TUR,Syria,SYR,652640,,2010
+652,645,Iraq,IRQ,Syria,SYR,652645,,2010
+652,651,Egypt,EGY,Syria,SYR,652651,,2010
+652,732,South Korea,ROK,Syria,SYR,652732,,2010
+660,255,Germany,GMY,Lebanon,LEB,660255,,2010
+663,255,Germany,GMY,Jordan,JOR,663255,,2010
+670,255,Germany,GMY,Saudi Arabia,SAU,670255,,2010
+679,2,United States of America,USA,Yemen,YEM,6792,,2010
+690,255,Germany,GMY,Kuwait,KUW,690255,,2010
+770,800,Thailand,THI,Pakistan,PAK,770800,,2010
+696,255,Germany,GMY,United Arab Emirates,UAE,696255,,2010
+771,220,France,FRN,Bangladesh,BNG,771220,,2010
+775,800,Thailand,THI,Myanmar,MYA,775800,,2010
+700,365,Russia,RUS,Afghanistan,AFG,700365,,2010
+700,770,Pakistan,PAK,Afghanistan,AFG,700770,,2010
+705,255,Germany,GMY,Kazakhstan,KZK,705255,,2010
+705,365,Russia,RUS,Kazakhstan,KZK,705365,,2010
+710,20,Canada,CAN,China,CHN,71020,,2010
+710,210,Netherlands,NTH,China,CHN,710210,,2010
+710,211,Belgium,BEL,China,CHN,710211,,2010
+710,225,Switzerland,SWZ,China,CHN,710225,,2010
+710,255,Germany,GMY,China,CHN,710255,,2010
+710,385,Norway,NOR,China,CHN,710385,,2010
+710,900,Australia,AUL,China,CHN,710900,,2010
+770,220,France,FRN,Pakistan,PAK,770220,,2010
+732,255,Germany,GMY,South Korea,ROK,732255,,2010
+850,20,Canada,CAN,Indonesia,INS,85020,,2010
+740,255,Germany,GMY,Japan,JPN,740255,,2010
+750,2,United States of America,USA,India,IND,7502,,2010
+750,20,Canada,CAN,India,IND,75020,,2010
+750,255,Germany,GMY,India,IND,750255,,2010
+770,2,United States of America,USA,Pakistan,PAK,7702,,2010
+770,255,Germany,GMY,Pakistan,PAK,770255,,2010
+770,325,Italy,ITA,Pakistan,PAK,770325,,2010
+770,700,Afghanistan,AFG,Pakistan,PAK,770700,,2010
+770,850,Indonesia,INS,Pakistan,PAK,770850,,2010
+771,2,United States of America,USA,Bangladesh,BNG,7712,,2010
+771,20,Canada,CAN,Bangladesh,BNG,77120,,2010
+771,255,Germany,GMY,Bangladesh,BNG,771255,,2010
+820,255,Germany,GMY,Malaysia,MAL,820255,,2010
+840,255,Germany,GMY,Philippines,PHI,840255,,2010
+850,2,United States of America,USA,Indonesia,INS,8502,,2010
+850,255,Germany,GMY,Indonesia,INS,850255,,2010
+850,900,Australia,AUL,Indonesia,INS,850900,,2010
+710,2,United States of America,USA,China,CHN,7102,,2010
+750,200,United Kingdom,UKG,India,IND,750200,,2010
+484,2,United States of America,USA,Congo,CON,4842,,2010
+484,220,France,FRN,Congo,CON,484220,,2010
+651,220,France,FRN,Egypt,EGY,651220,,2010
+710,750,India,IND,China,CHN,710750,,2010
+660,2,United States of America,USA,Lebanon,LEB,6602,,2010
+100,2,United States of America,USA,Colombia,COL,1002,,2010
+100,230,Spain,SPN,Colombia,COL,100230,,2010
+344,346,Bosnia and Herzegovina,BOS,Croatia,CRO,344346,,2010
+501,200,United Kingdom,UKG,Kenya,KEN,501200,,2010
+640,200,United Kingdom,UKG,Turkey,TUR,640200,,2010
+365,200,United Kingdom,UKG,Russia,RUS,365200,,2010
+640,645,Iraq,IRQ,Turkey,TUR,640645,,2010
+663,2,United States of America,USA,Jordan,JOR,6632,,2010
+690,200,United Kingdom,UKG,Kuwait,KUW,690200,,2010
+530,2,United States of America,USA,Ethiopia,ETH,5302,,2010
+615,200,United Kingdom,UKG,Algeria,ALG,615200,,2010
+365,230,Spain,SPN,Russia,RUS,365230,,2010
+770,200,United Kingdom,UKG,Pakistan,PAK,770200,,2010
+452,2,United States of America,USA,Ghana,GHA,4522,,2010
+771,200,United Kingdom,UKG,Bangladesh,BNG,771200,,2010
+40,20,Canada,CAN,Cuba,CUB,4020,,2010
+40,230,Spain,SPN,Cuba,CUB,40230,,2010
+771,750,India,IND,Bangladesh,BNG,771750,,2010
+540,200,United Kingdom,UKG,Angola,ANG,540200,,2010
+475,200,United Kingdom,UKG,Nigeria,NIG,475200,,2010
+780,750,India,IND,Sri Lanka,SRI,780750,,2010
+620,200,United Kingdom,UKG,Libya,LIB,620200,,2010
+645,750,India,IND,Iraq,IRQ,645750,,2010
+70,20,Canada,CAN,Mexico,MEX,7020,,2010
+780,2,United States of America,USA,Sri Lanka,SRI,7802,,2010
+780,200,United Kingdom,UKG,Sri Lanka,SRI,780200,,2010
+92,2,United States of America,USA,El Salvador,SAL,922,,2010
+360,200,United Kingdom,UKG,Romania,ROM,360200,,2010
+483,2,United States of America,USA,Chad,CHA,4832,,2010
+630,200,United Kingdom,UKG,Iran,IRN,630200,,2010
+100,200,United Kingdom,UKG,Colombia,COL,100200,,2010
+651,200,United Kingdom,UKG,Egypt,EGY,651200,,2010
+90,2,United States of America,USA,Guatemala,GUA,902,,2010
+101,2,United States of America,USA,Venezuela,VEN,1012,,2010
+651,2,United States of America,USA,Egypt,EGY,6512,,2010
+651,325,Italy,ITA,Egypt,EGY,651325,,2010
+630,750,India,IND,Iran,IRN,630750,,2010
+94,2,United States of America,USA,Costa Rica,COS,942,,2010
+775,750,India,IND,Myanmar,MYA,775750,,2010
+710,200,United Kingdom,UKG,China,CHN,710200,,2010
+651,255,Germany,GMY,Egypt,EGY,651255,,2010
+816,220,France,FRN,Vietnam,DRV,816220,,2010
+816,740,Japan,JPN,Vietnam,DRV,816740,,2010
+816,800,Thailand,THI,Vietnam,DRV,816800,,2010
+816,840,Philippines,PHI,Vietnam,DRV,816840,,2010
+816,850,Indonesia,INS,Vietnam,DRV,816850,,2010
+816,200,United Kingdom,UKG,Vietnam,DRV,816200,,2010
+816,2,United States of America,USA,Vietnam,DRV,8162,,2010
+816,210,Netherlands,NTH,Vietnam,DRV,816210,,2010
+704,2,United States of America,USA,Uzbekistan,UZB,7042,,2010
+345,2,United States of America,USA,Yugoslavia,YUG,3452,,2010
+816,255,Germany,GMY,Vietnam,DRV,816255,,2010
+811,816,Vietnam,DRV,Cambodia,CAM,811816,,2010
+345,255,Germany,GMY,Yugoslavia,YUG,345255,,2010
+345,305,Austria,AUS,Yugoslavia,YUG,345305,,2010
+705,2,United States of America,USA,Kazakhstan,KZK,7052,,2010
+345,325,Italy,ITA,Yugoslavia,YUG,345325,,2010
+345,220,France,FRN,Yugoslavia,YUG,345220,,2010
+816,710,China,CHN,Vietnam,DRV,816710,,2010
+70,42,Dominican Republic,DOM,Mexico,MEX,7042,,2010
+70,52,Trinidad and Tobago,TRI,Mexico,MEX,7052,,2010
+702,55,Grenada,GRN,Tajikistan,TAJ,70255,,2010

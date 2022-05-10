@@ -1,0 +1,1591 @@
+ccode1,ccode2,state.destination.name,state.destination.abb,state.origin.name,state.origin.abb,dyad.id,contiguity.any,year
+2,20,Canada,CAN,United States of America,USA,220,1.0,All
+2,255,Germany,GMY,United States of America,USA,2255,0.0,All
+20,255,Germany,GMY,Canada,CAN,20255,0.0,All
+31,2,United States of America,USA,Bahamas,BHM,312,1.0,All
+40,20,Canada,CAN,Cuba,CUB,4020,0.0,All
+40,230,Spain,SPN,Cuba,CUB,40230,0.0,All
+41,2,United States of America,USA,Haiti,HAI,412,0.0,All
+41,42,Dominican Republic,DOM,Haiti,HAI,4142,1.0,All
+70,2,United States of America,USA,Mexico,MEX,702,1.0,All
+70,255,Germany,GMY,Mexico,MEX,70255,0.0,All
+70,20,Canada,CAN,Mexico,MEX,7020,0.0,All
+70,42,Dominican Republic,DOM,Mexico,MEX,7042,0.0,All
+70,52,Trinidad and Tobago,TRI,Mexico,MEX,7052,0.0,All
+90,70,Mexico,MEX,Guatemala,GUA,9070,1.0,All
+90,2,United States of America,USA,Guatemala,GUA,902,0.0,All
+91,2,United States of America,USA,Honduras,HON,912,0.0,All
+92,90,Guatemala,GUA,El Salvador,SAL,9290,1.0,All
+92,2,United States of America,USA,El Salvador,SAL,922,0.0,All
+93,2,United States of America,USA,Nicaragua,NIC,932,0.0,All
+94,2,United States of America,USA,Costa Rica,COS,942,0.0,All
+95,2,United States of America,USA,Panama,PAN,952,0.0,All
+100,20,Canada,CAN,Colombia,COL,10020,0.0,All
+100,101,Venezuela,VEN,Colombia,COL,100101,1.0,All
+100,130,Ecuador,ECU,Colombia,COL,100130,1.0,All
+100,135,Peru,PER,Colombia,COL,100135,1.0,All
+100,140,Brazil,BRA,Colombia,COL,100140,1.0,All
+100,155,Chile,CHL,Colombia,COL,100155,0.0,All
+100,160,Argentina,ARG,Colombia,COL,100160,0.0,All
+100,210,Netherlands,NTH,Colombia,COL,100210,0.0,All
+100,255,Germany,GMY,Colombia,COL,100255,0.0,All
+100,325,Italy,ITA,Colombia,COL,100325,0.0,All
+100,2,United States of America,USA,Colombia,COL,1002,0.0,All
+100,230,Spain,SPN,Colombia,COL,100230,0.0,All
+100,200,United Kingdom,UKG,Colombia,COL,100200,0.0,All
+101,20,Canada,CAN,Venezuela,VEN,10120,0.0,All
+101,70,Mexico,MEX,Venezuela,VEN,10170,0.0,All
+101,255,Germany,GMY,Venezuela,VEN,101255,0.0,All
+101,2,United States of America,USA,Venezuela,VEN,1012,0.0,All
+130,2,United States of America,USA,Ecuador,ECU,1302,0.0,All
+135,2,United States of America,USA,Peru,PER,1352,0.0,All
+135,20,Canada,CAN,Peru,PER,13520,0.0,All
+135,160,Argentina,ARG,Peru,PER,135160,0.0,All
+135,255,Germany,GMY,Peru,PER,135255,0.0,All
+140,2,United States of America,USA,Brazil,BRA,1402,0.0,All
+140,255,Germany,GMY,Brazil,BRA,140255,0.0,All
+155,20,Canada,CAN,Chile,CHL,15520,0.0,All
+155,101,Venezuela,VEN,Chile,CHL,155101,0.0,All
+155,160,Argentina,ARG,Chile,CHL,155160,1.0,All
+155,211,Belgium,BEL,Chile,CHL,155211,0.0,All
+155,255,Germany,GMY,Chile,CHL,155255,0.0,All
+160,20,Canada,CAN,Argentina,ARG,16020,0.0,All
+160,255,Germany,GMY,Argentina,ARG,160255,0.0,All
+210,255,Germany,GMY,Netherlands,NTH,210255,1.0,All
+220,255,Germany,GMY,France,FRN,220255,1.0,All
+230,255,Germany,GMY,Spain,SPN,230255,0.0,All
+255,20,Canada,CAN,Germany,GMY,25520,0.0,All
+290,20,Canada,CAN,Poland,POL,29020,0.0,All
+290,211,Belgium,BEL,Poland,POL,290211,0.0,All
+290,255,Germany,GMY,Poland,POL,290255,1.0,All
+310,255,Germany,GMY,Hungary,HUN,310255,0.0,All
+316,255,Germany,GMY,Czech Republic,CZR,316255,1.0,All
+317,255,Germany,GMY,Slovakia,SLO,317255,0.0,All
+339,325,Italy,ITA,Albania,ALB,339325,1.0,All
+343,255,Germany,GMY,Macedonia,MAC,343255,0.0,All
+344,255,Germany,GMY,Croatia,CRO,344255,0.0,All
+344,325,Italy,ITA,Croatia,CRO,344325,1.0,All
+344,346,Bosnia and Herzegovina,BOS,Croatia,CRO,344346,1.0,All
+345,2,United States of America,USA,Yugoslavia,YUG,3452,0.0,All
+345,255,Germany,GMY,Yugoslavia,YUG,345255,0.0,All
+345,305,Austria,AUS,Yugoslavia,YUG,345305,1.0,All
+345,325,Italy,ITA,Yugoslavia,YUG,345325,1.0,All
+345,220,France,FRN,Yugoslavia,YUG,345220,0.0,All
+346,255,Germany,GMY,Bosnia and Herzegovina,BOS,346255,0.0,All
+346,325,Italy,ITA,Bosnia and Herzegovina,BOS,346325,0.0,All
+346,344,Croatia,CRO,Bosnia and Herzegovina,BOS,346344,1.0,All
+346,349,Slovenia,SLV,Bosnia and Herzegovina,BOS,346349,0.0,All
+349,255,Germany,GMY,Slovenia,SLV,349255,0.0,All
+350,255,Germany,GMY,Greece,GRC,350255,0.0,All
+355,255,Germany,GMY,Bulgaria,BUL,355255,0.0,All
+360,2,United States of America,USA,Romania,ROM,3602,0.0,All
+360,255,Germany,GMY,Romania,ROM,360255,0.0,All
+360,310,Hungary,HUN,Romania,ROM,360310,1.0,All
+360,200,United Kingdom,UKG,Romania,ROM,360200,0.0,All
+365,2,United States of America,USA,Russia,RUS,3652,1.0,All
+365,290,Poland,POL,Russia,RUS,365290,1.0,All
+365,316,Czech Republic,CZR,Russia,RUS,365316,0.0,All
+365,373,Azerbaijan,AZE,Russia,RUS,365373,1.0,All
+365,705,Kazakhstan,KZK,Russia,RUS,365705,1.0,All
+365,20,Canada,CAN,Russia,RUS,36520,0.0,All
+365,210,Netherlands,NTH,Russia,RUS,365210,0.0,All
+365,211,Belgium,BEL,Russia,RUS,365211,0.0,All
+365,220,France,FRN,Russia,RUS,365220,0.0,All
+365,225,Switzerland,SWZ,Russia,RUS,365225,0.0,All
+365,255,Germany,GMY,Russia,RUS,365255,1.0,All
+365,305,Austria,AUS,Russia,RUS,365305,0.0,All
+365,325,Italy,ITA,Russia,RUS,365325,0.0,All
+365,368,Lithuania,LIT,Russia,RUS,365368,1.0,All
+365,369,Ukraine,UKR,Russia,RUS,365369,1.0,All
+365,375,Finland,FIN,Russia,RUS,365375,1.0,All
+365,380,Sweden,SWD,Russia,RUS,365380,1.0,All
+365,385,Norway,NOR,Russia,RUS,365385,1.0,All
+365,390,Denmark,DEN,Russia,RUS,365390,1.0,All
+365,900,Australia,AUL,Russia,RUS,365900,0.0,All
+365,200,United Kingdom,UKG,Russia,RUS,365200,0.0,All
+365,230,Spain,SPN,Russia,RUS,365230,0.0,All
+367,255,Germany,GMY,Latvia,LAT,367255,1.0,All
+368,255,Germany,GMY,Lithuania,LIT,368255,1.0,All
+369,2,United States of America,USA,Ukraine,UKR,3692,0.0,All
+369,365,Russia,RUS,Ukraine,UKR,369365,1.0,All
+369,370,Belarus,BLR,Ukraine,UKR,369370,1.0,All
+369,210,Netherlands,NTH,Ukraine,UKR,369210,0.0,All
+369,211,Belgium,BEL,Ukraine,UKR,369211,0.0,All
+369,220,France,FRN,Ukraine,UKR,369220,0.0,All
+369,255,Germany,GMY,Ukraine,UKR,369255,0.0,All
+369,316,Czech Republic,CZR,Ukraine,UKR,369316,0.0,All
+369,325,Italy,ITA,Ukraine,UKR,369325,0.0,All
+370,2,United States of America,USA,Belarus,BLR,3702,0.0,All
+370,255,Germany,GMY,Belarus,BLR,370255,0.0,All
+370,365,Russia,RUS,Belarus,BLR,370365,1.0,All
+373,2,United States of America,USA,Azerbaijan,AZE,3732,0.0,All
+373,20,Canada,CAN,Azerbaijan,AZE,37320,0.0,All
+373,220,France,FRN,Azerbaijan,AZE,373220,0.0,All
+373,255,Germany,GMY,Azerbaijan,AZE,373255,0.0,All
+373,369,Ukraine,UKR,Azerbaijan,AZE,373369,0.0,All
+433,220,France,FRN,Senegal,SEN,433220,0.0,All
+437,2,United States of America,USA,Ivory Coast,CDI,4372,0.0,All
+437,210,Netherlands,NTH,Ivory Coast,CDI,437210,0.0,All
+437,220,France,FRN,Ivory Coast,CDI,437220,0.0,All
+437,255,Germany,GMY,Ivory Coast,CDI,437255,0.0,All
+437,475,Nigeria,NIG,Ivory Coast,CDI,437475,0.0,All
+450,255,Germany,GMY,Liberia,LBR,450255,0.0,All
+450,385,Norway,NOR,Liberia,LBR,450385,0.0,All
+452,2,United States of America,USA,Ghana,GHA,4522,0.0,All
+471,325,Italy,ITA,Cameroon,CAO,471325,0.0,All
+471,220,France,FRN,Cameroon,CAO,471220,0.0,All
+475,560,South Africa,SAF,Nigeria,NIG,475560,0.0,All
+475,2,United States of America,USA,Nigeria,NIG,4752,0.0,All
+475,20,Canada,CAN,Nigeria,NIG,47520,0.0,All
+475,220,France,FRN,Nigeria,NIG,475220,0.0,All
+475,255,Germany,GMY,Nigeria,NIG,475255,0.0,All
+475,325,Italy,ITA,Nigeria,NIG,475325,0.0,All
+475,200,United Kingdom,UKG,Nigeria,NIG,475200,0.0,All
+483,2,United States of America,USA,Chad,CHA,4832,0.0,All
+484,2,United States of America,USA,Congo,CON,4842,0.0,All
+484,220,France,FRN,Congo,CON,484220,0.0,All
+490,211,Belgium,BEL,Democratic Republic of the Congo,DRC,490211,0.0,All
+490,551,Zambia,ZAM,Democratic Republic of the Congo,DRC,490551,1.0,All
+490,560,South Africa,SAF,Democratic Republic of the Congo,DRC,490560,0.0,All
+501,2,United States of America,USA,Kenya,KEN,5012,0.0,All
+501,200,United Kingdom,UKG,Kenya,KEN,501200,0.0,All
+530,2,United States of America,USA,Ethiopia,ETH,5302,0.0,All
+540,2,United States of America,USA,Angola,ANG,5402,0.0,All
+540,20,Canada,CAN,Angola,ANG,54020,0.0,All
+540,140,Brazil,BRA,Angola,ANG,540140,0.0,All
+540,210,Netherlands,NTH,Angola,ANG,540210,0.0,All
+540,220,France,FRN,Angola,ANG,540220,0.0,All
+540,255,Germany,GMY,Angola,ANG,540255,0.0,All
+540,560,South Africa,SAF,Angola,ANG,540560,0.0,All
+540,200,United Kingdom,UKG,Angola,ANG,540200,0.0,All
+552,560,South Africa,SAF,Zimbabwe,ZIM,552560,1.0,All
+560,551,Zambia,ZAM,South Africa,SAF,560551,0.0,All
+560,572,Swaziland,SWA,South Africa,SAF,560572,1.0,All
+560,255,Germany,GMY,South Africa,SAF,560255,0.0,All
+560,552,Zimbabwe,ZIM,South Africa,SAF,560552,1.0,All
+600,325,Italy,ITA,Morocco,MOR,600325,0.0,All
+600,255,Germany,GMY,Morocco,MOR,600255,0.0,All
+615,230,Spain,SPN,Algeria,ALG,615230,1.0,All
+615,255,Germany,GMY,Algeria,ALG,615255,0.0,All
+615,2,United States of America,USA,Algeria,ALG,6152,0.0,All
+615,20,Canada,CAN,Algeria,ALG,61520,0.0,All
+615,220,France,FRN,Algeria,ALG,615220,1.0,All
+615,200,United Kingdom,UKG,Algeria,ALG,615200,0.0,All
+616,255,Germany,GMY,Tunisia,TUN,616255,0.0,All
+616,325,Italy,ITA,Tunisia,TUN,616325,1.0,All
+620,2,United States of America,USA,Libya,LIB,6202,0.0,All
+620,220,France,FRN,Libya,LIB,620220,0.0,All
+620,225,Switzerland,SWZ,Libya,LIB,620225,0.0,All
+620,255,Germany,GMY,Libya,LIB,620255,0.0,All
+620,325,Italy,ITA,Libya,LIB,620325,1.0,All
+620,200,United Kingdom,UKG,Libya,LIB,620200,0.0,All
+630,652,Syria,SYR,Iran,IRN,630652,0.0,All
+630,640,Turkey,TUR,Iran,IRN,630640,1.0,All
+630,210,Netherlands,NTH,Iran,IRN,630210,0.0,All
+630,211,Belgium,BEL,Iran,IRN,630211,0.0,All
+630,220,France,FRN,Iran,IRN,630220,0.0,All
+630,225,Switzerland,SWZ,Iran,IRN,630225,0.0,All
+630,255,Germany,GMY,Iran,IRN,630255,0.0,All
+630,305,Austria,AUS,Iran,IRN,630305,0.0,All
+630,325,Italy,ITA,Iran,IRN,630325,0.0,All
+630,350,Greece,GRC,Iran,IRN,630350,0.0,All
+630,380,Sweden,SWD,Iran,IRN,630380,0.0,All
+630,770,Pakistan,PAK,Iran,IRN,630770,1.0,All
+630,200,United Kingdom,UKG,Iran,IRN,630200,0.0,All
+630,750,India,IND,Iran,IRN,630750,0.0,All
+640,210,Netherlands,NTH,Turkey,TUR,640210,0.0,All
+640,220,France,FRN,Turkey,TUR,640220,0.0,All
+640,225,Switzerland,SWZ,Turkey,TUR,640225,0.0,All
+640,350,Greece,GRC,Turkey,TUR,640350,1.0,All
+640,2,United States of America,USA,Turkey,TUR,6402,0.0,All
+640,20,Canada,CAN,Turkey,TUR,64020,0.0,All
+640,211,Belgium,BEL,Turkey,TUR,640211,0.0,All
+640,255,Germany,GMY,Turkey,TUR,640255,0.0,All
+640,305,Austria,AUS,Turkey,TUR,640305,0.0,All
+640,325,Italy,ITA,Turkey,TUR,640325,0.0,All
+640,380,Sweden,SWD,Turkey,TUR,640380,0.0,All
+640,900,Australia,AUL,Turkey,TUR,640900,0.0,All
+640,200,United Kingdom,UKG,Turkey,TUR,640200,0.0,All
+640,645,Iraq,IRQ,Turkey,TUR,640645,1.0,All
+645,800,Thailand,THI,Iraq,IRQ,645800,0.0,All
+645,2,United States of America,USA,Iraq,IRQ,6452,0.0,All
+645,20,Canada,CAN,Iraq,IRQ,64520,0.0,All
+645,210,Netherlands,NTH,Iraq,IRQ,645210,0.0,All
+645,220,France,FRN,Iraq,IRQ,645220,0.0,All
+645,255,Germany,GMY,Iraq,IRQ,645255,0.0,All
+645,305,Austria,AUS,Iraq,IRQ,645305,0.0,All
+645,325,Italy,ITA,Iraq,IRQ,645325,0.0,All
+645,640,Turkey,TUR,Iraq,IRQ,645640,1.0,All
+645,652,Syria,SYR,Iraq,IRQ,645652,1.0,All
+645,663,Jordan,JOR,Iraq,IRQ,645663,1.0,All
+645,750,India,IND,Iraq,IRQ,645750,0.0,All
+651,220,France,FRN,Egypt,EGY,651220,0.0,All
+651,200,United Kingdom,UKG,Egypt,EGY,651200,0.0,All
+651,2,United States of America,USA,Egypt,EGY,6512,0.0,All
+651,325,Italy,ITA,Egypt,EGY,651325,0.0,All
+651,255,Germany,GMY,Egypt,EGY,651255,0.0,All
+652,220,France,FRN,Syria,SYR,652220,0.0,All
+652,2,United States of America,USA,Syria,SYR,6522,0.0,All
+652,255,Germany,GMY,Syria,SYR,652255,0.0,All
+652,325,Italy,ITA,Syria,SYR,652325,0.0,All
+652,365,Russia,RUS,Syria,SYR,652365,0.0,All
+652,369,Ukraine,UKR,Syria,SYR,652369,0.0,All
+652,640,Turkey,TUR,Syria,SYR,652640,1.0,All
+652,645,Iraq,IRQ,Syria,SYR,652645,1.0,All
+652,651,Egypt,EGY,Syria,SYR,652651,1.0,All
+652,732,South Korea,ROK,Syria,SYR,652732,0.0,All
+660,255,Germany,GMY,Lebanon,LEB,660255,0.0,All
+660,2,United States of America,USA,Lebanon,LEB,6602,0.0,All
+663,255,Germany,GMY,Jordan,JOR,663255,0.0,All
+663,2,United States of America,USA,Jordan,JOR,6632,0.0,All
+666,20,Canada,CAN,Israel,ISR,66620,0.0,All
+666,255,Germany,GMY,Israel,ISR,666255,0.0,All
+670,255,Germany,GMY,Saudi Arabia,SAU,670255,0.0,All
+679,2,United States of America,USA,Yemen,YEM,6792,0.0,All
+690,255,Germany,GMY,Kuwait,KUW,690255,0.0,All
+690,200,United Kingdom,UKG,Kuwait,KUW,690200,0.0,All
+696,255,Germany,GMY,United Arab Emirates,UAE,696255,0.0,All
+700,2,United States of America,USA,Afghanistan,AFG,7002,0.0,All
+700,365,Russia,RUS,Afghanistan,AFG,700365,1.0,All
+700,770,Pakistan,PAK,Afghanistan,AFG,700770,1.0,All
+701,365,Russia,RUS,Turkmenistan,TKM,701365,1.0,All
+702,55,Grenada,GRN,Tajikistan,TAJ,70255,0.0,All
+704,2,United States of America,USA,Uzbekistan,UZB,7042,0.0,All
+705,255,Germany,GMY,Kazakhstan,KZK,705255,0.0,All
+705,365,Russia,RUS,Kazakhstan,KZK,705365,1.0,All
+705,2,United States of America,USA,Kazakhstan,KZK,7052,0.0,All
+710,560,South Africa,SAF,China,CHN,710560,0.0,All
+710,220,France,FRN,China,CHN,710220,0.0,All
+710,20,Canada,CAN,China,CHN,71020,0.0,All
+710,210,Netherlands,NTH,China,CHN,710210,0.0,All
+710,211,Belgium,BEL,China,CHN,710211,0.0,All
+710,225,Switzerland,SWZ,China,CHN,710225,0.0,All
+710,255,Germany,GMY,China,CHN,710255,0.0,All
+710,385,Norway,NOR,China,CHN,710385,0.0,All
+710,900,Australia,AUL,China,CHN,710900,0.0,All
+710,2,United States of America,USA,China,CHN,7102,0.0,All
+710,750,India,IND,China,CHN,710750,1.0,All
+710,200,United Kingdom,UKG,China,CHN,710200,0.0,All
+732,255,Germany,GMY,South Korea,ROK,732255,0.0,All
+740,255,Germany,GMY,Japan,JPN,740255,0.0,All
+750,2,United States of America,USA,India,IND,7502,0.0,All
+750,20,Canada,CAN,India,IND,75020,0.0,All
+750,255,Germany,GMY,India,IND,750255,0.0,All
+750,200,United Kingdom,UKG,India,IND,750200,0.0,All
+770,820,Malaysia,MAL,Pakistan,PAK,770820,0.0,All
+770,800,Thailand,THI,Pakistan,PAK,770800,0.0,All
+770,220,France,FRN,Pakistan,PAK,770220,0.0,All
+770,2,United States of America,USA,Pakistan,PAK,7702,0.0,All
+770,255,Germany,GMY,Pakistan,PAK,770255,0.0,All
+770,325,Italy,ITA,Pakistan,PAK,770325,0.0,All
+770,700,Afghanistan,AFG,Pakistan,PAK,770700,1.0,All
+770,850,Indonesia,INS,Pakistan,PAK,770850,0.0,All
+770,200,United Kingdom,UKG,Pakistan,PAK,770200,0.0,All
+771,220,France,FRN,Bangladesh,BNG,771220,0.0,All
+771,2,United States of America,USA,Bangladesh,BNG,7712,0.0,All
+771,20,Canada,CAN,Bangladesh,BNG,77120,0.0,All
+771,255,Germany,GMY,Bangladesh,BNG,771255,0.0,All
+771,200,United Kingdom,UKG,Bangladesh,BNG,771200,0.0,All
+771,750,India,IND,Bangladesh,BNG,771750,1.0,All
+775,740,Japan,JPN,Myanmar,MYA,775740,0.0,All
+775,800,Thailand,THI,Myanmar,MYA,775800,1.0,All
+775,750,India,IND,Myanmar,MYA,775750,1.0,All
+780,750,India,IND,Sri Lanka,SRI,780750,1.0,All
+780,2,United States of America,USA,Sri Lanka,SRI,7802,0.0,All
+780,200,United Kingdom,UKG,Sri Lanka,SRI,780200,0.0,All
+800,900,Australia,AUL,Thailand,THI,800900,0.0,All
+800,255,Germany,GMY,Thailand,THI,800255,0.0,All
+811,2,United States of America,USA,Cambodia,CAM,8112,0.0,All
+811,816,Vietnam,DRV,Cambodia,CAM,811816,1.0,All
+812,710,China,CHN,Laos,LAO,812710,1.0,All
+812,800,Thailand,THI,Laos,LAO,812800,1.0,All
+816,220,France,FRN,Vietnam,DRV,816220,0.0,All
+816,740,Japan,JPN,Vietnam,DRV,816740,0.0,All
+816,800,Thailand,THI,Vietnam,DRV,816800,1.0,All
+816,840,Philippines,PHI,Vietnam,DRV,816840,0.0,All
+816,850,Indonesia,INS,Vietnam,DRV,816850,1.0,All
+816,200,United Kingdom,UKG,Vietnam,DRV,816200,0.0,All
+816,2,United States of America,USA,Vietnam,DRV,8162,0.0,All
+816,210,Netherlands,NTH,Vietnam,DRV,816210,0.0,All
+816,255,Germany,GMY,Vietnam,DRV,816255,0.0,All
+816,710,China,CHN,Vietnam,DRV,816710,1.0,All
+820,255,Germany,GMY,Malaysia,MAL,820255,0.0,All
+840,2,United States of America,USA,Philippines,PHI,8402,0.0,All
+840,255,Germany,GMY,Philippines,PHI,840255,0.0,All
+850,820,Malaysia,MAL,Indonesia,INS,850820,1.0,All
+850,20,Canada,CAN,Indonesia,INS,85020,0.0,All
+850,2,United States of America,USA,Indonesia,INS,8502,0.0,All
+850,255,Germany,GMY,Indonesia,INS,850255,0.0,All
+850,900,Australia,AUL,Indonesia,INS,850900,1.0,All
+2,20,Canada,CAN,United States of America,USA,220,,All
+2,255,Germany,GMY,United States of America,USA,2255,,All
+20,255,Germany,GMY,Canada,CAN,20255,,All
+135,2,United States of America,USA,Peru,PER,1352,,All
+210,255,Germany,GMY,Netherlands,NTH,210255,,All
+220,255,Germany,GMY,France,FRN,220255,,All
+255,20,Canada,CAN,Germany,GMY,25520,,All
+344,255,Germany,GMY,Croatia,CRO,344255,,All
+365,2,United States of America,USA,Russia,RUS,3652,,All
+365,290,Poland,POL,Russia,RUS,365290,,All
+365,316,Czech Republic,CZR,Russia,RUS,365316,,All
+365,373,Azerbaijan,AZE,Russia,RUS,365373,,All
+365,705,Kazakhstan,KZK,Russia,RUS,365705,,All
+369,2,United States of America,USA,Ukraine,UKR,3692,,All
+369,365,Russia,RUS,Ukraine,UKR,369365,,All
+369,370,Belarus,BLR,Ukraine,UKR,369370,,All
+560,551,Zambia,ZAM,South Africa,SAF,560551,,All
+560,572,Swaziland,SWA,South Africa,SAF,560572,,All
+630,652,Syria,SYR,Iran,IRN,630652,,All
+666,20,Canada,CAN,Israel,ISR,66620,,All
+666,255,Germany,GMY,Israel,ISR,666255,,All
+710,560,South Africa,SAF,China,CHN,710560,,All
+770,820,Malaysia,MAL,Pakistan,PAK,770820,,All
+850,820,Malaysia,MAL,Indonesia,INS,850820,,All
+471,325,Italy,ITA,Cameroon,CAO,471325,,All
+310,255,Germany,GMY,Hungary,HUN,310255,,All
+475,560,South Africa,SAF,Nigeria,NIG,475560,,All
+339,325,Italy,ITA,Albania,ALB,339325,,All
+316,255,Germany,GMY,Czech Republic,CZR,316255,,All
+317,255,Germany,GMY,Slovakia,SLO,317255,,All
+31,2,United States of America,USA,Bahamas,BHM,312,,All
+41,2,United States of America,USA,Haiti,HAI,412,,All
+41,42,Dominican Republic,DOM,Haiti,HAI,4142,,All
+70,2,United States of America,USA,Mexico,MEX,702,,All
+70,255,Germany,GMY,Mexico,MEX,70255,,All
+90,70,Mexico,MEX,Guatemala,GUA,9070,,All
+91,2,United States of America,USA,Honduras,HON,912,,All
+92,90,Guatemala,GUA,El Salvador,SAL,9290,,All
+93,2,United States of America,USA,Nicaragua,NIC,932,,All
+95,2,United States of America,USA,Panama,PAN,952,,All
+100,20,Canada,CAN,Colombia,COL,10020,,All
+100,101,Venezuela,VEN,Colombia,COL,100101,,All
+100,130,Ecuador,ECU,Colombia,COL,100130,,All
+100,135,Peru,PER,Colombia,COL,100135,,All
+100,140,Brazil,BRA,Colombia,COL,100140,,All
+100,155,Chile,CHL,Colombia,COL,100155,,All
+100,160,Argentina,ARG,Colombia,COL,100160,,All
+100,210,Netherlands,NTH,Colombia,COL,100210,,All
+100,255,Germany,GMY,Colombia,COL,100255,,All
+100,325,Italy,ITA,Colombia,COL,100325,,All
+101,20,Canada,CAN,Venezuela,VEN,10120,,All
+101,70,Mexico,MEX,Venezuela,VEN,10170,,All
+101,255,Germany,GMY,Venezuela,VEN,101255,,All
+130,2,United States of America,USA,Ecuador,ECU,1302,,All
+135,20,Canada,CAN,Peru,PER,13520,,All
+135,160,Argentina,ARG,Peru,PER,135160,,All
+135,255,Germany,GMY,Peru,PER,135255,,All
+140,2,United States of America,USA,Brazil,BRA,1402,,All
+140,255,Germany,GMY,Brazil,BRA,140255,,All
+155,20,Canada,CAN,Chile,CHL,15520,,All
+155,101,Venezuela,VEN,Chile,CHL,155101,,All
+155,160,Argentina,ARG,Chile,CHL,155160,,All
+155,211,Belgium,BEL,Chile,CHL,155211,,All
+155,255,Germany,GMY,Chile,CHL,155255,,All
+160,20,Canada,CAN,Argentina,ARG,16020,,All
+160,255,Germany,GMY,Argentina,ARG,160255,,All
+230,255,Germany,GMY,Spain,SPN,230255,,All
+290,20,Canada,CAN,Poland,POL,29020,,All
+290,211,Belgium,BEL,Poland,POL,290211,,All
+290,255,Germany,GMY,Poland,POL,290255,,All
+501,2,United States of America,USA,Kenya,KEN,5012,,All
+343,255,Germany,GMY,Macedonia,MAC,343255,,All
+344,325,Italy,ITA,Croatia,CRO,344325,,All
+346,255,Germany,GMY,Bosnia and Herzegovina,BOS,346255,,All
+346,325,Italy,ITA,Bosnia and Herzegovina,BOS,346325,,All
+346,344,Croatia,CRO,Bosnia and Herzegovina,BOS,346344,,All
+346,349,Slovenia,SLV,Bosnia and Herzegovina,BOS,346349,,All
+349,255,Germany,GMY,Slovenia,SLV,349255,,All
+350,255,Germany,GMY,Greece,GRC,350255,,All
+355,255,Germany,GMY,Bulgaria,BUL,355255,,All
+360,2,United States of America,USA,Romania,ROM,3602,,All
+360,255,Germany,GMY,Romania,ROM,360255,,All
+360,310,Hungary,HUN,Romania,ROM,360310,,All
+552,560,South Africa,SAF,Zimbabwe,ZIM,552560,,All
+365,20,Canada,CAN,Russia,RUS,36520,,All
+365,210,Netherlands,NTH,Russia,RUS,365210,,All
+365,211,Belgium,BEL,Russia,RUS,365211,,All
+365,220,France,FRN,Russia,RUS,365220,,All
+365,225,Switzerland,SWZ,Russia,RUS,365225,,All
+365,255,Germany,GMY,Russia,RUS,365255,,All
+365,305,Austria,AUS,Russia,RUS,365305,,All
+365,325,Italy,ITA,Russia,RUS,365325,,All
+365,368,Lithuania,LIT,Russia,RUS,365368,,All
+365,369,Ukraine,UKR,Russia,RUS,365369,,All
+365,375,Finland,FIN,Russia,RUS,365375,,All
+365,380,Sweden,SWD,Russia,RUS,365380,,All
+365,385,Norway,NOR,Russia,RUS,365385,,All
+365,390,Denmark,DEN,Russia,RUS,365390,,All
+365,900,Australia,AUL,Russia,RUS,365900,,All
+367,255,Germany,GMY,Latvia,LAT,367255,,All
+368,255,Germany,GMY,Lithuania,LIT,368255,,All
+369,210,Netherlands,NTH,Ukraine,UKR,369210,,All
+369,211,Belgium,BEL,Ukraine,UKR,369211,,All
+369,220,France,FRN,Ukraine,UKR,369220,,All
+369,255,Germany,GMY,Ukraine,UKR,369255,,All
+369,316,Czech Republic,CZR,Ukraine,UKR,369316,,All
+369,325,Italy,ITA,Ukraine,UKR,369325,,All
+370,2,United States of America,USA,Belarus,BLR,3702,,All
+370,255,Germany,GMY,Belarus,BLR,370255,,All
+370,365,Russia,RUS,Belarus,BLR,370365,,All
+373,2,United States of America,USA,Azerbaijan,AZE,3732,,All
+373,20,Canada,CAN,Azerbaijan,AZE,37320,,All
+373,220,France,FRN,Azerbaijan,AZE,373220,,All
+373,255,Germany,GMY,Azerbaijan,AZE,373255,,All
+373,369,Ukraine,UKR,Azerbaijan,AZE,373369,,All
+600,325,Italy,ITA,Morocco,MOR,600325,,All
+615,230,Spain,SPN,Algeria,ALG,615230,,All
+615,255,Germany,GMY,Algeria,ALG,615255,,All
+630,640,Turkey,TUR,Iran,IRN,630640,,All
+640,210,Netherlands,NTH,Turkey,TUR,640210,,All
+640,220,France,FRN,Turkey,TUR,640220,,All
+640,225,Switzerland,SWZ,Turkey,TUR,640225,,All
+640,350,Greece,GRC,Turkey,TUR,640350,,All
+645,800,Thailand,THI,Iraq,IRQ,645800,,All
+433,220,France,FRN,Senegal,SEN,433220,,All
+652,220,France,FRN,Syria,SYR,652220,,All
+437,2,United States of America,USA,Ivory Coast,CDI,4372,,All
+437,210,Netherlands,NTH,Ivory Coast,CDI,437210,,All
+437,220,France,FRN,Ivory Coast,CDI,437220,,All
+437,255,Germany,GMY,Ivory Coast,CDI,437255,,All
+437,475,Nigeria,NIG,Ivory Coast,CDI,437475,,All
+450,255,Germany,GMY,Liberia,LBR,450255,,All
+450,385,Norway,NOR,Liberia,LBR,450385,,All
+471,220,France,FRN,Cameroon,CAO,471220,,All
+700,2,United States of America,USA,Afghanistan,AFG,7002,,All
+475,2,United States of America,USA,Nigeria,NIG,4752,,All
+475,20,Canada,CAN,Nigeria,NIG,47520,,All
+475,220,France,FRN,Nigeria,NIG,475220,,All
+475,255,Germany,GMY,Nigeria,NIG,475255,,All
+475,325,Italy,ITA,Nigeria,NIG,475325,,All
+701,365,Russia,RUS,Turkmenistan,TKM,701365,,All
+490,211,Belgium,BEL,Democratic Republic of the Congo,DRC,490211,,All
+710,220,France,FRN,China,CHN,710220,,All
+490,551,Zambia,ZAM,Democratic Republic of the Congo,DRC,490551,,All
+490,560,South Africa,SAF,Democratic Republic of the Congo,DRC,490560,,All
+775,740,Japan,JPN,Myanmar,MYA,775740,,All
+840,2,United States of America,USA,Philippines,PHI,8402,,All
+800,900,Australia,AUL,Thailand,THI,800900,,All
+811,2,United States of America,USA,Cambodia,CAM,8112,,All
+812,710,China,CHN,Laos,LAO,812710,,All
+812,800,Thailand,THI,Laos,LAO,812800,,All
+540,2,United States of America,USA,Angola,ANG,5402,,All
+540,20,Canada,CAN,Angola,ANG,54020,,All
+540,140,Brazil,BRA,Angola,ANG,540140,,All
+540,210,Netherlands,NTH,Angola,ANG,540210,,All
+540,220,France,FRN,Angola,ANG,540220,,All
+540,255,Germany,GMY,Angola,ANG,540255,,All
+540,560,South Africa,SAF,Angola,ANG,540560,,All
+800,255,Germany,GMY,Thailand,THI,800255,,All
+560,255,Germany,GMY,South Africa,SAF,560255,,All
+560,552,Zimbabwe,ZIM,South Africa,SAF,560552,,All
+600,255,Germany,GMY,Morocco,MOR,600255,,All
+615,2,United States of America,USA,Algeria,ALG,6152,,All
+615,20,Canada,CAN,Algeria,ALG,61520,,All
+615,220,France,FRN,Algeria,ALG,615220,,All
+616,255,Germany,GMY,Tunisia,TUN,616255,,All
+616,325,Italy,ITA,Tunisia,TUN,616325,,All
+620,2,United States of America,USA,Libya,LIB,6202,,All
+620,220,France,FRN,Libya,LIB,620220,,All
+620,225,Switzerland,SWZ,Libya,LIB,620225,,All
+620,255,Germany,GMY,Libya,LIB,620255,,All
+620,325,Italy,ITA,Libya,LIB,620325,,All
+630,210,Netherlands,NTH,Iran,IRN,630210,,All
+630,211,Belgium,BEL,Iran,IRN,630211,,All
+630,220,France,FRN,Iran,IRN,630220,,All
+630,225,Switzerland,SWZ,Iran,IRN,630225,,All
+630,255,Germany,GMY,Iran,IRN,630255,,All
+630,305,Austria,AUS,Iran,IRN,630305,,All
+630,325,Italy,ITA,Iran,IRN,630325,,All
+630,350,Greece,GRC,Iran,IRN,630350,,All
+630,380,Sweden,SWD,Iran,IRN,630380,,All
+630,770,Pakistan,PAK,Iran,IRN,630770,,All
+640,2,United States of America,USA,Turkey,TUR,6402,,All
+640,20,Canada,CAN,Turkey,TUR,64020,,All
+640,211,Belgium,BEL,Turkey,TUR,640211,,All
+640,255,Germany,GMY,Turkey,TUR,640255,,All
+640,305,Austria,AUS,Turkey,TUR,640305,,All
+640,325,Italy,ITA,Turkey,TUR,640325,,All
+640,380,Sweden,SWD,Turkey,TUR,640380,,All
+640,900,Australia,AUL,Turkey,TUR,640900,,All
+645,2,United States of America,USA,Iraq,IRQ,6452,,All
+645,20,Canada,CAN,Iraq,IRQ,64520,,All
+645,210,Netherlands,NTH,Iraq,IRQ,645210,,All
+645,220,France,FRN,Iraq,IRQ,645220,,All
+645,255,Germany,GMY,Iraq,IRQ,645255,,All
+645,305,Austria,AUS,Iraq,IRQ,645305,,All
+645,325,Italy,ITA,Iraq,IRQ,645325,,All
+645,640,Turkey,TUR,Iraq,IRQ,645640,,All
+645,652,Syria,SYR,Iraq,IRQ,645652,,All
+645,663,Jordan,JOR,Iraq,IRQ,645663,,All
+652,2,United States of America,USA,Syria,SYR,6522,,All
+652,255,Germany,GMY,Syria,SYR,652255,,All
+652,325,Italy,ITA,Syria,SYR,652325,,All
+652,365,Russia,RUS,Syria,SYR,652365,,All
+652,369,Ukraine,UKR,Syria,SYR,652369,,All
+652,640,Turkey,TUR,Syria,SYR,652640,,All
+652,645,Iraq,IRQ,Syria,SYR,652645,,All
+652,651,Egypt,EGY,Syria,SYR,652651,,All
+652,732,South Korea,ROK,Syria,SYR,652732,,All
+660,255,Germany,GMY,Lebanon,LEB,660255,,All
+663,255,Germany,GMY,Jordan,JOR,663255,,All
+670,255,Germany,GMY,Saudi Arabia,SAU,670255,,All
+679,2,United States of America,USA,Yemen,YEM,6792,,All
+690,255,Germany,GMY,Kuwait,KUW,690255,,All
+770,800,Thailand,THI,Pakistan,PAK,770800,,All
+696,255,Germany,GMY,United Arab Emirates,UAE,696255,,All
+771,220,France,FRN,Bangladesh,BNG,771220,,All
+775,800,Thailand,THI,Myanmar,MYA,775800,,All
+700,365,Russia,RUS,Afghanistan,AFG,700365,,All
+700,770,Pakistan,PAK,Afghanistan,AFG,700770,,All
+705,255,Germany,GMY,Kazakhstan,KZK,705255,,All
+705,365,Russia,RUS,Kazakhstan,KZK,705365,,All
+710,20,Canada,CAN,China,CHN,71020,,All
+710,210,Netherlands,NTH,China,CHN,710210,,All
+710,211,Belgium,BEL,China,CHN,710211,,All
+710,225,Switzerland,SWZ,China,CHN,710225,,All
+710,255,Germany,GMY,China,CHN,710255,,All
+710,385,Norway,NOR,China,CHN,710385,,All
+710,900,Australia,AUL,China,CHN,710900,,All
+770,220,France,FRN,Pakistan,PAK,770220,,All
+732,255,Germany,GMY,South Korea,ROK,732255,,All
+850,20,Canada,CAN,Indonesia,INS,85020,,All
+740,255,Germany,GMY,Japan,JPN,740255,,All
+750,2,United States of America,USA,India,IND,7502,,All
+750,20,Canada,CAN,India,IND,75020,,All
+750,255,Germany,GMY,India,IND,750255,,All
+770,2,United States of America,USA,Pakistan,PAK,7702,,All
+770,255,Germany,GMY,Pakistan,PAK,770255,,All
+770,325,Italy,ITA,Pakistan,PAK,770325,,All
+770,700,Afghanistan,AFG,Pakistan,PAK,770700,,All
+770,850,Indonesia,INS,Pakistan,PAK,770850,,All
+771,2,United States of America,USA,Bangladesh,BNG,7712,,All
+771,20,Canada,CAN,Bangladesh,BNG,77120,,All
+771,255,Germany,GMY,Bangladesh,BNG,771255,,All
+820,255,Germany,GMY,Malaysia,MAL,820255,,All
+840,255,Germany,GMY,Philippines,PHI,840255,,All
+850,2,United States of America,USA,Indonesia,INS,8502,,All
+850,255,Germany,GMY,Indonesia,INS,850255,,All
+850,900,Australia,AUL,Indonesia,INS,850900,,All
+710,2,United States of America,USA,China,CHN,7102,,All
+750,200,United Kingdom,UKG,India,IND,750200,,All
+484,2,United States of America,USA,Congo,CON,4842,,All
+484,220,France,FRN,Congo,CON,484220,,All
+651,220,France,FRN,Egypt,EGY,651220,,All
+710,750,India,IND,China,CHN,710750,,All
+660,2,United States of America,USA,Lebanon,LEB,6602,,All
+100,2,United States of America,USA,Colombia,COL,1002,,All
+100,230,Spain,SPN,Colombia,COL,100230,,All
+344,346,Bosnia and Herzegovina,BOS,Croatia,CRO,344346,,All
+501,200,United Kingdom,UKG,Kenya,KEN,501200,,All
+640,200,United Kingdom,UKG,Turkey,TUR,640200,,All
+365,200,United Kingdom,UKG,Russia,RUS,365200,,All
+640,645,Iraq,IRQ,Turkey,TUR,640645,,All
+663,2,United States of America,USA,Jordan,JOR,6632,,All
+690,200,United Kingdom,UKG,Kuwait,KUW,690200,,All
+530,2,United States of America,USA,Ethiopia,ETH,5302,,All
+615,200,United Kingdom,UKG,Algeria,ALG,615200,,All
+365,230,Spain,SPN,Russia,RUS,365230,,All
+770,200,United Kingdom,UKG,Pakistan,PAK,770200,,All
+452,2,United States of America,USA,Ghana,GHA,4522,,All
+771,200,United Kingdom,UKG,Bangladesh,BNG,771200,,All
+40,20,Canada,CAN,Cuba,CUB,4020,,All
+40,230,Spain,SPN,Cuba,CUB,40230,,All
+771,750,India,IND,Bangladesh,BNG,771750,,All
+540,200,United Kingdom,UKG,Angola,ANG,540200,,All
+475,200,United Kingdom,UKG,Nigeria,NIG,475200,,All
+780,750,India,IND,Sri Lanka,SRI,780750,,All
+620,200,United Kingdom,UKG,Libya,LIB,620200,,All
+645,750,India,IND,Iraq,IRQ,645750,,All
+70,20,Canada,CAN,Mexico,MEX,7020,,All
+780,2,United States of America,USA,Sri Lanka,SRI,7802,,All
+780,200,United Kingdom,UKG,Sri Lanka,SRI,780200,,All
+92,2,United States of America,USA,El Salvador,SAL,922,,All
+360,200,United Kingdom,UKG,Romania,ROM,360200,,All
+483,2,United States of America,USA,Chad,CHA,4832,,All
+630,200,United Kingdom,UKG,Iran,IRN,630200,,All
+100,200,United Kingdom,UKG,Colombia,COL,100200,,All
+651,200,United Kingdom,UKG,Egypt,EGY,651200,,All
+90,2,United States of America,USA,Guatemala,GUA,902,,All
+101,2,United States of America,USA,Venezuela,VEN,1012,,All
+651,2,United States of America,USA,Egypt,EGY,6512,,All
+651,325,Italy,ITA,Egypt,EGY,651325,,All
+630,750,India,IND,Iran,IRN,630750,,All
+94,2,United States of America,USA,Costa Rica,COS,942,,All
+775,750,India,IND,Myanmar,MYA,775750,,All
+710,200,United Kingdom,UKG,China,CHN,710200,,All
+651,255,Germany,GMY,Egypt,EGY,651255,,All
+816,220,France,FRN,Vietnam,DRV,816220,,All
+816,740,Japan,JPN,Vietnam,DRV,816740,,All
+816,800,Thailand,THI,Vietnam,DRV,816800,,All
+816,840,Philippines,PHI,Vietnam,DRV,816840,,All
+816,850,Indonesia,INS,Vietnam,DRV,816850,,All
+816,200,United Kingdom,UKG,Vietnam,DRV,816200,,All
+816,2,United States of America,USA,Vietnam,DRV,8162,,All
+816,210,Netherlands,NTH,Vietnam,DRV,816210,,All
+704,2,United States of America,USA,Uzbekistan,UZB,7042,,All
+345,2,United States of America,USA,Yugoslavia,YUG,3452,,All
+816,255,Germany,GMY,Vietnam,DRV,816255,,All
+811,816,Vietnam,DRV,Cambodia,CAM,811816,,All
+345,255,Germany,GMY,Yugoslavia,YUG,345255,,All
+345,305,Austria,AUS,Yugoslavia,YUG,345305,,All
+705,2,United States of America,USA,Kazakhstan,KZK,7052,,All
+345,325,Italy,ITA,Yugoslavia,YUG,345325,,All
+345,220,France,FRN,Yugoslavia,YUG,345220,,All
+816,710,China,CHN,Vietnam,DRV,816710,,All
+70,42,Dominican Republic,DOM,Mexico,MEX,7042,,All
+70,52,Trinidad and Tobago,TRI,Mexico,MEX,7052,,All
+702,55,Grenada,GRN,Tajikistan,TAJ,70255,,All
+2,20,Canada,CAN,United States of America,USA,220,,All
+2,255,Germany,GMY,United States of America,USA,2255,,All
+20,255,Germany,GMY,Canada,CAN,20255,,All
+135,2,United States of America,USA,Peru,PER,1352,,All
+210,255,Germany,GMY,Netherlands,NTH,210255,,All
+220,255,Germany,GMY,France,FRN,220255,,All
+255,20,Canada,CAN,Germany,GMY,25520,,All
+344,255,Germany,GMY,Croatia,CRO,344255,,All
+365,2,United States of America,USA,Russia,RUS,3652,,All
+365,290,Poland,POL,Russia,RUS,365290,,All
+365,316,Czech Republic,CZR,Russia,RUS,365316,,All
+365,373,Azerbaijan,AZE,Russia,RUS,365373,,All
+365,705,Kazakhstan,KZK,Russia,RUS,365705,,All
+369,2,United States of America,USA,Ukraine,UKR,3692,,All
+369,365,Russia,RUS,Ukraine,UKR,369365,,All
+369,370,Belarus,BLR,Ukraine,UKR,369370,,All
+560,551,Zambia,ZAM,South Africa,SAF,560551,,All
+560,572,Swaziland,SWA,South Africa,SAF,560572,,All
+630,652,Syria,SYR,Iran,IRN,630652,,All
+666,20,Canada,CAN,Israel,ISR,66620,,All
+666,255,Germany,GMY,Israel,ISR,666255,,All
+710,560,South Africa,SAF,China,CHN,710560,,All
+770,820,Malaysia,MAL,Pakistan,PAK,770820,,All
+850,820,Malaysia,MAL,Indonesia,INS,850820,,All
+471,325,Italy,ITA,Cameroon,CAO,471325,,All
+310,255,Germany,GMY,Hungary,HUN,310255,,All
+475,560,South Africa,SAF,Nigeria,NIG,475560,,All
+339,325,Italy,ITA,Albania,ALB,339325,,All
+316,255,Germany,GMY,Czech Republic,CZR,316255,,All
+317,255,Germany,GMY,Slovakia,SLO,317255,,All
+31,2,United States of America,USA,Bahamas,BHM,312,,All
+41,2,United States of America,USA,Haiti,HAI,412,,All
+41,42,Dominican Republic,DOM,Haiti,HAI,4142,,All
+70,2,United States of America,USA,Mexico,MEX,702,,All
+70,255,Germany,GMY,Mexico,MEX,70255,,All
+90,70,Mexico,MEX,Guatemala,GUA,9070,,All
+91,2,United States of America,USA,Honduras,HON,912,,All
+92,90,Guatemala,GUA,El Salvador,SAL,9290,,All
+93,2,United States of America,USA,Nicaragua,NIC,932,,All
+95,2,United States of America,USA,Panama,PAN,952,,All
+100,20,Canada,CAN,Colombia,COL,10020,,All
+100,101,Venezuela,VEN,Colombia,COL,100101,,All
+100,130,Ecuador,ECU,Colombia,COL,100130,,All
+100,135,Peru,PER,Colombia,COL,100135,,All
+100,140,Brazil,BRA,Colombia,COL,100140,,All
+100,155,Chile,CHL,Colombia,COL,100155,,All
+100,160,Argentina,ARG,Colombia,COL,100160,,All
+100,210,Netherlands,NTH,Colombia,COL,100210,,All
+100,255,Germany,GMY,Colombia,COL,100255,,All
+100,325,Italy,ITA,Colombia,COL,100325,,All
+101,20,Canada,CAN,Venezuela,VEN,10120,,All
+101,70,Mexico,MEX,Venezuela,VEN,10170,,All
+101,255,Germany,GMY,Venezuela,VEN,101255,,All
+130,2,United States of America,USA,Ecuador,ECU,1302,,All
+135,20,Canada,CAN,Peru,PER,13520,,All
+135,160,Argentina,ARG,Peru,PER,135160,,All
+135,255,Germany,GMY,Peru,PER,135255,,All
+140,2,United States of America,USA,Brazil,BRA,1402,,All
+140,255,Germany,GMY,Brazil,BRA,140255,,All
+155,20,Canada,CAN,Chile,CHL,15520,,All
+155,101,Venezuela,VEN,Chile,CHL,155101,,All
+155,160,Argentina,ARG,Chile,CHL,155160,,All
+155,211,Belgium,BEL,Chile,CHL,155211,,All
+155,255,Germany,GMY,Chile,CHL,155255,,All
+160,20,Canada,CAN,Argentina,ARG,16020,,All
+160,255,Germany,GMY,Argentina,ARG,160255,,All
+230,255,Germany,GMY,Spain,SPN,230255,,All
+290,20,Canada,CAN,Poland,POL,29020,,All
+290,211,Belgium,BEL,Poland,POL,290211,,All
+290,255,Germany,GMY,Poland,POL,290255,,All
+501,2,United States of America,USA,Kenya,KEN,5012,,All
+343,255,Germany,GMY,Macedonia,MAC,343255,,All
+344,325,Italy,ITA,Croatia,CRO,344325,,All
+346,255,Germany,GMY,Bosnia and Herzegovina,BOS,346255,,All
+346,325,Italy,ITA,Bosnia and Herzegovina,BOS,346325,,All
+346,344,Croatia,CRO,Bosnia and Herzegovina,BOS,346344,,All
+346,349,Slovenia,SLV,Bosnia and Herzegovina,BOS,346349,,All
+349,255,Germany,GMY,Slovenia,SLV,349255,,All
+350,255,Germany,GMY,Greece,GRC,350255,,All
+355,255,Germany,GMY,Bulgaria,BUL,355255,,All
+360,2,United States of America,USA,Romania,ROM,3602,,All
+360,255,Germany,GMY,Romania,ROM,360255,,All
+360,310,Hungary,HUN,Romania,ROM,360310,,All
+552,560,South Africa,SAF,Zimbabwe,ZIM,552560,,All
+365,20,Canada,CAN,Russia,RUS,36520,,All
+365,210,Netherlands,NTH,Russia,RUS,365210,,All
+365,211,Belgium,BEL,Russia,RUS,365211,,All
+365,220,France,FRN,Russia,RUS,365220,,All
+365,225,Switzerland,SWZ,Russia,RUS,365225,,All
+365,255,Germany,GMY,Russia,RUS,365255,,All
+365,305,Austria,AUS,Russia,RUS,365305,,All
+365,325,Italy,ITA,Russia,RUS,365325,,All
+365,368,Lithuania,LIT,Russia,RUS,365368,,All
+365,369,Ukraine,UKR,Russia,RUS,365369,,All
+365,375,Finland,FIN,Russia,RUS,365375,,All
+365,380,Sweden,SWD,Russia,RUS,365380,,All
+365,385,Norway,NOR,Russia,RUS,365385,,All
+365,390,Denmark,DEN,Russia,RUS,365390,,All
+365,900,Australia,AUL,Russia,RUS,365900,,All
+367,255,Germany,GMY,Latvia,LAT,367255,,All
+368,255,Germany,GMY,Lithuania,LIT,368255,,All
+369,210,Netherlands,NTH,Ukraine,UKR,369210,,All
+369,211,Belgium,BEL,Ukraine,UKR,369211,,All
+369,220,France,FRN,Ukraine,UKR,369220,,All
+369,255,Germany,GMY,Ukraine,UKR,369255,,All
+369,316,Czech Republic,CZR,Ukraine,UKR,369316,,All
+369,325,Italy,ITA,Ukraine,UKR,369325,,All
+370,2,United States of America,USA,Belarus,BLR,3702,,All
+370,255,Germany,GMY,Belarus,BLR,370255,,All
+370,365,Russia,RUS,Belarus,BLR,370365,,All
+373,2,United States of America,USA,Azerbaijan,AZE,3732,,All
+373,20,Canada,CAN,Azerbaijan,AZE,37320,,All
+373,220,France,FRN,Azerbaijan,AZE,373220,,All
+373,255,Germany,GMY,Azerbaijan,AZE,373255,,All
+373,369,Ukraine,UKR,Azerbaijan,AZE,373369,,All
+600,325,Italy,ITA,Morocco,MOR,600325,,All
+615,230,Spain,SPN,Algeria,ALG,615230,,All
+615,255,Germany,GMY,Algeria,ALG,615255,,All
+630,640,Turkey,TUR,Iran,IRN,630640,,All
+640,210,Netherlands,NTH,Turkey,TUR,640210,,All
+640,220,France,FRN,Turkey,TUR,640220,,All
+640,225,Switzerland,SWZ,Turkey,TUR,640225,,All
+640,350,Greece,GRC,Turkey,TUR,640350,,All
+645,800,Thailand,THI,Iraq,IRQ,645800,,All
+433,220,France,FRN,Senegal,SEN,433220,,All
+652,220,France,FRN,Syria,SYR,652220,,All
+437,2,United States of America,USA,Ivory Coast,CDI,4372,,All
+437,210,Netherlands,NTH,Ivory Coast,CDI,437210,,All
+437,220,France,FRN,Ivory Coast,CDI,437220,,All
+437,255,Germany,GMY,Ivory Coast,CDI,437255,,All
+437,475,Nigeria,NIG,Ivory Coast,CDI,437475,,All
+450,255,Germany,GMY,Liberia,LBR,450255,,All
+450,385,Norway,NOR,Liberia,LBR,450385,,All
+471,220,France,FRN,Cameroon,CAO,471220,,All
+700,2,United States of America,USA,Afghanistan,AFG,7002,,All
+475,2,United States of America,USA,Nigeria,NIG,4752,,All
+475,20,Canada,CAN,Nigeria,NIG,47520,,All
+475,220,France,FRN,Nigeria,NIG,475220,,All
+475,255,Germany,GMY,Nigeria,NIG,475255,,All
+475,325,Italy,ITA,Nigeria,NIG,475325,,All
+701,365,Russia,RUS,Turkmenistan,TKM,701365,,All
+490,211,Belgium,BEL,Democratic Republic of the Congo,DRC,490211,,All
+710,220,France,FRN,China,CHN,710220,,All
+490,551,Zambia,ZAM,Democratic Republic of the Congo,DRC,490551,,All
+490,560,South Africa,SAF,Democratic Republic of the Congo,DRC,490560,,All
+775,740,Japan,JPN,Myanmar,MYA,775740,,All
+840,2,United States of America,USA,Philippines,PHI,8402,,All
+800,900,Australia,AUL,Thailand,THI,800900,,All
+811,2,United States of America,USA,Cambodia,CAM,8112,,All
+812,710,China,CHN,Laos,LAO,812710,,All
+812,800,Thailand,THI,Laos,LAO,812800,,All
+540,2,United States of America,USA,Angola,ANG,5402,,All
+540,20,Canada,CAN,Angola,ANG,54020,,All
+540,140,Brazil,BRA,Angola,ANG,540140,,All
+540,210,Netherlands,NTH,Angola,ANG,540210,,All
+540,220,France,FRN,Angola,ANG,540220,,All
+540,255,Germany,GMY,Angola,ANG,540255,,All
+540,560,South Africa,SAF,Angola,ANG,540560,,All
+800,255,Germany,GMY,Thailand,THI,800255,,All
+560,255,Germany,GMY,South Africa,SAF,560255,,All
+560,552,Zimbabwe,ZIM,South Africa,SAF,560552,,All
+600,255,Germany,GMY,Morocco,MOR,600255,,All
+615,2,United States of America,USA,Algeria,ALG,6152,,All
+615,20,Canada,CAN,Algeria,ALG,61520,,All
+615,220,France,FRN,Algeria,ALG,615220,,All
+616,255,Germany,GMY,Tunisia,TUN,616255,,All
+616,325,Italy,ITA,Tunisia,TUN,616325,,All
+620,2,United States of America,USA,Libya,LIB,6202,,All
+620,220,France,FRN,Libya,LIB,620220,,All
+620,225,Switzerland,SWZ,Libya,LIB,620225,,All
+620,255,Germany,GMY,Libya,LIB,620255,,All
+620,325,Italy,ITA,Libya,LIB,620325,,All
+630,210,Netherlands,NTH,Iran,IRN,630210,,All
+630,211,Belgium,BEL,Iran,IRN,630211,,All
+630,220,France,FRN,Iran,IRN,630220,,All
+630,225,Switzerland,SWZ,Iran,IRN,630225,,All
+630,255,Germany,GMY,Iran,IRN,630255,,All
+630,305,Austria,AUS,Iran,IRN,630305,,All
+630,325,Italy,ITA,Iran,IRN,630325,,All
+630,350,Greece,GRC,Iran,IRN,630350,,All
+630,380,Sweden,SWD,Iran,IRN,630380,,All
+630,770,Pakistan,PAK,Iran,IRN,630770,,All
+640,2,United States of America,USA,Turkey,TUR,6402,,All
+640,20,Canada,CAN,Turkey,TUR,64020,,All
+640,211,Belgium,BEL,Turkey,TUR,640211,,All
+640,255,Germany,GMY,Turkey,TUR,640255,,All
+640,305,Austria,AUS,Turkey,TUR,640305,,All
+640,325,Italy,ITA,Turkey,TUR,640325,,All
+640,380,Sweden,SWD,Turkey,TUR,640380,,All
+640,900,Australia,AUL,Turkey,TUR,640900,,All
+645,2,United States of America,USA,Iraq,IRQ,6452,,All
+645,20,Canada,CAN,Iraq,IRQ,64520,,All
+645,210,Netherlands,NTH,Iraq,IRQ,645210,,All
+645,220,France,FRN,Iraq,IRQ,645220,,All
+645,255,Germany,GMY,Iraq,IRQ,645255,,All
+645,305,Austria,AUS,Iraq,IRQ,645305,,All
+645,325,Italy,ITA,Iraq,IRQ,645325,,All
+645,640,Turkey,TUR,Iraq,IRQ,645640,,All
+645,652,Syria,SYR,Iraq,IRQ,645652,,All
+645,663,Jordan,JOR,Iraq,IRQ,645663,,All
+652,2,United States of America,USA,Syria,SYR,6522,,All
+652,255,Germany,GMY,Syria,SYR,652255,,All
+652,325,Italy,ITA,Syria,SYR,652325,,All
+652,365,Russia,RUS,Syria,SYR,652365,,All
+652,369,Ukraine,UKR,Syria,SYR,652369,,All
+652,640,Turkey,TUR,Syria,SYR,652640,,All
+652,645,Iraq,IRQ,Syria,SYR,652645,,All
+652,651,Egypt,EGY,Syria,SYR,652651,,All
+652,732,South Korea,ROK,Syria,SYR,652732,,All
+660,255,Germany,GMY,Lebanon,LEB,660255,,All
+663,255,Germany,GMY,Jordan,JOR,663255,,All
+670,255,Germany,GMY,Saudi Arabia,SAU,670255,,All
+679,2,United States of America,USA,Yemen,YEM,6792,,All
+690,255,Germany,GMY,Kuwait,KUW,690255,,All
+770,800,Thailand,THI,Pakistan,PAK,770800,,All
+696,255,Germany,GMY,United Arab Emirates,UAE,696255,,All
+771,220,France,FRN,Bangladesh,BNG,771220,,All
+775,800,Thailand,THI,Myanmar,MYA,775800,,All
+700,365,Russia,RUS,Afghanistan,AFG,700365,,All
+700,770,Pakistan,PAK,Afghanistan,AFG,700770,,All
+705,255,Germany,GMY,Kazakhstan,KZK,705255,,All
+705,365,Russia,RUS,Kazakhstan,KZK,705365,,All
+710,20,Canada,CAN,China,CHN,71020,,All
+710,210,Netherlands,NTH,China,CHN,710210,,All
+710,211,Belgium,BEL,China,CHN,710211,,All
+710,225,Switzerland,SWZ,China,CHN,710225,,All
+710,255,Germany,GMY,China,CHN,710255,,All
+710,385,Norway,NOR,China,CHN,710385,,All
+710,900,Australia,AUL,China,CHN,710900,,All
+770,220,France,FRN,Pakistan,PAK,770220,,All
+732,255,Germany,GMY,South Korea,ROK,732255,,All
+850,20,Canada,CAN,Indonesia,INS,85020,,All
+740,255,Germany,GMY,Japan,JPN,740255,,All
+750,2,United States of America,USA,India,IND,7502,,All
+750,20,Canada,CAN,India,IND,75020,,All
+750,255,Germany,GMY,India,IND,750255,,All
+770,2,United States of America,USA,Pakistan,PAK,7702,,All
+770,255,Germany,GMY,Pakistan,PAK,770255,,All
+770,325,Italy,ITA,Pakistan,PAK,770325,,All
+770,700,Afghanistan,AFG,Pakistan,PAK,770700,,All
+770,850,Indonesia,INS,Pakistan,PAK,770850,,All
+771,2,United States of America,USA,Bangladesh,BNG,7712,,All
+771,20,Canada,CAN,Bangladesh,BNG,77120,,All
+771,255,Germany,GMY,Bangladesh,BNG,771255,,All
+820,255,Germany,GMY,Malaysia,MAL,820255,,All
+840,255,Germany,GMY,Philippines,PHI,840255,,All
+850,2,United States of America,USA,Indonesia,INS,8502,,All
+850,255,Germany,GMY,Indonesia,INS,850255,,All
+850,900,Australia,AUL,Indonesia,INS,850900,,All
+710,2,United States of America,USA,China,CHN,7102,,All
+750,200,United Kingdom,UKG,India,IND,750200,,All
+484,2,United States of America,USA,Congo,CON,4842,,All
+484,220,France,FRN,Congo,CON,484220,,All
+651,220,France,FRN,Egypt,EGY,651220,,All
+710,750,India,IND,China,CHN,710750,,All
+660,2,United States of America,USA,Lebanon,LEB,6602,,All
+100,2,United States of America,USA,Colombia,COL,1002,,All
+100,230,Spain,SPN,Colombia,COL,100230,,All
+344,346,Bosnia and Herzegovina,BOS,Croatia,CRO,344346,,All
+501,200,United Kingdom,UKG,Kenya,KEN,501200,,All
+640,200,United Kingdom,UKG,Turkey,TUR,640200,,All
+365,200,United Kingdom,UKG,Russia,RUS,365200,,All
+640,645,Iraq,IRQ,Turkey,TUR,640645,,All
+663,2,United States of America,USA,Jordan,JOR,6632,,All
+690,200,United Kingdom,UKG,Kuwait,KUW,690200,,All
+530,2,United States of America,USA,Ethiopia,ETH,5302,,All
+615,200,United Kingdom,UKG,Algeria,ALG,615200,,All
+365,230,Spain,SPN,Russia,RUS,365230,,All
+770,200,United Kingdom,UKG,Pakistan,PAK,770200,,All
+452,2,United States of America,USA,Ghana,GHA,4522,,All
+771,200,United Kingdom,UKG,Bangladesh,BNG,771200,,All
+40,20,Canada,CAN,Cuba,CUB,4020,,All
+40,230,Spain,SPN,Cuba,CUB,40230,,All
+771,750,India,IND,Bangladesh,BNG,771750,,All
+540,200,United Kingdom,UKG,Angola,ANG,540200,,All
+475,200,United Kingdom,UKG,Nigeria,NIG,475200,,All
+780,750,India,IND,Sri Lanka,SRI,780750,,All
+620,200,United Kingdom,UKG,Libya,LIB,620200,,All
+645,750,India,IND,Iraq,IRQ,645750,,All
+70,20,Canada,CAN,Mexico,MEX,7020,,All
+780,2,United States of America,USA,Sri Lanka,SRI,7802,,All
+780,200,United Kingdom,UKG,Sri Lanka,SRI,780200,,All
+92,2,United States of America,USA,El Salvador,SAL,922,,All
+360,200,United Kingdom,UKG,Romania,ROM,360200,,All
+483,2,United States of America,USA,Chad,CHA,4832,,All
+630,200,United Kingdom,UKG,Iran,IRN,630200,,All
+100,200,United Kingdom,UKG,Colombia,COL,100200,,All
+651,200,United Kingdom,UKG,Egypt,EGY,651200,,All
+90,2,United States of America,USA,Guatemala,GUA,902,,All
+101,2,United States of America,USA,Venezuela,VEN,1012,,All
+651,2,United States of America,USA,Egypt,EGY,6512,,All
+651,325,Italy,ITA,Egypt,EGY,651325,,All
+630,750,India,IND,Iran,IRN,630750,,All
+94,2,United States of America,USA,Costa Rica,COS,942,,All
+775,750,India,IND,Myanmar,MYA,775750,,All
+710,200,United Kingdom,UKG,China,CHN,710200,,All
+651,255,Germany,GMY,Egypt,EGY,651255,,All
+816,220,France,FRN,Vietnam,DRV,816220,,All
+816,740,Japan,JPN,Vietnam,DRV,816740,,All
+816,800,Thailand,THI,Vietnam,DRV,816800,,All
+816,840,Philippines,PHI,Vietnam,DRV,816840,,All
+816,850,Indonesia,INS,Vietnam,DRV,816850,,All
+816,200,United Kingdom,UKG,Vietnam,DRV,816200,,All
+816,2,United States of America,USA,Vietnam,DRV,8162,,All
+816,210,Netherlands,NTH,Vietnam,DRV,816210,,All
+704,2,United States of America,USA,Uzbekistan,UZB,7042,,All
+345,2,United States of America,USA,Yugoslavia,YUG,3452,,All
+816,255,Germany,GMY,Vietnam,DRV,816255,,All
+811,816,Vietnam,DRV,Cambodia,CAM,811816,,All
+345,255,Germany,GMY,Yugoslavia,YUG,345255,,All
+345,305,Austria,AUS,Yugoslavia,YUG,345305,,All
+705,2,United States of America,USA,Kazakhstan,KZK,7052,,All
+345,325,Italy,ITA,Yugoslavia,YUG,345325,,All
+345,220,France,FRN,Yugoslavia,YUG,345220,,All
+816,710,China,CHN,Vietnam,DRV,816710,,All
+70,42,Dominican Republic,DOM,Mexico,MEX,7042,,All
+70,52,Trinidad and Tobago,TRI,Mexico,MEX,7052,,All
+702,55,Grenada,GRN,Tajikistan,TAJ,70255,,All
+2,20,Canada,CAN,United States of America,USA,220,,All
+2,255,Germany,GMY,United States of America,USA,2255,,All
+20,255,Germany,GMY,Canada,CAN,20255,,All
+135,2,United States of America,USA,Peru,PER,1352,,All
+210,255,Germany,GMY,Netherlands,NTH,210255,,All
+220,255,Germany,GMY,France,FRN,220255,,All
+255,20,Canada,CAN,Germany,GMY,25520,,All
+344,255,Germany,GMY,Croatia,CRO,344255,,All
+365,2,United States of America,USA,Russia,RUS,3652,,All
+365,290,Poland,POL,Russia,RUS,365290,,All
+365,316,Czech Republic,CZR,Russia,RUS,365316,,All
+365,373,Azerbaijan,AZE,Russia,RUS,365373,,All
+365,705,Kazakhstan,KZK,Russia,RUS,365705,,All
+369,2,United States of America,USA,Ukraine,UKR,3692,,All
+369,365,Russia,RUS,Ukraine,UKR,369365,,All
+369,370,Belarus,BLR,Ukraine,UKR,369370,,All
+560,551,Zambia,ZAM,South Africa,SAF,560551,,All
+560,572,Swaziland,SWA,South Africa,SAF,560572,,All
+630,652,Syria,SYR,Iran,IRN,630652,,All
+666,20,Canada,CAN,Israel,ISR,66620,,All
+666,255,Germany,GMY,Israel,ISR,666255,,All
+710,560,South Africa,SAF,China,CHN,710560,,All
+770,820,Malaysia,MAL,Pakistan,PAK,770820,,All
+850,820,Malaysia,MAL,Indonesia,INS,850820,,All
+471,325,Italy,ITA,Cameroon,CAO,471325,,All
+310,255,Germany,GMY,Hungary,HUN,310255,,All
+475,560,South Africa,SAF,Nigeria,NIG,475560,,All
+339,325,Italy,ITA,Albania,ALB,339325,,All
+316,255,Germany,GMY,Czech Republic,CZR,316255,,All
+317,255,Germany,GMY,Slovakia,SLO,317255,,All
+31,2,United States of America,USA,Bahamas,BHM,312,,All
+41,2,United States of America,USA,Haiti,HAI,412,,All
+41,42,Dominican Republic,DOM,Haiti,HAI,4142,,All
+70,2,United States of America,USA,Mexico,MEX,702,,All
+70,255,Germany,GMY,Mexico,MEX,70255,,All
+90,70,Mexico,MEX,Guatemala,GUA,9070,,All
+91,2,United States of America,USA,Honduras,HON,912,,All
+92,90,Guatemala,GUA,El Salvador,SAL,9290,,All
+93,2,United States of America,USA,Nicaragua,NIC,932,,All
+95,2,United States of America,USA,Panama,PAN,952,,All
+100,20,Canada,CAN,Colombia,COL,10020,,All
+100,101,Venezuela,VEN,Colombia,COL,100101,,All
+100,130,Ecuador,ECU,Colombia,COL,100130,,All
+100,135,Peru,PER,Colombia,COL,100135,,All
+100,140,Brazil,BRA,Colombia,COL,100140,,All
+100,155,Chile,CHL,Colombia,COL,100155,,All
+100,160,Argentina,ARG,Colombia,COL,100160,,All
+100,210,Netherlands,NTH,Colombia,COL,100210,,All
+100,255,Germany,GMY,Colombia,COL,100255,,All
+100,325,Italy,ITA,Colombia,COL,100325,,All
+101,20,Canada,CAN,Venezuela,VEN,10120,,All
+101,70,Mexico,MEX,Venezuela,VEN,10170,,All
+101,255,Germany,GMY,Venezuela,VEN,101255,,All
+130,2,United States of America,USA,Ecuador,ECU,1302,,All
+135,20,Canada,CAN,Peru,PER,13520,,All
+135,160,Argentina,ARG,Peru,PER,135160,,All
+135,255,Germany,GMY,Peru,PER,135255,,All
+140,2,United States of America,USA,Brazil,BRA,1402,,All
+140,255,Germany,GMY,Brazil,BRA,140255,,All
+155,20,Canada,CAN,Chile,CHL,15520,,All
+155,101,Venezuela,VEN,Chile,CHL,155101,,All
+155,160,Argentina,ARG,Chile,CHL,155160,,All
+155,211,Belgium,BEL,Chile,CHL,155211,,All
+155,255,Germany,GMY,Chile,CHL,155255,,All
+160,20,Canada,CAN,Argentina,ARG,16020,,All
+160,255,Germany,GMY,Argentina,ARG,160255,,All
+230,255,Germany,GMY,Spain,SPN,230255,,All
+290,20,Canada,CAN,Poland,POL,29020,,All
+290,211,Belgium,BEL,Poland,POL,290211,,All
+290,255,Germany,GMY,Poland,POL,290255,,All
+501,2,United States of America,USA,Kenya,KEN,5012,,All
+343,255,Germany,GMY,Macedonia,MAC,343255,,All
+344,325,Italy,ITA,Croatia,CRO,344325,,All
+346,255,Germany,GMY,Bosnia and Herzegovina,BOS,346255,,All
+346,325,Italy,ITA,Bosnia and Herzegovina,BOS,346325,,All
+346,344,Croatia,CRO,Bosnia and Herzegovina,BOS,346344,,All
+346,349,Slovenia,SLV,Bosnia and Herzegovina,BOS,346349,,All
+349,255,Germany,GMY,Slovenia,SLV,349255,,All
+350,255,Germany,GMY,Greece,GRC,350255,,All
+355,255,Germany,GMY,Bulgaria,BUL,355255,,All
+360,2,United States of America,USA,Romania,ROM,3602,,All
+360,255,Germany,GMY,Romania,ROM,360255,,All
+360,310,Hungary,HUN,Romania,ROM,360310,,All
+552,560,South Africa,SAF,Zimbabwe,ZIM,552560,,All
+365,20,Canada,CAN,Russia,RUS,36520,,All
+365,210,Netherlands,NTH,Russia,RUS,365210,,All
+365,211,Belgium,BEL,Russia,RUS,365211,,All
+365,220,France,FRN,Russia,RUS,365220,,All
+365,225,Switzerland,SWZ,Russia,RUS,365225,,All
+365,255,Germany,GMY,Russia,RUS,365255,,All
+365,305,Austria,AUS,Russia,RUS,365305,,All
+365,325,Italy,ITA,Russia,RUS,365325,,All
+365,368,Lithuania,LIT,Russia,RUS,365368,,All
+365,369,Ukraine,UKR,Russia,RUS,365369,,All
+365,375,Finland,FIN,Russia,RUS,365375,,All
+365,380,Sweden,SWD,Russia,RUS,365380,,All
+365,385,Norway,NOR,Russia,RUS,365385,,All
+365,390,Denmark,DEN,Russia,RUS,365390,,All
+365,900,Australia,AUL,Russia,RUS,365900,,All
+367,255,Germany,GMY,Latvia,LAT,367255,,All
+368,255,Germany,GMY,Lithuania,LIT,368255,,All
+369,210,Netherlands,NTH,Ukraine,UKR,369210,,All
+369,211,Belgium,BEL,Ukraine,UKR,369211,,All
+369,220,France,FRN,Ukraine,UKR,369220,,All
+369,255,Germany,GMY,Ukraine,UKR,369255,,All
+369,316,Czech Republic,CZR,Ukraine,UKR,369316,,All
+369,325,Italy,ITA,Ukraine,UKR,369325,,All
+370,2,United States of America,USA,Belarus,BLR,3702,,All
+370,255,Germany,GMY,Belarus,BLR,370255,,All
+370,365,Russia,RUS,Belarus,BLR,370365,,All
+373,2,United States of America,USA,Azerbaijan,AZE,3732,,All
+373,20,Canada,CAN,Azerbaijan,AZE,37320,,All
+373,220,France,FRN,Azerbaijan,AZE,373220,,All
+373,255,Germany,GMY,Azerbaijan,AZE,373255,,All
+373,369,Ukraine,UKR,Azerbaijan,AZE,373369,,All
+600,325,Italy,ITA,Morocco,MOR,600325,,All
+615,230,Spain,SPN,Algeria,ALG,615230,,All
+615,255,Germany,GMY,Algeria,ALG,615255,,All
+630,640,Turkey,TUR,Iran,IRN,630640,,All
+640,210,Netherlands,NTH,Turkey,TUR,640210,,All
+640,220,France,FRN,Turkey,TUR,640220,,All
+640,225,Switzerland,SWZ,Turkey,TUR,640225,,All
+640,350,Greece,GRC,Turkey,TUR,640350,,All
+645,800,Thailand,THI,Iraq,IRQ,645800,,All
+433,220,France,FRN,Senegal,SEN,433220,,All
+652,220,France,FRN,Syria,SYR,652220,,All
+437,2,United States of America,USA,Ivory Coast,CDI,4372,,All
+437,210,Netherlands,NTH,Ivory Coast,CDI,437210,,All
+437,220,France,FRN,Ivory Coast,CDI,437220,,All
+437,255,Germany,GMY,Ivory Coast,CDI,437255,,All
+437,475,Nigeria,NIG,Ivory Coast,CDI,437475,,All
+450,255,Germany,GMY,Liberia,LBR,450255,,All
+450,385,Norway,NOR,Liberia,LBR,450385,,All
+471,220,France,FRN,Cameroon,CAO,471220,,All
+700,2,United States of America,USA,Afghanistan,AFG,7002,,All
+475,2,United States of America,USA,Nigeria,NIG,4752,,All
+475,20,Canada,CAN,Nigeria,NIG,47520,,All
+475,220,France,FRN,Nigeria,NIG,475220,,All
+475,255,Germany,GMY,Nigeria,NIG,475255,,All
+475,325,Italy,ITA,Nigeria,NIG,475325,,All
+701,365,Russia,RUS,Turkmenistan,TKM,701365,,All
+490,211,Belgium,BEL,Democratic Republic of the Congo,DRC,490211,,All
+710,220,France,FRN,China,CHN,710220,,All
+490,551,Zambia,ZAM,Democratic Republic of the Congo,DRC,490551,,All
+490,560,South Africa,SAF,Democratic Republic of the Congo,DRC,490560,,All
+775,740,Japan,JPN,Myanmar,MYA,775740,,All
+840,2,United States of America,USA,Philippines,PHI,8402,,All
+800,900,Australia,AUL,Thailand,THI,800900,,All
+811,2,United States of America,USA,Cambodia,CAM,8112,,All
+812,710,China,CHN,Laos,LAO,812710,,All
+812,800,Thailand,THI,Laos,LAO,812800,,All
+540,2,United States of America,USA,Angola,ANG,5402,,All
+540,20,Canada,CAN,Angola,ANG,54020,,All
+540,140,Brazil,BRA,Angola,ANG,540140,,All
+540,210,Netherlands,NTH,Angola,ANG,540210,,All
+540,220,France,FRN,Angola,ANG,540220,,All
+540,255,Germany,GMY,Angola,ANG,540255,,All
+540,560,South Africa,SAF,Angola,ANG,540560,,All
+800,255,Germany,GMY,Thailand,THI,800255,,All
+560,255,Germany,GMY,South Africa,SAF,560255,,All
+560,552,Zimbabwe,ZIM,South Africa,SAF,560552,,All
+600,255,Germany,GMY,Morocco,MOR,600255,,All
+615,2,United States of America,USA,Algeria,ALG,6152,,All
+615,20,Canada,CAN,Algeria,ALG,61520,,All
+615,220,France,FRN,Algeria,ALG,615220,,All
+616,255,Germany,GMY,Tunisia,TUN,616255,,All
+616,325,Italy,ITA,Tunisia,TUN,616325,,All
+620,2,United States of America,USA,Libya,LIB,6202,,All
+620,220,France,FRN,Libya,LIB,620220,,All
+620,225,Switzerland,SWZ,Libya,LIB,620225,,All
+620,255,Germany,GMY,Libya,LIB,620255,,All
+620,325,Italy,ITA,Libya,LIB,620325,,All
+630,210,Netherlands,NTH,Iran,IRN,630210,,All
+630,211,Belgium,BEL,Iran,IRN,630211,,All
+630,220,France,FRN,Iran,IRN,630220,,All
+630,225,Switzerland,SWZ,Iran,IRN,630225,,All
+630,255,Germany,GMY,Iran,IRN,630255,,All
+630,305,Austria,AUS,Iran,IRN,630305,,All
+630,325,Italy,ITA,Iran,IRN,630325,,All
+630,350,Greece,GRC,Iran,IRN,630350,,All
+630,380,Sweden,SWD,Iran,IRN,630380,,All
+630,770,Pakistan,PAK,Iran,IRN,630770,,All
+640,2,United States of America,USA,Turkey,TUR,6402,,All
+640,20,Canada,CAN,Turkey,TUR,64020,,All
+640,211,Belgium,BEL,Turkey,TUR,640211,,All
+640,255,Germany,GMY,Turkey,TUR,640255,,All
+640,305,Austria,AUS,Turkey,TUR,640305,,All
+640,325,Italy,ITA,Turkey,TUR,640325,,All
+640,380,Sweden,SWD,Turkey,TUR,640380,,All
+640,900,Australia,AUL,Turkey,TUR,640900,,All
+645,2,United States of America,USA,Iraq,IRQ,6452,,All
+645,20,Canada,CAN,Iraq,IRQ,64520,,All
+645,210,Netherlands,NTH,Iraq,IRQ,645210,,All
+645,220,France,FRN,Iraq,IRQ,645220,,All
+645,255,Germany,GMY,Iraq,IRQ,645255,,All
+645,305,Austria,AUS,Iraq,IRQ,645305,,All
+645,325,Italy,ITA,Iraq,IRQ,645325,,All
+645,640,Turkey,TUR,Iraq,IRQ,645640,,All
+645,652,Syria,SYR,Iraq,IRQ,645652,,All
+645,663,Jordan,JOR,Iraq,IRQ,645663,,All
+652,2,United States of America,USA,Syria,SYR,6522,,All
+652,255,Germany,GMY,Syria,SYR,652255,,All
+652,325,Italy,ITA,Syria,SYR,652325,,All
+652,365,Russia,RUS,Syria,SYR,652365,,All
+652,369,Ukraine,UKR,Syria,SYR,652369,,All
+652,640,Turkey,TUR,Syria,SYR,652640,,All
+652,645,Iraq,IRQ,Syria,SYR,652645,,All
+652,651,Egypt,EGY,Syria,SYR,652651,,All
+652,732,South Korea,ROK,Syria,SYR,652732,,All
+660,255,Germany,GMY,Lebanon,LEB,660255,,All
+663,255,Germany,GMY,Jordan,JOR,663255,,All
+670,255,Germany,GMY,Saudi Arabia,SAU,670255,,All
+679,2,United States of America,USA,Yemen,YEM,6792,,All
+690,255,Germany,GMY,Kuwait,KUW,690255,,All
+770,800,Thailand,THI,Pakistan,PAK,770800,,All
+696,255,Germany,GMY,United Arab Emirates,UAE,696255,,All
+771,220,France,FRN,Bangladesh,BNG,771220,,All
+775,800,Thailand,THI,Myanmar,MYA,775800,,All
+700,365,Russia,RUS,Afghanistan,AFG,700365,,All
+700,770,Pakistan,PAK,Afghanistan,AFG,700770,,All
+705,255,Germany,GMY,Kazakhstan,KZK,705255,,All
+705,365,Russia,RUS,Kazakhstan,KZK,705365,,All
+710,20,Canada,CAN,China,CHN,71020,,All
+710,210,Netherlands,NTH,China,CHN,710210,,All
+710,211,Belgium,BEL,China,CHN,710211,,All
+710,225,Switzerland,SWZ,China,CHN,710225,,All
+710,255,Germany,GMY,China,CHN,710255,,All
+710,385,Norway,NOR,China,CHN,710385,,All
+710,900,Australia,AUL,China,CHN,710900,,All
+770,220,France,FRN,Pakistan,PAK,770220,,All
+732,255,Germany,GMY,South Korea,ROK,732255,,All
+850,20,Canada,CAN,Indonesia,INS,85020,,All
+740,255,Germany,GMY,Japan,JPN,740255,,All
+750,2,United States of America,USA,India,IND,7502,,All
+750,20,Canada,CAN,India,IND,75020,,All
+750,255,Germany,GMY,India,IND,750255,,All
+770,2,United States of America,USA,Pakistan,PAK,7702,,All
+770,255,Germany,GMY,Pakistan,PAK,770255,,All
+770,325,Italy,ITA,Pakistan,PAK,770325,,All
+770,700,Afghanistan,AFG,Pakistan,PAK,770700,,All
+770,850,Indonesia,INS,Pakistan,PAK,770850,,All
+771,2,United States of America,USA,Bangladesh,BNG,7712,,All
+771,20,Canada,CAN,Bangladesh,BNG,77120,,All
+771,255,Germany,GMY,Bangladesh,BNG,771255,,All
+820,255,Germany,GMY,Malaysia,MAL,820255,,All
+840,255,Germany,GMY,Philippines,PHI,840255,,All
+850,2,United States of America,USA,Indonesia,INS,8502,,All
+850,255,Germany,GMY,Indonesia,INS,850255,,All
+850,900,Australia,AUL,Indonesia,INS,850900,,All
+710,2,United States of America,USA,China,CHN,7102,,All
+750,200,United Kingdom,UKG,India,IND,750200,,All
+484,2,United States of America,USA,Congo,CON,4842,,All
+484,220,France,FRN,Congo,CON,484220,,All
+651,220,France,FRN,Egypt,EGY,651220,,All
+710,750,India,IND,China,CHN,710750,,All
+660,2,United States of America,USA,Lebanon,LEB,6602,,All
+100,2,United States of America,USA,Colombia,COL,1002,,All
+100,230,Spain,SPN,Colombia,COL,100230,,All
+344,346,Bosnia and Herzegovina,BOS,Croatia,CRO,344346,,All
+501,200,United Kingdom,UKG,Kenya,KEN,501200,,All
+640,200,United Kingdom,UKG,Turkey,TUR,640200,,All
+365,200,United Kingdom,UKG,Russia,RUS,365200,,All
+640,645,Iraq,IRQ,Turkey,TUR,640645,,All
+663,2,United States of America,USA,Jordan,JOR,6632,,All
+690,200,United Kingdom,UKG,Kuwait,KUW,690200,,All
+530,2,United States of America,USA,Ethiopia,ETH,5302,,All
+615,200,United Kingdom,UKG,Algeria,ALG,615200,,All
+365,230,Spain,SPN,Russia,RUS,365230,,All
+770,200,United Kingdom,UKG,Pakistan,PAK,770200,,All
+452,2,United States of America,USA,Ghana,GHA,4522,,All
+771,200,United Kingdom,UKG,Bangladesh,BNG,771200,,All
+40,20,Canada,CAN,Cuba,CUB,4020,,All
+40,230,Spain,SPN,Cuba,CUB,40230,,All
+771,750,India,IND,Bangladesh,BNG,771750,,All
+540,200,United Kingdom,UKG,Angola,ANG,540200,,All
+475,200,United Kingdom,UKG,Nigeria,NIG,475200,,All
+780,750,India,IND,Sri Lanka,SRI,780750,,All
+620,200,United Kingdom,UKG,Libya,LIB,620200,,All
+645,750,India,IND,Iraq,IRQ,645750,,All
+70,20,Canada,CAN,Mexico,MEX,7020,,All
+780,2,United States of America,USA,Sri Lanka,SRI,7802,,All
+780,200,United Kingdom,UKG,Sri Lanka,SRI,780200,,All
+92,2,United States of America,USA,El Salvador,SAL,922,,All
+360,200,United Kingdom,UKG,Romania,ROM,360200,,All
+483,2,United States of America,USA,Chad,CHA,4832,,All
+630,200,United Kingdom,UKG,Iran,IRN,630200,,All
+100,200,United Kingdom,UKG,Colombia,COL,100200,,All
+651,200,United Kingdom,UKG,Egypt,EGY,651200,,All
+90,2,United States of America,USA,Guatemala,GUA,902,,All
+101,2,United States of America,USA,Venezuela,VEN,1012,,All
+651,2,United States of America,USA,Egypt,EGY,6512,,All
+651,325,Italy,ITA,Egypt,EGY,651325,,All
+630,750,India,IND,Iran,IRN,630750,,All
+94,2,United States of America,USA,Costa Rica,COS,942,,All
+775,750,India,IND,Myanmar,MYA,775750,,All
+710,200,United Kingdom,UKG,China,CHN,710200,,All
+651,255,Germany,GMY,Egypt,EGY,651255,,All
+816,220,France,FRN,Vietnam,DRV,816220,,All
+816,740,Japan,JPN,Vietnam,DRV,816740,,All
+816,800,Thailand,THI,Vietnam,DRV,816800,,All
+816,840,Philippines,PHI,Vietnam,DRV,816840,,All
+816,850,Indonesia,INS,Vietnam,DRV,816850,,All
+816,200,United Kingdom,UKG,Vietnam,DRV,816200,,All
+816,2,United States of America,USA,Vietnam,DRV,8162,,All
+816,210,Netherlands,NTH,Vietnam,DRV,816210,,All
+704,2,United States of America,USA,Uzbekistan,UZB,7042,,All
+345,2,United States of America,USA,Yugoslavia,YUG,3452,,All
+816,255,Germany,GMY,Vietnam,DRV,816255,,All
+811,816,Vietnam,DRV,Cambodia,CAM,811816,,All
+345,255,Germany,GMY,Yugoslavia,YUG,345255,,All
+345,305,Austria,AUS,Yugoslavia,YUG,345305,,All
+705,2,United States of America,USA,Kazakhstan,KZK,7052,,All
+345,325,Italy,ITA,Yugoslavia,YUG,345325,,All
+345,220,France,FRN,Yugoslavia,YUG,345220,,All
+816,710,China,CHN,Vietnam,DRV,816710,,All
+70,42,Dominican Republic,DOM,Mexico,MEX,7042,,All
+70,52,Trinidad and Tobago,TRI,Mexico,MEX,7052,,All
+702,55,Grenada,GRN,Tajikistan,TAJ,70255,,All
+2,20,Canada,CAN,United States of America,USA,220,,All
+2,255,Germany,GMY,United States of America,USA,2255,,All
+20,255,Germany,GMY,Canada,CAN,20255,,All
+135,2,United States of America,USA,Peru,PER,1352,,All
+210,255,Germany,GMY,Netherlands,NTH,210255,,All
+220,255,Germany,GMY,France,FRN,220255,,All
+255,20,Canada,CAN,Germany,GMY,25520,,All
+344,255,Germany,GMY,Croatia,CRO,344255,,All
+365,2,United States of America,USA,Russia,RUS,3652,,All
+365,290,Poland,POL,Russia,RUS,365290,,All
+365,316,Czech Republic,CZR,Russia,RUS,365316,,All
+365,373,Azerbaijan,AZE,Russia,RUS,365373,,All
+365,705,Kazakhstan,KZK,Russia,RUS,365705,,All
+369,2,United States of America,USA,Ukraine,UKR,3692,,All
+369,365,Russia,RUS,Ukraine,UKR,369365,,All
+369,370,Belarus,BLR,Ukraine,UKR,369370,,All
+560,551,Zambia,ZAM,South Africa,SAF,560551,,All
+560,572,Swaziland,SWA,South Africa,SAF,560572,,All
+630,652,Syria,SYR,Iran,IRN,630652,,All
+666,20,Canada,CAN,Israel,ISR,66620,,All
+666,255,Germany,GMY,Israel,ISR,666255,,All
+710,560,South Africa,SAF,China,CHN,710560,,All
+770,820,Malaysia,MAL,Pakistan,PAK,770820,,All
+850,820,Malaysia,MAL,Indonesia,INS,850820,,All
+471,325,Italy,ITA,Cameroon,CAO,471325,,All
+310,255,Germany,GMY,Hungary,HUN,310255,,All
+475,560,South Africa,SAF,Nigeria,NIG,475560,,All
+339,325,Italy,ITA,Albania,ALB,339325,,All
+316,255,Germany,GMY,Czech Republic,CZR,316255,,All
+317,255,Germany,GMY,Slovakia,SLO,317255,,All
+31,2,United States of America,USA,Bahamas,BHM,312,,All
+41,2,United States of America,USA,Haiti,HAI,412,,All
+41,42,Dominican Republic,DOM,Haiti,HAI,4142,,All
+70,2,United States of America,USA,Mexico,MEX,702,,All
+70,255,Germany,GMY,Mexico,MEX,70255,,All
+90,70,Mexico,MEX,Guatemala,GUA,9070,,All
+91,2,United States of America,USA,Honduras,HON,912,,All
+92,90,Guatemala,GUA,El Salvador,SAL,9290,,All
+93,2,United States of America,USA,Nicaragua,NIC,932,,All
+95,2,United States of America,USA,Panama,PAN,952,,All
+100,20,Canada,CAN,Colombia,COL,10020,,All
+100,101,Venezuela,VEN,Colombia,COL,100101,,All
+100,130,Ecuador,ECU,Colombia,COL,100130,,All
+100,135,Peru,PER,Colombia,COL,100135,,All
+100,140,Brazil,BRA,Colombia,COL,100140,,All
+100,155,Chile,CHL,Colombia,COL,100155,,All
+100,160,Argentina,ARG,Colombia,COL,100160,,All
+100,210,Netherlands,NTH,Colombia,COL,100210,,All
+100,255,Germany,GMY,Colombia,COL,100255,,All
+100,325,Italy,ITA,Colombia,COL,100325,,All
+101,20,Canada,CAN,Venezuela,VEN,10120,,All
+101,70,Mexico,MEX,Venezuela,VEN,10170,,All
+101,255,Germany,GMY,Venezuela,VEN,101255,,All
+130,2,United States of America,USA,Ecuador,ECU,1302,,All
+135,20,Canada,CAN,Peru,PER,13520,,All
+135,160,Argentina,ARG,Peru,PER,135160,,All
+135,255,Germany,GMY,Peru,PER,135255,,All
+140,2,United States of America,USA,Brazil,BRA,1402,,All
+140,255,Germany,GMY,Brazil,BRA,140255,,All
+155,20,Canada,CAN,Chile,CHL,15520,,All
+155,101,Venezuela,VEN,Chile,CHL,155101,,All
+155,160,Argentina,ARG,Chile,CHL,155160,,All
+155,211,Belgium,BEL,Chile,CHL,155211,,All
+155,255,Germany,GMY,Chile,CHL,155255,,All
+160,20,Canada,CAN,Argentina,ARG,16020,,All
+160,255,Germany,GMY,Argentina,ARG,160255,,All
+230,255,Germany,GMY,Spain,SPN,230255,,All
+290,20,Canada,CAN,Poland,POL,29020,,All
+290,211,Belgium,BEL,Poland,POL,290211,,All
+290,255,Germany,GMY,Poland,POL,290255,,All
+501,2,United States of America,USA,Kenya,KEN,5012,,All
+343,255,Germany,GMY,Macedonia,MAC,343255,,All
+344,325,Italy,ITA,Croatia,CRO,344325,,All
+346,255,Germany,GMY,Bosnia and Herzegovina,BOS,346255,,All
+346,325,Italy,ITA,Bosnia and Herzegovina,BOS,346325,,All
+346,344,Croatia,CRO,Bosnia and Herzegovina,BOS,346344,,All
+346,349,Slovenia,SLV,Bosnia and Herzegovina,BOS,346349,,All
+349,255,Germany,GMY,Slovenia,SLV,349255,,All
+350,255,Germany,GMY,Greece,GRC,350255,,All
+355,255,Germany,GMY,Bulgaria,BUL,355255,,All
+360,2,United States of America,USA,Romania,ROM,3602,,All
+360,255,Germany,GMY,Romania,ROM,360255,,All
+360,310,Hungary,HUN,Romania,ROM,360310,,All
+552,560,South Africa,SAF,Zimbabwe,ZIM,552560,,All
+365,20,Canada,CAN,Russia,RUS,36520,,All
+365,210,Netherlands,NTH,Russia,RUS,365210,,All
+365,211,Belgium,BEL,Russia,RUS,365211,,All
+365,220,France,FRN,Russia,RUS,365220,,All
+365,225,Switzerland,SWZ,Russia,RUS,365225,,All
+365,255,Germany,GMY,Russia,RUS,365255,,All
+365,305,Austria,AUS,Russia,RUS,365305,,All
+365,325,Italy,ITA,Russia,RUS,365325,,All
+365,368,Lithuania,LIT,Russia,RUS,365368,,All
+365,369,Ukraine,UKR,Russia,RUS,365369,,All
+365,375,Finland,FIN,Russia,RUS,365375,,All
+365,380,Sweden,SWD,Russia,RUS,365380,,All
+365,385,Norway,NOR,Russia,RUS,365385,,All
+365,390,Denmark,DEN,Russia,RUS,365390,,All
+365,900,Australia,AUL,Russia,RUS,365900,,All
+367,255,Germany,GMY,Latvia,LAT,367255,,All
+368,255,Germany,GMY,Lithuania,LIT,368255,,All
+369,210,Netherlands,NTH,Ukraine,UKR,369210,,All
+369,211,Belgium,BEL,Ukraine,UKR,369211,,All
+369,220,France,FRN,Ukraine,UKR,369220,,All
+369,255,Germany,GMY,Ukraine,UKR,369255,,All
+369,316,Czech Republic,CZR,Ukraine,UKR,369316,,All
+369,325,Italy,ITA,Ukraine,UKR,369325,,All
+370,2,United States of America,USA,Belarus,BLR,3702,,All
+370,255,Germany,GMY,Belarus,BLR,370255,,All
+370,365,Russia,RUS,Belarus,BLR,370365,,All
+373,2,United States of America,USA,Azerbaijan,AZE,3732,,All
+373,20,Canada,CAN,Azerbaijan,AZE,37320,,All
+373,220,France,FRN,Azerbaijan,AZE,373220,,All
+373,255,Germany,GMY,Azerbaijan,AZE,373255,,All
+373,369,Ukraine,UKR,Azerbaijan,AZE,373369,,All
+600,325,Italy,ITA,Morocco,MOR,600325,,All
+615,230,Spain,SPN,Algeria,ALG,615230,,All
+615,255,Germany,GMY,Algeria,ALG,615255,,All
+630,640,Turkey,TUR,Iran,IRN,630640,,All
+640,210,Netherlands,NTH,Turkey,TUR,640210,,All
+640,220,France,FRN,Turkey,TUR,640220,,All
+640,225,Switzerland,SWZ,Turkey,TUR,640225,,All
+640,350,Greece,GRC,Turkey,TUR,640350,,All
+645,800,Thailand,THI,Iraq,IRQ,645800,,All
+433,220,France,FRN,Senegal,SEN,433220,,All
+652,220,France,FRN,Syria,SYR,652220,,All
+437,2,United States of America,USA,Ivory Coast,CDI,4372,,All
+437,210,Netherlands,NTH,Ivory Coast,CDI,437210,,All
+437,220,France,FRN,Ivory Coast,CDI,437220,,All
+437,255,Germany,GMY,Ivory Coast,CDI,437255,,All
+437,475,Nigeria,NIG,Ivory Coast,CDI,437475,,All
+450,255,Germany,GMY,Liberia,LBR,450255,,All
+450,385,Norway,NOR,Liberia,LBR,450385,,All
+471,220,France,FRN,Cameroon,CAO,471220,,All
+700,2,United States of America,USA,Afghanistan,AFG,7002,,All
+475,2,United States of America,USA,Nigeria,NIG,4752,,All
+475,20,Canada,CAN,Nigeria,NIG,47520,,All
+475,220,France,FRN,Nigeria,NIG,475220,,All
+475,255,Germany,GMY,Nigeria,NIG,475255,,All
+475,325,Italy,ITA,Nigeria,NIG,475325,,All
+701,365,Russia,RUS,Turkmenistan,TKM,701365,,All
+490,211,Belgium,BEL,Democratic Republic of the Congo,DRC,490211,,All
+710,220,France,FRN,China,CHN,710220,,All
+490,551,Zambia,ZAM,Democratic Republic of the Congo,DRC,490551,,All
+490,560,South Africa,SAF,Democratic Republic of the Congo,DRC,490560,,All
+775,740,Japan,JPN,Myanmar,MYA,775740,,All
+840,2,United States of America,USA,Philippines,PHI,8402,,All
+800,900,Australia,AUL,Thailand,THI,800900,,All
+811,2,United States of America,USA,Cambodia,CAM,8112,,All
+812,710,China,CHN,Laos,LAO,812710,,All
+812,800,Thailand,THI,Laos,LAO,812800,,All
+540,2,United States of America,USA,Angola,ANG,5402,,All
+540,20,Canada,CAN,Angola,ANG,54020,,All
+540,140,Brazil,BRA,Angola,ANG,540140,,All
+540,210,Netherlands,NTH,Angola,ANG,540210,,All
+540,220,France,FRN,Angola,ANG,540220,,All
+540,255,Germany,GMY,Angola,ANG,540255,,All
+540,560,South Africa,SAF,Angola,ANG,540560,,All
+800,255,Germany,GMY,Thailand,THI,800255,,All
+560,255,Germany,GMY,South Africa,SAF,560255,,All
+560,552,Zimbabwe,ZIM,South Africa,SAF,560552,,All
+600,255,Germany,GMY,Morocco,MOR,600255,,All
+615,2,United States of America,USA,Algeria,ALG,6152,,All
+615,20,Canada,CAN,Algeria,ALG,61520,,All
+615,220,France,FRN,Algeria,ALG,615220,,All
+616,255,Germany,GMY,Tunisia,TUN,616255,,All
+616,325,Italy,ITA,Tunisia,TUN,616325,,All
+620,2,United States of America,USA,Libya,LIB,6202,,All
+620,220,France,FRN,Libya,LIB,620220,,All
+620,225,Switzerland,SWZ,Libya,LIB,620225,,All
+620,255,Germany,GMY,Libya,LIB,620255,,All
+620,325,Italy,ITA,Libya,LIB,620325,,All
+630,210,Netherlands,NTH,Iran,IRN,630210,,All
+630,211,Belgium,BEL,Iran,IRN,630211,,All
+630,220,France,FRN,Iran,IRN,630220,,All
+630,225,Switzerland,SWZ,Iran,IRN,630225,,All
+630,255,Germany,GMY,Iran,IRN,630255,,All
+630,305,Austria,AUS,Iran,IRN,630305,,All
+630,325,Italy,ITA,Iran,IRN,630325,,All
+630,350,Greece,GRC,Iran,IRN,630350,,All
+630,380,Sweden,SWD,Iran,IRN,630380,,All
+630,770,Pakistan,PAK,Iran,IRN,630770,,All
+640,2,United States of America,USA,Turkey,TUR,6402,,All
+640,20,Canada,CAN,Turkey,TUR,64020,,All
+640,211,Belgium,BEL,Turkey,TUR,640211,,All
+640,255,Germany,GMY,Turkey,TUR,640255,,All
+640,305,Austria,AUS,Turkey,TUR,640305,,All
+640,325,Italy,ITA,Turkey,TUR,640325,,All
+640,380,Sweden,SWD,Turkey,TUR,640380,,All
+640,900,Australia,AUL,Turkey,TUR,640900,,All
+645,2,United States of America,USA,Iraq,IRQ,6452,,All
+645,20,Canada,CAN,Iraq,IRQ,64520,,All
+645,210,Netherlands,NTH,Iraq,IRQ,645210,,All
+645,220,France,FRN,Iraq,IRQ,645220,,All
+645,255,Germany,GMY,Iraq,IRQ,645255,,All
+645,305,Austria,AUS,Iraq,IRQ,645305,,All
+645,325,Italy,ITA,Iraq,IRQ,645325,,All
+645,640,Turkey,TUR,Iraq,IRQ,645640,,All
+645,652,Syria,SYR,Iraq,IRQ,645652,,All
+645,663,Jordan,JOR,Iraq,IRQ,645663,,All
+652,2,United States of America,USA,Syria,SYR,6522,,All
+652,255,Germany,GMY,Syria,SYR,652255,,All
+652,325,Italy,ITA,Syria,SYR,652325,,All
+652,365,Russia,RUS,Syria,SYR,652365,,All
+652,369,Ukraine,UKR,Syria,SYR,652369,,All
+652,640,Turkey,TUR,Syria,SYR,652640,,All
+652,645,Iraq,IRQ,Syria,SYR,652645,,All
+652,651,Egypt,EGY,Syria,SYR,652651,,All
+652,732,South Korea,ROK,Syria,SYR,652732,,All
+660,255,Germany,GMY,Lebanon,LEB,660255,,All
+663,255,Germany,GMY,Jordan,JOR,663255,,All
+670,255,Germany,GMY,Saudi Arabia,SAU,670255,,All
+679,2,United States of America,USA,Yemen,YEM,6792,,All
+690,255,Germany,GMY,Kuwait,KUW,690255,,All
+770,800,Thailand,THI,Pakistan,PAK,770800,,All
+696,255,Germany,GMY,United Arab Emirates,UAE,696255,,All
+771,220,France,FRN,Bangladesh,BNG,771220,,All
+775,800,Thailand,THI,Myanmar,MYA,775800,,All
+700,365,Russia,RUS,Afghanistan,AFG,700365,,All
+700,770,Pakistan,PAK,Afghanistan,AFG,700770,,All
+705,255,Germany,GMY,Kazakhstan,KZK,705255,,All
+705,365,Russia,RUS,Kazakhstan,KZK,705365,,All
+710,20,Canada,CAN,China,CHN,71020,,All
+710,210,Netherlands,NTH,China,CHN,710210,,All
+710,211,Belgium,BEL,China,CHN,710211,,All
+710,225,Switzerland,SWZ,China,CHN,710225,,All
+710,255,Germany,GMY,China,CHN,710255,,All
+710,385,Norway,NOR,China,CHN,710385,,All
+710,900,Australia,AUL,China,CHN,710900,,All
+770,220,France,FRN,Pakistan,PAK,770220,,All
+732,255,Germany,GMY,South Korea,ROK,732255,,All
+850,20,Canada,CAN,Indonesia,INS,85020,,All
+740,255,Germany,GMY,Japan,JPN,740255,,All
+750,2,United States of America,USA,India,IND,7502,,All
+750,20,Canada,CAN,India,IND,75020,,All
+750,255,Germany,GMY,India,IND,750255,,All
+770,2,United States of America,USA,Pakistan,PAK,7702,,All
+770,255,Germany,GMY,Pakistan,PAK,770255,,All
+770,325,Italy,ITA,Pakistan,PAK,770325,,All
+770,700,Afghanistan,AFG,Pakistan,PAK,770700,,All
+770,850,Indonesia,INS,Pakistan,PAK,770850,,All
+771,2,United States of America,USA,Bangladesh,BNG,7712,,All
+771,20,Canada,CAN,Bangladesh,BNG,77120,,All
+771,255,Germany,GMY,Bangladesh,BNG,771255,,All
+820,255,Germany,GMY,Malaysia,MAL,820255,,All
+840,255,Germany,GMY,Philippines,PHI,840255,,All
+850,2,United States of America,USA,Indonesia,INS,8502,,All
+850,255,Germany,GMY,Indonesia,INS,850255,,All
+850,900,Australia,AUL,Indonesia,INS,850900,,All
+710,2,United States of America,USA,China,CHN,7102,,All
+750,200,United Kingdom,UKG,India,IND,750200,,All
+484,2,United States of America,USA,Congo,CON,4842,,All
+484,220,France,FRN,Congo,CON,484220,,All
+651,220,France,FRN,Egypt,EGY,651220,,All
+710,750,India,IND,China,CHN,710750,,All
+660,2,United States of America,USA,Lebanon,LEB,6602,,All
+100,2,United States of America,USA,Colombia,COL,1002,,All
+100,230,Spain,SPN,Colombia,COL,100230,,All
+344,346,Bosnia and Herzegovina,BOS,Croatia,CRO,344346,,All
+501,200,United Kingdom,UKG,Kenya,KEN,501200,,All
+640,200,United Kingdom,UKG,Turkey,TUR,640200,,All
+365,200,United Kingdom,UKG,Russia,RUS,365200,,All
+640,645,Iraq,IRQ,Turkey,TUR,640645,,All
+663,2,United States of America,USA,Jordan,JOR,6632,,All
+690,200,United Kingdom,UKG,Kuwait,KUW,690200,,All
+530,2,United States of America,USA,Ethiopia,ETH,5302,,All
+615,200,United Kingdom,UKG,Algeria,ALG,615200,,All
+365,230,Spain,SPN,Russia,RUS,365230,,All
+770,200,United Kingdom,UKG,Pakistan,PAK,770200,,All
+452,2,United States of America,USA,Ghana,GHA,4522,,All
+771,200,United Kingdom,UKG,Bangladesh,BNG,771200,,All
+40,20,Canada,CAN,Cuba,CUB,4020,,All
+40,230,Spain,SPN,Cuba,CUB,40230,,All
+771,750,India,IND,Bangladesh,BNG,771750,,All
+540,200,United Kingdom,UKG,Angola,ANG,540200,,All
+475,200,United Kingdom,UKG,Nigeria,NIG,475200,,All
+780,750,India,IND,Sri Lanka,SRI,780750,,All
+620,200,United Kingdom,UKG,Libya,LIB,620200,,All
+645,750,India,IND,Iraq,IRQ,645750,,All
+70,20,Canada,CAN,Mexico,MEX,7020,,All
+780,2,United States of America,USA,Sri Lanka,SRI,7802,,All
+780,200,United Kingdom,UKG,Sri Lanka,SRI,780200,,All
+92,2,United States of America,USA,El Salvador,SAL,922,,All
+360,200,United Kingdom,UKG,Romania,ROM,360200,,All
+483,2,United States of America,USA,Chad,CHA,4832,,All
+630,200,United Kingdom,UKG,Iran,IRN,630200,,All
+100,200,United Kingdom,UKG,Colombia,COL,100200,,All
+651,200,United Kingdom,UKG,Egypt,EGY,651200,,All
+90,2,United States of America,USA,Guatemala,GUA,902,,All
+101,2,United States of America,USA,Venezuela,VEN,1012,,All
+651,2,United States of America,USA,Egypt,EGY,6512,,All
+651,325,Italy,ITA,Egypt,EGY,651325,,All
+630,750,India,IND,Iran,IRN,630750,,All
+94,2,United States of America,USA,Costa Rica,COS,942,,All
+775,750,India,IND,Myanmar,MYA,775750,,All
+710,200,United Kingdom,UKG,China,CHN,710200,,All
+651,255,Germany,GMY,Egypt,EGY,651255,,All
+816,220,France,FRN,Vietnam,DRV,816220,,All
+816,740,Japan,JPN,Vietnam,DRV,816740,,All
+816,800,Thailand,THI,Vietnam,DRV,816800,,All
+816,840,Philippines,PHI,Vietnam,DRV,816840,,All
+816,850,Indonesia,INS,Vietnam,DRV,816850,,All
+816,200,United Kingdom,UKG,Vietnam,DRV,816200,,All
+816,2,United States of America,USA,Vietnam,DRV,8162,,All
+816,210,Netherlands,NTH,Vietnam,DRV,816210,,All
+704,2,United States of America,USA,Uzbekistan,UZB,7042,,All
+345,2,United States of America,USA,Yugoslavia,YUG,3452,,All
+816,255,Germany,GMY,Vietnam,DRV,816255,,All
+811,816,Vietnam,DRV,Cambodia,CAM,811816,,All
+345,255,Germany,GMY,Yugoslavia,YUG,345255,,All
+345,305,Austria,AUS,Yugoslavia,YUG,345305,,All
+705,2,United States of America,USA,Kazakhstan,KZK,7052,,All
+345,325,Italy,ITA,Yugoslavia,YUG,345325,,All
+345,220,France,FRN,Yugoslavia,YUG,345220,,All
+816,710,China,CHN,Vietnam,DRV,816710,,All
+70,42,Dominican Republic,DOM,Mexico,MEX,7042,,All
+70,52,Trinidad and Tobago,TRI,Mexico,MEX,7052,,All
+702,55,Grenada,GRN,Tajikistan,TAJ,70255,,All
