@@ -374,6 +374,8 @@ preds_immig <- nl.2017.immig$coefficients[1] +
 
 
 print("2017 immigration model using time lagged immigration levels (2010)")
+# exclude refugee flows for this model
+# use low and high immigration factors; none is implied (the intercept)
 nl.2017.immig.factors <-
   netlm(
     immigrant.pop.2017.mat,
@@ -397,17 +399,16 @@ nl.2017.immig.factors <-
   )
 
 preds_immig.factors <- nl.2017.immig$coefficients[1] +
-  nl.2017.immig$coefficients[2] * ref2016.mat +
-  nl.2017.immig$coefficients[3] * polyarchy.2016.mat +
-  nl.2017.immig$coefficients[4] * armsflows.inverse.2016.mat +
-  nl.2017.immig$coefficients[5] * riv.strategic.2016.mat +
-  nl.2017.immig$coefficients[6] * contiguity.any.mat +
-  nl.2017.immig$coefficients[7] * income.2015.gradient.mat +
-  nl.2017.immig$coefficients[8] * pts.2015.mat +
-  nl.2017.immig$coefficients[9] * defense.alliance.2016.mat +
-  nl.2017.immig$coefficients[10] * trade.2014.mat +
-  nl.2017.immig$coefficients[11] * immigrant.2010.low.mat +
-  nl.2017.immig$coefficients[12] * immigrant.2010.high.mat
+  nl.2017.immig$coefficients[2] * polyarchy.2016.mat +
+  nl.2017.immig$coefficients[3] * armsflows.inverse.2016.mat +
+  nl.2017.immig$coefficients[4] * riv.strategic.2016.mat +
+  nl.2017.immig$coefficients[5] * contiguity.any.mat +
+  nl.2017.immig$coefficients[6] * income.2015.gradient.mat +
+  nl.2017.immig$coefficients[7] * pts.2015.mat +
+  nl.2017.immig$coefficients[8] * defense.alliance.2016.mat +
+  nl.2017.immig$coefficients[9] * trade.2014.mat +
+  nl.2017.immig$coefficients[10] * immigrant.2010.low.mat +
+  nl.2017.immig$coefficients[11] * immigrant.2010.high.mat
 
 
 
