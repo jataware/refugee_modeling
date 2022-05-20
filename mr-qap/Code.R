@@ -441,12 +441,19 @@ ukr <-
 ####################################
 proc_results <- function(res) {
   neighbors <- c("370", "365", "360", "290", "310", "317", "359")
-  neighbors_names <- c("Belarus", "Russia", "Romania", "Poland", "Hungary", "Slovakia", "Moldova")
-  out <- data.frame(res["369", neighbors]) 
+  neighbors_names <-
+    c("Belarus",
+      "Russia",
+      "Romania",
+      "Poland",
+      "Hungary",
+      "Slovakia",
+      "Moldova")
+  out <- data.frame(res["369", neighbors])
   rownames(out) <- neighbors_names
   colnames(out) <- c('total_people')
-  out$percent_total <- out$total_people/sum(out$total_people)
-  out <- out[order(-out$total_people),]
+  out$percent_total <- out$total_people / sum(out$total_people)
+  out <- out[order(-out$total_people), ]
   return(out)
 }
 
