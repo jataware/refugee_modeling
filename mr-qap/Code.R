@@ -436,6 +436,29 @@ ukr <-
     immigration.2010.high
   )
 
-write.csv(preds, file = 'ref_flow_preds_2016.csv')
-write.csv(preds_immig, file = 'immig_flow_preds_2017.csv')
-write.csv(preds_immig.factors, file = 'immig_flow_preds_factors_2017.csv')
+####################################
+######### PROCESS RESULTS ##########
+####################################
+proc_results <- function(res) {
+  neighbors <- c("370", "365", "360", "290", "310", "317", "359")
+  neighbors_names <- c("Belarus", "Russia", "Romania", "Poland", "Hungary", "Slovakia", "Moldova")
+  out <- data.frame(res["369", neighbors]) 
+  rownames(out) <- neighbors_names
+  colnames(out) <- c('total_people')
+  out$percent_total <- out$total_people/sum(out$total_people)
+  out <- out[order(-out$total_people),]
+  return(out)
+}
+
+ref.results <- proc_results(preds)
+img.results <- proc_results(preds_immig)
+img.factors.results <- proc_results(preds_immig.factors)
+
+# Write the results from the 2016 refugee flow model
+write.csv(ref.results, file = 'ref_flow_preds_2016.csv')
+
+# Write the results from the immigration model
+write.csv(img.results, file = 'immig_flow_preds_2017.csv')
+
+# Write the results from the immigration model which used 2010 immigration levels
+write.csv(img.factors.results, file = 'immig_flow_preds_factors_2017.csv')
