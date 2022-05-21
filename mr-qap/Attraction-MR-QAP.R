@@ -44,7 +44,7 @@ gdp.mat <-
     igraph.edges,
     type = "both",
     names = T,
-    attr = "GDP.gradient_norm"
+    attr = "GDP.norm"
   ))
 
 libdem.mat <-
@@ -53,7 +53,7 @@ libdem.mat <-
       igraph.edges,
       type = "both",
       names = T,
-      attr = "v2x_libdem.gradient"
+      attr = "v2x_libdem"
     )
   )
 
@@ -73,7 +73,7 @@ test.gdp.mat <-
       igraph.edges.test,
       type = "both",
       names = T,
-      attr = "GDP.gradient_norm"
+      attr = "GDP.norm"
     )
   )
 
@@ -83,7 +83,7 @@ test.libdem.mat <-
       igraph.edges.test,
       type = "both",
       names = T,
-      attr = "v2x_libdem.gradient"
+      attr = "v2x_libdem"
     )
   )
 
@@ -109,5 +109,5 @@ preds <- ref_lm$coefficients[1] +
   ref_lm$coefficients[2] * test.gdp.mat +
   ref_lm$coefficients[3] * test.libdem.mat
 
-preds[0]
+
 write.csv(preds[1, 2:8], file = 'mr-qap-results.csv')
