@@ -1,0 +1,114 @@
+warnings()
+
+library(foreign)
+library(igraph) ### Remember this conflicts with statnet & sna
+library(tidyverse)
+library(corrr)
+library(ggraph)
+library(dplyr)
+library(rlang)
+library(naniar)
+library(statnet)
+library(sna)
+library(network)
+library(cluster)    # clustering algorithms
+library(factoextra) # clustering visualization
+library(dendextend) # for comparing two dendrograms
+library(ggplot2)
+library(fmsb)
+library(sjmisc)
+library(prettyR)
+
+#####################################################
+# Matrix Creation
+print("Matrix Creation")
+#####################################################
+edges <- read.csv("training.csv")
+edges.test <- read.csv("test.csv")
+
+igraph.edges <- graph_from_data_frame(edges, directed = T)
+igraph.edges.test <- graph_from_data_frame(edges.test, directed = T)
+
+######## TRAIN DATA #######
+##########################
+gdp.mat <-
+  as.matrix(as_adjacency_matrix(
+    igraph.edges,
+    type = "both",
+    names = T,
+    attr = "GDP.gradient_norm"
+  ))
+
+ref_pct_tot.mat <-
+  as.matrix(as_adjacency_matrix(
+    igraph.edges,
+    type = "both",
+    names = T,
+    attr = "pct_tot"
+  ))
+
+libdem.mat <-
+  as.matrix(
+    as_adjacency_matrix(
+      igraph.edges,
+      type = "both",
+      names = T,
+      attr = "v2x_libdem.gradient"
+    )
+  )
+
+######## TEST DATA #######
+##########################
+test.gdp.mat <-
+  as.matrix(as_adjacency_matrix(
+    igraph.edges.test,
+    type = "both",
+    names = T,
+    attr = "GDP.gradient_norm"
+  ))
+
+test.ref_pct_tot.mat <-
+  as.matrix(as_adjacency_matrix(
+    igraph.edges.test,
+    type = "both",
+    names = T,
+    attr = "pct_tot"
+  ))
+
+test.libdem.mat <-
+  as.matrix(
+    as_adjacency_matrix(
+      igraph.edges.test,
+      type = "both",
+      names = T,
+      attr = "v2x_libdem.gradient"
+    )
+  )
+
+
+#####################################################
+# MRQAPs
+print("Fit MRQAPs")
+#####################################################
+
+ref_lm <-
+  netlm(
+    ref_pct_tot.mat,
+    # Dependent variable/network
+    list(
+      gdp.mat,dd
+      libdem.mat
+    ),
+    # List the independent variables/networks
+    reps = 1000,
+    nullhyp = "qapspp",
+    test.statistic = "t-value"
+  )
+
+
+preds <- ref_lm$coefficients[1] +
+  ref_lm$coefficients[2] * test.gdp.mat +
+  ref_lm$coefficients[3] * test.libdem.mat
+
+preds[0]
+write.csv(preds[1,2:8], file='mr-qap-results.csv')
