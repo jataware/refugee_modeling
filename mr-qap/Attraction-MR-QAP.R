@@ -31,20 +31,20 @@ igraph.edges.test <- graph_from_data_frame(edges.test, directed = T)
 
 ######## TRAIN DATA #######
 ##########################
-gdp.mat <-
-  as.matrix(as_adjacency_matrix(
-    igraph.edges,
-    type = "both",
-    names = T,
-    attr = "GDP.gradient_norm"
-  ))
-
 ref_pct_tot.mat <-
   as.matrix(as_adjacency_matrix(
     igraph.edges,
     type = "both",
     names = T,
     attr = "pct_tot"
+  ))
+
+gdp.mat <-
+  as.matrix(as_adjacency_matrix(
+    igraph.edges,
+    type = "both",
+    names = T,
+    attr = "GDP.gradient_norm"
   ))
 
 libdem.mat <-
@@ -59,14 +59,6 @@ libdem.mat <-
 
 ######## TEST DATA #######
 ##########################
-test.gdp.mat <-
-  as.matrix(as_adjacency_matrix(
-    igraph.edges.test,
-    type = "both",
-    names = T,
-    attr = "GDP.gradient_norm"
-  ))
-
 test.ref_pct_tot.mat <-
   as.matrix(as_adjacency_matrix(
     igraph.edges.test,
@@ -74,6 +66,16 @@ test.ref_pct_tot.mat <-
     names = T,
     attr = "pct_tot"
   ))
+
+test.gdp.mat <-
+  as.matrix(
+    as_adjacency_matrix(
+      igraph.edges.test,
+      type = "both",
+      names = T,
+      attr = "GDP.gradient_norm"
+    )
+  )
 
 test.libdem.mat <-
   as.matrix(
@@ -85,7 +87,6 @@ test.libdem.mat <-
     )
   )
 
-
 #####################################################
 # MRQAPs
 print("Fit MRQAPs")
@@ -95,10 +96,8 @@ ref_lm <-
   netlm(
     ref_pct_tot.mat,
     # Dependent variable/network
-    list(
-      gdp.mat,dd
-      libdem.mat
-    ),
+    list(gdp.mat,
+         libdem.mat),
     # List the independent variables/networks
     reps = 1000,
     nullhyp = "qapspp",
@@ -111,4 +110,4 @@ preds <- ref_lm$coefficients[1] +
   ref_lm$coefficients[3] * test.libdem.mat
 
 preds[0]
-write.csv(preds[1,2:8], file='mr-qap-results.csv')
+write.csv(preds[1, 2:8], file = 'mr-qap-results.csv')
