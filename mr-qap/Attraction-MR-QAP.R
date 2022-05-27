@@ -109,5 +109,10 @@ preds <- ref_lm$coefficients[1] +
   ref_lm$coefficients[2] * test.gdp.mat +
   ref_lm$coefficients[3] * test.libdem.mat
 
+preds <- data.frame(preds[1, 2:8])
+colnames(preds) <- c("pct_tot")
+preds <- cbind(country = rownames(preds), preds)
+rownames(preds) <- 1:nrow(preds)
+preds$pct_tot <- preds$pct_tot / sum(preds$pct_tot)
 
 write.csv(preds[1, 2:8], file = 'mr-qap-results.csv')
