@@ -178,10 +178,7 @@ ref_lm <-
     ref_pct_tot.mat,
     # Dependent variable/network
     list(gdp.mat,
-         libdem.mat,
-         migrant.mat,
-         justice.mat,
-         trade.mat),
+         libdem.mat),
     # List the independent variables/networks
     reps = 1000,
     nullhyp = "qapspp",
